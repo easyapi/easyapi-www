@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>EasyAPI网关 - EasyAPI服务平台</title>
+    <meta name="keywords" content="API文档管理,API管理系统,API接口管理系统,API管理平台,API管理,API,API接口,接口管理,API接口管理,API监控,API测试,API服务"/>
+    <meta name="description" content="EasyAPI 简单，好用的API管理系统，移动互联网时代，每个应用都需要后台API支撑，通过API管理系统，后台与APP开发者进行很好的沟通，还在用Word文档写API吗，OUT了！"/>
+    <link rel="stylesheet" href="../static/css/main.min.css">
+</head>
+<style>
+    .f_2 {
+        font-size: 1.9rem!important;
+        padding-left: 80px;
+    }
+    .img_w {
+        width: 380px;
+        padding-right: 200px!important;
+    }
+    .avatarnav_down li a:hover{
+        color: #18c1d6;
+    }
+    .navs .show_name .dis_show .hover_color a li:hover p{
+        color: #2EACCB;        
+        }
+    .navs .show_name .dis_show .hover_color a li:hover span{
+        color: #999
+    }
+
+    .navs .show_names .dis_show .isShow a li:hover p{
+        /* color: #de9000; */
+        color: #2EACCB;
+
+    }
+    .navs .show_names .dis_show .isShow a li:hover span{
+        color: #999
+    }
+
+    .side-navs .nav .show_console ul a li:hover .dis_consoletxt p{
+        color: #2EACCB;
+        font-weight: bold;
+    }
+     .dis_showtxt p:hover {
+        color: #2EACCB!important;
+    }
+
+    .u-infobox .u-igateway .text {
+        padding-top: 15px;
+    }
+
+    .header .navs span {
+        position: relative;
+
+    }
+
+    .header .navs span:after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        background: url(/static/images/angle.png) center no-repeat;
+        background-size: 20px auto;
+    }
+
+    .header .side-navs .nav {
+        padding: 0;
+    }
+
+    .header .side-navs .console {
+        border: 1px solid transparent;
+    }
+
+    .side-navs span:hover .console {
+        border: 1px solid #fff;
+    }
+
+    .header .navs span:hover:after {
+        background-image: url(/static/images/angle-1.png);
+    }
+
+    .header .navs .dis_show .isShow li .icon_img {
+        width: 30px;
+        height: 30px;
+        float: left;
+    }
+
+    .header .navs .dis_show .isShow li .dis_showtxt {
+        float: right;
+        width: 85%;
+    }
+</style>
+<body>
+
+    <div class="header header-op">
+        <div class="x-wp">
+            <a href="/"><img class="logo f-fl" src="https://static.easyapi.com/images/logo.png"></a>
+            <div class="navs f-fl">
+                <span class="f-rel">产品
+                    <div class="dis_show">
+                        <img class="down_img" src="../static/images/info/narrow.png">
+                        <ul>
+                            <a href="/product/doc" class="a_link">
+                                <li>
+                                    <img class="icon_img" src="/static/images/info/down_icon1.png">
+                                    <div class="dis_showtxt">
+                                        <p>文档管理</p>
+                                        <span>在线API测试工具，快速完成接口测试任务，支持团队共同测试</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="/product/gateway" class="a_link">
+                                <li>
+
+                                    <img class="icon_img" src="/static/images/info/down_icon2.png">
+                                    <div class="dis_showtxt">
+                                        <p>网关系统</p>
+                                        <span>企业API架构正确之选，轻松管理海量API，特有的接口容器功能更强大</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="/product/test" class="a_link">
+                                <li>
+                                    <img class="icon_img" src="/static/images/info/down_icon3.png">
+                                    <div class="dis_showtxt">
+                                        <p>接口测试</p>
+                                        <span>在线API测试工具，快速完成接口测试任务，支持团队共同测试</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="/product/interface" class="a_link">
+                                <li>
+                                    <img class="icon_img" src="/static/images/info/down_icon4.png">
+                                    <div class="dis_showtxt">
+                                        <p>接口服务</p>
+                                        <span>众多接口服务，满足开发的每一个环节，让开发更高效</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="/product/monitor" class="a_link">
+                                <li>
+                                    <img class="icon_img" src="/static/images/info/down_icon5.png">
+                                    <div class="dis_showtxt">
+                                        <p>监控系统</p>
+                                        <span>API监控实时反馈API状态，保障产品稳定性，提升运维响应速度</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="/product/scene" class="a_link">
+                                <li>
+                                    <img class="icon_img" src="/static/images/info/down_icon6.png">
+                                    <div class="dis_showtxt">
+                                        <p>场景化服务</p>
+                                        <span>企业专注于核心业务开发，提供非核心标准化场景业务开发服务，性价比更高</span>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </span>
+                <a href="/info/price">价格</a>
+                <span class="f-rel">私有化
+                    <div class="dis_show">
+                        <img class="down_img" src="/static/images/info/narrow.png">
+                        <ul class="isShow">
+                            <a href="/solution/portal" class="a_link">
+                                <li>
+                                    <img class="icon_img" src="/static/images/info/header-icon2.png">
+                                    <div class="dis_showtxt">
+                                        <p>API管理门户</p>
+                                        <span>API管理门户主要为开发企业搭建API门户，企业集中化API管理解决方案</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="/solution/market" class="a_link">
+                                <li>
+
+                                    <img class="icon_img" src="/static/images/info/header-icon3.png">
+                                    <div class="dis_showtxt">
+                                        <p>API服务市场</p>
+                                        <span>推进企业数字化转型，构建联盟生态服务，统一企业的API服务进出口径</span>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="/solution/open" class="a_link">
+                                <li>
+
+                                    <img class="icon_img" src="/static/images/info/header-icon1.png">
+                                    <div class="dis_showtxt">
+                                        <p>API开放平台</p>
+                                        <span>让企业的数据通过开放平台连接更多的可能性，实现上下游生态建设</span>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </span>
+                <a href="https://market.easyapi.com" target="_blank">API市场</a>
+            </div>
+            <div class="side-navs">
+                <a class="navlogo" href="https://account.easyapi.com/signup" id="register">注册</a>
+                <span class="f-rel nav" style="height: 50px">
+                    <p class="console" style="padding: 0 15px">控制台</p>
+                    <div class="show_console">
+                        <img class="console_narrow" src="/static/images/info/narrow.png"/>
+                        <ul>
+                            <a href="https://doc.easyapi.com">
+                                <li>
+                                    <img class="console_icon" src="/static/images/info/down_icon7.png">
+                                    <div class="dis_consoletxt">
+                                        <p>API文档</p>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="https://monitor.easyapi.com">
+                                <li>
+                                    <img class="console_icon" src="/static/images/info/down_icon8.png">
+                                    <div class="dis_consoletxt">
+                                        <p>API监控</p>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="https://service.easyapi.com">
+                                <li>
+                                    <img class="console_icon" src="/static/images/info/down_icon9.png">
+                                    <div class="dis_consoletxt">
+                                        <p>API服务</p>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="https://gateway.easyapi.com">
+                                <li>
+                                    <img class="console_icon" src="/static/images/info/down_icon10.png">
+                                    <div class="dis_consoletxt">
+                                        <p>API网关</p>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </span>
+                <div class="navs f-fr dis_hide" id="avatar">
+                    <div class="upbx">
+                        <a class="f-fr" href="/project/" style="margin-top: -20px;"><img id="photo" src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="u-banner-bg" style="background-image:url('../static/images/info/gateway_1.png');height: 520px;">
+        <div class="x-wp">
+            <div class="title">
+                <h1>EasyAPI网关系统</h1>
+                <p>企业API安全基础构架正确之选</p>
+                <!-- <p>认证、鉴权、安全、流量控制、缓存、接口容器</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="u-infobox f-border-b">
+            <div class="u-title">构建面向未来的 API 网关</div>
+            <div class="u-inro">API网关是数据及系统的集成的基础设施，支持将云端应用及数据通过简单、快速地配置转化成 API<br>
+            同时提供安全独立的数据门户以及统一管控的开发者中心，帮助用户实现数据开放及共享</div>
+        <ul class="u-iconui x-wp">
+            <li>
+                <img src="../static/images/info/gateway_icon1.png">
+                <span>安全保障</span>
+                <p>用户鉴权身份验证 <br>签名防止请求篡改<br>调用权限审核把控
+                </p>
+            </li>
+            <li>
+                <img src="../static/images/info/gateway_icon2.png">
+                <span>独立访问</span>
+                <p>集成数据独享存储<br>开放门户单独部署<br>自定义域名及门户
+                </p>
+            </li>
+            <li>
+                <img src="../static/images/info/gateway_icon3.png">
+                <span>简单应用</span>
+                <p>自动实现主机部署<br>零代码配置化操作<br>自动实现接口SDK
+                </p>
+            </li>
+            <li>
+                <img src="../static/images/info/gateway_icon4.png">
+                <span>场景灵活</span>
+                <p>多种集成业务场景<br>功能模块按需配置<br>支持多数据源集成
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="u-infobox  f-border-b">
+        <div class="u-title">专注API网关 </div>
+        <div class="u-igateway f-cb">
+            <img class="f-fr img_w" src="../static/images/info/gateway_2.png">
+            <div class="text f-fl">
+                <p class="f_2 ">  <img src="../static/images/info/gateway_icon5.png">快速创建API接口<br>
+                    <img src="../static/images/info/gateway_icon6.png">自动是吸纳数据网关<br>
+                    <img src="../static/images/info/gateway_icon7.png">API接口网关版本管理<br>
+                    <img src="../static/images/info/gateway_icon8.png">数据可根据需要返回
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="u-infobox ">
+        <div class="u-title">EasyAPI网关的价值</div>
+        <div class="u-inro">
+            让API跟安全，更灵活
+        </div>
+        <ul class="u-iconui x-wp">
+            <li>
+                <img src="../static/images/info/gateway_icon9.png">
+                <span>降低成本</span>
+            </li>
+            <li>
+                <img src="../static/images/info/gateway_icon10.png">
+                <span>提高效率</span>
+            </li>
+            <li>
+                <img src="../static/images/info/gateway_icon11.png">
+                <span>海量规模</span>
+            </li>
+            <li>
+                <img src="../static/images/info/gateway_icon12.png">
+                <span>轻松监控</span>
+            </li>
+            <li>
+                <img src="../static/images/info/gateway_icon13.png">
+                <span>简化开发</span>
+            </li>
+            <li>
+                <img src="../static/images/info/gateway_icon14.png">
+                <span>授权灵活</span>
+            </li>
+            <li>
+                <img src="../static/images/info/gateway_icon15.png">
+                <span>无缝对接</span>
+            </li>
+            <li>
+                <img src="../static/images/info/gateway_icon16.png">
+                <span>融合开发</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="u-infofoot">
+        <p>为了更多的开发我们的产品，API测试适当收费，感谢支持</p>
+        <a href="https://gateway.easyapi.com" class="btn">立即使用EasyAPI网关</a>
+    </div>
+
+    <div class="footer clearfix">
+        <p>
+            <a href="/info/about">关于我们</a>
+            <a href="/info/together">合作伙伴</a>
+            <a href="/info/contact">联系我们</a>
+            <a href="/info/donate">支持我们</a>
+                                <a href="/info/changlog">平台动态</a>
+        </p>
+        <p>Copyright © 2015～2019 上海帮趣网络技术有限公司</p>
+        <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript">
+        if($.cookie("authenticationToken")){
+            $.ajax({
+                method: 'GET',
+                url: 'https://account.easyapi.com/api/account',
+                beforeSend: function (request) {
+                    request.setRequestHeader("Authorization", "Bearer " + ($.cookie("authenticationToken")));
+                },
+                success: function (data) {
+                    $("#register").addClass('dis_hide');
+                    $("#photo").attr("src", data.photo + "!icon.jpg");
+                    $("#avatar").removeClass('dis_hide');
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
