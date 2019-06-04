@@ -73,8 +73,8 @@ gulp.task("build:style:min",function () {
     var banner = [
         '/*!',
         ' * 官网样式表 v<%= pkg.version %>',
-        ' * @author sql80',
-        ' * @email sql80@sql.com',
+        ' * @author easyapi',
+        ' * @email leida@easyapi.com',
         ' * @time <%=  name %>',
         ' */',
         ''
