@@ -5,7 +5,7 @@
     <title>首页 - EasyAPI服务平台</title>
     <meta name="keywords" content="API文档管理,API管理系统,API接口管理系统,API管理平台,API管理,API,API接口,接口管理,API接口管理,API监控,API测试,API服务"/>
     <meta name="description" content="EasyAPI 简单，好用的API管理系统，移动互联网时代，每个应用都需要后台API支撑，通过API管理系统，后台与APP开发者进行很好的沟通，还在用Word文档写API吗，OUT了！"/>
-    <link rel="stylesheet" href="static/css/main.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
 </head>
 <style>
     .avatar{
@@ -72,14 +72,25 @@
     .bg_white {
         background: white!important;
         /* border-bottom: 4px solid white; */
+        position: relative;
         display: inline-block;
         color: #31b0d5;
         height: 46px;
-        padding: 0 40px;
+        padding: 0 20px;
         font-size: 16px;
         line-height: 46px;
         font-weight:600;
         border-radius: 6px
+    }
+    .bg_white>p{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .bg_white>p>img{
+        width: 16px;
+        height: 16px;
+        margin-left:20px;
     }
     .font_w {
         font-weight: bold;
@@ -259,7 +270,7 @@
                 <!-- <a class="navlogo" href="https://account.easyapi.com/login" id="login">登录</a> -->
                 <!-- id="console" -->
                 <span class="f-rel nav" style="height: 50px" >
-                    <p class="console " style="padding: 0 15px 0 0">控制台</p>
+                    <p class="console " style="padding: 0 10px">控制台</p>
                     <div class="show_console">
                         <img class="console_narrow" src="/static/images/info/narrow.png"/>
                         <ul>
@@ -337,7 +348,28 @@
                     <p>移动互联网时代，EasyAPI是一个为您提供API管理、API测试、API监控、API文档的综合性API服务平台。
                         <br>你还在用Word管理接口文档吗？你还在使用拼接URL测试吗？你OUT了！
                     </p>
-                    <a href="https://doc.easyapi.com" class="bg_white">现在开始</a>
+                    <div class="bg_white" id="clickShow">
+                        <p>
+                            <span>现在开始</span>
+                            <img src="/static/images/right.png" alt="">
+                        </p>
+                        <ul class="jump_link">
+                            <li>
+                                <a href="https://doc.easyapi.com">API文档中心</a>
+                                </li>
+                            <li>
+                                <a href="https://monitor.easyapi.com">API监控中心</a>
+                                </li>
+                            <li>
+                                <a href="https://gateway.easyapi.com">API网关中心</a>
+                                </li>
+                            <li>
+                                <a href="https://service.easyapi.com">API服务中心</a>
+                                </li>
+                        </ul>
+                    
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -502,6 +534,9 @@
                                     }
                                 });
                             }
+                            $("#clickShow").click(function(){
+                                $('.jump_link').toggle('normal');
+                            })
                         </script>
                     </body>
                     </html>

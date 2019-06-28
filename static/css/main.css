@@ -408,7 +408,10 @@ legend {
   color: rgba(255, 255, 255, 0.5);
 }
 .header .navs .dis_show {
-  display: none;
+  transition: all 3s linear;
+  /* display: none; */
+  visibility: hidden;
+  
 }
 .header .navs .dis_show .down_img {
   width: 20px;
@@ -516,7 +519,10 @@ legend {
   cursor: pointer;
 }
 .header .navs span:hover .dis_show {
-  display: block;
+  transition: all 1s linear;
+  /* display: block; */
+  visibility: visible;
+  
 }
 .header .side-navs {
   float: right;
@@ -526,7 +532,9 @@ legend {
   padding-top: 20px;
 }
 .header .side-navs .show_console {
-  display: none;
+  transition: all 3s linear;
+  /* display: none; */
+  visibility: hidden;
 }
 .header .side-navs .show_console .console_narrow {
   width: 20px;
@@ -575,7 +583,9 @@ legend {
   color: rgba(255, 255, 255, 0.7);
 }
 .header .side-navs span:hover .show_console {
-  display: block;
+  transition: all 1s linear;
+  /* display: block; */
+  visibility: visible;
 }
 .header .side-navs a:hover {
   color: rgba(255, 255, 255, 0.5);
@@ -751,7 +761,8 @@ legend {
   height: 760px;
   box-sizing: border-box;
   overflow: hidden;
-  background: url('../images/bg_00.png') no-repeat;
+  background: url('../images/bg_00.png') no-repeat center;
+  background-size:100% 100%;
 }
 .page-index .u-page.u-page1 .u-info {
   height: 320px;
@@ -769,7 +780,7 @@ legend {
 .page-index .u-page.u-page1 .u-info p {
   font-size: 1.8rem;
   padding-bottom: 50px;
-  line-height: 1.7;
+  /* line-height: 1.7; */
 }
 .page-index .u-page.u-page1 .u-info a.btn {
   border-bottom: 4px solid #de9000;
@@ -1881,5 +1892,25 @@ legend {
 }
 
 .header .navs .dis_show .isShow li .dis_showtxt {
-  width: 80%!important;
+  width: 80%!important; 
+}
+.jump_link{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  border-radius: 5px;
+  background:#fff;
+  display: none;
+  line-height: 36px;
+}
+.jump_link>li{
+  line-height: 30px;
+  display: inline-block;
+  padding:0 5px;
+  cursor: pointer;
+  /* border-right:1px solid #0AB3CB; */
+}
+.jump_link>li>a{
+  color: #0AB3CB;
 }
