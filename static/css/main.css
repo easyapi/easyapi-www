@@ -391,7 +391,7 @@ legend {
 }
 .header .logo {
   margin-top: 17px;
-  width: 120;
+  width: 120px;
 }
 .header .navs {
   line-height: 68px;
@@ -408,9 +408,10 @@ legend {
   color: rgba(255, 255, 255, 0.5);
 }
 .header .navs .dis_show {
-  transition: all 3s linear;
   /* display: none; */
   visibility: hidden;
+  opacity:0;
+  transition: all 2s ease;
   
 }
 .header .navs .dis_show .down_img {
@@ -519,9 +520,10 @@ legend {
   cursor: pointer;
 }
 .header .navs span:hover .dis_show {
-  transition: all 1s linear;
   /* display: block; */
   visibility: visible;
+  opacity:1;
+  transition: all 0.3s ease-in;
   
 }
 .header .side-navs {
@@ -532,9 +534,10 @@ legend {
   padding-top: 20px;
 }
 .header .side-navs .show_console {
-  transition: all 3s linear;
   /* display: none; */
   visibility: hidden;
+  opacity:0;
+  transition: all 2s ease;
 }
 .header .side-navs .show_console .console_narrow {
   width: 20px;
@@ -583,9 +586,10 @@ legend {
   color: rgba(255, 255, 255, 0.7);
 }
 .header .side-navs span:hover .show_console {
-  transition: all 1s linear;
   /* display: block; */
   visibility: visible;
+  opacity:1;
+  transition: all 0.3s ease-in;
 }
 .header .side-navs a:hover {
   color: rgba(255, 255, 255, 0.5);
@@ -779,7 +783,7 @@ legend {
 }
 .page-index .u-page.u-page1 .u-info p {
   font-size: 1.8rem;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   /* line-height: 1.7; */
 }
 .page-index .u-page.u-page1 .u-info a.btn {
@@ -1896,7 +1900,7 @@ legend {
 }
 .jump_link{
   position: absolute;
-  top:0;
+  top:48px;
   left:0;
   width: 100%;
   border-radius: 5px;
