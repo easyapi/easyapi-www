@@ -411,7 +411,7 @@ legend {
   /* display: none; */
   visibility: hidden;
   opacity:0;
-  transition: all 2s ease;
+  transition: all 0.6s ease-in;
   
 }
 .header .navs .dis_show .down_img {
@@ -537,7 +537,7 @@ legend {
   /* display: none; */
   visibility: hidden;
   opacity:0;
-  transition: all 2s ease;
+  transition: all 0.6s ease-in;
 }
 .header .side-navs .show_console .console_narrow {
   width: 20px;
