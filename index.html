@@ -81,13 +81,13 @@
 
     /* bug */
     .bg_white {
-        background: white !important;
-        /* border-bottom: 4px solid white; */
+        background: #f0bf43 !important;
+        border-bottom: 4px solid #bf9f43;
         position: relative;
         display: inline-block;
-        color: #31b0d5;
+        color: #ffffff;
         height: 46px;
-        padding: 0 20px;
+        padding: 10px 60px;
         font-size: 16px;
         line-height: 46px;
         font-weight: 600;
@@ -111,8 +111,9 @@
     }
 
     .bg_white>p a {
-        font-size: 16px;
-        color: #0AB3CB;
+        font-size: 26px;
+        color: #fff;
+        letter-spacing: 4px;
     }
 
     .font_w {
@@ -358,9 +359,9 @@
     </div>
 
     <div class="page-index">
-        <div class="u-page u-page1 f-cb" style="height:520px;">
+        <div class="u-page u-page1 f-cb">
             <div class="main wp">
-                <div class="u-info" style=" margin: 190px auto 10%;">
+                <div class="u-info" style=" margin: 0 auto;padding:172px 0;">
                     <h1>简单，好用的API服务平台</h1>
                     <p>移动互联网时代，EasyAPI是一个为您提供API管理、API测试、API监控、API文档的综合性API服务平台。
                         <br>你还在用Word管理接口文档吗？你还在使用拼接URL测试吗？你OUT了！
@@ -368,16 +369,23 @@
                     <div class="bg_white">
                         <p>
                             <span><a href="https://doc.easyapi.com">API文档中心</a></span>
-                            <img id="clickShow" src="/static/images/down.png" alt="">
                         </p>
                         <ul class="jump_link">
                             <li>
+                                <img src="/static/images/info/down_icon1.png">
+                                <a href="https://doc.easyapi.com">API文档中心</a>
+                            </li>
+                            <li></li>
+                            <li>
+                                <img src="/static/images/info/down_icon5.png">
                                 <a href="https://monitor.easyapi.com">API监控中心</a>
                             </li>
                             <li>
+                                <img src="/static/images/info/down_icon2.png">
                                 <a href="https://gateway.easyapi.com">API网关中心</a>
                             </li>
                             <li>
+                                <img src="/static/images/info/header-icon1.png">
                                 <a href="https://service.easyapi.com">API服务中心</a>
                             </li>
                         </ul>
@@ -546,12 +554,6 @@
                 }
             });
         }
-        var r = 0;
-        $("#clickShow").click(function () {
-            r += 180;
-            $(this).css('transform', 'rotate(' + r + 'deg)');
-            $('.jump_link').slideToggle('normal');
-        })
     </script>
 </body>
 
