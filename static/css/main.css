@@ -1958,6 +1958,9 @@ legend {
 .side-navs .nav .show_console ul a li:hover{
   background:#f5f5f5;
 }
+.header .navs .dis_show ul li:hover{
+  background:#f5f5f5;
+}
 .bg_white:hover .jump_link{
    
   visibility: visible;
