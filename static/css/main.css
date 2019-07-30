@@ -408,10 +408,10 @@ legend {
   color: rgba(255, 255, 255, 0.5);
 }
 .header .navs .dis_show {
-  /* display: none; */
-  visibility: hidden;
-  opacity:0;
-  transition: all 0.6s ease-in;
+  display: none;
+  /* visibility: hidden; */
+  /* opacity:0; */
+  /* transition: all 0.6s ease-in; */
   
 }
 .header .navs .dis_show .down_img {
@@ -479,7 +479,7 @@ legend {
   line-height: 18px;
 }
 .header .navs .dis_show ul li .dis_showtxt span {
-  color: #d3d3d3;
+  color: #999;
   font-size: 12px;
   line-height: 18px;
   padding: 0;
@@ -509,7 +509,7 @@ legend {
   color: #333333;
 }
 .header .navs .dis_show .isShow li .dis_showtxt span {
-  color: #d3d3d3;
+  color: #999;
   font-size: 12px;
   line-height: 14px;
   padding: 0;
@@ -523,11 +523,14 @@ legend {
   padding: 0 10px;
   cursor: pointer;
 }
+.header .navs span:hover{
+  color: rgba(255, 255, 255, 0.5);
+}
 .header .navs span:hover .dis_show {
-  /* display: block; */
-  visibility: visible;
-  opacity:1;
-  transition: all 0.3s ease-in;
+  display: block;
+  /* visibility: visible; */
+  /* opacity:1; */
+  /* transition: all 0.3s ease-in; */
   
 }
 .header .side-navs {
@@ -538,10 +541,10 @@ legend {
   padding-top: 12px;
 }
 .header .side-navs .show_console {
-  /* display: none; */
-  visibility: hidden;
-  opacity:0;
-  transition: all 0.6s ease-in;
+  display: none;
+  /* visibility: hidden; */
+  /* opacity:0; */
+  /* transition: all 0.6s ease-in; */
 }
 .header .side-navs .show_console .console_narrow {
   width: 20px;
@@ -594,10 +597,10 @@ legend {
   color: rgba(255, 255, 255, 0.7);
 }
 .header .side-navs span:hover .show_console {
-  /* display: block; */
-  visibility: visible;
-  opacity:1;
-  transition: all 0.3s ease-in;
+  display: block;
+  /* visibility: visible; */
+  /* opacity:1; */
+  /* transition: all 0.3s ease-in; */
 }
 .header .side-navs a:hover {
   color: rgba(255, 255, 255, 0.5);
@@ -1908,17 +1911,17 @@ legend {
 }
 .jump_link{
   position: absolute;
-  top:75px;
+  top:86px;
   left:50%;
   width: 60%;
   transform: translate(-50%,0);
   border-radius: 5px;
   background:#fff;
   visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in;
+  /* opacity: 0; */
+  /* transition: all 0.5s ease-in; */
   line-height: 36px;
-  box-shadow: 0 0 15px 5px #daecf0;
+  box-shadow: 0 2px 10px 5px #daecf0;
 }
 .jump_link>li{
   margin:5px 0;
@@ -1961,9 +1964,13 @@ legend {
 .header .navs .dis_show ul li:hover{
   background:#f5f5f5;
 }
-.bg_white:hover .jump_link{
-   
+.bg_white:hover .jump_link{ 
   visibility: visible;
   opacity: 1;
   transition: all 0.5s ease-in;
+} 
+.bg_white:hover img{
+  visibility: visible;
+  /* opacity: 1; */
+  /* transition: all 0.3s ease-in; */
 }
