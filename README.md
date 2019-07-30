@@ -1,4 +1,4 @@
-EasyAPI官网
+EasyAPI官网 https://www.easyapi.com
 --------
 
 EasyAPI官网，是一个纯静态项目工程，右上角使用Ajax调用EasyAPI获取账号信息接口，当账户登录显示用户信息。
