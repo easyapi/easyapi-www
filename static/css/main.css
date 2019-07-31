@@ -418,7 +418,7 @@ legend {
   /* visibility: hidden; */
   /* opacity:0; */
   /* transition: all 0.6s ease-in; */
-  
+
 }
 .header .navs .dis_show .down_img {
   width: 20px;
@@ -537,7 +537,7 @@ legend {
   /* visibility: visible; */
   /* opacity:1; */
   /* transition: all 0.3s ease-in; */
-  
+
 }
 .header .side-navs {
   float: right;
@@ -782,7 +782,7 @@ legend {
   height: 520px;
   box-sizing: border-box;
   /* overflow: hidden; */
-  background: url('../images/bg_00.png') no-repeat center;
+  background: url('../images/bg_index.png') no-repeat center;
   background-size:100% 100%;
 }
 .page-index .u-page.u-page1 .u-info {
@@ -1913,7 +1913,7 @@ legend {
 }
 
 .header .navs .dis_show .isShow li .dis_showtxt {
-  width: 86%!important; 
+  width: 86%!important;
 }
 .jump_link{
   position: absolute;
@@ -1939,7 +1939,7 @@ legend {
 .jump_link>li:hover{
   background: #f5f5f5;
 }
-.jump_link>li:hover >a{ 
+.jump_link>li:hover >a{
   color:#18c1d6;
 }
 .jump_link>li:nth-child(2){
@@ -1970,11 +1970,11 @@ legend {
 .header .navs .dis_show ul li:hover{
   background:#f5f5f5;
 }
-.bg_white:hover .jump_link{ 
+.bg_white:hover .jump_link{
   visibility: visible;
   opacity: 1;
   transition: all 0.5s ease-in;
-} 
+}
 .bg_white:hover img{
   visibility: visible;
   /* opacity: 1; */
