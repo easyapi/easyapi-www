@@ -373,6 +373,12 @@ legend {
   width: 1200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1000px) {
+  .x-wp {
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
 .dis_hide {
   display: none;
 }
@@ -561,9 +567,9 @@ legend {
   background: white;
   border-radius: 6px;
   width: 130px;
-  padding: 20px 0 0;
+  padding: 5px 0;
   overflow: hidden;
-  right: 20px;
+  right: -12px;
   top: 46px;
   z-index: 99999;
 }
