@@ -557,7 +557,7 @@ legend {
   height: 10px;
   position: absolute;
   top: 38px;
-  right: 40px;
+  right: 24px;
 }
 .header .side-navs .show_console ul {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -569,7 +569,7 @@ legend {
   width: 130px;
   padding: 5px 0;
   overflow: hidden;
-  right: -12px;
+  right: -27px;
   top: 46px;
   z-index: 99999;
 }
