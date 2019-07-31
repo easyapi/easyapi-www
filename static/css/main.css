@@ -375,7 +375,7 @@ legend {
 }
 @media screen and (max-width: 1000px) {
   .x-wp {
-    width: 100vw;
+    width: 95vw;
     margin: 0 auto;
   }
 }
