@@ -7,7 +7,7 @@
   <meta name="keywords" content="API文档管理,API管理系统,API接口管理系统,API管理平台,API管理,API,API接口,接口管理,API接口管理,API监控,API测试,API服务" />
   <meta name="description"
     content="EasyAPI 简单，好用的API管理系统，移动互联网时代，每个应用都需要后台API支撑，通过API管理系统，后台与APP开发者进行很好的沟通，还在用Word文档写API吗，OUT了！" />
-  <link rel="stylesheet" href="../static/css/main.min.css">
+  <script src="../static/style/style.js"></script>
 </head>
 <style>
   .text-c {
@@ -88,10 +88,11 @@
     float: right;
     width: 85%;
   }
-  .u-banner-bg{
-    background-image:url('../static/images/product/bg_document.png');
+
+  .u-banner-bg {
+    background-image: url('../static/images/product/bg_document.png');
     height: 520px;
-    background-size:100% 100%;
+    background-size: 100% 100%;
   }
 </style>
 
@@ -105,7 +106,7 @@
           <div class="dis_show">
             <img class="down_img" src="../static/images/info/narrow.png">
             <ul>
-              <a href="/product/doc" class="a_link">
+              <a href="/product/doc.html" class="a_link">
                 <li>
                   <img class="icon_img" src="/static/images/info/down_icon1.png">
                   <div class="dis_showtxt">
@@ -114,7 +115,7 @@
                   </div>
                 </li>
               </a>
-              <a href="/product/gateway" class="a_link">
+              <a href="/product/gateway.html" class="a_link">
                 <li>
                   <img class="icon_img" src="/static/images/info/down_icon2.png">
                   <div class="dis_showtxt">
@@ -123,7 +124,7 @@
                   </div>
                 </li>
               </a>
-              <a href="/product/test" class="a_link">
+              <a href="/product/test.html" class="a_link">
                 <li>
                   <img class="icon_img" src="/static/images/info/down_icon3.png">
                   <div class="dis_showtxt">
@@ -132,7 +133,7 @@
                   </div>
                 </li>
               </a>
-              <a href="/product/interface" class="a_link">
+              <a href="/product/interface.html" class="a_link">
                 <li>
                   <img class="icon_img" src="/static/images/info/down_icon4.png">
                   <div class="dis_showtxt">
@@ -141,7 +142,7 @@
                   </div>
                 </li>
               </a>
-              <a href="/product/monitor" class="a_link">
+              <a href="/product/monitor.html" class="a_link">
                 <li>
                   <img class="icon_img" src="/static/images/info/down_icon5.png">
                   <div class="dis_showtxt">
@@ -150,7 +151,7 @@
                   </div>
                 </li>
               </a>
-              <a href="/product/scene" class="a_link">
+              <a href="/product/scene.html" class="a_link">
                 <li>
                   <img class="icon_img" src="/static/images/info/down_icon6.png">
                   <div class="dis_showtxt">
@@ -163,12 +164,12 @@
 
           </div>
         </span>
-        <a href="/info/price">价格</a>
+        <a href="/info/price.html">价格</a>
         <span class="f-rel">私有化
           <div class="dis_show">
             <img class="down_img" src="/static/images/info/narrow.png">
             <ul class="isShow">
-              <a href="/solution/portal" class="a_link">
+              <a href="/solution/portal.html" class="a_link">
                 <li>
                   <img class="icon_img" src="/static/images/info/header-icon2.png">
                   <div class="dis_showtxt">
@@ -177,7 +178,7 @@
                   </div>
                 </li>
               </a>
-              <a href="/solution/market" class="a_link">
+              <a href="/solution/market.html" class="a_link">
                 <li>
 
                   <img class="icon_img" src="/static/images/info/header-icon3.png">
@@ -187,7 +188,7 @@
                   </div>
                 </li>
               </a>
-              <a href="/solution/open" class="a_link">
+              <a href="/solution/open.html" class="a_link">
                 <li>
 
                   <img class="icon_img" src="/static/images/info/header-icon1.png">
@@ -346,19 +347,18 @@
 
   <div class="footer clearfix">
     <p>
-      <a href="/info/about">关于我们</a>
-      <a href="/info/together">合作伙伴</a>
-      <a href="/info/contact">联系我们</a>
-      <a href="/info/donate">支持我们</a>
-      <a href="/info/changlog">平台动态</a>
+      <a href="/info/about.html">关于我们</a>
+      <a href="/info/together.html">合作伙伴</a>
+      <a href="/info/contact.html">联系我们</a>
+      <a href="/info/donate.html">支持我们</a>
+      <a href="/info/changlog.html">平台动态</a>
     </p>
     <p>Copyright © 2015～2019 上海帮趣网络技术有限公司</p>
     <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
   </div>
 
   <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
-  <script type="text/javascript"
-    src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
   <script type="text/javascript">
     if ($.cookie("authenticationToken")) {
       $.ajax({
