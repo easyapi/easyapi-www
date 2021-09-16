@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script src="../../static/style/style.js"></script>
+  <title>合作伙伴 - EasyAPI服务平台</title>
+  <meta name="keywords" content="API文档管理,API管理系统,API接口管理系统,API管理平台,API管理,API,API接口,接口管理,API接口管理,API监控,API测试,API服务"/>
+  <meta name="description"
+        content="EasyAPI 简单，好用的API管理系统，移动互联网时代，每个应用都需要后台API支撑，通过API管理系统，后台与APP开发者进行很好的沟通，还在用Word文档写API吗，OUT了！"/>
+</head>
+<style>
+  .avatarnav_down li a:hover {
+    color: #18c1d6;
+  }
+
+  .navs .show_name .dis_show .hover_color a li:hover p {
+    color: #2EACCB;
+  }
+
+  .navs .show_name .dis_show .hover_color a li:hover span {
+    color: #999
+  }
+
+  .navs .show_names .dis_show .isShow a li:hover p {
+    /* color: #de9000; */
+    color: #2EACCB;
+
+  }
+
+  .navs .show_names .dis_show .isShow a li:hover span {
+    color: #999
+  }
+
+  .side-navs .nav .show_console ul a li:hover .dis_consoletxt p {
+    color: #2EACCB;
+    font-weight: bold;
+  }
+
+  .dis_showtxt p:hover {
+    color: #2EACCB !important;
+  }
+
+  .header .navs span {
+    position: relative;
+
+  }
+
+  .header .navs span:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: url(/static/images/angle.png) center no-repeat;
+    background-size: 20px auto;
+  }
+
+  .header .side-navs .nav {
+    padding: 0;
+  }
+
+  .header .side-navs .console {
+    border: 1px solid #fff;
+  }
+
+  .side-navs span:hover .console {
+    border: 1px solid #fff;
+  }
+
+  .header .navs span:hover:after {
+    background-image: url(/static/images/angle-1.png);
+  }
+
+  .header .navs .dis_show .isShow li .icon_img {
+    width: 30px;
+    height: 30px;
+    float: left;
+  }
+
+  .header .navs .dis_show .isShow li .dis_showtxt {
+    float: right;
+    width: 85%;
+  }
+</style>
+
+<div class="header">
+  <div class="x-wp">
+    <a href="/"><img class="logo f-fl" src="https://qiniu.easyapi.com/market/logo.svg"></a>
+    <div class="navs f-fl">
+      <span class="f-rel">产品
+
+        <div class="dis_show">
+          <img class="down_img" src="../../static/images/info/narrow.png">
+
+          <ul>
+            <a href="/pages/product/doc.vue" class="a_link">
+              <li>
+                <img class="icon_img" src="/static/images/info/down_icon1.png">
+                <div class="dis_showtxt">
+                  <p>文档管理</p>
+                  <span>在线API测试工具，快速完成接口测试任务，支持团队共同测试</span>
+                </div>
+              </li>
+            </a>
+            <a href="/pages/product/gateway.vue" class="a_link">
+              <li>
+
+                <img class="icon_img" src="/static/images/info/down_icon2.png">
+                <div class="dis_showtxt">
+                  <p>网关系统</p>
+                  <span>企业API架构正确之选，轻松管理海量API，特有的接口容器功能更强大</span>
+                </div>
+              </li>
+            </a>
+            <a href="/pages/product/test.vue" class="a_link">
+              <li>
+                <img class="icon_img" src="/static/images/info/down_icon3.png">
+                <div class="dis_showtxt">
+                  <p>接口测试</p>
+                  <span>在线API测试工具，快速完成接口测试任务，支持团队共同测试</span>
+                </div>
+              </li>
+            </a>
+            <a href="/pages/product/interface.vue" class="a_link">
+              <li>
+                <img class="icon_img" src="/static/images/info/down_icon4.png">
+                <div class="dis_showtxt">
+                  <p>接口服务</p>
+                  <span>众多接口服务，满足开发的每一个环节，让开发更高效</span>
+                </div>
+              </li>
+            </a>
+            <a href="/pages/product/monitor.vue" class="a_link">
+              <li>
+                <img class="icon_img" src="/static/images/info/down_icon5.png">
+                <div class="dis_showtxt">
+                  <p>监控系统</p>
+                  <span>API监控实时反馈API状态，保障产品稳定性，提升运维响应速度</span>
+                </div>
+              </li>
+            </a>
+            <a href="/pages/product/scene.vue" class="a_link">
+              <li>
+                <img class="icon_img" src="/static/images/info/down_icon6.png">
+                <div class="dis_showtxt">
+                  <p>场景化服务</p>
+                  <span>企业专注于核心业务开发，提供非核心标准化场景业务开发服务，性价比更高</span>
+                </div>
+              </li>
+            </a>
+          </ul>
+
+        </div>
+      </span>
+
+      <a href="/pages/infos/info/price.html">价格</a>
+      <span class="f-rel">私有化
+        <div class="dis_show">
+          <img class="down_img" src="/static/images/info/narrow.png">
+          <ul>
+            <a href="/pages/solution/portal.vue" class="a_link">
+              <li>
+                <img class="icon_img" src="/static/images/info/header-icon2.png">
+                <div class="dis_showtxt">
+                  <p>API管理门户</p>
+                  <span>API管理门户主要为开发企业搭建API门户，企业集中化API管理解决方案</span>
+                </div>
+              </li>
+            </a>
+            <a href="/pages/solution/market.vue" class="a_link">
+              <li>
+
+                <img class="icon_img" src="/static/images/info/header-icon3.png">
+                <div class="dis_showtxt">
+                  <p>API服务市场</p>
+                  <span>推进企业数字化转型，构建联盟生态服务，统一企业的API服务进出口径</span>
+                </div>
+              </li>
+            </a>
+            <a href="/pages/solution/open.vue" class="a_link">
+              <li>
+
+                <img class="icon_img" src="/static/images/info/header-icon1.png">
+                <div class="dis_showtxt">
+                  <p>API开放平台</p>
+                  <span>让企业的数据通过开放平台连接更多的可能性，实现上下游生态建设</span>
+                </div>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </span>
+      <a href="https://market.easyapi.com" target="_blank">API市场</a>
+    </div>
+    <div class="side-navs">
+      <a class="navlogo" href="https://account.easyapi.com/signup" id="register">注册</a>
+      <span class="f-rel nav" style="height: 50px">
+        <p class="console" style="padding: 0 15px">控制台</p>
+        <div class="show_console">
+          <img class="console_narrow" src="/static/images/info/narrow.png"/>
+          <ul>
+            <a href="https://doc.easyapi.com">
+              <li>
+                <img class="console_icon" src="/static/images/info/down_icon7.png">
+                <div class="dis_consoletxt">
+                  <p>API文档</p>
+                </div>
+              </li>
+            </a>
+            <a href="https://monitor.easyapi.com">
+              <li>
+                <img class="console_icon" src="/static/images/info/down_icon8.png">
+                <div class="dis_consoletxt">
+                  <p>API监控</p>
+                </div>
+              </li>
+            </a>
+            <a href="https://service.easyapi.com">
+              <li>
+                <img class="console_icon" src="/static/images/info/down_icon9.png">
+                <div class="dis_consoletxt">
+                  <p>API服务</p>
+                </div>
+              </li>
+            </a>
+            <a href="https://gateway.easyapi.com">
+              <li>
+                <img class="console_icon" src="/static/images/info/down_icon10.png">
+                <div class="dis_consoletxt">
+                  <p>API网关</p>
+                </div>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </span>
+      <div class="navs f-fr dis_hide" id="avatar">
+        <div class="upbx">
+          <a class="f-fr" href="/project/" style="margin-top: -20px;"><img
+            src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-together">
+  <h2 class="u-title">
+    <div class="x-wp">合作伙伴</div>
+  </h2>
+  <div class="x-wp">
+    <div class="u-together">
+      <div class="u-aplist f-cb">
+        <h3>合作伙伴</h3>
+        <a title="吾音疗疾" href="http://www.wuyinliaoji.com" target="_blank"><img
+          src="https://static.easyapi.com/images/app/wuyinliaoji.png"><span>吾音疗疾</span></a>
+        <a title="优云" href="https://www.uyun.cn" target="_blank"><img
+          src="https://static.easyapi.com/images/app/uyun.png"><span>优云运维</span></a>
+        <a title="麦客" href="https://www.mikecrm.com" target="_blank"><img
+          src="https://static.easyapi.com/images/app/mikecrm.png"><span>麦客</span></a>
+      </div>
+      <div class="u-links">
+        <a href="http://bangqu.com" title="帮趣网" target="_blank">帮趣网</a> +
+        <a href="http://game.bangqu.com" title="帮趣游戏" target="_blank">帮趣游戏</a> +
+        <a href="http://www.yinwan.com" title="银湾社区生活网" target="_blank">银湾社区生活网</a> +
+        <a href="http://www.opark.com/" title="OPark" target="_blank">OPark园区在线</a> +
+        <a href="http://www.kuaizu365.cn" title="快租365" target="”_blank”">快租365</a> +
+      </div>
+
+      <div class="u-tobd f-cb">
+        <h3>众创空间</h3>
+        <a title="苏河汇" href="http://suhehui.com/workspace/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/shh.png"></a>
+        <a title="创客邦" href="http://ckb.opark.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/ckb.png"></a>
+        <a title="桔子空间" href="http://www.juzilab.com/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/jzkj.png"></a>
+        <a title="3W·空间" href="http://www.3wcoffee.com/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/3wkf.png"></a>
+
+
+      </div>
+      <div class="u-tobd f-cb">
+        <h3>友情链接</h3>
+        <a title="七牛" href="http://www.qiniu.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/qiniu.png" alt=""></a>
+        <a title="超级表格" href="http://www.chaojibiaoge.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/cjbg.png" alt=""></a>
+        <a title="计蒜客" href="http://www.jisuanke.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/jsk.png" alt=""></a>
+        <a title="SendCloud" href="http://sendcloud.sohu.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/sendcloud.png" alt=""></a>
+        <a title="网站建设" href="https://www.proginn.com/users/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/proginn.png" alt=""></a>
+        <a title="wlgf" href="http://www.nsoad.com/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/wlgf.png" alt=""></a>
+        <a title="时速云" href="https://www.tenxcloud.com/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/shisuyun.png" alt=""></a>
+        <a title="蒲公英" href="https://www.pgyer.com/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/pgyer.png" alt=""></a>
+        <a title="sdkcn" href="https://www.sdk.cn" target="_blank"><img
+          src="https://static.easyapi.com/images/link/sdkcn.png" alt=""></a>
+        <a title="测试窝" href="http://www.testwo.com/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/ceshiwo.png" alt=""></a>
+        <a title="justalkcloud" href="http://justalkcloud.com/" target="_blank">
+          <img src="https://static.easyapi.com/images/link/justtalk.png" alt="">
+        </a>
+        <a title="产品大牛" href="http://www.pmdaniu.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/cpdn.png"></a>
+        <a title="bmob" href="http://www.bmob.cn" target="_blank"><img
+          src="https://static.easyapi.com/images/link/bmob.png"></a>
+        <a title="棱镜" href="http://www.ljsdk.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/lingjing.png"></a>
+        <a title="devstore" href="http://www.devstore.cn" target="_blank"><img
+          src="https://static.easyapi.com/images/link/dev.png"></a>
+        <a title="表情云" href="http://biaoqingmm.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/bqy.png"></a>
+        <a title="实现网" href="http://shixian.com/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/shixian.png"></a>
+        <a title="udesk" href="http://www.udesk.cn" target="_blank"><img
+          src="https://static.easyapi.com/images/link/udesk.png"></a>
+        <a title="麦客" href="http://www.mikecrm.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/mike.png"></a>
+        <a title="优云" href="https://www.uyun.cn/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/youyun.png"></a>
+        <a title="美团云" href="https://www.mtyun.com/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/meituanyun.png"></a>
+        <a title="bugtags" href="https://www.bugtags.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/bugtags.png"></a>
+        <a title="得图网" href="https://www.detu.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/detu.png"></a>
+        <a title="堂桥" href="http://www.techbridge-inc.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/tangqiao.png"></a>
+        <a title="开源中国" href="http://www.oschina.net" target="_blank"><img
+          src="https://static.easyapi.com/images/link/oschina.png"></a>
+        <a title="趣拍云SDK" href="https://www.qupaicloud.com/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/qupaicloud.png"></a>
+        <a title="岂安科技" href="http://bigsec.com/" target="_blank"><img
+          src="https://static.easyapi.com/images/link/bigsec.png"></a>
+        <a title="码云" href="https://gitee.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/gitee.png"></a>
+        <a title="Tracup" href="https://www.tracup.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/tracup.png"></a>
+        <a title="Leangoo" href="https://www.leangoo.com" target="_blank"><img
+          src="https://static.easyapi.com/images/link/leangoo.png"></a>
+      </div>
+
+      <div class="u-size">
+        <h3>素材 <span class="f-ff0">文字描述：EasyAPI，EasyAPI服务平台</span></h3>
+        <dl class="f-cb">
+          <dd>
+            <em><img src="https://static.easyapi.com/images/sucai/icon-1m.png"></em>
+            <span>1024*1024</span>
+            <p>
+              <a href="https://static.easyapi.com/images/sucai/icon-1.png" target="_blank">下载PNG</a>
+            </p>
+          </dd>
+          <dd>
+            <em><img src="https://static.easyapi.com/images/sucai/icon-2m.png"></em>
+            <span>1024*1024</span>
+            <p>
+              <a href="https://static.easyapi.com/images/sucai/icon-2.png" target="_blank">下载PNG</a>
+            </p>
+          </dd>
+          <dd>
+            <em><img src="https://static.easyapi.com/images/sucai/icon-8m.png"></em>
+            <span>1024*1024</span>
+            <p>
+              <a href="https://static.easyapi.com/images/sucai/icon-8.png" target="_blank">下载PNG</a>
+            </p>
+          </dd>
+          <dd>
+            <em><img src="https://static.easyapi.com/images/sucai/icon-3m.png"></em>
+            <span>1024*1024</span>
+            <p>
+              <a href="https://static.easyapi.com/images/sucai/icon-3.png" target="_blank">下载PNG</a>
+            </p>
+          </dd>
+          <dd>
+            <em><img src="https://static.easyapi.com/images/sucai/icon-4m.png"></em>
+            <span>1024*1024</span>
+            <p>
+              <a href="https://static.easyapi.com/images/sucai/icon-4.png" target="_blank">下载PNG</a>
+            </p>
+          </dd>
+          <dd>
+            <em><img src="https://static.easyapi.com/images/sucai/icon-7m.png"></em>
+            <span>1024*1024/透明</span>
+            <p>
+              <a href="https://static.easyapi.com/images/sucai/icon-7.png" target="_blank">下载PNG</a>
+            </p>
+          </dd>
+          <dd>
+            <em><img src="https://static.easyapi.com/images/sucai/icon-5m.png"></em>
+            <span>1024*1024/透明</span>
+            <p>
+              <a href="https://static.easyapi.com/images/sucai/icon-5.png" target="_blank">下载PNG</a>
+            </p>
+          </dd>
+          <dd>
+            <em><img src="https://static.easyapi.com/images/sucai/icon-5m.png"></em>
+            <span>AI文件</span>
+            <p>
+              <a href="https://static.easyapi.com/images/sucai/easyapi_logo.ai.zip" target="_blank">矢量文件</a>
+            </p>
+          </dd>
+        </dl>
+
+        <h3>色彩值 </h3>
+        <dl class="f-cb colorbox">
+          <dd class="color1">
+            <em><img src="https://static.easyapi.com/images/sucai/icon-6m.png"></em>
+            <span>主色</span>
+            <p>#18c1d6</p>
+          </dd>
+          <dd class="color2">
+            <em><img src="https://static.easyapi.com/images/sucai/icon-5m.png"></em>
+            <span>灰色</span>
+            <p>#868a92</p>
+          </dd>
+          <dd class="color3">
+            <em><img src="https://static.easyapi.com/images/sucai/icon-6m.png"></em>
+            <span>黑色</span>
+            <p>#262939</p>
+          </dd>
+          <dd class="color4">
+            <em><img src="https://static.easyapi.com/images/sucai/icon-5m.png"></em>
+            <span>白色</span>
+            <p>#fffff</p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer clearfix">
+  <p>
+    <a href="/pages/infos/info/about.html">关于我们</a>
+    <a href="/pages/infos/info/together.html">合作伙伴</a>
+    <a href="/pages/infos/info/contact.html">联系我们</a>
+    <a href="/pages/infos/info/donate.html">支持我们</a>
+    <a href="/pages/infos/info/changlog.html">平台动态</a>
+  </p>
+  <p>Copyright © 2015～2019 上海帮趣网络技术有限公司</p>
+  <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script type="text/javascript">
+  if ($.cookie("authenticationToken")) {
+    $.ajax({
+      method: 'GET',
+      url: 'https://account-api.easyapi.com/api/account',
+      beforeSend: function (request) {
+        request.setRequestHeader("Authorization", "Bearer " + ($.cookie("authenticationToken")));
+      },
+      success: function (data) {
+        $("#register").addClass('dis_hide');
+        $("#photo").attr("src", data.photo + "!icon.jpg");
+        $("#avatar").removeClass('dis_hide');
+      }
+    });
+  }
+</script>
+
+</body>
+
+</html>
