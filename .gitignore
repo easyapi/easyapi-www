@@ -1,6 +1,11 @@
-.DS_Store
+# dependencies
 node_modules
-/dist
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
 
 # Lock files
 yarn.lock
@@ -17,3 +22,6 @@ yarn-error.log*
 
 # Editor directories and files
 .idea
+
+# Mac OSX
+.DS_Store
