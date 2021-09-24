@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer clearfix">
     <p>
       <a href="/pages/info/about.vue">关于我们</a>
       <a href="/pages/info/together.vue">合作伙伴</a>

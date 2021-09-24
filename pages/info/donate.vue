@@ -1,536 +1,355 @@
-﻿<!DOCTYPE html>
-<html lang="zh">
+﻿<template>
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <script src="../../static/style/style.js"></script>
-  <title>支持我们 - EasyAPI服务平台</title>
-  <meta name="keywords" content="API文档管理,API管理系统,API接口管理系统,API管理平台,API管理,API,API接口,接口管理,API接口管理,API监控,API测试,API服务"/>
-  <meta name="description"
-        content="EasyAPI 简单，好用的API管理系统，移动互联网时代，每个应用都需要后台API支撑，通过API管理系统，后台与APP开发者进行很好的沟通，还在用Word文档写API吗，OUT了！"/>
-</head>
-<style>
-  .avatarnav_down li a:hover {
-    color: #18c1d6;
-  }
 
-  .navs .show_name .dis_show .hover_color a li:hover p {
-    color: #2EACCB;
-  }
-
-  .navs .show_name .dis_show .hover_color a li:hover span {
-    color: #999
-  }
-
-  .navs .show_names .dis_show .isShow a li:hover p {
-    /* color: #de9000; */
-    color: #2EACCB;
-
-  }
-
-  .navs .show_names .dis_show .isShow a li:hover span {
-    color: #999
-  }
-
-  .side-navs .nav .show_console ul a li:hover .dis_consoletxt p {
-    color: #2EACCB;
-    font-weight: bold;
-  }
-
-  .dis_showtxt p:hover {
-    color: #2EACCB !important;
-  }
-
-  .header .navs span {
-    position: relative;
-
-  }
-
-  .header .navs span:after {
-    content: '';
-    position: absolute;
-    right: -10px;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    background: url(/static/images/angle.png) center no-repeat;
-    background-size: 20px auto;
-  }
-
-  .header .side-navs .nav {
-    padding: 0;
-  }
-
-  .header .side-navs .console {
-    border: 1px solid #fff;
-  }
-
-  .side-navs span:hover .console {
-    border: 1px solid #fff;
-  }
-
-  .header .navs span:hover:after {
-    background-image: url(/static/images/angle-1.png);
-  }
-
-  .page-infopage .u-zcpro .u-box dl dd .btn {
-    padding: 5px 20px;
-  }
-
-  .header .navs .dis_show .isShow li .icon_img {
-    width: 30px;
-    height: 30px;
-    float: left;
-  }
-
-  .header .navs .dis_show .isShow li .dis_showtxt {
-    float: right;
-    width: 85%;
-  }
-</style>
-
-<body class="f-body-gray">
-
-<div class="header ">
   <div class="x-wp">
-    <a href="/"><img class="logo f-fl" src="https://qiniu.easyapi.com/market/logo.svg"></a>
-    <div class="navs f-fl">
-        <span class="f-rel">产品
+    <div class="page-infopage">
+      <h2 class="u-title">支持我们</h2>
 
-          <div class="dis_show">
-            <img class="down_img" src="../../static/images/info/narrow.png">
-
-            <ul>
-              <a href="/pages/product/doc.vue" class="a_link">
-                <li>
-                  <img class="icon_img" src="/static/images/info/down_icon1.png">
-                  <div class="dis_showtxt">
-                    <p>文档管理</p>
-                    <span>在线API测试工具，快速完成接口测试任务，支持团队共同测试</span>
-                  </div>
-                </li>
-              </a>
-              <a href="/pages/product/gateway.vue" class="a_link">
-                <li>
-
-                  <img class="icon_img" src="/static/images/info/down_icon2.png">
-                  <div class="dis_showtxt">
-                    <p>网关系统</p>
-                    <span>企业API架构正确之选，轻松管理海量API，特有的接口容器功能更强大</span>
-                  </div>
-                </li>
-              </a>
-              <a href="/pages/product/test.vue" class="a_link">
-                <li>
-                  <img class="icon_img" src="/static/images/info/down_icon3.png">
-                  <div class="dis_showtxt">
-                    <p>接口测试</p>
-                    <span>在线API测试工具，快速完成接口测试任务，支持团队共同测试</span>
-                  </div>
-                </li>
-              </a>
-              <a href="/pages/product/interface.vue" class="a_link">
-                <li>
-                  <img class="icon_img" src="/static/images/info/down_icon4.png">
-                  <div class="dis_showtxt">
-                    <p>接口服务</p>
-                    <span>众多接口服务，满足开发的每一个环节，让开发更高效</span>
-                  </div>
-                </li>
-              </a>
-              <a href="/pages/product/monitor.vue" class="a_link">
-                <li>
-                  <img class="icon_img" src="/static/images/info/down_icon5.png">
-                  <div class="dis_showtxt">
-                    <p>监控系统</p>
-                    <span>API监控实时反馈API状态，保障产品稳定性，提升运维响应速度</span>
-                  </div>
-                </li>
-              </a>
-              <a href="/pages/product/scene.vue" class="a_link">
-                <li>
-                  <img class="icon_img" src="/static/images/info/down_icon6.png">
-                  <div class="dis_showtxt">
-                    <p>场景化服务</p>
-                    <span>企业专注于核心业务开发，提供非核心标准化场景业务开发服务，性价比更高</span>
-                  </div>
-                </li>
-              </a>
-            </ul>
-
-          </div>
-        </span>
-
-      <a href="/pages/infos/info/price.html">价格</a>
-      <span class="f-rel">私有化
-          <div class="dis_show">
-            <img class="down_img" src="/static/images/info/narrow.png">
-            <ul>
-              <a href="/pages/solution/portal.vue" class="a_link">
-                <li>
-                  <img class="icon_img" src="/static/images/info/header-icon2.png">
-                  <div class="dis_showtxt">
-                    <p>API管理门户</p>
-                    <span>API管理门户主要为开发企业搭建API门户，企业集中化API管理解决方案</span>
-                  </div>
-                </li>
-              </a>
-              <a href="/pages/solution/market.vue" class="a_link">
-                <li>
-
-                  <img class="icon_img" src="/static/images/info/header-icon3.png">
-                  <div class="dis_showtxt">
-                    <p>API服务市场</p>
-                    <span>推进企业数字化转型，构建联盟生态服务，统一企业的API服务进出口径</span>
-                  </div>
-                </li>
-              </a>
-              <a href="/pages/solution/open.vue" class="a_link">
-                <li>
-
-                  <img class="icon_img" src="/static/images/info/header-icon1.png">
-                  <div class="dis_showtxt">
-                    <p>API开放平台</p>
-                    <span>让企业的数据通过开放平台连接更多的可能性，实现上下游生态建设</span>
-                  </div>
-                </li>
-              </a>
-            </ul>
-          </div>
-        </span>
-      <a href="https://market.easyapi.com" target="_blank">API市场</a>
-    </div>
-    <div class="side-navs">
-      <a class="navlogo" href="https://account.easyapi.com/signup" id="register">注册</a>
-      <span class="f-rel nav" style="height: 50px">
-          <p class="console" style="padding: 0 15px">控制台</p>
-          <div class="show_console">
-            <img class="console_narrow" src="/static/images/info/narrow.png"/>
-            <ul>
-              <a href="https://doc.easyapi.com">
-                <li>
-                  <img class="console_icon" src="/static/images/info/down_icon7.png">
-                  <div class="dis_consoletxt">
-                    <p>API文档</p>
-                  </div>
-                </li>
-              </a>
-              <a href="https://monitor.easyapi.com">
-                <li>
-                  <img class="console_icon" src="/static/images/info/down_icon8.png">
-                  <div class="dis_consoletxt">
-                    <p>API监控</p>
-                  </div>
-                </li>
-              </a>
-              <a href="https://service.easyapi.com">
-                <li>
-                  <img class="console_icon" src="/static/images/info/down_icon9.png">
-                  <div class="dis_consoletxt">
-                    <p>API服务</p>
-                  </div>
-                </li>
-              </a>
-              <a href="https://gateway.easyapi.com">
-                <li>
-                  <img class="console_icon" src="/static/images/info/down_icon10.png">
-                  <div class="dis_consoletxt">
-                    <p>API网关</p>
-                  </div>
-                </li>
-              </a>
-            </ul>
-          </div>
-        </span>
-      <div class="navs f-fr dis_hide" id="avatar">
-        <div class="upbx">
-          <a class="f-fr" href="/project/" style="margin-top: -20px;"><img
-            src="https://qiniu.easyapi.com/user/default.jpg!icon.jpg"></a>
+      <div class="u-tbg">
+        <img src="https://static.easyapi.com/images/info/donate.jpg">
+      </div>
+      <div class="u-donate f-cb">
+        <div class="p">
+          <em>如</em>如果您觉得 EasyAPI
+          对您非常有用，您可以考虑通过捐赠来支持我们。
+          您的捐赠将帮助我们应付日益增长的主机和宽带，
+          以及软件开发、美工与网站编辑等方面费用，帮助我们在未来为您提供更加优质的内容和服务
+          。我们非常感谢您的捐赠与支持。
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="x-wp">
-  <div class="page-infopage">
-    <h2 class="u-title">支持我们</h2>
-
-    <div class="u-tbg">
-      <img src="https://static.easyapi.com/images/info/donate.jpg">
-    </div>
-    <div class="u-donate f-cb">
-      <div class="p">
-        <em>如</em>如果您觉得 EasyAPI
-        对您非常有用，您可以考虑通过捐赠来支持我们。
-        您的捐赠将帮助我们应付日益增长的主机和宽带，
-        以及软件开发、美工与网站编辑等方面费用，帮助我们在未来为您提供更加优质的内容和服务
-        。我们非常感谢您的捐赠与支持。
-      </div>
-      <dl class="payb clearfix">
-        <dd>
-          <p><img src="https://static.easyapi.com/images/info/fanfanle.png"></p>
-          <span>微信扫一扫</span>
-        </dd>
-        <dd>
-          <p><img src="https://static.easyapi.com/images/info/leida.png"></p>
-          <span>支付宝扫一扫</span>
-        </dd>
-      </dl>
-    </div>
-
-    <div class="u-names  f-cb">
-      <div class="u-enhd">支持名单</div>
-      <ul class="f-cb">
-        <li>
-          <p><img src="https://qiniu.easyapi.com/user/zhaozilong.jpg"></p>
-          <strong>赵子龙</strong>
-          <span>Java工程师</span>
-        </li>
-        <li>
-          <p><img src="https://qiniu.easyapi.com/user/tangwenchang.jpg"></p>
-          <strong>唐文昌</strong>
-          <span>iOS工程师</span>
-        </li>
-        <li>
-          <p><img src="https://qiniu.easyapi.com/user/banxin.jpg"></p>
-          <strong>班新</strong>
-          <span>Android工程师</span>
-        </li>
-        <li>
-          <p><img src="https://qiniu.easyapi.com/user/zhangsheng.jpg"></p>
-          <strong>张胜</strong>
-          <span>项目总监</span>
-        </li>
-        <li>
-          <p><img src="https://qiniu.easyapi.com/user/huangmingjie.jpg"></p>
-          <strong>黄明杰</strong>
-          <span>技术总监</span>
-        </li>
-        <li>
-          <p><img src="https://qiniu.easyapi.com/user/zhanglinghui.jpg"></p>
-          <strong>张凌辉</strong>
-          <span>Java架构师</span>
-        </li>
-        <li>
-          <p><img src="https://qiniu.easyapi.com/user/jiyixin.jpg"></p>
-          <strong>季乙心</strong>
-          <span>产品经理</span>
-        </li>
-        <li>
-          <p><img src="../../static/images/user-phone.png"></p>
-          　<a href="/pages/infos/info/support.html" class="more">更多支持者</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="u-zcpro f-cb">
-      <div class="u-enhd">支持项目</div>
-      <div class="u-box">
-        <dl>
-          <dt><span>￥15元</span><i>33人支持</i></dt>
+        <dl class="payb clearfix">
           <dd>
-            <p>署名<i class="iconfont icon-ok"></i></p>
-            <p>鼠标垫</p>
-            <p>马克杯</p>
-            <p>T恤衫</p>
-            <p>充电宝</p>
-            <p>0.5股份</p>
-            <span>
+            <p><img src="https://static.easyapi.com/images/info/fanfanle.png"></p>
+            <span>微信扫一扫</span>
+          </dd>
+          <dd>
+            <p><img src="https://static.easyapi.com/images/info/leida.png"></p>
+            <span>支付宝扫一扫</span>
+          </dd>
+        </dl>
+      </div>
+
+      <div class="u-names  f-cb">
+        <div class="u-enhd">支持名单</div>
+        <ul class="f-cb">
+          <li>
+            <p><img src="https://qiniu.easyapi.com/user/zhaozilong.jpg"></p>
+            <strong>赵子龙</strong>
+            <span>Java工程师</span>
+          </li>
+          <li>
+            <p><img src="https://qiniu.easyapi.com/user/tangwenchang.jpg"></p>
+            <strong>唐文昌</strong>
+            <span>iOS工程师</span>
+          </li>
+          <li>
+            <p><img src="https://qiniu.easyapi.com/user/banxin.jpg"></p>
+            <strong>班新</strong>
+            <span>Android工程师</span>
+          </li>
+          <li>
+            <p><img src="https://qiniu.easyapi.com/user/zhangsheng.jpg"></p>
+            <strong>张胜</strong>
+            <span>项目总监</span>
+          </li>
+          <li>
+            <p><img src="https://qiniu.easyapi.com/user/huangmingjie.jpg"></p>
+            <strong>黄明杰</strong>
+            <span>技术总监</span>
+          </li>
+          <li>
+            <p><img src="https://qiniu.easyapi.com/user/zhanglinghui.jpg"></p>
+            <strong>张凌辉</strong>
+            <span>Java架构师</span>
+          </li>
+          <li>
+            <p><img src="https://qiniu.easyapi.com/user/jiyixin.jpg"></p>
+            <strong>季乙心</strong>
+            <span>产品经理</span>
+          </li>
+          <li>
+            <p><img src="../../static/images/user-phone.png"></p>
+            　<a href="/pages/infos/info/support.html" class="more">更多支持者</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="u-zcpro f-cb">
+        <div class="u-enhd">支持项目</div>
+        <div class="u-box">
+          <dl>
+            <dt><span>￥15元</span><i>33人支持</i></dt>
+            <dd>
+              <p>署名<i class="iconfont icon-ok"></i></p>
+              <p>鼠标垫</p>
+              <p>马克杯</p>
+              <p>T恤衫</p>
+              <p>充电宝</p>
+              <p>0.5股份</p>
+              <span>
                 <a class="btn btn-info " href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
                   支持15元
                 </a>
               </span>
-          </dd>
-        </dl>
-        <dl>
-          <dt><span>￥50元</span><i>8人支持</i></dt>
-          <dd>
-            <p>署名<i class="iconfont icon-ok"></i></p>
-            <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-            <p>马克杯</p>
-            <p>T恤衫</p>
-            <p>充电宝</p>
-            <p>0.5股份</p>
+            </dd>
+          </dl>
+          <dl>
+            <dt><span>￥50元</span><i>8人支持</i></dt>
+            <dd>
+              <p>署名<i class="iconfont icon-ok"></i></p>
+              <p>鼠标垫<i class="iconfont icon-ok"></i></p>
+              <p>马克杯</p>
+              <p>T恤衫</p>
+              <p>充电宝</p>
+              <p>0.5股份</p>
 
-            <span>
+              <span>
                 <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
                   支持50元
                 </a>
               </span>
-          </dd>
-        </dl>
-        <dl>
-          <dt><span>￥100元</span><i>18人支持</i></dt>
-          <dd>
-            <p>署名<i class="iconfont icon-ok"></i></p>
-            <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-            <p>马克杯<i class="iconfont icon-ok"></i></p>
-            <p>T恤衫</p>
-            <p>充电宝</p>
-            <p>0.5股份</p>
+            </dd>
+          </dl>
+          <dl>
+            <dt><span>￥100元</span><i>18人支持</i></dt>
+            <dd>
+              <p>署名<i class="iconfont icon-ok"></i></p>
+              <p>鼠标垫<i class="iconfont icon-ok"></i></p>
+              <p>马克杯<i class="iconfont icon-ok"></i></p>
+              <p>T恤衫</p>
+              <p>充电宝</p>
+              <p>0.5股份</p>
 
-            <span>
+              <span>
                 <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
                   支持100元
                 </a>
               </span>
-          </dd>
-        </dl>
-        <dl>
-          <dt><span>￥200元</span><i>23人支持</i></dt>
-          <dd>
-            <p>署名<i class="iconfont icon-ok"></i></p>
-            <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-            <p>马克杯<i class="iconfont icon-ok"></i></p>
-            <p>T恤衫<i class="iconfont icon-ok"></i></p>
-            <p>充电宝</p>
-            <p>0.5股份</p>
+            </dd>
+          </dl>
+          <dl>
+            <dt><span>￥200元</span><i>23人支持</i></dt>
+            <dd>
+              <p>署名<i class="iconfont icon-ok"></i></p>
+              <p>鼠标垫<i class="iconfont icon-ok"></i></p>
+              <p>马克杯<i class="iconfont icon-ok"></i></p>
+              <p>T恤衫<i class="iconfont icon-ok"></i></p>
+              <p>充电宝</p>
+              <p>0.5股份</p>
 
-            <span>
+              <span>
                 <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
                   支持200元
                 </a>
               </span>
-          </dd>
-        </dl>
-        <dl>
-          <dt><span>￥500元</span><i>2人支持</i></dt>
-          <dd>
-            <p>署名<i class="iconfont icon-ok"></i></p>
-            <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-            <p>马克杯<i class="iconfont icon-ok"></i></p>
-            <p>T恤衫<i class="iconfont icon-ok"></i></p>
-            <p>充电宝<i class="iconfont icon-ok"></i></p>
-            <p>0.5股份</p>
-            <span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><span>￥500元</span><i>2人支持</i></dt>
+            <dd>
+              <p>署名<i class="iconfont icon-ok"></i></p>
+              <p>鼠标垫<i class="iconfont icon-ok"></i></p>
+              <p>马克杯<i class="iconfont icon-ok"></i></p>
+              <p>T恤衫<i class="iconfont icon-ok"></i></p>
+              <p>充电宝<i class="iconfont icon-ok"></i></p>
+              <p>0.5股份</p>
+              <span>
                 <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
                   支持500元
                 </a>
               </span>
-          </dd>
-        </dl>
-        <dl>
-          <dt><span>￥2000元</span><i>1人支持</i></dt>
-          <dd>
-            <p>署名<i class="iconfont icon-ok"></i></p>
-            <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-            <p>马克杯<i class="iconfont icon-ok"></i></p>
-            <p>T恤衫<i class="iconfont icon-ok"></i></p>
-            <p>充电宝<i class="iconfont icon-ok"></i></p>
-            <p>广告机会</p>
-            <span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><span>￥2000元</span><i>1人支持</i></dt>
+            <dd>
+              <p>署名<i class="iconfont icon-ok"></i></p>
+              <p>鼠标垫<i class="iconfont icon-ok"></i></p>
+              <p>马克杯<i class="iconfont icon-ok"></i></p>
+              <p>T恤衫<i class="iconfont icon-ok"></i></p>
+              <p>充电宝<i class="iconfont icon-ok"></i></p>
+              <p>广告机会</p>
+              <span>
                 <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
                   支持2000元
                 </a>
               </span>
-          </dd>
-        </dl>
-        <dl>
-          <dt><span>￥5000元</span><i>0人支持</i></dt>
-          <dd>
-            <p>署名<i class="iconfont icon-ok"></i></p>
-            <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-            <p>马克杯<i class="iconfont icon-ok"></i></p>
-            <p>T恤衫<i class="iconfont icon-ok"></i></p>
-            <p>充电宝<i class="iconfont icon-ok"></i></p>
-            <p>定制风格<i class="iconfont icon-ok"></i></p>
-            <span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><span>￥5000元</span><i>0人支持</i></dt>
+            <dd>
+              <p>署名<i class="iconfont icon-ok"></i></p>
+              <p>鼠标垫<i class="iconfont icon-ok"></i></p>
+              <p>马克杯<i class="iconfont icon-ok"></i></p>
+              <p>T恤衫<i class="iconfont icon-ok"></i></p>
+              <p>充电宝<i class="iconfont icon-ok"></i></p>
+              <p>定制风格<i class="iconfont icon-ok"></i></p>
+              <span>
                 <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
                   支持5000元
                 </a>
               </span>
-          </dd>
-        </dl>
-        <dl>
-          <dt><span>￥10000元</span><i>0人支持</i></dt>
-          <dd>
-            <p>署名<i class="iconfont icon-ok"></i></p>
-            <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-            <p>马克杯<i class="iconfont icon-ok"></i></p>
-            <p>T恤衫<i class="iconfont icon-ok"></i></p>
-            <p>充电宝<i class="iconfont icon-ok"></i></p>
-            <p>0.5股份<i class="iconfont icon-ok"></i></p>
-            <span>
+            </dd>
+          </dl>
+          <dl>
+            <dt><span>￥10000元</span><i>0人支持</i></dt>
+            <dd>
+              <p>署名<i class="iconfont icon-ok"></i></p>
+              <p>鼠标垫<i class="iconfont icon-ok"></i></p>
+              <p>马克杯<i class="iconfont icon-ok"></i></p>
+              <p>T恤衫<i class="iconfont icon-ok"></i></p>
+              <p>充电宝<i class="iconfont icon-ok"></i></p>
+              <p>0.5股份<i class="iconfont icon-ok"></i></p>
+              <span>
                 <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
                   支持10000元
                 </a>
               </span>
-          </dd>
-        </dl>
+            </dd>
+          </dl>
+        </div>
+        <p class="foo f-cb">注意：请通过上面支付宝，微信支付支持费用，可加微信好友，或者QQ149151419联系，需要您提供快递地址，我们会立即安排发货，
+          一旦支付成功将无法取消支持，我们由衷感谢您的支持，将持续提供完善的产品服务。 </p>
       </div>
-      <p class="foo f-cb">注意：请通过上面支付宝，微信支付支持费用，可加微信好友，或者QQ149151419联系，需要您提供快递地址，我们会立即安排发货，
-        一旦支付成功将无法取消支持，我们由衷感谢您的支持，将持续提供完善的产品服务。 </p>
+    </div>
+
+  </div>
+
+  <div id="laybox" style="display: none">
+    <div class="layer-alertdon">
+      <dl class=" clearfix">
+        <dd>
+          <p><img src="https://static.easyapi.com/images/info/fanfanle.png"/></p>
+          <span>微信扫一扫</span>
+        </dd>
+        <dd>
+          <p><img src="https://static.easyapi.com/images/info/leida.png"/></p>
+          <span>支付宝扫一扫</span>
+        </dd>
+      </dl>
+      <p>注意：请通过上面支付宝，微信支付支持费用，可加微信好友，或者QQ149151419联系，需要您提供快递地址，我们会立即安排发货，
+        一旦支付成功将无法取消支持，我们由衷感谢您的支持，将持续提供完善的产品服务。
+      </p>
     </div>
   </div>
-
-</div>
-
-<div id="laybox" style="display: none">
-  <div class="layer-alertdon">
-    <dl class=" clearfix">
-      <dd>
-        <p><img src="https://static.easyapi.com/images/info/fanfanle.png"/></p>
-        <span>微信扫一扫</span>
-      </dd>
-      <dd>
-        <p><img src="https://static.easyapi.com/images/info/leida.png"/></p>
-        <span>支付宝扫一扫</span>
-      </dd>
-    </dl>
-    <p>注意：请通过上面支付宝，微信支付支持费用，可加微信好友，或者QQ149151419联系，需要您提供快递地址，我们会立即安排发货，
-      一旦支付成功将无法取消支持，我们由衷感谢您的支持，将持续提供完善的产品服务。
-    </p>
-  </div>
-</div>
-
-<div class="footer clearfix">
-  <p>
-    <a href="/pages/infos/info/about.html">关于我们</a>
-    <a href="/pages/infos/info/together.html">合作伙伴</a>
-    <a href="/pages/infos/info/contact.html">联系我们</a>
-    <a href="/pages/infos/info/donate.html">支持我们</a>
-    <a href="/pages/infos/info/changlog.html">平台动态</a>
-  </p>
-  <p>Copyright © 2015～2019 上海帮趣网络技术有限公司</p>
-  <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
-</div>
-
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://static.easyapi.com/layer/3.1.1/layer.js"></script>
-<script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+</template>
 
 <script>
-  $(".btn").on("click", function () {
-    var h = $("#laybox").html();
-    layer.open({
-      type: 1,
-      title: false,
-      closeBtn: 0,
-      area: '810px',
-      shadeClose: true,
-      content: h
-    });
-  })
-
-  if ($.cookie("authenticationToken")) {
-    $.ajax({
-      method: 'GET',
-      url: 'https://account-api.easyapi.com/api/account',
-      beforeSend: function (request) {
-        request.setRequestHeader("Authorization", "Bearer " + ($.cookie("authenticationToken")));
-      },
-      success: function (data) {
-        $("#register").addClass('dis_hide');
-        $("#photo").attr("src", data.photo + "!icon.jpg");
-        $("#avatar").removeClass('dis_hide');
-      }
-    });
+export default {
+  name: 'Index',
+  head() {
+    return {
+      title: '首页 - EasyAPI服务平台',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'EasyAPI 简单，好用的API管理系统，移动互联网时代，每个应用都需要后台API支撑，通过API管理系统，后台与APP开发者进行很好的沟通，还在用Word文档写API吗，OUT了！'
+        },
+        {
+          hid: 'keyword',
+          name: 'keyword',
+          content: 'API文档管理,API管理系统,API接口管理系统,API管理平台,API管理,API,API接口,接口管理,API接口管理,API监控,API测试,API服务'
+        }
+      ]
+    }
+  },
+  mounted() {
+    if ($.cookie("authenticationToken")) {
+      $.ajax({
+        method: 'GET',
+        url: 'https://account-api.easyapi.com/api/account',
+        beforeSend: function (request) {
+          request.setRequestHeader("Authorization", "Bearer " + ($.cookie("authenticationToken")));
+        },
+        success: function (data) {
+          $("#register").addClass('dis_hide');
+          $("#avatar").removeClass('dis_hide');
+          $("#photo").attr("src", data.photo + "!icon.jpg");
+        }
+      });
+    }
   }
+}
 </script>
 
-</body>
+<style lang="less" scoped>
+.avatarnav_down li a:hover {
+  color: #18c1d6;
+}
 
-</html>
+.navs .show_name .dis_show .hover_color a li:hover p {
+  color: #2EACCB;
+}
+
+.navs .show_name .dis_show .hover_color a li:hover span {
+  color: #999
+}
+
+.navs .show_names .dis_show .isShow a li:hover p {
+  /* color: #de9000; */
+  color: #2EACCB;
+
+}
+
+.navs .show_names .dis_show .isShow a li:hover span {
+  color: #999
+}
+
+.side-navs .nav .show_console ul a li:hover .dis_consoletxt p {
+  color: #2EACCB;
+  font-weight: bold;
+}
+
+.dis_showtxt p:hover {
+  color: #2EACCB !important;
+}
+
+.header .navs span {
+  position: relative;
+
+}
+
+.header .navs span:after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: url(/static/images/angle.png) center no-repeat;
+  background-size: 20px auto;
+}
+
+.header .side-navs .nav {
+  padding: 0;
+}
+
+.header .side-navs .console {
+  border: 1px solid #fff;
+}
+
+.side-navs span:hover .console {
+  border: 1px solid #fff;
+}
+
+.header .navs span:hover:after {
+  background-image: url(/static/images/angle-1.png);
+}
+
+.page-infopage .u-zcpro .u-box dl dd .btn {
+  padding: 5px 20px;
+}
+
+.header .navs .dis_show .isShow li .icon_img {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+.header .navs .dis_show .isShow li .dis_showtxt {
+  float: right;
+  width: 85%;
+}
+</style>

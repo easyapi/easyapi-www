@@ -11,164 +11,7 @@
   <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://cdn.bootcss.com/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
-<style>
-  .u-infobox-price .u-price li {
-    width: 340px;
-  }
 
-  .appshows-imgs li {
-    float: left;
-    width: 15%;
-    margin-right: 2%;
-    margin-bottom: 15px;
-  }
-
-  .appshows-imgs li:nth-child(6) {
-    margin-right: 0;
-  }
-
-  .appshows-imgs li:nth-child(12) {
-    margin-right: 0;
-  }
-
-  .appshows-imgs li img {
-    width: 100%;
-  }
-
-  .free_use {
-    height: 100%;
-    height: 60px;
-    line-height: 54px;
-    border-radius: 4px;
-    text-align: center;
-
-  }
-
-  .free_use a {
-    color: #18c1d6;
-    width: 100%;
-    height: 100%;
-    display: block;
-    text-align: center;
-  }
-
-  .free_use a:hover {
-    color: white;
-    background: #18c1d6;
-  }
-
-  .avatarnav_down li a:hover {
-    color: #18c1d6;
-  }
-
-  .navs .show_name .dis_show .hover_color a li:hover p {
-    color: #2EACCB;
-  }
-
-  .navs .show_name .dis_show .hover_color a li:hover span {
-    color: #999
-  }
-
-  .navs .show_names .dis_show .isShow a li:hover p {
-    /* color: #de9000; */
-    color: #2EACCB;
-
-  }
-
-  .navs .show_names .dis_show .isShow a li:hover span {
-    color: #999
-  }
-
-  .side-navs .nav .show_console ul a li:hover .dis_consoletxt p {
-    color: #2EACCB;
-    font-weight: bold;
-  }
-
-  .dis_showtxt p:hover {
-    color: #2EACCB !important;
-  }
-
-  .header .navs span {
-    position: relative;
-
-  }
-
-  .header .navs span:after {
-    content: '';
-    position: absolute;
-    right: -10px;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    background: url(/static/images/angle.png) center no-repeat;
-    background-size: 20px auto;
-  }
-
-  .header .side-navs .nav {
-    padding: 0;
-  }
-
-  .header .side-navs .console {
-    border: 1px solid #fff;
-  }
-
-  .side-navs span:hover .console {
-    border: 1px solid #fff;
-  }
-
-  .header .navs span:hover:after {
-    background-image: url(/static/images/angle-1.png);
-  }
-
-  .u-infobox-price .u-price li:hover {
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .u-infobox-price .u-price li .free_use {
-    position: relative;
-    font-size: 14px;
-  }
-
-  .u-infobox-price .u-price li .free_use img {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    width: 15px;
-    -webkit-transform: translate(0, -70%);
-  }
-
-  /*
-      .header .navs .dis_show ul li {
-          width: auto;
-      }
-
-      .header .navs .dis_show ul li .icon_img {
-          width: 60px;
-          height: 60px;
-      } */
-
-  .u-banner-bg .price-title {
-    padding-top: 130px;
-  }
-
-  .u-banner-bg {
-    background-image: url('../../static/images/info/bg_price.png');
-    height: 520px;
-    background-size: cover;
-  }
-
-  .header .navs .dis_show .isShow li .icon_img {
-    width: 30px;
-    height: 30px;
-    float: left;
-  }
-
-  .header .navs .dis_show .isShow li .dis_showtxt {
-    float: right;
-    width: 85%;
-  }
-</style>
 
 <body>
 <div class="header header-op">
@@ -479,18 +322,6 @@
   </div>
 </div>
 
-<div class="footer clearfix">
-  <p>
-    <a href="/pages/infos/info/about.html">关于我们</a>
-    <a href="/pages/infos/info/together.html">合作伙伴</a>
-    <a href="/pages/infos/info/contact.html">联系我们</a>
-    <a href="/pages/infos/info/donate.html">支持我们</a>
-    <a href="/pages/infos/info/changlog.html">平台动态</a>
-  </p>
-  <p>Copyright © 2015～2019 上海帮趣网络技术有限公司</p>
-  <p><a href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备19007521号</a></p>
-</div>
-
 <script>
   $(document).ready(function () {
 
@@ -501,27 +332,200 @@
     });
   });
 </script>
-
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
-<script src="https://cdn.bootcss.com/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script type="text/javascript">
-  if ($.cookie("authenticationToken")) {
-    $.ajax({
-      method: 'GET',
-      url: 'https://account-api.easyapi.com/api/account',
-      beforeSend: function (request) {
-        request.setRequestHeader("Authorization", "Bearer " + ($.cookie("authenticationToken")));
-      },
-      success: function (data) {
-        $("#register").addClass('dis_hide');
-        $("#photo").attr("src", data.photo + "!icon.jpg");
-        $("#avatar").removeClass('dis_hide');
+<script>
+  export default {
+    name: 'Index',
+    head() {
+      return {
+        title: '首页 - EasyAPI服务平台',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'EasyAPI 简单，好用的API管理系统，移动互联网时代，每个应用都需要后台API支撑，通过API管理系统，后台与APP开发者进行很好的沟通，还在用Word文档写API吗，OUT了！'
+          },
+          {
+            hid: 'keyword',
+            name: 'keyword',
+            content: 'API文档管理,API管理系统,API接口管理系统,API管理平台,API管理,API,API接口,接口管理,API接口管理,API监控,API测试,API服务'
+          }
+        ]
       }
-    });
+    },
+    mounted() {
+      if ($.cookie("authenticationToken")) {
+        $.ajax({
+          method: 'GET',
+          url: 'https://account-api.easyapi.com/api/account',
+          beforeSend: function (request) {
+            request.setRequestHeader("Authorization", "Bearer " + ($.cookie("authenticationToken")));
+          },
+          success: function (data) {
+            $("#register").addClass('dis_hide');
+            $("#avatar").removeClass('dis_hide');
+            $("#photo").attr("src", data.photo + "!icon.jpg");
+          }
+        });
+      }
+    }
   }
 </script>
 
-</body>
+<style>
+  .u-infobox-price .u-price li {
+    width: 340px;
+  }
 
-</html>
+  .appshows-imgs li {
+    float: left;
+    width: 15%;
+    margin-right: 2%;
+    margin-bottom: 15px;
+  }
+
+  .appshows-imgs li:nth-child(6) {
+    margin-right: 0;
+  }
+
+  .appshows-imgs li:nth-child(12) {
+    margin-right: 0;
+  }
+
+  .appshows-imgs li img {
+    width: 100%;
+  }
+
+  .free_use {
+    height: 100%;
+    height: 60px;
+    line-height: 54px;
+    border-radius: 4px;
+    text-align: center;
+
+  }
+
+  .free_use a {
+    color: #18c1d6;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .free_use a:hover {
+    color: white;
+    background: #18c1d6;
+  }
+
+  .avatarnav_down li a:hover {
+    color: #18c1d6;
+  }
+
+  .navs .show_name .dis_show .hover_color a li:hover p {
+    color: #2EACCB;
+  }
+
+  .navs .show_name .dis_show .hover_color a li:hover span {
+    color: #999
+  }
+
+  .navs .show_names .dis_show .isShow a li:hover p {
+    /* color: #de9000; */
+    color: #2EACCB;
+
+  }
+
+  .navs .show_names .dis_show .isShow a li:hover span {
+    color: #999
+  }
+
+  .side-navs .nav .show_console ul a li:hover .dis_consoletxt p {
+    color: #2EACCB;
+    font-weight: bold;
+  }
+
+  .dis_showtxt p:hover {
+    color: #2EACCB !important;
+  }
+
+  .header .navs span {
+    position: relative;
+
+  }
+
+  .header .navs span:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: url(/static/images/angle.png) center no-repeat;
+    background-size: 20px auto;
+  }
+
+  .header .side-navs .nav {
+    padding: 0;
+  }
+
+  .header .side-navs .console {
+    border: 1px solid #fff;
+  }
+
+  .side-navs span:hover .console {
+    border: 1px solid #fff;
+  }
+
+  .header .navs span:hover:after {
+    background-image: url(/static/images/angle-1.png);
+  }
+
+  .u-infobox-price .u-price li:hover {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .u-infobox-price .u-price li .free_use {
+    position: relative;
+    font-size: 14px;
+  }
+
+  .u-infobox-price .u-price li .free_use img {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    width: 15px;
+    -webkit-transform: translate(0, -70%);
+  }
+
+  /*
+      .header .navs .dis_show ul li {
+          width: auto;
+      }
+
+      .header .navs .dis_show ul li .icon_img {
+          width: 60px;
+          height: 60px;
+      } */
+
+  .u-banner-bg .price-title {
+    padding-top: 130px;
+  }
+
+  .u-banner-bg {
+    background-image: url('../../static/images/info/bg_price.png');
+    height: 520px;
+    background-size: cover;
+  }
+
+  .header .navs .dis_show .isShow li .icon_img {
+    width: 30px;
+    height: 30px;
+    float: left;
+  }
+
+  .header .navs .dis_show .isShow li .dis_showtxt {
+    float: right;
+    width: 85%;
+  }
+</style>
