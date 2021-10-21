@@ -15,7 +15,7 @@ module.exports = {
     script: []
   },
   css: [
-    '@/assets/less/index.less'
+    '@/assets/scss/index.scss'
   ],
   plugins: ['@/plugins/axios'],
   /*

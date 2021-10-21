@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import _Id from './_id'
+import Id from './_id'
 
-export default _Id
+export default Id
 </script>
