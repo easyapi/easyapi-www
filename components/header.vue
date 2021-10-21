@@ -75,7 +75,7 @@
                 </div>
               </li>
             </a>
-            <a href="/pages/product/scene.vue" class="a_link">
+            <a href="/pages/product/scene/index.vue" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/down_icon6.png">
                 <div class="dis_showtxt">
@@ -99,7 +99,7 @@
         <div class="dis_show">
           <img class="down_img" src="/static/images/info/narrow.png">
           <ul class="isShow">
-            <a href="/pages/solution/portal.vue" class="a_link">
+            <a href="/pages/solution/portal/index.vue" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/header-icon2.png">
                 <div class="dis_showtxt">
@@ -112,7 +112,7 @@
                 </div>
               </li>
             </a>
-            <a href="/pages/solution/market.vue" class="a_link">
+            <a href="/pages/solution/market/index.vue" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/header-icon3.png">
                 <div class="dis_showtxt">
@@ -125,7 +125,7 @@
                 </div>
               </li>
             </a>
-            <a href="/pages/solution/open.vue" class="a_link">
+            <a href="/pages/solution/open/index.vue" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/header-icon1.png">
                 <div class="dis_showtxt">

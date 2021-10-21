@@ -1,0 +1,139 @@
+﻿.add_img_line li {
+  /* width: 46%!important; */
+}
+
+.add_img_line li img {
+  /* display: inline-block;
+  width: 51px;
+  padding-right: 34px;
+  margin-right: -44px; */
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.d_inline_block {
+  display: inline-block;
+}
+
+.line_tips {
+  padding: 20px 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  /* padding-right: 100px; */
+  width: 512px;
+}
+
+.text_img_auto {
+  /* text-align: center; */
+  /* padding: 40px 20% 40px 15%!important; */
+}
+
+.u-infobox .u-tese {
+  padding: unset;
+}
+
+.avatarnav_down li a:hover {
+  color: #18c1d6;
+}
+
+.navs .show_name .dis_show .hover_color a li:hover p {
+  color: #2EACCB;
+}
+
+.navs .show_name .dis_show .hover_color a li:hover span {
+  color: #999
+}
+
+.navs .show_names .dis_show .isShow a li:hover p {
+  /* color: #de9000; */
+  color: #2EACCB;
+
+}
+
+.navs .show_names .dis_show .isShow a li:hover span {
+  color: #999
+}
+
+.side-navs .nav .show_console ul a li:hover .dis_consoletxt p {
+  color: #2EACCB;
+  font-weight: bold;
+}
+
+.dis_showtxt p:hover {
+  color: #2EACCB !important;
+}
+
+.header .navs span {
+  position: relative;
+
+}
+
+.header .navs span:after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: url(/static/images/angle.png) center no-repeat;
+  background-size: 20px auto;
+}
+
+.header .side-navs .nav {
+  padding: 0;
+}
+
+.header .side-navs .console {
+  border: 1px solid #fff;
+}
+
+.side-navs span:hover .console {
+  border: 1px solid #fff;
+}
+
+.header .navs span:hover:after {
+  background-image: url(/static/images/angle-1.png);
+}
+
+.u-infobox .u-tese li {
+  width: auto;
+  margin-right: 30px;
+}
+
+.u-tese-wrap {
+  width: 1104px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.u-tese-wrap ul {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.u-banner-bg .title {
+  padding-top: 184px;
+}
+
+.u-banner-bg {
+  background-image: url('../../static/images/product/bg_test.png');
+  height: 520px;
+  background-size: cover;
+}
+
+.header .navs .dis_show .isShow li .icon_img {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+.header .navs .dis_show .isShow li .dis_showtxt {
+  float: right;
+  width: 85%;
+}
+
+.u-infobox .u-title {
+  margin-bottom: 60px;
+}

@@ -1,0 +1,273 @@
+.avatar {
+  overflow: hidden;
+  height: 500px;
+  width: 100px;
+  text-align: center;
+}
+
+.avatar:hover .avatarnav_down {
+  display: block;
+}
+
+.avatarnav_down {
+  display: none;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  border: 1px solid #ddd;
+  top: 50px;
+  right: 50%;
+  margin-right: -80px;
+}
+
+.avatarnav_down li {
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.avatarnav_down li:last-child {
+  border-bottom: 0;
+}
+
+.avatarnav_down li a {
+  font-size: 14px;
+  text-align: center;
+}
+
+.avatarnav_down li a:hover {
+  color: #18c1d6;
+}
+
+.navs .show_name .dis_show .hover_color a li:hover p {
+  color: #0AB3CB;
+}
+
+.navs .show_name .dis_show .hover_color a li:hover span {
+  color: #999
+}
+
+.navs .show_names .dis_show .isShow a li:hover p {
+  /* color: #de9000; */
+  color: #0AB3CB;
+
+}
+
+.navs .show_names .dis_show .isShow a li:hover span {
+  color: #999
+}
+
+.side-navs .nav .show_console ul a li:hover .dis_consoletxt p {
+  /* color: #de9000; */
+  color: #0AB3CB;
+
+  font-weight: bold;
+}
+
+/* bug */
+.bg_white {
+  background: #f0bf43 !important;
+  border-bottom: 4px solid #bf9f43;
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  height: 46px;
+  padding: 10px 60px;
+  font-size: 16px;
+  line-height: 46px;
+  font-weight: 600;
+  border-radius: 6px
+}
+
+.img > img {
+  width: 100%;
+}
+
+.bg_white > p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bg_white > p > img {
+  width: 16px;
+  height: 16px;
+  margin-left: 20px;
+}
+
+.bg_white > p a {
+  font-size: 26px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.font_w {
+  font-weight: bold;
+}
+
+.text_c {
+  text-align: center !important;
+
+}
+
+/* .dis_showtxt p:hover {
+    color: #2EACCB!important;
+} */
+
+.header .navs span {
+  position: relative;
+
+}
+
+.header .navs span:after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: url(/static/images/angle.png) center no-repeat;
+  background-size: 20px auto;
+}
+
+.header .side-navs .nav {
+  padding: 0;
+}
+
+.header .side-navs .console {
+  border: 1px solid #fff;
+}
+
+.bg_white:hover {
+  /* color: rgb(244, 244, 244,0.7); */
+  color: rgba(49, 176, 213, 0.7);
+}
+
+.bg_white:active {
+  /* color: rgba(238, 238, 238,0.6); */
+  color: rgba(49, 176, 213, 0.6)
+}
+
+.side-navs span:hover .console {
+  border: 1px solid #fff;
+}
+
+.header .navs span:hover:after {
+  background-image: url(/static/images/angle-1.png);
+}
+
+.header .navs .dis_show .isShow li .icon_img {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+.header .navs .dis_show .isShow li .dis_showtxt {
+  float: right;
+  width: 85%;
+}
+
+.u-page1 {
+  background: url(../../static/images/info/bg_github.png) no-repeat center !important;
+  background-size: cover !important;
+}
+
+.floor1 {
+  padding-bottom: 70px;
+}
+
+.floor1 > h1 {
+  text-align: center;
+  font-weight: normal;
+  color: #555555;
+  font-size: 4.8rem;
+  padding: 100px 0 60px;
+}
+
+.floor1 > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+}
+
+.floor1 > ul > li {
+  width: 200px;
+  text-align: center;
+}
+
+.floor1 > ul > li > a {
+  display: block;
+  margin-top: 20px;
+}
+
+.floor1 > ul > li > a > span {
+  font-family: MicrosoftYaHei;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.floor1 > ul > li img {
+  width: 100px;
+  height: 100px;
+}
+
+.floor1 li p {
+  padding-top: 10px;
+  font-family: MicrosoftYaHei;
+  font-size: 14px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 22px;
+  color: #828282 !important;
+  text-align: left;
+}
+
+.u-page2 img {
+  width: 385px !important;
+  height: 223px;
+}
+
+.one {
+  width: 383px !important;
+}
+
+.u-page2 span {
+  width: 383px;
+  background-color: #ffffff;
+  border: solid 1px #dddddd;
+  font-family: MicrosoftYaHei;
+  font-size: 14px !important;
+  padding: 10px 0 !important;
+  color: #000000;
+}
+
+.u-page3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.u-page3 h3 {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #000000;
+  padding: 10px 0;
+}
+
+.u-page3 p {
+  font-family: MicrosoftYaHei;
+  text-align: left !important;
+  padding-bottom: 20px !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  color: #666666 !important;
+}
