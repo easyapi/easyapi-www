@@ -22,26 +22,5 @@ export default {
     }
   },
   mounted() {
-    if (Cookies.get("authenticationToken")) {
-      $.ajax({
-        method: 'GET',
-        url: 'https://account-api.easyapi.com/api/account',
-        beforeSend: function (request) {
-          request.setRequestHeader("Authorization", "Bearer " + (Cookies.get("authenticationToken")));
-        },
-        success: function (data) {
-          $("#register").addClass('dis_hide');
-          $("#avatar").removeClass('dis_hide');
-          $("#photo").attr("src", data.photo + "!icon.jpg");
-        }
-      });
-    }
-    $(document).ready(function () {
-      $(".thisroll").owlCarousel({
-        items: 4,
-        dots: false,
-        //                nav: true
-      });
-    });
   }
 }

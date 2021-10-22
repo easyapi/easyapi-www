@@ -25,7 +25,7 @@
           </div>
           <div class="free_use">
             <a href="https://doc.easyapi.com">免费试用</a>
-            <img src="../../../static/images/info/arrow-r.png"/>
+            <img src="/images/info/arrow-r.png"/>
           </div>
         </li>
         <li class="">
@@ -44,7 +44,7 @@
           </div>
           <div class="free_use">
             <a href="https://monitor.easyapi.com">免费试用</a>
-            <img src="../../../static/images/info/arrow-r.png" alt=""/>
+            <img src="/images/info/arrow-r.png" alt=""/>
           </div>
         </li>
         <li>
@@ -61,7 +61,7 @@
           </div>
           <div class="free_use">
             <a href="https://gateway.easyapi.com">免费试用</a>
-            <img src="../../../static/images/info/arrow-r.png"/>
+            <img src="/images/info/arrow-r.png"/>
 
           </div>
         </li>
@@ -77,68 +77,68 @@
         <ul class="appshows-imgs">
           <li>
             <a title="中兴" href="https://www.zte.com.cn" target="_blank">
-              <img src="../../../static/images/info/pic_price_logo1.png">
+              <img src="/images/info/pic_price_logo1.png">
             </a>
           </li>
           <li>
             <a title="华为" href="https://www.huawei.com" target="_blank">
-              <img src="../../../static/images/info/pic_price_logo2.png">
+              <img src="/images/info/pic_price_logo2.png">
             </a>
           </li>
           <li>
             <a title="平安银行" href="http://bank.pingan.com/" target="_blank">
-              <img src="../../../static/images/info/pic_price_logo3.png">
+              <img src="/images/info/pic_price_logo3.png">
             </a>
           </li>
           <li>
             <a title="翼龙贷" href="https://www.eloancn.com/" target="_blank">
-              <img src="../../../static/images/info/pic_price_logo4.png">
+              <img src="/images/info/pic_price_logo4.png">
             </a>
           </li>
           <li>
             <a title="宝象金融" href="https://www.bxjr.com/" target="_blank">
-              <img src="../../../static/images/info/pic_price_logo5.png">
+              <img src="/images/info/pic_price_logo5.png">
             </a>
           </li>
           <li>
             <a title="超级表格" href="http://www.chaojibiaoge.com/" target="_blank">
-              <img src="../../../static/images/info/pic_price_logo6.png">
+              <img src="/images/info/pic_price_logo6.png">
             </a>
 
           </li>
           <li>
             <a title="程序员客栈" href="https://www.proginn.com" target="_blank">
-              <img src="../../../static/images/info/pic_price_logo7.png">
+              <img src="/images/info/pic_price_logo7.png">
             </a>
 
           </li>
           <li>
             <a title="计蒜客" href="https://www.jisuanke.com/" target="_blank">
-              <img src="../../../static/images/info/pic_price_logo8.png">
+              <img src="/images/info/pic_price_logo8.png">
             </a>
 
           </li>
           <li>
             <a title="中国电科" href="http://www.cetc.com.cn/" target="_blank">
-              <img src="../../../static/images/info/pic_price_logo9.png">
+              <img src="/images/info/pic_price_logo9.png">
             </a>
 
           </li>
           <li>
             <a title="华润创业" href="http://www.cre.com.hk/" target="_blank">
-              <img src="../../../static/images/info/pic_price_logo10.png">
+              <img src="/images/info/pic_price_logo10.png">
             </a>
 
           </li>
           <li>
             <a title="山东魏桥" href="http://www.weiqiaocy.com/" target="_blank">
-              <img src="../../../static/images/info/pic_price_logo11.png">
+              <img src="/images/info/pic_price_logo11.png">
             </a>
 
           </li>
           <li>
             <a title="服务区" href="https://www.fuwuqu.com/" target="_blank">
-              <img src="../../../static/images/info/pic_price_logo12.png">
+              <img src="/images/info/pic_price_logo12.png">
             </a>
 
           </li>

@@ -20,7 +20,7 @@
         帮您快速优化后端服务性能
       </div>
       <div class="oneimg">
-        <img src="../../../static/images/info/monitor_2.png">
+        <img src="/images/info/monitor_2.png">
       </div>
     </div>
 
@@ -30,7 +30,7 @@
         实现发现问题，快速解决问题
       </div>
       <div class="oneimg">
-        <img src="../../../static/images/info/monitor_3.png"/>
+        <img src="/images/info/monitor_3.png"/>
       </div>
     </div>
   </div>

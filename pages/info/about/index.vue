@@ -5,7 +5,7 @@
         <div class="x-wp">关于我们</div>
       </h2>
       <div class="x-wp">
-        <img src="../../../static/images/info/about/team.png"/>
+        <img src="/images/info/about/team.png"/>
       </div>
     </div>
 
@@ -88,17 +88,17 @@
       <div class="u-values f-l">
         <ul>
           <li>
-            <img src="../../../static/images/info/about_3.png" alt="">
+            <img src="/images/info/about_3.png" alt="">
             <span>使命</span>
             <p>让移动互联网开发变得更容易</p>
           </li>
           <li>
-            <img src="../../../static/images/info/about_4.png" alt="">
+            <img src="/images/info/about_4.png" alt="">
             <span>价值观</span>
             <p>始终以客户为中心，不断提升学习能力，把复杂 <br> 事变简单，用心做好每一件事情</p>
           </li>
           <li>
-            <img src="../../../static/images/info/about_5.png" alt="">
+            <img src="/images/info/about_5.png" alt="">
             <span>愿景</span>
             <p>打造软件开发企业基础工具，让每个软件开发企<br>业都使用帮趣的产品</p>
           </li>

@@ -2,7 +2,6 @@
 
 export default {
   name: 'Index',
-  components: {Header},
   head() {
     return {
       title: '首页 - EasyAPI服务平台',

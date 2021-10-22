@@ -13,7 +13,7 @@
     <div class="u-infobox">
       <div class="u-title">您的API总有问题存在</div>
       <div class="oneimg wp clearfix">
-        <img src="../../../static/images/info/test_2.png">
+        <img src="/images/info/test_2.png">
       </div>
     </div>
 
@@ -21,7 +21,7 @@
       <div class="u-title">测试工具</div>
       <div class="u-inro">致力于成为中国最好的API测试工具</div>
       <div class="oneimg">
-        <img src="../../../static/images/info/test_3.png">
+        <img src="/images/info/test_3.png">
       </div>
     </div>
 

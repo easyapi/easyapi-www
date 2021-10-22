@@ -8,11 +8,11 @@
       <span class="f-rel show_name">
         产品
         <div class="dis_show">
-          <img class="down_img" src="/static/images/info/narrow.png">
+          <img class="down_img" src="/images/info/narrow.png">
           <ul class="hover_color">
             <a href="/product/doc" class="a_link">
               <li>
-                <img class="icon_img" src="/static/images/info/down_icon1.png">
+                <img class="icon_img" src="/images/info/down_icon1.png">
                 <div class="dis_showtxt">
                   <p>
                     文档管理
@@ -25,7 +25,7 @@
             </a>
             <a href="/product/gateway" class="a_link">
               <li>
-                <img class="icon_img" src="/static/images/info/down_icon2.png">
+                <img class="icon_img" src="/images/info/down_icon2.png">
                 <div class="dis_showtxt">
                   <p>
                     网关系统
@@ -38,7 +38,7 @@
             </a>
             <a href="/product/test" class="a_link">
               <li>
-                <img class="icon_img" src="/static/images/info/down_icon3.png">
+                <img class="icon_img" src="/images/info/down_icon3.png">
                 <div class="dis_showtxt">
                   <p>
                     接口测试
@@ -51,7 +51,7 @@
             </a>
             <a href="/product/interface" class="a_link">
               <li>
-                <img class="icon_img" src="/static/images/info/down_icon4.png">
+                <img class="icon_img" src="/images/info/down_icon4.png">
                 <div class="dis_showtxt">
                   <p>
                     接口服务
@@ -64,7 +64,7 @@
             </a>
             <a href="/product/monitor" class="a_link">
               <li>
-                <img class="icon_img" src="/static/images/info/down_icon5.png">
+                <img class="icon_img" src="/images/info/down_icon5.png">
                 <div class="dis_showtxt">
                   <p>
                     监控系统
@@ -77,7 +77,7 @@
             </a>
             <a href="/product/scene" class="a_link">
               <li>
-                <img class="icon_img" src="/static/images/info/down_icon6.png">
+                <img class="icon_img" src="/images/info/down_icon6.png">
                 <div class="dis_showtxt">
                   <p>
                     场景化服务
@@ -97,11 +97,11 @@
         <span class="f-rel show_names">
         私有化
         <div class="dis_show">
-          <img class="down_img" src="/static/images/info/narrow.png">
+          <img class="down_img" src="/images/info/narrow.png">
           <ul class="isShow">
             <a href="/solution/portal" class="a_link">
               <li>
-                <img class="icon_img" src="/static/images/info/header-icon2.png">
+                <img class="icon_img" src="/images/info/header-icon2.png">
                 <div class="dis_showtxt">
                   <p>
                     API管理门户
@@ -114,7 +114,7 @@
             </a>
             <a href="/solution/market" class="a_link">
               <li>
-                <img class="icon_img" src="/static/images/info/header-icon3.png">
+                <img class="icon_img" src="/images/info/header-icon3.png">
                 <div class="dis_showtxt">
                   <p>
                     API服务市场
@@ -127,7 +127,7 @@
             </a>
             <a href="/solution/open" class="a_link">
               <li>
-                <img class="icon_img" src="/static/images/info/header-icon1.png">
+                <img class="icon_img" src="/images/info/header-icon1.png">
                 <div class="dis_showtxt">
                   <p>
                     API开放平台
@@ -156,11 +156,11 @@
           控制台
         </p>
         <div class="show_console">
-          <img class="console_narrow" src="/static/images/info/narrow.png" />
+          <img class="console_narrow" src="/images/info/narrow.png" />
           <ul>
             <a href="https://doc.easyapi.com">
               <li>
-                <img class="console_icon" src="/static/images/info/down_icon7.png">
+                <img class="console_icon" src="/images/info/down_icon7.png">
                 <div class="dis_consoletxt">
                   <p>
                     API管理
@@ -170,7 +170,7 @@
             </a>
             <a href="https://monitor.easyapi.com">
               <li>
-                <img class="console_icon" src="/static/images/info/down_icon8.png">
+                <img class="console_icon" src="/images/info/down_icon8.png">
                 <div class="dis_consoletxt">
                   <p>
                     API监控
@@ -180,7 +180,7 @@
             </a>
             <a href="https://service.easyapi.com">
               <li>
-                <img class="console_icon" src="/static/images/info/down_icon9.png">
+                <img class="console_icon" src="/images/info/down_icon9.png">
                 <div class="dis_consoletxt">
                   <p>
                     API服务
@@ -190,7 +190,7 @@
             </a>
             <a href="https://gateway.easyapi.com">
               <li>
-                <img class="console_icon" src="/static/images/info/down_icon10.png">
+                <img class="console_icon" src="/images/info/down_icon10.png">
                 <div class="dis_consoletxt">
                   <p>
                     API网关
@@ -255,7 +255,7 @@ export default {
   width: 20px;
   height: 20px;
   margin-top: -10px;
-  background: url(/static/images/angle.png) center no-repeat;
+  background: url(/images/angle.png) center no-repeat;
   background-size: 20px auto;
 }
 
@@ -272,7 +272,7 @@ export default {
 }
 
 .header .navs span:hover:after {
-  background-image: url(/static/images/angle-1.png);
+  background-image: url(/images/angle-1.png);
 }
 
 .header .navs .dis_show .isShow li .icon_img {

@@ -1,6 +1,5 @@
 ﻿<template>
   <div>
-    <Header></Header>
     <div class="u-banner-bg">
       <div class="x-wp">
         <div class="sysinfo f-tac">
@@ -21,35 +20,35 @@
       </div>
       <ul class="u-iconui one x-wp">
         <li>
-          <img src="../../../static/images/info/open_icon6.png">
+          <img src="/images/info/open_icon6.png">
           <span>API编辑</span>
         </li>
         <li>
-          <img src="../../../static/images/info/open_icon7.png">
+          <img src="/images/info/open_icon7.png">
           <span>API浏览</span>
         </li>
         <li>
-          <img src="../../../static/images/info/open_icon8.png">
+          <img src="/images/info/open_icon8.png">
           <span>API测试</span>
         </li>
         <li>
-          <img src="../../../static/images/info/open_icon9.png">
+          <img src="/images/info/open_icon9.png">
           <span>API监控</span>
         </li>
         <li>
-          <img src="../../../static/images/info/open_icon10.png">
+          <img src="/images/info/open_icon10.png">
           <span>API门户</span>
         </li>
       </ul>
     </div>
 
-    <div class="u-infobox bgfa bg_img" style="background-image:url('../../../static/images/solution/bg_portal2.png')">
+    <div class="u-infobox bgfa bg_img" style="background-image:url('/images/solution/bg_portal2.png')">
       <div class="u-title f-c-white">轻量级环境部署</div>
       <div class="u-inro f-c-white">基于云服务器环境轻量级部署，前端源码开放，可自由修改符合自己公司的API门户风格
         立刻让自己公司的API管理更具有效率
       </div>
       <div class="oneimg">
-        <img src="../../../static/images/info/open_3.png">
+        <img src="/images/info/open_3.png">
       </div>
     </div>
 
@@ -118,7 +117,6 @@
 
 <script>
 import Index from './index'
-import Header from "../../../components/header";
 
 export default Index
 </script>

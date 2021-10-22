@@ -20,7 +20,7 @@
         <ul>
           <li>
             <a href="/pages/product/doc.vue">
-              <img src="../../../static/images/info/github/open1.png">
+              <img src="/images/info/github/open1.png">
             </a>
             <a href="/pages/product/doc.vue">
               <span class="font_w">提升前端技能</span>
@@ -29,7 +29,7 @@
           </li>
           <li>
             <a href="/pages/product/monitor.vue">
-              <img src="../../../static/images/info/github/open2.png">
+              <img src="/images/info/github/open2.png">
             </a>
             <a href="/pages/product/monitor.vue">
               <span class="font_w">技术创造价值</span>
@@ -38,7 +38,7 @@
           </li>
           <li>
             <a href="/pages/product/gateway.vue">
-              <img src="../../../static/images/info/github/open3.png">
+              <img src="/images/info/github/open3.png">
             </a>
             <a href="/pages/product/gateway.vue">
               <span class="font_w">一份长期的事业</span>
@@ -47,7 +47,7 @@
           </li>
           <li>
             <a href="/pages/product/market.vue">
-              <img src="../../../static/images/info/github/open4.png"></a>
+              <img src="/images/info/github/open4.png"></a>
             <a href="/pages/product/market.vue">
               <span class="font_w">认识更多朋友</span>
               <p>结交来自五湖四海的技术朋友，每年至少1次集体出行</p>
@@ -61,11 +61,11 @@
           <h1 style="font-size:36px;padding-bottom:90px;">需要做什么？</h1>
           <div class="inn f-cb">
             <div class="one f-fl">
-              <img src="../../../static/images/info/github/1.png">
+              <img src="/images/info/github/1.png">
               <span>前端开源合伙人每周投入60小时</span>
             </div>
             <div class="one f-fr">
-              <img src="../../../static/images/info/github/2.png">
+              <img src="/images/info/github/2.png">
               <span>前端开源志愿者每月参与2个以上ISSUE</span>
             </div>
           </div>
@@ -78,11 +78,11 @@
           <h1 style="font-size:36px;padding-bottom:90px;">你将获得什么？</h1>
           <div class="inn f-cb">
             <div class="one f-fl">
-              <img src="../../../static/images/info/github/3.png">
+              <img src="/images/info/github/3.png">
               <span>前端开源合伙人获得每小时66元分成</span>
             </div>
             <div class="one f-fr">
-              <img src="../../../static/images/info/github/4.png">
+              <img src="/images/info/github/4.png">
               <span>前端开源志愿者获得文档管理免费试用特权</span>
             </div>
           </div>

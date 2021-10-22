@@ -67,7 +67,7 @@
               <span>产品经理</span>
             </li>
             <li>
-              <p><img src="../../../static/images/user-phone.png"></p>
+              <p><img src="/images/user-phone.png"></p>
               　<a href="/pages/infos/info/support.html" class="more">更多支持者</a>
             </li>
           </ul>

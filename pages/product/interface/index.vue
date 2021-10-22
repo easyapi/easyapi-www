@@ -20,23 +20,23 @@
       </div>
       <ul class="u-iconui one x-wp">
         <li>
-          <img src="../../../static/images/info/api_icon1.png">
+          <img src="/images/info/api_icon1.png">
           <span>短信验证码</span>
         </li>
         <li>
-          <img src="../../../static/images/info/api_icon2.png">
+          <img src="/images/info/api_icon2.png">
           <span>加油卡充值</span>
         </li>
         <li>
-          <img src="../../../static/images/info/api_icon4.png">
+          <img src="/images/info/api_icon4.png">
           <span>中文分词</span>
         </li>
         <li>
-          <img src="../../../static/images/info/api_icon3.png">
+          <img src="/images/info/api_icon3.png">
           <span>天气预报</span>
         </li>
         <li>
-          <img src="../../../static/images/info/api_icon5.png">
+          <img src="/images/info/api_icon5.png">
           <span>流量充值</span>
         </li>
       </ul>
@@ -47,7 +47,7 @@
         实现发现问题，快速解决问题
       </div>
       <div class="oneimg">
-        <img src="../../../static/images/info/api_img.png">
+        <img src="/images/info/api_img.png">
       </div>
     </div>
   </div>

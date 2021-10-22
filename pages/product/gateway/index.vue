@@ -16,25 +16,25 @@
       </div>
       <ul class="u-iconui x-wp">
         <li>
-          <img src="../../../static/images/info/gateway_icon1.png">
+          <img src="/images/info/gateway_icon1.png">
           <span>安全保障</span>
           <p>用户鉴权身份验证 <br>签名防止请求篡改<br>调用权限审核把控
           </p>
         </li>
         <li>
-          <img src="../../../static/images/info/gateway_icon2.png">
+          <img src="/images/info/gateway_icon2.png">
           <span>独立访问</span>
           <p>集成数据独享存储<br>开放门户单独部署<br>自定义域名及门户
           </p>
         </li>
         <li>
-          <img src="../../../static/images/info/gateway_icon3.png">
+          <img src="/images/info/gateway_icon3.png">
           <span>简单应用</span>
           <p>自动实现主机部署<br>零代码配置化操作<br>自动实现接口SDK
           </p>
         </li>
         <li>
-          <img src="../../../static/images/info/gateway_icon4.png">
+          <img src="/images/info/gateway_icon4.png">
           <span>场景灵活</span>
           <p>多种集成业务场景<br>功能模块按需配置<br>支持多数据源集成
           </p>
@@ -44,12 +44,12 @@
     <div class="u-infobox  f-border-b">
       <div class="u-title">专注API网关</div>
       <div class="u-igateway f-cb">
-        <img class="f-fr img_w" src="../../../static/images/info/gateway_2.png">
+        <img class="f-fr img_w" src="/images/info/gateway_2.png">
         <div class="text f-fl">
-          <p class="f_2 "><img src="../../../static/images/info/gateway_icon5.png">快速创建API接口<br>
-            <img src="../../../static/images/info/gateway_icon6.png">自动是吸纳数据网关<br>
-            <img src="../../../static/images/info/gateway_icon7.png">API接口网关版本管理<br>
-            <img src="../../../static/images/info/gateway_icon8.png">数据可根据需要返回
+          <p class="f_2 "><img src="/images/info/gateway_icon5.png">快速创建API接口<br>
+            <img src="/images/info/gateway_icon6.png">自动是吸纳数据网关<br>
+            <img src="/images/info/gateway_icon7.png">API接口网关版本管理<br>
+            <img src="/images/info/gateway_icon8.png">数据可根据需要返回
           </p>
         </div>
       </div>
@@ -62,35 +62,35 @@
       </div>
       <ul class="u-iconui x-wp">
         <li>
-          <img src="../../../static/images/info/gateway_icon9.png">
+          <img src="/images/info/gateway_icon9.png">
           <span>降低成本</span>
         </li>
         <li>
-          <img src="../../../static/images/info/gateway_icon10.png">
+          <img src="/images/info/gateway_icon10.png">
           <span>提高效率</span>
         </li>
         <li>
-          <img src="../../../static/images/info/gateway_icon11.png">
+          <img src="/images/info/gateway_icon11.png">
           <span>海量规模</span>
         </li>
         <li>
-          <img src="../../../static/images/info/gateway_icon12.png">
+          <img src="/images/info/gateway_icon12.png">
           <span>轻松监控</span>
         </li>
         <li>
-          <img src="../../../static/images/info/gateway_icon13.png">
+          <img src="/images/info/gateway_icon13.png">
           <span>简化开发</span>
         </li>
         <li>
-          <img src="../../../static/images/info/gateway_icon14.png">
+          <img src="/images/info/gateway_icon14.png">
           <span>授权灵活</span>
         </li>
         <li>
-          <img src="../../../static/images/info/gateway_icon15.png">
+          <img src="/images/info/gateway_icon15.png">
           <span>无缝对接</span>
         </li>
         <li>
-          <img src="../../../static/images/info/gateway_icon16.png">
+          <img src="/images/info/gateway_icon16.png">
           <span>融合开发</span>
         </li>
       </ul>

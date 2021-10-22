@@ -20,35 +20,35 @@
       </div>
       <ul class="u-iconui one x-wp">
         <li>
-          <img src="../../../static/images/info/open_icon1.png">
+          <img src="/images/info/open_icon1.png">
           <span>简单易用</span>
         </li>
         <li>
-          <img src="../../../static/images/info/open_icon2.png">
+          <img src="/images/info/open_icon2.png">
           <span>多模板选择</span>
         </li>
         <li>
-          <img src="../../../static/images/info/open_icon3.png">
+          <img src="/images/info/open_icon3.png">
           <span>接口变更动态</span>
         </li>
         <li>
-          <img src="../../../static/images/info/open_icon4.png">
+          <img src="/images/info/open_icon4.png">
           <span>访问统计</span>
         </li>
         <li>
-          <img src="../../../static/images/info/open_icon5.png">
+          <img src="/images/info/open_icon5.png">
           <span>测试记录</span>
         </li>
       </ul>
     </div>
 
-    <div class="u-infobox bgfa bg_img" style="background-image:url('../../../static/images/info/bg_open.png')">
+    <div class="u-infobox bgfa bg_img" style="background-image:url('/images/info/bg_open.png')">
       <div class="u-title f-c-white">友好的界面交互</div>
       <div class="u-inro f-c-white">通过搭建API开放平台，让您公司的数据更好的向合作伙伴、客户进行授权访问
         让贵公司的数据不断为贵公司产生价值
       </div>
       <div class="oneimg">
-        <img src="../../../static/images/info/open_3.png">
+        <img src="/images/info/open_3.png">
       </div>
     </div>
 
