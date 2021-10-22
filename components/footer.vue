@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style scoped lang="less">
+<style scoped lang="scss">
 .footer {
   text-align: center;
   background: #fafafa;

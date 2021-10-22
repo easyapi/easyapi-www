@@ -239,22 +239,116 @@ export default {
 }
 </script>
 
-<style scoped lang="less">
-.footer {
+<style scoped lang="scss">
+
+
+.header .navs span {
+  position: relative;
+
+}
+
+.header .navs span:after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: url(/static/images/angle.png) center no-repeat;
+  background-size: 20px auto;
+}
+
+.header .side-navs .nav {
+  padding: 0;
+}
+
+.header .side-navs .console {
+  border: 1px solid #fff;
+}
+
+.side-navs span:hover .console {
+  border: 1px solid #fff;
+}
+
+.header .navs span:hover:after {
+  background-image: url(/static/images/angle-1.png);
+}
+
+.header .navs .dis_show .isShow li .icon_img {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+.header .navs .dis_show .isShow li .dis_showtxt {
+  float: right;
+  width: 85%;
+}
+
+
+.navs .show_name .dis_show .hover_color a li:hover p {
+  color: #0AB3CB;
+}
+
+.navs .show_name .dis_show .hover_color a li:hover span {
+  color: #999
+}
+
+.navs .show_names .dis_show .isShow a li:hover p {
+  /* color: #de9000; */
+  color: #0AB3CB;
+}
+
+.navs .show_names .dis_show .isShow a li:hover span {
+  color: #999
+}
+
+.side-navs .nav .show_console ul a li:hover .dis_consoletxt p {
+  color: #0AB3CB;
+  font-weight: bold;
+}
+
+
+.avatar {
+  overflow: hidden;
+  height: 500px;
+  width: 100px;
   text-align: center;
-  background: #fafafa;
-  color: #777;
-  margin: 20px 0 0 0;
-  padding: 70px 0 50px 0;
-  font-size: 12px;
 }
 
-.footer p {
-  margin-bottom: 10px;
+.avatar:hover .avatarnav_down {
+  display: block;
 }
 
-.footer a {
-  color: #777;
-  padding: 0 20px;
+.avatarnav_down {
+  display: none;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  border: 1px solid #ddd;
+  top: 50px;
+  right: 50%;
+  margin-right: -80px;
+}
+
+.avatarnav_down li {
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.avatarnav_down li:last-child {
+  border-bottom: 0;
+}
+
+.avatarnav_down li a {
+  font-size: 14px;
+  text-align: center;
+}
+
+.avatarnav_down li a:hover {
+  color: #18c1d6;
 }
 </style>

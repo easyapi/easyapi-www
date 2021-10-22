@@ -8,7 +8,6 @@
   line-height: 46px;
   padding: 0 40px;
   border-radius: 5px;
-
 }
 
 .bug_btn:hover {
@@ -19,79 +18,8 @@
   color: rgba(5, 161, 242, 0.6);
 }
 
-.avatarnav_down li a:hover {
-  color: #18c1d6;
-}
-
-.navs .show_name .dis_show .hover_color a li:hover p {
-  color: #2EACCB;
-}
-
-.navs .show_name .dis_show .hover_color a li:hover span {
-  color: #999
-}
-
-.navs .show_names .dis_show .isShow a li:hover p {
-  /* color: #de9000; */
-  color: #2EACCB;
-
-}
-
-.navs .show_names .dis_show .isShow a li:hover span {
-  color: #999
-}
-
-.side-navs .nav .show_console ul a li:hover .dis_consoletxt p {
-  color: #2EACCB;
-  font-weight: bold;
-}
-
 .dis_showtxt p:hover {
   color: #2EACCB !important;
-}
-
-.header .navs span {
-  position: relative;
-
-}
-
-.header .navs span:after {
-  content: '';
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  background: url(/static/images/angle.png) center no-repeat;
-  background-size: 20px auto;
-}
-
-.header .side-navs .nav {
-  padding: 0;
-}
-
-.header .side-navs .console {
-  border: 1px solid #fff;
-}
-
-.side-navs span:hover .console {
-  border: 1px solid #fff;
-}
-
-.header .navs span:hover:after {
-  background-image: url(/static/images/angle-1.png);
-}
-
-.header .navs .dis_show .isShow li .icon_img {
-  width: 30px;
-  height: 30px;
-  float: left;
-}
-
-.header .navs .dis_show .isShow li .dis_showtxt {
-  float: right;
-  width: 85%;
 }
 
 .u-banner-bg {
