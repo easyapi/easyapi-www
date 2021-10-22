@@ -1,7 +1,7 @@
 <template>
   <div class="header header-index" style="background: none;box-shadow:none">
     <div class="x-wp">
-      <a href="/">
+      <a href="">
         <img class="logo f-fl" src="https://qiniu.easyapi.com/market/logo.svg">
       </a>
       <div class="navs f-fl">
@@ -10,7 +10,7 @@
         <div class="dis_show">
           <img class="down_img" src="/static/images/info/narrow.png">
           <ul class="hover_color">
-            <a href="/pages/product/doc.vue" class="a_link">
+            <a href="/product/doc" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/down_icon1.png">
                 <div class="dis_showtxt">
@@ -23,7 +23,7 @@
                 </div>
               </li>
             </a>
-            <a href="/pages/product/gateway.vue" class="a_link">
+            <a href="/product/gateway" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/down_icon2.png">
                 <div class="dis_showtxt">
@@ -36,7 +36,7 @@
                 </div>
               </li>
             </a>
-            <a href="/pages/product/test.vue" class="a_link">
+            <a href="/product/test" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/down_icon3.png">
                 <div class="dis_showtxt">
@@ -49,7 +49,7 @@
                 </div>
               </li>
             </a>
-            <a href="/pages/product/interface.vue" class="a_link">
+            <a href="/product/interface" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/down_icon4.png">
                 <div class="dis_showtxt">
@@ -62,7 +62,7 @@
                 </div>
               </li>
             </a>
-            <a href="/pages/product/monitor.vue" class="a_link">
+            <a href="/product/monitor" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/down_icon5.png">
                 <div class="dis_showtxt">
@@ -75,7 +75,7 @@
                 </div>
               </li>
             </a>
-            <a href="/pages/product/scene/index.vue" class="a_link">
+            <a href="/product/scene" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/down_icon6.png">
                 <div class="dis_showtxt">
@@ -91,7 +91,7 @@
           </ul>
         </div>
       </span>
-        <a href="/pages/info/price.vue">
+        <a href="/info/price">
           价格
         </a>
         <span class="f-rel show_names">
@@ -99,7 +99,7 @@
         <div class="dis_show">
           <img class="down_img" src="/static/images/info/narrow.png">
           <ul class="isShow">
-            <a href="/pages/solution/portal/index.vue" class="a_link">
+            <a href="/solution/portal" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/header-icon2.png">
                 <div class="dis_showtxt">
@@ -112,7 +112,7 @@
                 </div>
               </li>
             </a>
-            <a href="/pages/solution/market/index.vue" class="a_link">
+            <a href="/solution/market" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/header-icon3.png">
                 <div class="dis_showtxt">
@@ -125,7 +125,7 @@
                 </div>
               </li>
             </a>
-            <a href="/pages/solution/open/index.vue" class="a_link">
+            <a href="/solution/open" class="a_link">
               <li>
                 <img class="icon_img" src="/static/images/info/header-icon1.png">
                 <div class="dis_showtxt">

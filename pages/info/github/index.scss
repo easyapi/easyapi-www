@@ -141,7 +141,7 @@
 }
 
 .bg_white:hover {
-  /* color: rgb(244, 244, 244,0.7); */
+  /* color: rgba(244, 244, 244,0.7); */
   color: rgba(49, 176, 213, 0.7);
 }
 
@@ -170,7 +170,7 @@
 }
 
 .u-page1 {
-  background: url(../../static/images/info/bg_github.png) no-repeat center !important;
+  background: url(/static/images/info/bg_github.png) no-repeat center !important;
   background-size: cover !important;
 }
 

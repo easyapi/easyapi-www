@@ -47,25 +47,7 @@ $gray-lighter: #ddd;
 .f-c-white{color:white;}
 .f-rel{position: relative;}
 .f-none{display: none;}
-.f-border-b($a:$gray-lighter){
-  border-bottom:solid $a 1px;
-}
-.f-border-t($a:$gray-lighter){
-  border-top:solid $a 1px;
-}
-.f-border-l($a:$gray-lighter){
-  border-left:solid $a 1px;
-}
-.f-border-r($a:$gray-lighter){
-  border-right:solid $a 1px;
-}
-.f-border($a:$gray-lighter){
-  border:solid $a 1px;
-}
-.f-size($a;$b){
-  width:$a;
-  height:$b;
-}
+
 .f-body-gray{
   background:$body-gray;
 }

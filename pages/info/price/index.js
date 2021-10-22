@@ -1,14 +1,5 @@
 import './index.scss'
 
-$(document).ready(function () {
-
-  $(".appshows-imgs").owlCarousel({
-    items: 5,
-    dots: true,
-    nav: false
-  });
-});
-
 export default {
   name: 'Index',
   head() {

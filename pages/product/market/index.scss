@@ -12,11 +12,11 @@
 }
 
 .bug_btn:hover {
-  color: rgb(44, 117, 220, 0.7);
+  color: rgba(44, 117, 220, 0.7);
 }
 
 .bug_btn:active {
-  color: rgb(45, 119, 221, 0.6);
+  color: rgba(45, 119, 221, 0.6);
 }
 
 .avatarnav_down li a:hover {
@@ -95,7 +95,7 @@
 }
 
 .u-banner-bg {
-  background-image: url('../../../static/images/solution/bg_market.png');
+  background-image: url('/static/images/solution/bg_market.png');
   background-size: cover;
   height: 520px;
 }
