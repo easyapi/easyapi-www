@@ -36,12 +36,12 @@ export default {
       map.openInfoWindow(infoWindow, point); //开启信息窗口
     });
 
-    if ($.cookie("authenticationToken")) {
+    if (Cookies.get("authenticationToken")) {
       $.ajax({
         method: 'GET',
         url: 'https://account-api.easyapi.com/api/account',
         beforeSend: function (request) {
-          request.setRequestHeader("Authorization", "Bearer " + ($.cookie("authenticationToken")));
+          request.setRequestHeader("Authorization", "Bearer " + (Cookies.get("authenticationToken")));
         },
         success: function (data) {
           $("#register").addClass('dis_hide');

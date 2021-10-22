@@ -7,7 +7,6 @@
       <div class="x-wp">
         <img src="../../../static/images/info/about/team.png"/>
       </div>
-
     </div>
 
     <div class="u-infobox">

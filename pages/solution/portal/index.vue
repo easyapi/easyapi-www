@@ -1,5 +1,6 @@
 ﻿<template>
   <div>
+    <Header></Header>
     <div class="u-banner-bg">
       <div class="x-wp">
         <div class="sysinfo f-tac">
@@ -117,6 +118,7 @@
 
 <script>
 import Index from './index'
+import Header from "../../../components/header";
 
 export default Index
 </script>

@@ -2,6 +2,7 @@
 
 export default {
   name: 'Index',
+  components: {Header},
   head() {
     return {
       title: '首页 - EasyAPI服务平台',
@@ -20,26 +21,6 @@ export default {
     }
   },
   mounted() {
-    if ($.cookie("authenticationToken")) {
-      $.ajax({
-        method: 'GET',
-        url: 'https://account-api.easyapi.com/api/account',
-        beforeSend: function (request) {
-          request.setRequestHeader("Authorization", "Bearer " + ($.cookie("authenticationToken")));
-        },
-        success: function (data) {
-          $("#register").addClass('dis_hide');
-          $("#avatar").removeClass('dis_hide');
-          $("#photo").attr("src", data.photo + "!icon.jpg");
-        }
-      });
-    }
-    $(document).ready(function () {
-      $(".thisroll").owlCarousel({
-        items: 4,
-        dots: false,
-        //                nav: true
-      });
-    });
+
   }
 }
