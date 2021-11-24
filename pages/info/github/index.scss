@@ -10,7 +10,7 @@
   font-size: 16px;
   line-height: 46px;
   font-weight: 600;
-  border-radius: 6px
+  border-radius: 6px;
 }
 
 .img > img {
@@ -50,9 +50,8 @@
 
 .bg_white:active {
   /* color: rgba(238, 238, 238,0.6); */
-  color: rgba(49, 176, 213, 0.6)
+  color: rgba(49, 176, 213, 0.6);
 }
-
 
 .u-page1 {
   background: url(/images/info/bg_github.png) no-repeat center !important;
@@ -118,6 +117,7 @@
 .u-page2 img {
   width: 385px !important;
   height: 223px;
+  vertical-align: top;
 }
 
 .one {
@@ -129,9 +129,11 @@
   background-color: #ffffff;
   border: solid 1px #dddddd;
   font-family: MicrosoftYaHei;
-  font-size: 14px !important;
-  padding: 10px 0 !important;
+  font-size: 18px !important;
+  line-height: 50px;
+  border-top: none;
   color: #000000;
+  padding: 0 !important;
 }
 
 .u-page3 {
