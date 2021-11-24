@@ -1,8 +1,6 @@
 import './_id.scss'
 
 import {getArticle} from '../../api/article'
-import Header from '~/components/header'
-import Footer from '~/components/footer'
 
 export default {
   name: 'post-id',
@@ -14,10 +12,6 @@ export default {
         {hid: 'keyword', name: 'keyword', content: '文章详情'}
       ]
     }
-  },
-  components: {
-    Header,
-    Footer
   },
   data() {
     return {

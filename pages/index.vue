@@ -19,10 +19,10 @@
               </a>
             </span>
             </p>
-            <img src="/static/images/angle-1.png" alt="">
+            <img src="/images/angle-1.png" alt="">
             <ul class="jump_link">
               <li>
-                <img src="/static/images/info/down_icon1.png">
+                <img src="/images/info/down_icon1.png">
                 <a href="https://doc.easyapi.com">
                   API文档中心
                 </a>
@@ -30,19 +30,19 @@
               <li>
               </li>
               <li>
-                <img src="/static/images/info/down_icon5.png">
+                <img src="/images/info/down_icon5.png">
                 <a href="https://monitor.easyapi.com">
                   API监控中心
                 </a>
               </li>
               <li>
-                <img src="/static/images/info/down_icon2.png">
+                <img src="/images/info/down_icon2.png">
                 <a href="https://gateway.easyapi.com">
                   API网关中心
                 </a>
               </li>
               <li>
-                <img src="/static/images/info/header-icon1.png">
+                <img src="/images/info/header-icon1.png">
                 <a href="https://service.easyapi.com">
                   API服务中心
                 </a>
@@ -133,7 +133,7 @@
             </p>
           </div>
           <div class="" style="display:inline-block;margin-top:60px;">
-            <img src="../static/images/info/ic_home_arrow.png">
+            <img src="/images/info/ic_home_arrow.png">
           </div>
           <div class="one f-fr">
             <img src="https://static.easyapi.com/images/w2.png">
@@ -231,7 +231,7 @@
           期待你的咨询合作
         </p>
         <div class="img">
-          <img src="../static/images/info/pic_homg_more.png">
+          <img src="/images/info/pic_homg_more.png">
         </div>
       </div>
     </div>

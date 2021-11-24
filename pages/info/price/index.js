@@ -1,7 +1,5 @@
 import './index.scss'
 
-import Cookies from 'js-cookie'
-
 export default {
   name: 'Index',
   head() {

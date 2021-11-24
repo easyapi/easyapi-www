@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header></Header>
     <div class="container">
       <div v-if="!noData">
         <div v-for="item of list" :key="item.articleId">
@@ -18,7 +17,6 @@
         <div>没有更多数据了...</div>
       </div>
     </div>
-    <Footer></Footer>
   </div>
 </template>
 

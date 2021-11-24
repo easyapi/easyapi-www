@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header></Header>
     <div class='container'>
       <div class='detail-wrapper'>
         <div class='detail-title'>
@@ -11,7 +10,6 @@
         </div>
       </div>
     </div>
-    <Footer></Footer>
   </div>
 </template>
 

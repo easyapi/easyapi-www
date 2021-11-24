@@ -1,9 +1,9 @@
 <template>
   <div class="header header-index" style="background: none;box-shadow:none">
     <div class="x-wp">
-      <a href="">
+      <nuxt-link to="/">
         <img class="logo f-fl" src="https://qiniu.easyapi.com/market/logo.svg">
-      </a>
+      </nuxt-link>
       <div class="navs f-fl">
       <span class="f-rel show_name">
         产品

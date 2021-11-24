@@ -8,7 +8,7 @@
             <p>为您的公司打造私有化API管理门户，提升API管理效率</p>
             <div class="bg_white">
               <p>
-                <span><a href="https://github.com/easyapi">前往GITHUB参与</a></span>
+                <span><a href="https://github.com/easyapi" target="_blank">前往GITHUB参与</a></span>
               </p>
             </div>
           </div>

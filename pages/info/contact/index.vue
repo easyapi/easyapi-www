@@ -1,7 +1,6 @@
 ﻿<template>
   <div>
     <div class="page-together">
-
       <h2 class="u-title">
         <div class="x-wp">联系我们</div>
       </h2>

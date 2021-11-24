@@ -1,8 +1,6 @@
 import './index.scss'
 
 import {getArticleList} from '../../api/article'
-import Header from '~/components/header'
-import Footer from '~/components/footer'
 import ListItem from './components/listItem'
 
 export default {
@@ -17,8 +15,6 @@ export default {
     }
   },
   components: {
-    Header,
-    Footer,
     ListItem,
   },
   data() {
