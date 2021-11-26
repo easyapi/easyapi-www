@@ -1,6 +1,5 @@
 ﻿<template>
   <div class="main">
-    <div class="top"></div>
     <div class="content">
       <img src="/images/info/about/team.png"/>
     </div>

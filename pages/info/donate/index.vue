@@ -1,6 +1,5 @@
 ﻿<template>
   <div class="main">
-    <div class="top"></div>
     <div class="content">
       <div class="info-page">
         <h2 class="title">支持我们</h2>

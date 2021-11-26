@@ -58,11 +58,11 @@
   background-size: cover !important;
 }
 
-.floor1 {
+.github-content {
   padding-bottom: 70px;
 }
 
-.floor1 > h1 {
+.github-content > h1 {
   text-align: center;
   font-weight: normal;
   color: #555555;
@@ -70,7 +70,7 @@
   padding: 100px 0 60px;
 }
 
-.floor1 > ul {
+.github-content > ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -78,17 +78,17 @@
   margin: auto;
 }
 
-.floor1 > ul > li {
+.github-content > ul > li {
   width: 200px;
   text-align: center;
 }
 
-.floor1 > ul > li > a {
+.github-content > ul > li > a {
   display: block;
   margin-top: 20px;
 }
 
-.floor1 > ul > li > a > span {
+.github-content > ul > li > a > span {
   font-family: MicrosoftYaHei;
   font-size: 20px;
   font-weight: bold;
@@ -98,12 +98,12 @@
   color: #333333;
 }
 
-.floor1 > ul > li img {
+.github-content > ul > li img {
   width: 100px;
   height: 100px;
 }
 
-.floor1 li p {
+.github-content li p {
   padding-top: 10px;
   font-family: MicrosoftYaHei;
   font-size: 14px !important;
@@ -124,21 +124,14 @@
   width: 383px !important;
 }
 
-.u-page2 span {
+.card span {
   width: 383px;
-  background-color: #ffffff;
-  border: solid 1px #dddddd;
   font-family: MicrosoftYaHei;
   font-size: 18px !important;
   line-height: 50px;
   border-top: none;
   color: #000000;
   padding: 0 !important;
-}
-
-.u-page3 {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 20px;
 }
 
 .u-page3 h3 {
