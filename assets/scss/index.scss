@@ -121,6 +121,13 @@ body, button, input, keygen, legend, select, textarea {
   outline: 0;
 }
 
+.top {
+  width: 100%;
+  height: 72px;
+  background-color: #18c1d6;
+}
+
+
 .disabled {
   display: none;
 }
@@ -213,8 +220,8 @@ body, button, input, keygen, legend, select, textarea {
 }
 
 .bg-f7 {
-   background-color: #f7f7f7;
- }
+  background-color: #f7f7f7;
+}
 
 .bg-f5 {
   background-color: #f7f7f7;
@@ -1532,7 +1539,7 @@ body, button, input, keygen, legend, select, textarea {
   }
 }
 
-.page-infopage {
+.info-page {
   min-height: 800px;
   padding-bottom: 50px;
   margin: 50px 0;
@@ -1545,194 +1552,6 @@ body, button, input, keygen, legend, select, textarea {
     padding: 15px 30px;
     text-align: left;
     font-size: 2rem;
-  }
-
-  .u-tbg {
-    padding: 0 30px 30px;
-    margin: 20px;
-    background: url(../../static/images/info/about_0.png) bottom no-repeat;
-
-    img {
-      width: 100%;
-    }
-  }
-
-  .u-donate {
-    padding: 10px 50px 100px;
-
-    .p {
-      width: 600px;
-      float: left;
-      padding-top: 20px;
-      font-size: 1.4rem;
-      color: #555;
-      line-height: 29px;
-
-      em {
-        font-size: 22px;
-        font-style: normal;
-        padding-right: 3px;
-      }
-    }
-
-    .payb {
-      width: 400px;
-      float: right;
-      text-align: center;
-
-      img {
-        width: 180px;
-        height: 180px;
-        border-radius: 5px;
-      }
-
-      dd {
-        width: 160px;
-        margin-left: 20px;
-        text-align: center;
-        display: inline-block;
-        float: right;
-
-        p {
-          width: 160px;
-          padding-bottom: 20px;
-          text-align: center;
-          background: url(../../static/images/info/about_1.png) bottom center no-repeat;
-
-          img {
-            width: 120px;
-            height: 120px;
-          }
-        }
-
-        span {
-          display: inline-block;
-          margin-top: 5px;
-          font-size: 1.4rem;
-          color: #555;
-        }
-      }
-    }
-  }
-
-  .u-enhd {
-    font-size: 2rem;
-    padding: 10px 40px;
-    color: #333;
-  }
-
-  .u-names {
-    ul {
-      font-size: 1.4rem;
-      padding: 20px 45px;
-
-      li {
-        text-align: center;
-        width: 110px;
-        float: left;
-        margin: 10px;
-        padding-bottom: 20px;
-
-        p {
-          img {
-            width: 60px;
-            border-radius: 50%;
-            height: 60px;
-          }
-        }
-
-        strong {
-          display: block;
-          font-weight: 400;
-          padding: 8px 0 5px;
-        }
-
-        span {
-          display: block;
-          color: gray;
-        }
-
-        a {
-          &.more {
-            display: block;
-            color: #18c1d6;
-          }
-        }
-      }
-    }
-  }
-
-  .u-zcpro {
-    dt {
-      border-bottom: solid #ddd 1px;
-      padding: 5px 20px;
-      height: 38px;
-      line-height: 38px;
-
-      span {
-        float: left;
-        font-size: 1.5rem;
-      }
-
-      i {
-        float: right;
-        color: gray;
-        font-weight: 400;
-        font-size: 1.2rem;
-      }
-    }
-
-    .u-box {
-      padding-left: 20px;
-
-      dl {
-        border: solid #ddd 1px;
-        border-radius: 5px;
-        width: 20%;
-        float: left;
-        margin: 2%;
-
-        dd {
-          p {
-            border-bottom: 1px dashed #ddd;
-            font-size: 1.4rem;
-            color: gray;
-            padding: 9px 20px;
-
-            i {
-              float: right;
-              color: #87bf54;
-            }
-          }
-
-          span {
-            text-align: center;
-            display: block;
-            padding: 10px 0;
-          }
-
-          .btn {
-            background-color: #18c1d6;
-            padding: 3px 10px;
-            font-size: 1.4rem;
-            color: #fff;
-            border-radius: 3px;
-            border-bottom: 2px solid #15a6b8;
-
-            &:hover {
-              background-color: #16b3c6;
-            }
-          }
-        }
-      }
-    }
-
-    .foo {
-      padding: 15px 60px 15px 40px;
-      color: gray;
-      font-size: 1.4rem;
-      line-height: 1.7;
-    }
   }
 
   .u-donatelist {
@@ -1846,22 +1665,6 @@ body, button, input, keygen, legend, select, textarea {
         &:hover {
           text-decoration: underline;
         }
-      }
-    }
-
-    .u-tbg {
-      color: #fff;
-      width: 1200px;
-      text-align: center;
-      height: 300px;
-
-      h2 {
-        padding: 90px 0 10px;
-        font-size: 34px;
-      }
-
-      p {
-        font-size: 18px;
       }
     }
 
@@ -2087,92 +1890,6 @@ body, button, input, keygen, legend, select, textarea {
       background: #fff;
       padding: 10px 0;
       color: #18c1d6;
-    }
-  }
-
-  .u-box {
-    width: 630px;
-    padding: 20px 0;
-    margin: 0 auto;
-
-    .u-log {
-      width: 45%;
-      box-shadow: 0 3px 3px #ddd;
-      box-sizing: border-box;
-      padding: 15px;
-      font-size: 1.4rem;
-      border: solid #ddd 1px;
-      border-radius: 5px;
-      position: relative;
-
-      h4 {
-        color: #18c1d6;
-      }
-
-      p {
-        margin-top: 10px;
-        color: gray;
-        line-height: 1.6;
-      }
-
-      &:nth-child(odd) {
-        float: left;
-        margin-right: 50%;
-      }
-
-      &:nth-child(odd):after {
-        content: '';
-        width: 14px;
-        height: 23px;
-        background-image: url(../../static/images/info/arr.png);
-        background-size: cover;
-        position: absolute;
-        right: -14px;
-        top: 10px;
-      }
-
-      &:nth-child(odd):before {
-        content: ' ';
-        width: 10px;
-        height: 10px;
-        display: inline-block;
-        background: #18c1d6;
-        background-size: cover;
-        position: absolute;
-        right: -40px;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        top: 10px;
-      }
-
-      &:nth-child(even) {
-        float: right;
-      }
-
-      &:nth-child(even):after {
-        content: '';
-        width: 14px;
-        height: 23px;
-        background-image: url(../../static/images/info/arr2.png);
-        background-size: cover;
-        position: absolute;
-        left: -14px;
-        top: 15px;
-      }
-
-      &:nth-child(even):before {
-        content: ' ';
-        width: 10px;
-        height: 10px;
-        display: inline-block;
-        background: #18c1d6;
-        background-size: cover;
-        position: absolute;
-        left: -40px;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        top: 15px;
-      }
     }
   }
 

@@ -1,22 +1,21 @@
 ﻿<template>
-
-  <div>
+  <div class="main">
+    <div class="top"></div>
     <div class="content">
-      <div class="page-infopage">
+      <div class="info-page">
         <h2 class="title">支持我们</h2>
-
-        <div class="u-tbg">
+        <div class="donate-img">
           <img src="https://static.easyapi.com/images/info/donate.jpg">
         </div>
-        <div class="u-donate f-cb">
-          <div class="p">
+        <div class="donate-description f-cb">
+          <p>
             <em>如</em>如果您觉得 EasyAPI
             对您非常有用，您可以考虑通过捐赠来支持我们。
             您的捐赠将帮助我们应付日益增长的主机和宽带，
             以及软件开发、美工与网站编辑等方面费用，帮助我们在未来为您提供更加优质的内容和服务
             。我们非常感谢您的捐赠与支持。
-          </div>
-          <dl class="payb clearfix">
+          </p>
+          <dl class="pay">
             <dd>
               <p><img src="https://static.easyapi.com/images/info/fanfanle.png"></p>
               <span>微信扫一扫</span>
@@ -28,8 +27,8 @@
           </dl>
         </div>
 
-        <div class="u-names  f-cb">
-          <div class="u-enhd">支持名单</div>
+        <div class="supporter  f-cb">
+          <div class="support">支持名单</div>
           <ul class="f-cb">
             <li>
               <p><img src="https://qiniu.easyapi.com/user/zhaozilong.jpg"></p>
@@ -73,9 +72,9 @@
           </ul>
         </div>
 
-        <div class="u-zcpro f-cb">
-          <div class="u-enhd">支持项目</div>
-          <div class="u-box">
+        <div class="support-project f-cb">
+          <div class="support">支持项目</div>
+          <div class="box">
             <dl>
               <dt><span>￥15元</span><i>33人支持</i></dt>
               <dd>
@@ -236,7 +235,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>

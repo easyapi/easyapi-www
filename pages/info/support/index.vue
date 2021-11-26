@@ -2,7 +2,7 @@
 
   <div>
     <div class="content">
-      <div class="page-infopage">
+      <div class="info-page">
         <h2 class="title">支持名单</h2>
 
         <div class="u-donatelist f-cb">

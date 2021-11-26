@@ -1,11 +1,8 @@
 ﻿<template>
-  <div>
-    <div class="page-together">
-      <h2 class="top">
-      </h2>
-      <div class="content">
-        <img src="/images/info/about/team.png"/>
-      </div>
+  <div class="main">
+    <div class="top"></div>
+    <div class="content">
+      <img src="/images/info/about/team.png"/>
     </div>
 
     <div class="pd-100">
