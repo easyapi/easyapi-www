@@ -1,58 +1,56 @@
 ﻿<template>
-  <div class="page-index">
-    <div class="u-page u-page1 f-cb">
-      <div class="main wp">
-        <div class="u-info" style=" margin: 0 auto;padding:172px 0;">
-          <h1>
-            简单，好用的API服务平台
-          </h1>
+  <div class="main">
+    <div class="card card-bg f-cb">
+      <div class="card-info">
+        <h1>
+          简单，好用的API服务平台
+        </h1>
+        <p>
+          移动互联网时代，EasyAPI是一个为您提供API管理、API测试、API监控、API文档的综合性API服务平台。
+          <br>
+          你还在用Word管理接口文档吗？你还在使用拼接URL测试吗？你OUT了！
+        </p>
+        <div class="bg_white">
           <p>
-            移动互联网时代，EasyAPI是一个为您提供API管理、API测试、API监控、API文档的综合性API服务平台。
-            <br>
-            你还在用Word管理接口文档吗？你还在使用拼接URL测试吗？你OUT了！
-          </p>
-          <div class="bg_white">
-            <p>
             <span>
               <a href="https://doc.easyapi.com">
                 API文档中心
               </a>
             </span>
-            </p>
-            <img src="/images/angle-1.png" alt="">
-            <ul class="jump_link">
-              <li>
-                <img src="/images/info/down_icon1.png">
-                <a href="https://doc.easyapi.com">
-                  API文档中心
-                </a>
-              </li>
-              <li>
-              </li>
-              <li>
-                <img src="/images/info/down_icon5.png">
-                <a href="https://monitor.easyapi.com">
-                  API监控中心
-                </a>
-              </li>
-              <li>
-                <img src="/images/info/down_icon2.png">
-                <a href="https://gateway.easyapi.com">
-                  API网关中心
-                </a>
-              </li>
-              <li>
-                <img src="/images/info/header-icon1.png">
-                <a href="https://service.easyapi.com">
-                  API服务中心
-                </a>
-              </li>
-            </ul>
-          </div>
+          </p>
+          <img src="/images/angle-1.png" alt="">
+          <ul class="jump_link">
+            <li>
+              <img src="/images/info/down_icon1.png">
+              <a href="https://doc.easyapi.com">
+                API文档中心
+              </a>
+            </li>
+            <li>
+            </li>
+            <li>
+              <img src="/images/info/down_icon5.png">
+              <a href="https://monitor.easyapi.com">
+                API监控中心
+              </a>
+            </li>
+            <li>
+              <img src="/images/info/down_icon2.png">
+              <a href="https://gateway.easyapi.com">
+                API网关中心
+              </a>
+            </li>
+            <li>
+              <img src="/images/info/header-icon1.png">
+              <a href="https://service.easyapi.com">
+                API服务中心
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="u-pageicon clearfix">
+    <div class="card-icon">
       <ul>
         <li>
           <a href="/pages/product/doc.vue">
@@ -108,8 +106,8 @@
         </li>
       </ul>
     </div>
-    <div class="u-page u-page2 f-cb">
-      <div class="ii">
+    <div class="card page f-cb">
+      <div class="card-item">
         <h1>
           在线管理，API文档实时更新
         </h1>
@@ -118,8 +116,8 @@
           <br>
           别 World 文档传阅版本混乱
         </p>
-        <div class="inn f-cb">
-          <div class="one f-fl">
+        <div class="pd-b-50 f-cb">
+          <div class="inner-item f-fl">
             <img src="https://static.easyapi.com/images/w1.png">
             <span>
             Word
@@ -135,7 +133,7 @@
           <div class="" style="display:inline-block;margin-top:60px;">
             <img src="/images/info/ic_home_arrow.png">
           </div>
-          <div class="one f-fr">
+          <div class="inner-item f-fr">
             <img src="https://static.easyapi.com/images/w2.png">
             <span>
             EasyAPI
@@ -147,8 +145,8 @@
         </div>
       </div>
     </div>
-    <div class="u-page u-page4 f-cb">
-      <div class="ii">
+    <div class="card f-cb">
+      <div class="card-item">
         <h1>
           监控系统，提升接口性能
         </h1>
@@ -157,8 +155,8 @@
           <br>
           为您准确分析性能数据。
         </p>
-        <div class="inn f-cb">
-          <div class="one ">
+        <div class="inner pd-b-50 f-cb">
+          <div class="inner-item">
             <img src="https://static.easyapi.com/images/index-i-3.png">
             <span>
             开发效率提升
@@ -169,7 +167,7 @@
               更快速开发
             </p>
           </div>
-          <div class="one ">
+          <div class="inner-item">
             <img src="https://static.easyapi.com/images/index-i-2.png">
             <span>
             运维响应提升
@@ -180,7 +178,7 @@
               快速解决问题
             </p>
           </div>
-          <div class="one ">
+          <div class="inner-item">
             <img src="https://static.easyapi.com/images/index-i-1.png">
             <span>
             业务风险降低
@@ -194,8 +192,8 @@
         </div>
       </div>
     </div>
-    <div class="u-page u-page3 f-cb" style="background:#fafafa">
-      <div class="ii">
+    <div class="card f-cb" style="background:#fafafa">
+      <div class="card-item">
         <h1>
           API网关，企业API安全基础构架正确之选
         </h1>
@@ -207,8 +205,8 @@
         </div>
       </div>
     </div>
-    <div class="u-page u-page3 f-cb">
-      <div class="ii">
+    <div class="card f-cb">
+      <div class="card-item">
         <h1>
           API接口服务，选择优质的接口
         </h1>
@@ -220,8 +218,8 @@
         </div>
       </div>
     </div>
-    <div class="u-page u-page5 f-cb  f-border-b" style="background:#fafafa;">
-      <div class="ii">
+    <div class="card bor-b f-cb  f-border-b" style="background:#fafafa;">
+      <div class="card-item">
         <h1>
           更多API解决方案，欢迎联系
         </h1>
@@ -239,7 +237,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>

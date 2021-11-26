@@ -196,6 +196,22 @@ body, button, input, keygen, legend, select, textarea {
   position: relative;
 }
 
+.pd-t-20 {
+  padding-top: 20px;
+}
+
+.pd-b-50 {
+  padding-bottom: 50px;
+}
+
+.bor-b {
+  border-bottom: solid #ddd 1px;
+}
+
+.bg-f7 {
+  background-color: #f7f7f7;
+}
+
 .f-prz {
   position: relative;
   zoom: 1;
@@ -735,11 +751,11 @@ body, button, input, keygen, legend, select, textarea {
   }
 }
 
-.page-index {
-  .u-page {
+.main {
+  .card {
     width: 100%;
 
-    .ii {
+    .card-item {
       display: table;
       width: 80%;
       max-width: 1080px;
@@ -763,19 +779,21 @@ body, button, input, keygen, legend, select, textarea {
       }
     }
 
-    &.u-page1 {
+    &.card-bg {
       height: 520px;
       box-sizing: border-box;
       background: url(../../static/images/bg_index.png) no-repeat center;
       background-size: 100% 100%;
 
-      .u-info {
+      .card-info {
         height: 320px;
         text-align: center;
         margin: 300px auto 10%;
         width: 76%;
         color: #fff;
         line-height: 2.3em;
+        margin: 0 auto;
+        padding: 172px 0;
 
         h1 {
           font-size: 48px;
@@ -803,73 +821,63 @@ body, button, input, keygen, legend, select, textarea {
       }
     }
 
-    &.u-page2 {
+    &.page {
       background: #f7f7f7;
       padding-top: 20px;
 
-      .inn {
-        padding-bottom: 50px;
+      .inner-item {
+        width: 45%;
+        text-align: center;
 
-        .one {
-          width: 45%;
-          text-align: center;
+        img {
+          width: 220px;
+        }
 
-          img {
-            width: 220px;
-          }
+        span {
+          display: block;
+          padding: 20px 0 0;
+          font-size: 1.8rem;
+        }
 
-          span {
-            display: block;
-            padding: 20px 0 0;
-            font-size: 1.8rem;
-          }
-
-          p {
-            font-size: 14px;
-            color: #888;
-            line-height: 28px;
-            padding: 20px 70px 50px;
-            text-align: left;
-          }
+        p {
+          font-size: 14px;
+          color: #888;
+          line-height: 28px;
+          padding: 20px 70px 50px;
+          text-align: left;
         }
       }
     }
 
-    &.u-page4 {
-      .inn {
-        .one {
-          width: 33%;
-          text-align: center;
-          float: left;
+    .inner {
+      .inner-item {
+        width: 33%;
+        text-align: center;
+        float: left;
 
-          img {
-            width: 140px;
-            max-width: 200px;
-            border-radius: 50%;
-          }
+        img {
+          width: 140px;
+          max-width: 200px;
+          border-radius: 50%;
+        }
 
-          span {
-            display: block;
-            padding: 20px 0 0;
-            font-size: 1.8rem;
-          }
+        span {
+          display: block;
+          padding: 20px 0 0;
+          font-size: 1.8rem;
+        }
 
-          p {
-            font-size: 1.4rem;
-            color: #888;
-            line-height: 25px;
-            padding: 10px 70px 50px;
-          }
+        p {
+          font-size: 1.4rem;
+          color: #888;
+          line-height: 25px;
+          padding: 10px 70px 50px;
         }
       }
-    }
-
-    &.u-page5 {
-      border-bottom: solid #ddd 1px;
     }
   }
 
-  .u-pageicon {
+  .card-icon {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;

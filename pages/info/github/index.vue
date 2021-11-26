@@ -1,9 +1,9 @@
 ﻿<template>
   <div>
-    <div class="page-index">
-      <div class="u-page u-page1 f-cb">
+    <div class="main">
+      <div class="card card-bg f-cb">
         <div class="main wp">
-          <div class="u-info" style=" margin: 0 auto;padding:172px 0;">
+          <div class="card-info">
             <h1>前端开源计划</h1>
             <p>为您的公司打造私有化API管理门户，提升API管理效率</p>
             <div class="bg_white">
@@ -56,15 +56,15 @@
         </ul>
       </div>
 
-      <div class="u-page u-page2 f-cb">
-        <div class="ii">
+      <div class="card pd-t-20 bg-f7 f-cb">
+        <div class="card-content">
           <h1 style="font-size:36px;padding-bottom:90px;">需要做什么？</h1>
           <div class="inn f-cb">
-            <div class="one f-fl">
+            <div class="card-content-item f-fl">
               <img src="/images/info/github/1.png">
               <span>前端开源合伙人每周投入60小时</span>
             </div>
-            <div class="one f-fr">
+            <div class="card-content-item f-fr">
               <img src="/images/info/github/2.png">
               <span>前端开源志愿者每月参与2个以上ISSUE</span>
             </div>
@@ -73,15 +73,15 @@
       </div>
 
 
-      <div class="u-page u-page2 f-cb" style="background: #fff;">
-        <div class="ii">
+      <div class="card pd-t-20 bg-f7 f-cb" style="background: #fff;">
+        <div class="card-content">
           <h1 style="font-size:36px;padding-bottom:90px;">你将获得什么？</h1>
           <div class="inn f-cb">
-            <div class="one f-fl">
+            <div class="card-content-item f-fl">
               <img src="/images/info/github/3.png">
               <span>前端开源合伙人获得每小时66元分成</span>
             </div>
-            <div class="one f-fr">
+            <div class="card-content-item f-fr">
               <img src="/images/info/github/4.png">
               <span>前端开源志愿者获得文档管理免费试用特权</span>
             </div>
@@ -89,8 +89,8 @@
         </div>
       </div>
 
-      <div class="u-page u-page3 f-cb" style="background:#fafafa">
-        <div class="ii">
+      <div class="card u-page3 f-cb" style="background:#fafafa">
+        <div class="card-content">
           <h1 style="font-size:36px;padding-bottom:30px;">常见问题</h1>
           <h3>开源的版权怎么区分？</h3>
           <p>EasyAPI产品上线后，为了满足广大开发者用户的使用，特推出前端开源产品，为了充分发挥我们的用户群体优势，希望大家共同完善EasyAPI产品，EasyAPI自始至终版权均为EasyAPI运营公司
@@ -105,7 +105,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>

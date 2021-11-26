@@ -1,5 +1,5 @@
 <template>
-  <div class="footer clearfix">
+  <div class="footer">
     <p>
       <nuxt-link to="/info/about">关于我们</nuxt-link>
       <nuxt-link to="/info/together">合作伙伴</nuxt-link>
@@ -13,27 +13,11 @@
 </template>
 
 <script>
-export default {
-  name: 'Footer'
-}
+  export default {
+    name: 'Footer'
+  }
 </script>
 
 <style scoped lang="scss">
-.footer {
-  text-align: center;
-  background: #fafafa;
-  color: #777;
-  margin: 20px 0 0 0;
-  padding: 70px 0 50px 0;
-  font-size: 12px;
-}
 
-.footer p {
-  margin-bottom: 10px;
-}
-
-.footer a {
-  color: #777;
-  padding: 0 20px;
-}
 </style>
