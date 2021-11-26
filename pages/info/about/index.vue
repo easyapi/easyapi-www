@@ -1,9 +1,7 @@
 ﻿<template>
   <div>
     <div class="page-together">
-      <h2 class="u-title">
-        <div class="content">关于我们</div>
-      </h2>
+      <div class="top"></div>
       <div class="content">
         <img src="/images/info/about/team.png"/>
       </div>
@@ -116,7 +114,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>
