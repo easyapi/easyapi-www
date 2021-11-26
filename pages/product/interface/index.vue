@@ -13,9 +13,9 @@
       </div>
     </div>
 
-    <div class="u-infobox ">
-      <div class="u-title">精选API接口服务</div>
-      <div class="u-inro">通过整合不同接口服务，提供标准化接口文档 <br>
+    <div class="pd-100 ">
+      <div class="title">精选API接口服务</div>
+      <div class="description">通过整合不同接口服务，提供标准化接口文档 <br>
         未来同一API接口可绑定多个供应商，随时切换，真正实现API接口的100%可用
       </div>
       <ul class="u-iconui one content">
@@ -41,9 +41,9 @@
         </li>
       </ul>
     </div>
-    <div class="u-infobox bgfa nbottom" style="margin-bottom: 100px;">
-      <div class="u-title">统一的API服务管理</div>
-      <div class="u-inro">实时反馈APP与API的交互情况，请求参数，返回结果，瞬间重现问题场景 <br>
+    <div class="pd-100 bgfa nbottom" style="margin-bottom: 100px;">
+      <div class="title">统一的API服务管理</div>
+      <div class="description">实时反馈APP与API的交互情况，请求参数，返回结果，瞬间重现问题场景 <br>
         实现发现问题，快速解决问题
       </div>
       <div class="oneimg">

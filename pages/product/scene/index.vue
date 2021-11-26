@@ -12,10 +12,10 @@
         </div>
       </div>
     </div>
-    <div class="u-infobox">
-      <div class="u-title">什么是API场景化服务</div>
-      <div class="u-title">什么是API场景化服务</div>
-      <div class="u-inro">提供完善的后端管理服务，前端通过API实现定制化的的一种服务<br>
+    <div class="pd-100">
+      <div class="title">什么是API场景化服务</div>
+      <div class="title">什么是API场景化服务</div>
+      <div class="description">提供完善的后端管理服务，前端通过API实现定制化的的一种服务<br>
         我们的目标是为提供企业提供非核心功能标准化产品服务
       </div>
       <ul class="u-iconui  content">
@@ -43,9 +43,9 @@
       </ul>
     </div>
 
-    <div class="u-infobox " style="background-color: #f8f8f8">
-      <div class="u-title">我们正在做的场景化服务</div>
-      <div class="u-inro"></div>
+    <div class="pd-100 " style="background-color: #f8f8f8">
+      <div class="title">我们正在做的场景化服务</div>
+      <div class="description"></div>
       <ul class="u-iconui content">
         <li>
           <img src="/images/info/open_icon11.png">

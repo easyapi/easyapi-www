@@ -1,19 +1,20 @@
 ﻿<template>
   <div>
     <div class="page-together">
-      <div class="top"></div>
+      <h2 class="top">
+      </h2>
       <div class="content">
         <img src="/images/info/about/team.png"/>
       </div>
     </div>
 
-    <div class="u-infobox">
+    <div class="pd-100">
       <div class="content">
-        <div class="u-title">团队介绍</div>
-        <div class="u-inro">
+        <div class="title">团队介绍</div>
+        <div class="description ">
           上海帮趣网络技术有限公司创建于2014年，致力于成为中国领先的移动互联网工具提供商，公司核心团队，数年行业资深经验，开发过数十个移动APP，与行业合作伙伴保持业务沟通，加大移动互联网工具建设。公司总部位于上海博济智汇园、在无锡滨湖区创意产业园（蠡湖边）设立研发基地，是一家拥有自主知识产权的移动互联网企业。团队成员20人+。
         </div>
-        <div class="u-teambox f-cb">
+        <div class="team-box f-cb">
           <ul>
             <li>
               <img src="https://qiniu.easyapi.com/user/leida.jpg">
@@ -68,22 +69,22 @@
       </div>
     </div>
 
-    <div class="u-infobox bgfa bg_img" style="background:#f5f5f5">
-      <div class="u-title f-c-white f-c-gray">EasyAPI是什么</div>
-      <div class="u-inro f-c-white f-c-gray">EasyAPI最初是我们团队内部的工具，因为热爱，我们希望她能得到更多的人来使用，我们也会一直站在她的旁边优化她，完美她，希望广大的苦B开发人员，
+    <div class="pd-100 bgfa bg-f5">
+      <div class="title f-c-white f-c-gray">EasyAPI是什么</div>
+      <div class="description  f-c-white f-c-gray">
+        EasyAPI最初是我们团队内部的工具，因为热爱，我们希望她能得到更多的人来使用，我们也会一直站在她的旁边优化她，完美她，希望广大的苦B开发人员，
         希望广大的苦B 的开发人员，程序员早日用上，致力于数十万移<br>动开发者,后端的开发人员提供全套的API系统解决方案（发布，测试，浏览，监控）
       </div>
 
     </div>
 
-    <div class="u-infobox bgfa ">
-      <div class="u-title">
-
+    <div class="pd-100 bgfa ">
+      <div class="title">
       <span style="padding: 10px 10px;
        border-bottom: 2px solid #18c1d6;">团队文化</span>
       </div>
-      <div class="u-inro">为客户创造价值</div>
-      <div class="u-values f-l">
+      <div class="description ">为客户创造价值</div>
+      <div class="culture f-l">
         <ul>
           <li>
             <img src="/images/info/about_3.png" alt="">
@@ -104,9 +105,9 @@
       </div>
     </div>
 
-    <div class="u-infobox bgfa f-border-b" style="">
-      <div class="u-title">我们的目标</div>
-      <div class="u-inro">
+    <div class="pd-100 bgfa f-border-b">
+      <div class="title">我们的目标</div>
+      <div class="description ">
         EasyAPI最初是我们团队内部的工具，因为热爱，我们希望她能得到更多的人来使用，我们也会一直站在她的旁边优化她，完美她，希望广大的苦B开发人员，<br>程序猿早日用上，致力于为数十万移动开发者，后端开发人员提供全套的API系统解决方案（发布、浏览、测试、监控、网关、接口服务）。
       </div>
     </div>

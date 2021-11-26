@@ -9,9 +9,9 @@
         </div>
       </div>
     </div>
-    <div class="u-infobox f-border-b">
-      <div class="u-title">构建面向未来的 API 网关</div>
-      <div class="u-inro">API网关是数据及系统的集成的基础设施，支持将云端应用及数据通过简单、快速地配置转化成 API<br>
+    <div class="pd-100 f-border-b">
+      <div class="title">构建面向未来的 API 网关</div>
+      <div class="description">API网关是数据及系统的集成的基础设施，支持将云端应用及数据通过简单、快速地配置转化成 API<br>
         同时提供安全独立的数据门户以及统一管控的开发者中心，帮助用户实现数据开放及共享
       </div>
       <ul class="u-iconui content">
@@ -41,8 +41,8 @@
         </li>
       </ul>
     </div>
-    <div class="u-infobox  f-border-b">
-      <div class="u-title">专注API网关</div>
+    <div class="pd-100  f-border-b">
+      <div class="title">专注API网关</div>
       <div class="u-igateway f-cb">
         <img class="f-fr img_w" src="/images/info/gateway_2.png">
         <div class="text f-fl">
@@ -55,9 +55,9 @@
       </div>
     </div>
 
-    <div class="u-infobox ">
-      <div class="u-title">EasyAPI网关的价值</div>
-      <div class="u-inro">
+    <div class="pd-100 ">
+      <div class="title">EasyAPI网关的价值</div>
+      <div class="description">
         让API跟安全，更灵活
       </div>
       <ul class="u-iconui content">

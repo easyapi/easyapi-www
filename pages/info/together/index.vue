@@ -1,7 +1,7 @@
 ﻿<template>
 
-  <div class="page-together">
-    <h2 class="u-title">
+  <div class="card">
+    <h2 class="title">
       <div class="content">合作伙伴</div>
     </h2>
     <div class="content">

@@ -13,9 +13,9 @@
       </div>
     </div>
 
-    <div class="u-infobox ">
-      <div class="u-title">什么是API管理门户</div>
-      <div class="u-inro">API管理门户主要为开发企业搭建API门户，核心功能包括API文档管理、API测试工具、API监控系统等服务<br>
+    <div class="pd-100 ">
+      <div class="title">什么是API管理门户</div>
+      <div class="description">API管理门户主要为开发企业搭建API门户，核心功能包括API文档管理、API测试工具、API监控系统等服务<br>
         对于大中型开发团队，API内部管理较注重隐私，特推出私有化版本
       </div>
       <ul class="u-iconui one content">
@@ -42,9 +42,9 @@
       </ul>
     </div>
 
-    <div class="u-infobox bgfa bg_img" style="background-image:url('/images/solution/bg_portal2.png')">
-      <div class="u-title f-c-white">轻量级环境部署</div>
-      <div class="u-inro f-c-white">基于云服务器环境轻量级部署，前端源码开放，可自由修改符合自己公司的API门户风格
+    <div class="pd-100 bgfa bg_img" style="background-image:url('/images/solution/bg_portal2.png')">
+      <div class="title f-c-white">轻量级环境部署</div>
+      <div class="description f-c-white">基于云服务器环境轻量级部署，前端源码开放，可自由修改符合自己公司的API门户风格
         立刻让自己公司的API管理更具有效率
       </div>
       <div class="oneimg">
@@ -52,9 +52,9 @@
       </div>
     </div>
 
-    <div class="u-infobox bgfa">
-      <div class="u-title">客户案例</div>
-      <div class="u-inro">我们始终坚持为客户提供优质的服务</div>
+    <div class="pd-100 bgfa">
+      <div class="title">客户案例</div>
+      <div class="description">我们始终坚持为客户提供优质的服务</div>
       <div class="u-casebox" style="position:relative;">
         <div class=" arrow_bug left-arrow">
           <

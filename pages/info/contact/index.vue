@@ -1,7 +1,7 @@
 ﻿<template>
   <div>
-    <div class="page-together">
-      <h2 class="u-title">
+    <div class="card">
+      <h2 class="title">
         <div class="content">联系我们</div>
       </h2>
       <div class="u-contact">

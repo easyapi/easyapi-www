@@ -10,23 +10,23 @@
       </div>
     </div>
 
-    <div class="u-infobox">
-      <div class="u-title">您的API总有问题存在</div>
+    <div class="pd-100">
+      <div class="title">您的API总有问题存在</div>
       <div class="oneimg wp clearfix">
         <img src="/images/info/test_2.png">
       </div>
     </div>
 
-    <div class="u-infobox bgfa" style="background:#eff9fc">
-      <div class="u-title">测试工具</div>
-      <div class="u-inro">致力于成为中国最好的API测试工具</div>
+    <div class="pd-100 bgfa" style="background:#eff9fc">
+      <div class="title">测试工具</div>
+      <div class="description">致力于成为中国最好的API测试工具</div>
       <div class="oneimg">
         <img src="/images/info/test_3.png">
       </div>
     </div>
 
-    <div class="u-infobox">
-      <div class="u-title">产品特色</div>
+    <div class="pd-100">
+      <div class="title">产品特色</div>
       <div class="u-tese-wrap">
         <ul class="u-tese content text_img_auto  f-cb add_img_line">
           <li>

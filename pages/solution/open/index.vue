@@ -13,9 +13,9 @@
       </div>
     </div>
 
-    <div class="u-infobox">
-      <div class="u-title">最专业API开放平台供应商</div>
-      <div class="u-inro">基于EasyAPI成熟的API文档、API监控、API网关系统<br>
+    <div class="pd-100">
+      <div class="title">最专业API开放平台供应商</div>
+      <div class="description">基于EasyAPI成熟的API文档、API监控、API网关系统<br>
         为您通过国内最重要的API开发平台解决方案，30天建立属于自己的开放平台
       </div>
       <ul class="u-iconui one content">
@@ -42,9 +42,9 @@
       </ul>
     </div>
 
-    <div class="u-infobox bgfa bg_img" style="background-image:url('/images/info/bg_open.png')">
-      <div class="u-title f-c-white">友好的界面交互</div>
-      <div class="u-inro f-c-white">通过搭建API开放平台，让您公司的数据更好的向合作伙伴、客户进行授权访问
+    <div class="pd-100 bgfa bg_img" style="background-image:url('/images/info/bg_open.png')">
+      <div class="title f-c-white">友好的界面交互</div>
+      <div class="description f-c-white">通过搭建API开放平台，让您公司的数据更好的向合作伙伴、客户进行授权访问
         让贵公司的数据不断为贵公司产生价值
       </div>
       <div class="oneimg">
@@ -52,9 +52,9 @@
       </div>
     </div>
 
-    <div class="u-infobox bgfa">
-      <div class="u-title">客户案例</div>
-      <div class="u-inro">我们始终坚持为客户提供优质的服务</div>
+    <div class="pd-100 bgfa">
+      <div class="title">客户案例</div>
+      <div class="description">我们始终坚持为客户提供优质的服务</div>
       <div class="u-casebox" style="position:relative;">
         <div class=" arrow_bug left-arrow">
           <

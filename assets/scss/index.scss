@@ -200,6 +200,10 @@ body, button, input, keygen, legend, select, textarea {
   padding-top: 20px;
 }
 
+.pd-100 {
+  padding: 100px 0;
+}
+
 .pd-b-50 {
   padding-bottom: 50px;
 }
@@ -209,6 +213,10 @@ body, button, input, keygen, legend, select, textarea {
 }
 
 .bg-f7 {
+   background-color: #f7f7f7;
+ }
+
+.bg-f5 {
   background-color: #f7f7f7;
 }
 
@@ -1001,10 +1009,10 @@ body, button, input, keygen, legend, select, textarea {
   }
 }
 
-.u-infobox {
+.pd-100 {
   padding: 100px 0;
 
-  .u-title {
+  .title {
     text-align: center;
     font-size: 36px;
     font-weight: 400;
@@ -1020,7 +1028,7 @@ body, button, input, keygen, legend, select, textarea {
     }
   }
 
-  .u-inro {
+  .description {
     text-align: center;
     font-size: 1.6rem;
     line-height: 1.7;
@@ -1345,7 +1353,7 @@ body, button, input, keygen, legend, select, textarea {
     }
   }
 
-  .u-teambox {
+  .team-box {
     text-align: center;
 
     ul {
@@ -1371,7 +1379,7 @@ body, button, input, keygen, legend, select, textarea {
     }
   }
 
-  .u-values {
+  .culture {
     ul {
       text-align: center;
 
@@ -1401,11 +1409,6 @@ body, button, input, keygen, legend, select, textarea {
 
   &.nbottom {
     padding-bottom: 0;
-  }
-
-  &.bg_img {
-    background-size: cover;
-    background-position: center;
   }
 
   &.f-border-b {
@@ -1537,7 +1540,7 @@ body, button, input, keygen, legend, select, textarea {
   border-radius: 6px;
   background: #fff;
 
-  .u-title {
+  .title {
     border-bottom: solid #ddd 1px;
     padding: 15px 30px;
     text-align: left;
@@ -1787,8 +1790,8 @@ body, button, input, keygen, legend, select, textarea {
   }
 }
 
-.page-together {
-  .u-title {
+.card {
+  .title {
     background: #ecf1f5;
     font-size: 2rem;
     padding: 20px 0;
@@ -2011,7 +2014,7 @@ body, button, input, keygen, legend, select, textarea {
   }
 }
 
-.page-together .u-contact .cerwm .hd a.active, .page-together .u-contact .cerwm .hd a:hover {
+.card .u-contact .cerwm .hd a.active, .card .u-contact .cerwm .hd a:hover {
   border-bottom: 2px solid #18c1d6;
   color: #18c1d6;
 }

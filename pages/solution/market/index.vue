@@ -13,9 +13,9 @@
       </div>
     </div>
 
-    <div class="u-infobox" style="padding-bottom: 0">
-      <div class="u-title">最专业API服务市场供应商</div>
-      <div class="u-inro">我们是专一的API团队，我们有成熟的API服务市场运营经验<br>
+    <div class="pd-100" style="padding-bottom: 0">
+      <div class="title">最专业API服务市场供应商</div>
+      <div class="description">我们是专一的API团队，我们有成熟的API服务市场运营经验<br>
         基于我们的经验，为您的公司快速架构API服务市场，助力贵公司行业生态建设
       </div>
       <div class="u-igateway f-cb">
@@ -33,7 +33,7 @@
     </div>
 
 
-    <div class="u-infobox" style="background-color: #eee;padding-bottom: 0">
+    <div class="pd-100" style="background-color: #eee;padding-bottom: 0">
 
       <div class="u-igateway f-cb">
         <img style="width: 500px;margin-right: 0;height:400px" class="f-fl img"
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div class="u-infobox" style="padding-bottom: 0">
+    <div class="pd-100" style="padding-bottom: 0">
       <div class="u-igateway f-cb">
         <img style="width: 500px;margin-right: 0;height:400px" class="f-fr img"
              src="/images/info/market_img3.png">
