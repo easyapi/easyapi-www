@@ -1,7 +1,7 @@
 ﻿<template>
   <div>
     <div class="u-banner-bg">
-      <div class="x-wp">
+      <div class="content">
         <div class="sysinfo f-tac">
           <h1>API管理门户</h1>
           <p>为您的公司打造私有化API管理门户，提升API管理效率</p>
@@ -18,7 +18,7 @@
       <div class="u-inro">API管理门户主要为开发企业搭建API门户，核心功能包括API文档管理、API测试工具、API监控系统等服务<br>
         对于大中型开发团队，API内部管理较注重隐私，特推出私有化版本
       </div>
-      <ul class="u-iconui one x-wp">
+      <ul class="u-iconui one content">
         <li>
           <img src="/images/info/open_icon6.png">
           <span>API编辑</span>

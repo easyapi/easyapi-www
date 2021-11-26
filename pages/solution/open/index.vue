@@ -1,7 +1,7 @@
 ﻿<template>
   <div>
     <div class="u-banner-bg">
-      <div class="x-wp">
+      <div class="content">
         <div class="sysinfo f-tac">
           <h1>API开放平台</h1>
           <p>您有数据，我们有API开放平台解决方案</p>
@@ -18,7 +18,7 @@
       <div class="u-inro">基于EasyAPI成熟的API文档、API监控、API网关系统<br>
         为您通过国内最重要的API开发平台解决方案，30天建立属于自己的开放平台
       </div>
-      <ul class="u-iconui one x-wp">
+      <ul class="u-iconui one content">
         <li>
           <img src="/images/info/open_icon1.png">
           <span>简单易用</span>

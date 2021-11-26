@@ -1,7 +1,7 @@
 ﻿<template>
   <div>
     <div class="u-banner-bg">
-      <div class="x-wp">
+      <div class="content">
         <div class="sysinfo f-tac">
           <h1>API场景化服务</h1>
           <p>EasyAPI顺应技术开发趋势，推出通过API实现特定的场景化服务</p>
@@ -18,7 +18,7 @@
       <div class="u-inro">提供完善的后端管理服务，前端通过API实现定制化的的一种服务<br>
         我们的目标是为提供企业提供非核心功能标准化产品服务
       </div>
-      <ul class="u-iconui  x-wp">
+      <ul class="u-iconui  content">
         <li class="u-display">
           <img src="/images/info/open_icon19.png">
           <div class="lefttext">
@@ -46,7 +46,7 @@
     <div class="u-infobox " style="background-color: #f8f8f8">
       <div class="u-title">我们正在做的场景化服务</div>
       <div class="u-inro"></div>
-      <ul class="u-iconui x-wp">
+      <ul class="u-iconui content">
         <li>
           <img src="/images/info/open_icon11.png">
           <span>聚合通知</span>

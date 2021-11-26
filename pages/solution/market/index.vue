@@ -1,7 +1,7 @@
 ﻿<template>
   <div>
     <div class="u-banner-bg">
-      <div class="x-wp">
+      <div class="content">
         <div class="sysinfo f-tac">
           <h1>API服务市场</h1>
           <p>为您的企业搭建API服务市场，建立自己的开放合作的行业生态圈</p>

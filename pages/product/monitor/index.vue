@@ -1,7 +1,7 @@
 ﻿<template>
   <div>
     <div class="u-banner-bg">
-      <div class="x-wp">
+      <div class="content">
         <div class="sysinfo">
           <h1>EasyAPI接口监控系统</h1>
           <p>专注API接口监控，让您的API接口更稳定，与APP更紧密</p>

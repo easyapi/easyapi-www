@@ -1,7 +1,7 @@
 ﻿<template>
   <div>
     <div class="u-banner-bg">
-      <div class="x-wp">
+      <div class="content">
         <div class="price-title">
           <h1>支持我们创造更好的 API 产品</h1>
           <p>EasyAPI为您的团队提供易用、好用的API服务，我们专注于围绕应用API服务<br>

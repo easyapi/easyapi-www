@@ -1,110 +1,133 @@
 @import "in.scss";
-@media screen and (max-width:1000px) {
-	.x-wp {
-		width: 95vw;
-		margin: 0 auto
-	}
-}
-@-webkit-keyframes rotation {
-	0% {
-		-webkit-transform: rotate(0)
-	}
 
-	to {
-		-webkit-transform: rotate(360deg)
-	}
+@media screen and (max-width: 1000px) {
+  .content {
+    width: 95vw;
+    margin: 0 auto
+  }
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0)
+  }
+
+  to {
+    -webkit-transform: rotate(360deg)
+  }
 }
 
 @keyframes rotation {
-	0% {
-		transform: rotate(0)
-	}
+  0% {
+    transform: rotate(0)
+  }
 
-	to {
-		transform: rotate(360deg)
-	}
+  to {
+    transform: rotate(360deg)
+  }
 }
 
 @keyframes rotate {
-	0% {
-		-webkit-transform: rotate(0) scale(1);
-		transform: rotate(0) scale(1)
-	}
+  0% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1)
+  }
 
-	50% {
-		-webkit-transform: rotate(180deg) scale(.6);
-		transform: rotate(180deg) scale(.6)
-	}
+  50% {
+    -webkit-transform: rotate(180deg) scale(.6);
+    transform: rotate(180deg) scale(.6)
+  }
 
-	to {
-		-webkit-transform: rotate(360deg) scale(1);
-		transform: rotate(360deg) scale(1)
-	}
+  to {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1)
+  }
 }
-blockquote,body,button,caption,dd,div,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,html,input,legend,li,menu,ol,p,pre,table,td,textarea,th,ul {
+
+blockquote, body, button, caption, dd, div, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hr, html, input, legend, li, menu, ol, p, pre, table, td, textarea, th, ul {
   margin: 0;
   padding: 0;
-  font-family: "Microsoft YaHei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,Arial,sans-serif;
+  font-family: "Microsoft YaHei", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, Arial, sans-serif;
 }
-address,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+
+address, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-caption,th {
+
+caption, th {
   text-align: left;
   font-weight: 400;
 }
-abbr,body,fieldset,html,iframe,img {
+
+abbr, body, fieldset, html, iframe, img {
   border: 0;
 }
-address,cite,dfn,em,i,var {
+
+address, cite, dfn, em, i, var {
   font-style: normal;
 }
-[hidefocus],summary {
+
+[hidefocus], summary {
   outline: 0;
 }
+
 li {
   list-style: none;
 }
-h1,h2,h3,h4,h5,h6,small {
-  font-weight: 400!important;
+
+h1, h2, h3, h4, h5, h6, small {
+  font-weight: 400 !important;
 }
-code,kbd,pre,samp {
+
+code, kbd, pre, samp {
   font-family: inherit;
 }
-q:after,q:before {
+
+q:after, q:before {
   content: none;
 }
+
 textarea {
   overflow: auto;
   resize: none;
 }
-label,summary {
+
+label, summary {
   cursor: default;
 }
-a,button {
+
+a, button {
   cursor: pointer;
 }
-b,em,h1,h2,h3,h4,h5,h6,strong {
+
+b, em, h1, h2, h3, h4, h5, h6, strong {
   font-weight: 700;
 }
-a,a:hover,del,ins,s,u {
+
+a, a:hover, del, ins, s, u {
   text-decoration: none;
 }
+
 html {
   font-size: 62.5%;
 }
-body,button,input,keygen,legend,select,textarea {
+
+body, button, input, keygen, legend, select, textarea {
   outline: 0;
 }
+
 .disabled {
   display: none;
 }
+
 .loading {
   position: relative;
+
   &:after {
     z-index: 33;
     position: absolute;
@@ -117,12 +140,13 @@ body,button,input,keygen,legend,select,textarea {
     height: 26px;
     border: 2px solid #4db6ff;
     border-radius: 100%;
-    background: 0 0!important;
+    background: 0 0 !important;
     content: "";
     border-bottom-color: transparent;
     -webkit-animation: rotate .75s 0s linear infinite;
     animation: rotate .75s 0s linear infinite;
   }
+
   &:before {
     content: "";
     position: absolute;
@@ -130,11 +154,12 @@ body,button,input,keygen,legend,select,textarea {
     right: 0;
     bottom: 0;
     top: 0;
-    background: rgba(255,255,255,.8);
+    background: rgba(255, 255, 255, .8);
     z-index: 22;
   }
 }
-.f-cb:after,.f-cbli li:after {
+
+.f-cb:after, .f-cbli li:after {
   display: block;
   clear: both;
   visibility: hidden;
@@ -142,72 +167,94 @@ body,button,input,keygen,legend,select,textarea {
   overflow: hidden;
   content: ".";
 }
-.f-cb,.f-cbli li {
+
+.f-cb, .f-cbli li {
   zoom: 1;
 }
+
 .f-ib {
   display: inline-block;
 }
+
 .f-dn {
   display: none;
 }
+
 .f-db {
   display: block;
 }
+
 .f-fl {
   float: left;
 }
+
 .f-fr {
   float: right;
 }
+
 .f-pr {
   position: relative;
 }
+
 .f-prz {
   position: relative;
   zoom: 1;
 }
+
 .f-oh {
   overflow: hidden;
 }
+
 .f-ff0 {
   font-family: "Microsoft YaHei";
 }
+
 .f-ff1 {
   font-family: "Microsoft YaHei";
 }
+
 .f-fs1 {
   font-size: 1.2rem;
 }
+
 .f-fs2 {
   font-size: 1.4rem;
 }
+
 .f-fwn {
   font-weight: 400;
 }
+
 .f-fwb {
   font-weight: 700;
 }
+
 .f-tal {
   text-align: left;
 }
+
 .f-tac {
   text-align: center;
 }
+
 .f-tar {
   text-align: right;
 }
+
 .f-taj {
   text-align: justify;
   text-justify: inter-ideograph;
 }
-.f-vam,.f-vama * {
+
+.f-vam, .f-vama * {
   vertical-align: middle;
 }
+
 .f-wsn {
   word-wrap: normal;
   white-space: nowrap;
 }
+
 .f-pre {
   overflow: hidden;
   text-align: left;
@@ -215,45 +262,57 @@ body,button,input,keygen,legend,select,textarea {
   word-wrap: break-word;
   word-break: break-all;
 }
+
 .f-wwb {
   white-space: normal;
   word-wrap: break-word;
   word-break: break-all;
 }
+
 .f-ti {
   overflow: hidden;
   text-indent: -30000px;
 }
+
 .f-ti2 {
   text-indent: 2em;
 }
+
 .f-lhn {
   line-height: normal;
 }
-.f-tdu,.f-tdu:hover {
+
+.f-tdu, .f-tdu:hover {
   text-decoration: underline;
 }
-.f-tdn,.f-tdn:hover {
+
+.f-tdn, .f-tdn:hover {
   text-decoration: none;
 }
+
 .f-toe {
   overflow: hidden;
   word-wrap: normal;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
 .f-csp {
   cursor: pointer;
 }
+
 .f-csd {
   cursor: default;
 }
+
 .f-csh {
   cursor: help;
 }
+
 .f-csm {
   cursor: move;
 }
+
 .f-usn {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -261,127 +320,99 @@ body,button,input,keygen,legend,select,textarea {
   -o-user-select: none;
   user-select: none;
 }
+
 .f-c-danger {
   color: red;
 }
+
 .f-c-gray {
   color: gray;
 }
+
 .f-c-success {
   color: #87bf54;
 }
+
 .f-c-warning {
   color: orange;
 }
+
 .f-c-info {
   color: #18c1d6;
 }
+
 .f-c-white {
   color: #fff;
 }
+
 .f-rel {
   position: relative;
 }
+
 .f-none {
   display: none;
 }
+
 .f-body-gray {
   background: #fefefe;
 }
-.x-wp {
+
+.content {
   width: 1200px;
   margin: 0 auto;
 }
+
 .dis_hide {
   display: none;
 }
+
 .header {
   position: relative;
   top: 0;
   height: 72px;
-  background: #18c1d6;
+  background: none;
+  box-shadow: none;
+
   &.header-index {
-    background: rgba(0,178,200,.5);
     position: absolute;
     left: 0;
     right: 0;
-    box-shadow: 0 1px 2px rgba(0,0,0,.1);
   }
+
   .logo {
     margin-top: 17px;
     width: 120px;
   }
+
   .navs {
     line-height: 68px;
     font-size: 1.6rem;
     height: 58px;
+
     a {
       color: #fff;
       margin-left: 20px;
       display: inline-block;
       padding: 0 10px;
+
       &:hover {
-        color: rgba(255,255,255,.5);
+        color: rgba(255, 255, 255, .5);
       }
     }
-    .dis_show {
+
+    .popover {
       display: none;
-      .down_img {
+
+      .popover-img {
         width: 20px;
         height: 10px;
         position: absolute;
         top: 58px;
         left: 20px;
       }
-      .isShow {
-        box-shadow: 0 1px 2px rgba(0,0,0,.3);
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        position: absolute;
-        background: #fff;
-        border-radius: 6px;
-        width: 320px;
-        padding: 20px 0 0;
-        overflow: hidden;
-        left: 0;
-        z-index: 99999;
-        .a_link {
-          display: block;
-          margin: 0;
-          padding: 0;
-        }
-        li {
-          width: 100%;
-          padding: 5px 20px 0 20px;
-          box-sizing: border-box;
-          float: none;
-          overflow: hidden;
-          .icon_img {
-            float: left;
-          }
-          .dis_showtxt {
-            float: right;
-            width: 72%;
-            width: 86%!important;
-            p {
-              font-size: 16px;
-              color: #333;
-            }
-            span {
-              color: #999;
-              font-size: 12px;
-              line-height: 14px;
-              padding: 0;
-              margin: 0;
-              line-height: 20px;
-            }
-          }
-        }
-      }
+
       ul {
-        box-shadow: 0 1px 2px rgba(0,0,0,.3);
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
         position: absolute;
         background: #fff;
         border-radius: 6px;
@@ -390,80 +421,93 @@ body,button,input,keygen,legend,select,textarea {
         overflow: hidden;
         left: 0;
         z-index: 99999;
+
         .a_link {
           display: block;
           margin: 0;
           padding: 0;
         }
+
         li {
           float: left;
           width: 50%;
           padding: 5px 20px 0 20px;
           box-sizing: border-box;
+
           .icon_img {
             width: 25px;
             height: 25px;
             float: left;
           }
-          .dis_showtxt {
+
+          .popover-content {
             float: right;
             width: 86%;
             margin-top: 4px;
+
             p {
               font-size: 16px;
               color: #333;
               line-height: 18px;
             }
+
             span {
               color: #999;
               font-size: 12px;
               line-height: 18px;
               padding: 0;
               margin: 0;
+
               &:after {
                 content: none;
               }
             }
           }
+
           &:hover {
             background: #f5f5f5;
           }
         }
       }
     }
+
     span {
       display: inline-block;
       color: #fff;
       margin-left: 20px;
       padding: 0 10px;
       cursor: pointer;
+
       &:hover {
-        color: rgba(255,255,255,.5);
-        .dis_show {
+        color: rgba(255, 255, 255, .5);
+
+        .popover {
           display: block;
         }
       }
     }
   }
+
   .side-navs {
     float: right;
     width: 300px;
     text-align: right;
     height: 80px;
     padding-top: 12px;
-    .show_console {
+
+    .popover {
       display: none;
-      .console_narrow {
+
+      .popover-img {
         width: 20px;
         height: 10px;
         position: absolute;
         top: 38px;
         right: 24px;
       }
+
       ul {
-        box-shadow: 0 1px 2px rgba(0,0,0,.3);
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
         position: absolute;
         background: #fff;
         border-radius: 6px;
@@ -473,16 +517,20 @@ body,button,input,keygen,legend,select,textarea {
         right: -27px;
         top: 46px;
         z-index: 99999;
+
         li {
           padding: 10px 20px;
           box-sizing: border-box;
+
           .console_icon {
             width: 24px;
             height: 24px;
             float: left;
           }
-          .dis_consoletxt {
+
+          .popover-content {
             text-align: left;
+
             p {
               font-size: 16px;
               color: #333;
@@ -491,6 +539,7 @@ body,button,input,keygen,legend,select,textarea {
             }
           }
         }
+
         & > a {
           &:first-child {
             & > li {
@@ -500,22 +549,27 @@ body,button,input,keygen,legend,select,textarea {
         }
       }
     }
+
     span {
       &:hover {
-        color: rgba(255,255,255,.7);
-        .show_console {
+        color: rgba(255, 255, 255, .7);
+
+        .popover {
           display: block;
         }
       }
     }
+
     a {
       &:hover {
-        color: rgba(255,255,255,.5);
+        color: rgba(255, 255, 255, .5);
+
         .console {
-          background-color: rgba(255,255,255,.5);
+          background-color: rgba(255, 255, 255, .5);
         }
       }
     }
+
     .nav {
       display: inline-block;
       height: 40px;
@@ -528,7 +582,8 @@ body,button,input,keygen,legend,select,textarea {
       color: #fff;
       font-size: 16px;
     }
-    .navlogo {
+
+    .register {
       height: 40px;
       line-height: 40px;
       padding: 0 15px;
@@ -539,26 +594,32 @@ body,button,input,keygen,legend,select,textarea {
       color: #fff;
       font-size: 16px;
     }
+
     .console {
       border: 1px solid #fff;
       border-radius: 6px;
       height: 32px;
       line-height: 30px;
       margin-top: 4px;
+      padding: 0 10px;
     }
   }
+
   .upbx {
     display: inline-block;
     float: left;
     position: relative;
     padding-top: 5px;
+
     a {
       margin-left: 0;
       padding-right: 0;
+
       &:hover {
         border: 0;
       }
     }
+
     .console {
       border: 1px solid #fff;
       border-radius: 6px;
@@ -566,11 +627,13 @@ body,button,input,keygen,legend,select,textarea {
       line-height: 30px;
       margin-top: 4px;
     }
+
     i {
       color: #fff;
       font-size: 20px;
       width: 50px;
     }
+
     em {
       position: absolute;
       top: 10px;
@@ -584,6 +647,7 @@ body,button,input,keygen,legend,select,textarea {
       text-align: center;
       line-height: 25px;
     }
+
     img {
       margin: 20px 5px 0 0;
       width: 30px;
@@ -591,6 +655,7 @@ body,button,input,keygen,legend,select,textarea {
       border-radius: 50%;
       float: right;
     }
+
     .ov {
       top: 50px;
       border: 1px solid #ddd;
@@ -602,6 +667,7 @@ body,button,input,keygen,legend,select,textarea {
       position: absolute;
       background: #fff;
       border-radius: 6px;
+
       a {
         color: gray;
         display: block;
@@ -609,6 +675,7 @@ body,button,input,keygen,legend,select,textarea {
         padding: 0 20px;
         line-height: 38px;
         height: 38px;
+
         &:hover {
           background: #18c1d6;
           color: #fff;
@@ -616,6 +683,7 @@ body,button,input,keygen,legend,select,textarea {
       }
     }
   }
+
   &.header-op {
     background: 0 0;
     position: absolute;
@@ -623,33 +691,41 @@ body,button,input,keygen,legend,select,textarea {
     right: 0;
   }
 }
+
 .footer {
   text-align: center;
   background: #fafafa;
   color: gray;
   padding: 70px 0 50px;
   font-size: 1.2rem;
+
   p {
     margin-bottom: 10px;
   }
+
   a {
     color: gray;
     padding: 0 10px;
+
     &:hover {
       color: #555;
     }
   }
 }
+
 .page-error {
   text-align: center;
   width: 800px;
   margin: 220px auto;
+
   .u-tex {
     font-size: 1.5rem;
+
     p {
       margin: 30px;
       color: gray;
     }
+
     .btn {
       border: solid #18c1d6 1px;
       color: #18c1d6;
@@ -658,15 +734,18 @@ body,button,input,keygen,legend,select,textarea {
     }
   }
 }
+
 .page-index {
   .u-page {
     width: 100%;
+
     .ii {
       display: table;
       width: 80%;
       max-width: 1080px;
       margin: 0 auto 0;
       padding-top: 5%;
+
       h1 {
         text-align: center;
         font-weight: 400;
@@ -674,6 +753,7 @@ body,button,input,keygen,legend,select,textarea {
         font-size: 4.8rem;
         padding-bottom: 40px;
       }
+
       p {
         font-size: 1.8rem;
         line-height: 34px;
@@ -682,11 +762,13 @@ body,button,input,keygen,legend,select,textarea {
         color: #777;
       }
     }
+
     &.u-page1 {
       height: 520px;
       box-sizing: border-box;
       background: url(../../static/images/bg_index.png) no-repeat center;
       background-size: 100% 100%;
+
       .u-info {
         height: 320px;
         text-align: center;
@@ -694,15 +776,18 @@ body,button,input,keygen,legend,select,textarea {
         width: 76%;
         color: #fff;
         line-height: 2.3em;
+
         h1 {
           font-size: 48px;
           font-weight: 400;
           padding-bottom: 50px;
         }
+
         p {
           font-size: 1.8rem;
           padding-bottom: 40px;
         }
+
         a {
           &.btn {
             border-bottom: 4px solid #de9000;
@@ -717,22 +802,28 @@ body,button,input,keygen,legend,select,textarea {
         }
       }
     }
+
     &.u-page2 {
       background: #f7f7f7;
       padding-top: 20px;
+
       .inn {
         padding-bottom: 50px;
+
         .one {
           width: 45%;
           text-align: center;
+
           img {
             width: 220px;
           }
+
           span {
             display: block;
             padding: 20px 0 0;
             font-size: 1.8rem;
           }
+
           p {
             font-size: 14px;
             color: #888;
@@ -743,22 +834,26 @@ body,button,input,keygen,legend,select,textarea {
         }
       }
     }
+
     &.u-page4 {
       .inn {
         .one {
           width: 33%;
           text-align: center;
           float: left;
+
           img {
             width: 140px;
             max-width: 200px;
             border-radius: 50%;
           }
+
           span {
             display: block;
             padding: 20px 0 0;
             font-size: 1.8rem;
           }
+
           p {
             font-size: 1.4rem;
             color: #888;
@@ -768,35 +863,43 @@ body,button,input,keygen,legend,select,textarea {
         }
       }
     }
+
     &.u-page5 {
       border-bottom: solid #ddd 1px;
     }
   }
+
   .u-pageicon {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     padding: 80px 0;
+
     li {
       width: 24%;
       display: inline-block;
       text-align: center;
+
       img {
         width: 120px;
       }
+
       span {
         display: block;
         padding: 10px 0 5px;
         font-size: 1.6rem;
       }
+
       p {
         color: gray;
         font-size: 1.4rem;
       }
+
       a {
         cursor: pointer;
         display: inline-block;
         color: #555;
+
         &:hover {
           color: #222;
         }
@@ -804,54 +907,67 @@ body,button,input,keygen,legend,select,textarea {
     }
   }
 }
+
 .u-banner-bg {
   height: 680px;
   background-repeat: no-repeat;
   background-position: center;
+
   .title {
     padding-top: 184px;
     text-align: center;
     color: #fff;
+
     &.color-gray {
       color: #555;
     }
+
     h1 {
       font-size: 4.8rem;
       margin: 15px 0;
     }
+
     p {
       font-size: 2rem;
       line-height: 1.7;
     }
   }
+
   .price-title {
     padding-top: 190px;
     text-align: center;
     color: #fff;
+
     &.color-gray {
       color: #555;
     }
+
     h1 {
       font-size: 4.8rem;
       margin: 15px 0;
     }
+
     p {
       font-size: 2rem;
       line-height: 1.7;
     }
   }
+
   .sysinfo {
     padding-top: 184px;
     color: #fff;
+
     h1 {
       font-size: 4.8rem;
       margin: 15px 0;
     }
+
     p {
       font-size: 2rem;
       line-height: 1.7;
       margin-bottom: 10px;
     }
+
     .btn {
       background: #fff;
       display: inline-block;
@@ -861,12 +977,14 @@ body,button,input,keygen,legend,select,textarea {
       padding: 10px 20px;
       border-radius: 5px;
     }
+
     .more {
       a {
         font-size: 1.5rem;
         color: #fff;
         display: inline-block;
         margin: 10px;
+
         &:first-child {
           margin-left: 0;
         }
@@ -874,41 +992,51 @@ body,button,input,keygen,legend,select,textarea {
     }
   }
 }
+
 .u-infobox {
   padding: 100px 0;
+
   .u-title {
     text-align: center;
     font-size: 36px;
     font-weight: 400;
     margin-bottom: 12px;
     color: #333;
+
     &.f-c-white {
       color: #fff;
     }
+
     &.f-c-gray {
       color: #555;
     }
   }
+
   .u-inro {
     text-align: center;
     font-size: 1.6rem;
     line-height: 1.7;
     margin-bottom: 50px;
     color: gray;
+
     &.f-c-white {
       color: #fff;
     }
+
     &.f-c-gray {
       color: #555;
     }
   }
+
   .oneimg {
     margin-top: 60px;
     text-align: center;
+
     img {
       vertical-align: bottom;
     }
   }
+
   .u-iconui {
     text-align: center;
     max-width: 1200px;
@@ -916,22 +1044,27 @@ body,button,input,keygen,legend,select,textarea {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+
     li {
       width: 230px;
       display: inline-block;
       padding-bottom: 25px;
+
       img {
         width: 90px;
         height: 90px;
         margin-bottom: 10px;
       }
+
       i {
         font-size: 60px;
       }
+
       span {
         display: block;
         font-size: 16px;
       }
+
       p {
         color: gray;
         font-size: 1.2rem;
@@ -939,85 +1072,102 @@ body,button,input,keygen,legend,select,textarea {
         padding: 10px 30px 0;
       }
     }
+
     .u-display {
       width: 280px;
       float: left;
       margin-right: 15px;
       border: 1px solid #dbe1e8;
       padding: 20px;
+
       img {
         width: 80px;
         height: 80px;
         float: left;
         margin-top: 4px;
       }
+
       .lefttext {
         float: right;
         width: 180px;
+
         p {
           font-size: 20px;
           color: #333;
           padding: 0;
         }
+
         span {
           font-size: 12px;
           color: #828282;
         }
       }
+
       &:last-child {
         margin-right: 0;
       }
     }
+
     &.one {
       li {
         width: 160px;
       }
     }
   }
+
   .u-tese {
     text-align: center;
     padding: 40px 150px 40px 370px;
+
     li {
       float: left;
       width: 50%;
       text-align: left;
       position: relative;
       padding-bottom: 30px;
+
       i {
         color: #00a3c1;
         position: absolute;
         left: -30px;
       }
+
       h3 {
         padding-bottom: 7px;
         font-size: 1.6rem;
         font-weight: 400;
       }
+
       p {
         color: gray;
         font-size: 1.4rem;
       }
     }
   }
+
   .u-igateway {
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 30px;
+
     .img {
       width: 380px;
       margin-right: 100px;
     }
+
     .text {
       width: 300px;
       padding-top: 60px;
       padding-left: 50px;
       font-size: 20px;
     }
+
     p {
       color: gray;
       font-size: 1.6rem;
       padding-top: 10px;
       line-height: 2.6;
+
       img {
         width: 25px;
         margin-right: 5px;
@@ -1025,17 +1175,21 @@ body,button,input,keygen,legend,select,textarea {
       }
     }
   }
+
   .u-appshows {
     max-width: 1000px;
     overflow: hidden;
     margin: 50px auto;
+
     .owl-item {
       float: left;
+
       a {
         display: inline-block;
         border: solid #ddd 1px;
         width: 125px;
         height: 60px;
+
         img {
           width: 125px;
           height: 60px;
@@ -1043,15 +1197,19 @@ body,button,input,keygen,legend,select,textarea {
         }
       }
     }
+
     .owl-stage-outer {
       height: 80px;
     }
+
     .owl-dots {
       text-align: center;
       margin-top: 10px;
+
       .owl-dot {
         display: inline-block;
         margin: 5px;
+
         span {
           background: #ddd;
           width: 15px;
@@ -1059,6 +1217,7 @@ body,button,input,keygen,legend,select,textarea {
           display: inline-block;
           border-radius: 50%;
         }
+
         &.active {
           span {
             background: gray;
@@ -1067,28 +1226,36 @@ body,button,input,keygen,legend,select,textarea {
       }
     }
   }
+
   .u-casebox {
     max-width: 1000px;
     margin: 0 auto;
+
     .owl-item {
       float: left;
     }
+
     .thisroll {
       position: relative;
+
       .owl-stage-outer {
         overflow: hidden;
+
         .item {
           position: relative;
           border: solid #ddd 1px;
           width: 220px;
           height: 320px;
           text-align: center;
+
           img {
             width: 80px;
             height: 80px;
           }
+
           .box {
             margin-top: 100px;
+
             span {
               display: block;
               margin-top: 10px;
@@ -1096,6 +1263,7 @@ body,button,input,keygen,legend,select,textarea {
               font-size: 1.4rem;
             }
           }
+
           .u-lay {
             position: absolute;
             display: none;
@@ -1103,26 +1271,30 @@ body,button,input,keygen,legend,select,textarea {
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: -webkit-linear-gradient(top left,#34a1d6,#34c1d6 90%);
+            background-image: -webkit-linear-gradient(top left, #34a1d6, #34c1d6 90%);
             box-sizing: border-box;
             padding: 60px 20px 0;
             color: #fff;
+
             h4 {
               margin-top: 5px;
               font-size: 1.5rem;
             }
+
             .line {
               display: inline-block;
               height: 3px;
               width: 50px;
               background: #fff;
             }
+
             p {
               margin-top: 15px;
               line-height: 24px;
               font-size: 1.4rem;
             }
           }
+
           &:hover {
             .u-lay {
               display: block;
@@ -1131,11 +1303,13 @@ body,button,input,keygen,legend,select,textarea {
         }
       }
     }
+
     .owl-nav {
       position: absolute;
       top: 100px;
       left: 0;
       right: 0;
+
       div {
         display: inline-block;
         width: 39px;
@@ -1145,56 +1319,69 @@ body,button,input,keygen,legend,select,textarea {
         position: absolute;
         cursor: pointer;
         opacity: .6;
+
         &:hover {
           opacity: 1;
         }
       }
+
       .owl-prev {
         left: -50px;
         background-image: url(../../static/images/info/l.png);
       }
+
       .owl-next {
         right: -20px;
         background-image: url(../../static/images/info/r.png);
       }
     }
   }
+
   .u-teambox {
     text-align: center;
+
     ul {
       text-align: center;
       padding: 0 0 0 100px;
+
       li {
         float: left;
         width: 100px;
         height: 150px;
         margin: 20px 30px;
+
         img {
           border-radius: 50%;
           width: 100px;
           height: 100px;
         }
+
         p {
           color: gray;
         }
       }
     }
   }
+
   .u-values {
     ul {
       text-align: center;
+
       li {
         width: 300px;
         display: inline-block;
         margin: 0 25px;
+
         img {
           margin-bottom: 25px;
         }
+
         span {
           font-size: 1.6rem;
           display: block;
           margin: 7px 0;
         }
+
         p {
           font-size: 1.4rem;
           line-height: 1.7;
@@ -1203,25 +1390,32 @@ body,button,input,keygen,legend,select,textarea {
       }
     }
   }
+
   &.nbottom {
     padding-bottom: 0;
   }
+
   &.bg_img {
     background-size: cover;
     background-position: center;
   }
+
   &.f-border-b {
     border-bottom: solid #ddd 1px;
   }
+
   &.f-border-t {
     border-bottom: solid #ddd 1px;
   }
 }
+
 .u-infobox-price {
   padding-bottom: 100px;
+
   .u-price {
     margin-top: -170px;
     text-align: center;
+
     li {
       display: inline-block;
       vertical-align: middle;
@@ -1232,10 +1426,12 @@ body,button,input,keygen,legend,select,textarea {
       border: solid #ddd 1px;
       border-radius: 10px;
       overflow: hidden;
+
       .tit {
         padding: 25px 20px 10px;
         font-size: 1.6rem;
       }
+
       .tex {
         height: 170px;
         line-height: 2;
@@ -1244,28 +1440,34 @@ body,button,input,keygen,legend,select,textarea {
         color: gray;
         margin: 0 20px;
         border-top: solid #ddd 1px;
+
         span {
           display: block;
           text-align: center;
         }
       }
+
       .pri {
         padding: 20px 0;
+
         span {
           display: block;
           font-size: 4.3rem;
           padding-bottom: 5px;
+
           em {
             margin-right: 5px;
           }
         }
       }
+
       .btn {
         border: solid #18c1d6 1px;
         display: inline-block;
         padding: 5px 15px;
         border-radius: 3px;
         color: #18c1d6;
+
         &:hover {
           color: #fff;
           background: #18c1d6;
@@ -1274,26 +1476,31 @@ body,button,input,keygen,legend,select,textarea {
     }
   }
 }
+
 .u-infofoot {
   padding: 100px;
   text-align: center;
-  background-image: -webkit-linear-gradient(top left,#34a1d6,#34c1d6 90%);
+  background-image: -webkit-linear-gradient(top left, #34a1d6, #34c1d6 90%);
+
   .codebox {
     width: 330px;
     overflow: hidden;
     text-align: center;
     margin: 10px auto;
+
     .code {
       overflow: hidden;
       margin-top: 20px;
     }
   }
+
   h3 {
     margin: 20px;
     font-size: 2.8rem;
     font-weight: 400;
     color: #fff;
   }
+
   a {
     border: solid #fff 1px;
     color: #fff;
@@ -1301,16 +1508,19 @@ body,button,input,keygen,legend,select,textarea {
     padding: 8px 15px;
     display: inline-block;
     border-radius: 5px;
+
     &:hover {
-      background: rgba(255,255,255,.2);
+      background: rgba(255, 255, 255, .2);
     }
   }
+
   p {
     font-size: 1.8rem;
     margin: 20px;
     color: #fff;
   }
 }
+
 .page-infopage {
   min-height: 800px;
   padding-bottom: 50px;
@@ -1318,22 +1528,27 @@ body,button,input,keygen,legend,select,textarea {
   border: 1px solid #ddd;
   border-radius: 6px;
   background: #fff;
+
   .u-title {
     border-bottom: solid #ddd 1px;
     padding: 15px 30px;
     text-align: left;
     font-size: 2rem;
   }
+
   .u-tbg {
     padding: 0 30px 30px;
     margin: 20px;
     background: url(../../static/images/info/about_0.png) bottom no-repeat;
+
     img {
       width: 100%;
     }
   }
+
   .u-donate {
     padding: 10px 50px 100px;
+
     .p {
       width: 600px;
       float: left;
@@ -1341,37 +1556,44 @@ body,button,input,keygen,legend,select,textarea {
       font-size: 1.4rem;
       color: #555;
       line-height: 29px;
+
       em {
         font-size: 22px;
         font-style: normal;
         padding-right: 3px;
       }
     }
+
     .payb {
       width: 400px;
       float: right;
       text-align: center;
+
       img {
         width: 180px;
         height: 180px;
         border-radius: 5px;
       }
+
       dd {
         width: 160px;
         margin-left: 20px;
         text-align: center;
         display: inline-block;
         float: right;
+
         p {
           width: 160px;
           padding-bottom: 20px;
           text-align: center;
           background: url(../../static/images/info/about_1.png) bottom center no-repeat;
+
           img {
             width: 120px;
             height: 120px;
           }
         }
+
         span {
           display: inline-block;
           margin-top: 5px;
@@ -1381,21 +1603,25 @@ body,button,input,keygen,legend,select,textarea {
       }
     }
   }
+
   .u-enhd {
     font-size: 2rem;
     padding: 10px 40px;
     color: #333;
   }
+
   .u-names {
     ul {
       font-size: 1.4rem;
       padding: 20px 45px;
+
       li {
         text-align: center;
         width: 110px;
         float: left;
         margin: 10px;
         padding-bottom: 20px;
+
         p {
           img {
             width: 60px;
@@ -1403,15 +1629,18 @@ body,button,input,keygen,legend,select,textarea {
             height: 60px;
           }
         }
+
         strong {
           display: block;
           font-weight: 400;
           padding: 8px 0 5px;
         }
+
         span {
           display: block;
           color: gray;
         }
+
         a {
           &.more {
             display: block;
@@ -1421,16 +1650,19 @@ body,button,input,keygen,legend,select,textarea {
       }
     }
   }
+
   .u-zcpro {
     dt {
       border-bottom: solid #ddd 1px;
       padding: 5px 20px;
       height: 38px;
       line-height: 38px;
+
       span {
         float: left;
         font-size: 1.5rem;
       }
+
       i {
         float: right;
         color: gray;
@@ -1438,30 +1670,36 @@ body,button,input,keygen,legend,select,textarea {
         font-size: 1.2rem;
       }
     }
+
     .u-box {
       padding-left: 20px;
+
       dl {
         border: solid #ddd 1px;
         border-radius: 5px;
         width: 20%;
         float: left;
         margin: 2%;
+
         dd {
           p {
             border-bottom: 1px dashed #ddd;
             font-size: 1.4rem;
             color: gray;
             padding: 9px 20px;
+
             i {
               float: right;
               color: #87bf54;
             }
           }
+
           span {
             text-align: center;
             display: block;
             padding: 10px 0;
           }
+
           .btn {
             background-color: #18c1d6;
             padding: 3px 10px;
@@ -1469,6 +1707,7 @@ body,button,input,keygen,legend,select,textarea {
             color: #fff;
             border-radius: 3px;
             border-bottom: 2px solid #15a6b8;
+
             &:hover {
               background-color: #16b3c6;
             }
@@ -1476,6 +1715,7 @@ body,button,input,keygen,legend,select,textarea {
         }
       }
     }
+
     .foo {
       padding: 15px 60px 15px 40px;
       color: gray;
@@ -1483,28 +1723,34 @@ body,button,input,keygen,legend,select,textarea {
       line-height: 1.7;
     }
   }
+
   .u-donatelist {
     .ulist {
       padding: 50px 0 0 20px;
+
       li {
         margin: 8px;
         text-align: center;
         width: 110px;
         height: 130px;
         float: left;
+
         img {
           width: 65px;
           height: 65px;
           border-radius: 50%;
         }
+
         strong {
           display: block;
           padding: 5px 0;
         }
       }
     }
+
     .utex {
       margin: 20px 50px;
+
       a {
         display: inline-block;
         padding: 5px 0;
@@ -1514,14 +1760,17 @@ body,button,input,keygen,legend,select,textarea {
         margin-right: 10px;
       }
     }
+
     .u-open {
       padding: 20px 50px;
+
       a {
         background-color: #18c1d6;
         padding: 5px 15px;
         font-size: 1.4rem;
         color: #fff;
         border-radius: 3px;
+
         &:hover {
           background-color: #16b3c6;
         }
@@ -1529,12 +1778,14 @@ body,button,input,keygen,legend,select,textarea {
     }
   }
 }
+
 .page-together {
   .u-title {
     background: #ecf1f5;
     font-size: 2rem;
     padding: 20px 0;
   }
+
   .u-together {
     h3 {
       border-bottom: solid #ddd 1px;
@@ -1542,18 +1793,22 @@ body,button,input,keygen,legend,select,textarea {
       padding: 10px 0;
       color: #555;
       margin-bottom: 10px;
+
       .f-ff0 {
         font-size: 1.2rem;
       }
     }
+
     .u-aplist {
       padding: 50px 0 50px 0;
+
       a {
         width: 110px;
         padding: 20px 40px 20px 0;
         float: left;
         text-align: center;
       }
+
       span {
         text-align: center;
         display: block;
@@ -1561,39 +1816,48 @@ body,button,input,keygen,legend,select,textarea {
         font-size: 1.4rem;
         margin-top: 5px;
       }
+
       img {
         width: 110px;
         height: 110px;
         border-radius: 20px;
       }
     }
+
     .u-links {
       padding: 10px 0;
       color: gray;
+
       a {
         color: #18c1d6;
         font-size: 1.4rem;
+
         &:hover {
           text-decoration: underline;
         }
       }
     }
+
     .u-tbg {
       color: #fff;
       width: 1200px;
       text-align: center;
       height: 300px;
+
       h2 {
         padding: 90px 0 10px;
         font-size: 34px;
       }
+
       p {
         font-size: 18px;
       }
     }
+
     .u-tobd {
       padding: 50px 0 50px 0;
       background: #fff;
+
       a {
         padding: 2px;
         float: left;
@@ -1602,46 +1866,57 @@ body,button,input,keygen,legend,select,textarea {
         border: 1px solid #eee;
         display: inline-block;
         margin: 10px 24px 12px 0;
+
         img {
           width: 120px;
           height: 60px;
         }
+
         &:hover {
           border-color: #ddd;
         }
       }
     }
+
     .u-size {
       padding: 50px 0;
+
       em {
         display: block;
         height: 120px;
+
         img {
           width: 120px;
         }
       }
+
       dl {
         padding-top: 30px;
+
         dd {
           width: 120px;
           float: left;
           margin: 0 60px 50px 0;
           text-align: center;
+
           &.color1 {
             em {
               background: #18c1d6;
             }
           }
+
           &.color2 {
             em {
               background: #555;
             }
           }
+
           &.color3 {
             em {
               background: #333;
             }
           }
+
           &.color4 {
             em {
               background: #fff;
@@ -1650,6 +1925,7 @@ body,button,input,keygen,legend,select,textarea {
           }
         }
       }
+
       .colorbox {
         em {
           mg {
@@ -1657,11 +1933,13 @@ body,button,input,keygen,legend,select,textarea {
           }
         }
       }
+
       span {
         color: gray;
         display: inline-block;
         padding: 6px 0;
       }
+
       p {
         a {
           display: inline-block;
@@ -1669,24 +1947,31 @@ body,button,input,keygen,legend,select,textarea {
       }
     }
   }
+
   .u-contact {
     margin-top: 50px;
+
     .tex {
       font-size: 1.4rem;
+
       p {
         line-height: 23px;
         padding: 0;
         color: #555;
       }
+
       h3 {
         padding: 20px 0 5px;
       }
     }
+
     .cerwm {
       padding: 50px 0 5px;
+
       .hd {
         border-bottom: 1px solid #ddd;
         margin-bottom: 15px;
+
         a {
           display: inline-block;
           padding: 5px 2px;
@@ -1696,15 +1981,18 @@ body,button,input,keygen,legend,select,textarea {
         }
       }
     }
+
     .ermbx {
       li {
         float: left;
         width: 120px;
         margin-right: 50px;
         font-size: 12px;
+
         img {
           width: 100%;
         }
+
         span {
           display: block;
           text-align: center;
@@ -1714,21 +2002,26 @@ body,button,input,keygen,legend,select,textarea {
     }
   }
 }
-.page-together .u-contact .cerwm .hd a.active,.page-together .u-contact .cerwm .hd a:hover {
+
+.page-together .u-contact .cerwm .hd a.active, .page-together .u-contact .cerwm .hd a:hover {
   border-bottom: 2px solid #18c1d6;
   color: #18c1d6;
 }
+
 .layer-alertdon {
   padding: 30px;
+
   dl {
     dd {
       width: 50%;
       float: left;
       text-align: center;
       padding: 15px 0;
+
       img {
         width: 140px;
       }
+
       span {
         font-size: 15px;
         display: inline-block;
@@ -1736,38 +2029,47 @@ body,button,input,keygen,legend,select,textarea {
       }
     }
   }
+
   p {
     font-size: 1.4rem;
     line-height: 1.7;
     color: gray;
   }
 }
+
 .u-changlogbanner {
   height: 299px;
   background-repeat: no-repeat;
   background-position: center;
+
   .title {
     padding-top: 70px;
     text-align: center;
     color: #fff;
+
     &.color-gray {
       color: #555;
     }
+
     h1 {
       font-size: 4.8rem;
       margin: 15px 0;
     }
+
     p {
       font-size: 2rem;
       line-height: 1.7;
     }
   }
 }
+
 .u-changlog {
   padding: 15px 0;
   margin-top: 50px;
+
   .u-hd {
     text-align: center;
+
     span {
       font-size: 1.5rem;
       display: inline-block;
@@ -1776,10 +2078,12 @@ body,button,input,keygen,legend,select,textarea {
       color: #18c1d6;
     }
   }
+
   .u-box {
     width: 630px;
     padding: 20px 0;
     margin: 0 auto;
+
     .u-log {
       width: 45%;
       box-shadow: 0 3px 3px #ddd;
@@ -1789,18 +2093,22 @@ body,button,input,keygen,legend,select,textarea {
       border: solid #ddd 1px;
       border-radius: 5px;
       position: relative;
+
       h4 {
         color: #18c1d6;
       }
+
       p {
         margin-top: 10px;
         color: gray;
         line-height: 1.6;
       }
+
       &:nth-child(odd) {
         float: left;
         margin-right: 50%;
       }
+
       &:nth-child(odd):after {
         content: '';
         width: 14px;
@@ -1811,6 +2119,7 @@ body,button,input,keygen,legend,select,textarea {
         right: -14px;
         top: 10px;
       }
+
       &:nth-child(odd):before {
         content: ' ';
         width: 10px;
@@ -1824,9 +2133,11 @@ body,button,input,keygen,legend,select,textarea {
         border-radius: 50%;
         top: 10px;
       }
+
       &:nth-child(even) {
         float: right;
       }
+
       &:nth-child(even):after {
         content: '';
         width: 14px;
@@ -1837,6 +2148,7 @@ body,button,input,keygen,legend,select,textarea {
         left: -14px;
         top: 15px;
       }
+
       &:nth-child(even):before {
         content: ' ';
         width: 10px;
@@ -1852,6 +2164,7 @@ body,button,input,keygen,legend,select,textarea {
       }
     }
   }
+
   .line {
     position: absolute;
     bottom: 0;
@@ -1860,27 +2173,32 @@ body,button,input,keygen,legend,select,textarea {
     left: 50%;
   }
 }
+
 .jump_link {
   position: absolute;
   top: 86px;
   left: 50%;
   width: 60%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   border-radius: 5px;
   background: #fff;
   visibility: hidden;
   line-height: 36px;
   box-shadow: 0 2px 10px 5px #daecf0;
+
   & > li {
     margin: 5px 0;
     padding: 5px;
     cursor: pointer;
+
     &:hover {
       background: #f5f5f5;
+
       & > a {
         color: #18c1d6;
       }
     }
+
     &:nth-child(2) {
       display: block;
       width: 90%;
@@ -1889,32 +2207,36 @@ body,button,input,keygen,legend,select,textarea {
       margin: 5px auto;
       padding: 0;
     }
+
     & > img {
       width: 24px;
       vertical-align: text-bottom;
       height: 24px;
     }
+
     & > a {
       color: gray;
     }
   }
 }
+
 .navs {
   .show_name {
-    .dis_show {
+    .popover {
       .hover_color {
         a {
           li {
             &:hover {
-              background: #f5f5f5!important;
+              background: #f5f5f5 !important;
             }
           }
         }
       }
     }
   }
+
   .show_names {
-    .dis_show {
+    .popover {
       .isShow {
         a {
           li {
@@ -1927,9 +2249,10 @@ body,button,input,keygen,legend,select,textarea {
     }
   }
 }
+
 .side-navs {
   .nav {
-    .show_console {
+    .popover {
       ul {
         a {
           li {
@@ -1942,6 +2265,7 @@ body,button,input,keygen,legend,select,textarea {
     }
   }
 }
+
 .bg_white {
   &:hover {
     .jump_link {
@@ -1949,6 +2273,7 @@ body,button,input,keygen,legend,select,textarea {
       opacity: 1;
       transition: all .5s ease-in;
     }
+
     img {
       visibility: visible;
     }

@@ -1,7 +1,7 @@
 ﻿<template>
   <div>
     <div class="u-banner-bg">
-      <div class="x-wp">
+      <div class="content">
         <div class="title">
           <h1>EasyAPI文档管理</h1>
           <p class="text-c">EasyAPI文档管理致力于API文档从过去的Word服务提升到在线管理，一切只为提升开发效率，<br>降低开发成本，打造一支高效的开发团队。
@@ -11,7 +11,7 @@
     </div>
 
     <div class="u-infobox ">
-      <ul class="u-iconui x-wp">
+      <ul class="u-iconui content">
         <li>
           <img src="/images/info/test-icon-1.png">
           <span>简单易用</span>

@@ -2,15 +2,15 @@
   <div>
     <div class="page-together">
       <h2 class="u-title">
-        <div class="x-wp">关于我们</div>
+        <div class="content">关于我们</div>
       </h2>
-      <div class="x-wp">
+      <div class="content">
         <img src="/images/info/about/team.png"/>
       </div>
     </div>
 
     <div class="u-infobox">
-      <div class="x-wp">
+      <div class="content">
         <div class="u-title">团队介绍</div>
         <div class="u-inro">
           上海帮趣网络技术有限公司创建于2014年，致力于成为中国领先的移动互联网工具提供商，公司核心团队，数年行业资深经验，开发过数十个移动APP，与行业合作伙伴保持业务沟通，加大移动互联网工具建设。公司总部位于上海博济智汇园、在无锡滨湖区创意产业园（蠡湖边）设立研发基地，是一家拥有自主知识产权的移动互联网企业。团队成员20人+。

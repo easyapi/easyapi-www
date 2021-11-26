@@ -1,7 +1,7 @@
 ﻿<template>
   <div>
     <div class="u-banner-bg">
-      <div class="x-wp">
+      <div class="content">
         <div class="title">
           <h1>API自动化测试</h1>
           <p>API测试是对移动端开发人员负责，我们支持粗放式测试，支持精细化自定义测试<br>
@@ -27,7 +27,7 @@
 
     <div class="u-infobox">
       <div class="u-title">产品特色</div>
-      <ul class="u-tese x-wp f-cb">
+      <ul class="u-tese content f-cb">
         <li>
           <i class="iconfont icon-xingxing"></i>
           <h3>对接文档管理</h3>

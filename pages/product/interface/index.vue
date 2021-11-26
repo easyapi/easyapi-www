@@ -1,7 +1,7 @@
 ﻿<template>
   <div>
     <div class="u-banner-bg">
-      <div class="x-wp">
+      <div class="content">
         <div class="sysinfo f-tac">
           <h1>API接口服务</h1>
           <p>提供专业的API数据服务，打造一站式的接口管理</p>
@@ -18,7 +18,7 @@
       <div class="u-inro">通过整合不同接口服务，提供标准化接口文档 <br>
         未来同一API接口可绑定多个供应商，随时切换，真正实现API接口的100%可用
       </div>
-      <ul class="u-iconui one x-wp">
+      <ul class="u-iconui one content">
         <li>
           <img src="/images/info/api_icon1.png">
           <span>短信验证码</span>

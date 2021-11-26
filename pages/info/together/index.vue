@@ -2,9 +2,9 @@
 
   <div class="page-together">
     <h2 class="u-title">
-      <div class="x-wp">合作伙伴</div>
+      <div class="content">合作伙伴</div>
     </h2>
-    <div class="x-wp">
+    <div class="content">
       <div class="u-together">
         <div class="u-aplist f-cb">
           <h3>合作伙伴</h3>

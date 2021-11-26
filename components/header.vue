@@ -1,19 +1,19 @@
 <template>
-  <div class="header header-index" style="background: none;box-shadow:none">
-    <div class="x-wp">
+  <div class="header header-index">
+    <div class="content">
       <nuxt-link to="/">
         <img class="logo f-fl" src="https://qiniu.easyapi.com/market/logo.svg">
       </nuxt-link>
       <div class="navs f-fl">
-      <span class="f-rel show_name">
+       <span class="f-rel navs-item">
         产品
-        <div class="dis_show">
-          <img class="down_img" src="/images/info/narrow.png">
-          <ul class="hover_color">
+        <div class="popover">
+          <img class="popover-img" src="/images/info/narrow.png">
+          <ul>
             <a href="/product/doc" class="a_link">
               <li>
                 <img class="icon_img" src="/images/info/down_icon1.png">
-                <div class="dis_showtxt">
+                <div class="popover-content">
                   <p>
                     文档管理
                   </p>
@@ -26,7 +26,7 @@
             <a href="/product/gateway" class="a_link">
               <li>
                 <img class="icon_img" src="/images/info/down_icon2.png">
-                <div class="dis_showtxt">
+                <div class="popover-content">
                   <p>
                     网关系统
                   </p>
@@ -39,7 +39,7 @@
             <a href="/product/test" class="a_link">
               <li>
                 <img class="icon_img" src="/images/info/down_icon3.png">
-                <div class="dis_showtxt">
+                <div class="popover-content">
                   <p>
                     接口测试
                   </p>
@@ -52,7 +52,7 @@
             <a href="/product/interface" class="a_link">
               <li>
                 <img class="icon_img" src="/images/info/down_icon4.png">
-                <div class="dis_showtxt">
+                <div class="popover-content">
                   <p>
                     接口服务
                   </p>
@@ -65,7 +65,7 @@
             <a href="/product/monitor" class="a_link">
               <li>
                 <img class="icon_img" src="/images/info/down_icon5.png">
-                <div class="dis_showtxt">
+                <div class="popover-content">
                   <p>
                     监控系统
                   </p>
@@ -78,7 +78,7 @@
             <a href="/product/scene" class="a_link">
               <li>
                 <img class="icon_img" src="/images/info/down_icon6.png">
-                <div class="dis_showtxt">
+                <div class="popover-content">
                   <p>
                     场景化服务
                   </p>
@@ -94,15 +94,15 @@
         <a href="/info/price">
           价格
         </a>
-        <span class="f-rel show_names">
+        <span class="f-rel navs-item">
         私有化
-        <div class="dis_show">
-          <img class="down_img" src="/images/info/narrow.png">
-          <ul class="isShow">
+        <div class="popover">
+          <img class="popover-img" src="/images/info/narrow.png">
+          <ul>
             <a href="/solution/portal" class="a_link">
               <li>
                 <img class="icon_img" src="/images/info/header-icon2.png">
-                <div class="dis_showtxt">
+                <div class="popover-content">
                   <p>
                     API管理门户
                   </p>
@@ -115,7 +115,7 @@
             <a href="/solution/market" class="a_link">
               <li>
                 <img class="icon_img" src="/images/info/header-icon3.png">
-                <div class="dis_showtxt">
+                <div class="popover-content">
                   <p>
                     API服务市场
                   </p>
@@ -128,7 +128,7 @@
             <a href="/solution/open" class="a_link">
               <li>
                 <img class="icon_img" src="/images/info/header-icon1.png">
-                <div class="dis_showtxt">
+                <div class="popover-content">
                   <p>
                     API开放平台
                   </p>
@@ -146,22 +146,22 @@
         </a>
       </div>
       <div class="side-navs">
-        <a class="navlogo" href="https://account.easyapi.com/signup" id="register">
+        <a class="register" href="https://account.easyapi.com/signup" id="register">
           注册
         </a>
         <!-- <a class="navlogo" href="https://account.easyapi.com/login" id="login">登录</a> -->
         <!-- id="console" -->
-        <span class="f-rel nav" style="height: 50px">
-        <p class="console " style="padding: 0 10px">
+        <span class="f-rel nav">
+        <p class="console">
           控制台
         </p>
-        <div class="show_console">
-          <img class="console_narrow" src="/images/info/narrow.png" />
+        <div class="popover">
+          <img class="popover-img" src="/images/info/narrow.png"/>
           <ul>
             <a href="https://doc.easyapi.com">
               <li>
                 <img class="console_icon" src="/images/info/down_icon7.png">
-                <div class="dis_consoletxt">
+                <div class="popover-content">
                   <p>
                     API管理
                   </p>
@@ -171,7 +171,7 @@
             <a href="https://monitor.easyapi.com">
               <li>
                 <img class="console_icon" src="/images/info/down_icon8.png">
-                <div class="dis_consoletxt">
+                <div class="popover-content">
                   <p>
                     API监控
                   </p>
@@ -181,7 +181,7 @@
             <a href="https://service.easyapi.com">
               <li>
                 <img class="console_icon" src="/images/info/down_icon9.png">
-                <div class="dis_consoletxt">
+                <div class="popover-content">
                   <p>
                     API服务
                   </p>
@@ -191,7 +191,7 @@
             <a href="https://gateway.easyapi.com">
               <li>
                 <img class="console_icon" src="/images/info/down_icon10.png">
-                <div class="dis_consoletxt">
+                <div class="popover-content">
                   <p>
                     API网关
                   </p>
@@ -201,154 +201,59 @@
           </ul>
         </div>
       </span>
-        <div class="navs f-fr" id="avatar">
-          <div class="upbx">
-            <div class="avatar dis_hide" style="padding-right: 40px;box-sizing: border-box;">
-              <a class="f-fr " href="/project/" style="margin-top: -20px;">
-                <img src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg"
-                />
-              </a>
-              <ul class="avatarnav_down">
-                <li>
-                  <a href="https://account.easyapi.com/notification/" style="color: #666">
-                    我的通知
-                  </a>
-                </li>
-                <li>
-                  <a href="https://account.easyapi.com/setting/data" style="color: #666">
-                    个人设置
-                  </a>
-                </li>
-                <li>
-                  <a href="https://account.easyapi.com/logout" style="color: #666">
-                    退出
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <!--<div class="navs f-fr" id="avatar">-->
+          <!--<div class="upbx">-->
+            <!--<div class="avatar dis_hide" style="padding-right: 40px;box-sizing: border-box;">-->
+              <!--<a class="f-fr " href="/project/" style="margin-top: -20px;">-->
+                <!--<img src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg"-->
+                <!--/>-->
+              <!--</a>-->
+              <!--<ul class="avatarnav_down">-->
+                <!--<li>-->
+                  <!--<a href="https://account.easyapi.com/notification/" style="color: #666">-->
+                    <!--我的通知-->
+                  <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                  <!--<a href="https://account.easyapi.com/setting/data" style="color: #666">-->
+                    <!--个人设置-->
+                  <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                  <!--<a href="https://account.easyapi.com/logout" style="color: #666">-->
+                    <!--退出-->
+                  <!--</a>-->
+                <!--</li>-->
+              <!--</ul>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'Header'
-}
+  export default {
+    name: 'Header'
+  }
 </script>
 
 <style scoped lang="scss">
 
+  .header .navs span:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: url(/images/angle.png) center no-repeat;
+    background-size: 20px auto;
+  }
 
-.header .navs span {
-  position: relative;
-
-}
-
-.header .navs span:after {
-  content: '';
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  background: url(/images/angle.png) center no-repeat;
-  background-size: 20px auto;
-}
-
-.header .side-navs .nav {
-  padding: 0;
-}
-
-.header .side-navs .console {
-  border: 1px solid #fff;
-}
-
-.side-navs span:hover .console {
-  border: 1px solid #fff;
-}
-
-.header .navs span:hover:after {
-  background-image: url(/images/angle-1.png);
-}
-
-.header .navs .dis_show .isShow li .icon_img {
-  width: 30px;
-  height: 30px;
-  float: left;
-}
-
-.header .navs .dis_show .isShow li .dis_showtxt {
-  float: right;
-  width: 85%;
-}
-
-
-.navs .show_name .dis_show .hover_color a li:hover p {
-  color: #0AB3CB;
-}
-
-.navs .show_name .dis_show .hover_color a li:hover span {
-  color: #999
-}
-
-.navs .show_names .dis_show .isShow a li:hover p {
-  /* color: #de9000; */
-  color: #0AB3CB;
-}
-
-.navs .show_names .dis_show .isShow a li:hover span {
-  color: #999
-}
-
-.side-navs .nav .show_console ul a li:hover .dis_consoletxt p {
-  color: #0AB3CB;
-  font-weight: bold;
-}
-
-
-.avatar {
-  overflow: hidden;
-  height: 500px;
-  width: 100px;
-  text-align: center;
-}
-
-.avatar:hover .avatarnav_down {
-  display: block;
-}
-
-.avatarnav_down {
-  display: none;
-  width: 100px;
-  background-color: #fff;
-  border-radius: 4px;
-  position: absolute;
-  border: 1px solid #ddd;
-  top: 50px;
-  right: 50%;
-  margin-right: -80px;
-}
-
-.avatarnav_down li {
-  text-align: center;
-  line-height: 40px;
-  border-bottom: 1px solid #ddd;
-}
-
-.avatarnav_down li:last-child {
-  border-bottom: 0;
-}
-
-.avatarnav_down li a {
-  font-size: 14px;
-  text-align: center;
-}
-
-.avatarnav_down li a:hover {
-  color: #18c1d6;
-}
+  .header .navs span:hover:after {
+    background-image: url(/images/angle-1.png);
+  }
 </style>

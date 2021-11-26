@@ -2,10 +2,10 @@
   <div>
     <div class="page-together">
       <h2 class="u-title">
-        <div class="x-wp">联系我们</div>
+        <div class="content">联系我们</div>
       </h2>
       <div class="u-contact">
-        <div class="x-wp">
+        <div class="content">
           <div class="tex ">
             <div id="allmap" style=""></div>
             <h3>无锡到群软件科技有限公司</h3>

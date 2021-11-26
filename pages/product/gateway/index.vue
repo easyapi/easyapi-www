@@ -1,7 +1,7 @@
 ﻿<template>
   <div>
     <div class="u-banner-bg">
-      <div class="x-wp">
+      <div class="content">
         <div class="title">
           <h1>EasyAPI网关系统</h1>
           <p>企业API安全基础构架正确之选</p>
@@ -14,7 +14,7 @@
       <div class="u-inro">API网关是数据及系统的集成的基础设施，支持将云端应用及数据通过简单、快速地配置转化成 API<br>
         同时提供安全独立的数据门户以及统一管控的开发者中心，帮助用户实现数据开放及共享
       </div>
-      <ul class="u-iconui x-wp">
+      <ul class="u-iconui content">
         <li>
           <img src="/images/info/gateway_icon1.png">
           <span>安全保障</span>
@@ -60,7 +60,7 @@
       <div class="u-inro">
         让API跟安全，更灵活
       </div>
-      <ul class="u-iconui x-wp">
+      <ul class="u-iconui content">
         <li>
           <img src="/images/info/gateway_icon9.png">
           <span>降低成本</span>

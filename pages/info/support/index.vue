@@ -1,7 +1,7 @@
 ﻿<template>
 
   <div>
-    <div class="x-wp">
+    <div class="content">
       <div class="page-infopage">
         <h2 class="u-title">支持名单</h2>
 
