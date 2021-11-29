@@ -1,6 +1,6 @@
 ﻿<template>
-  <div>
-    <div class="u-banner-bg">
+  <div class="main">
+    <div class="price-bg">
       <div class="content">
         <div class="price-title">
           <h1>支持我们创造更好的 API 产品</h1>
@@ -9,15 +9,15 @@
         </div>
       </div>
     </div>
-    <div class="u-infobox-price f-border-b">
-      <ul class="u-price">
+    <div class="price-card f-border-b">
+      <ul class="price-card-title">
         <li>
-          <div class="tit">文档管理</div>
-          <div class="pri">
+          <div class="title">文档管理</div>
+          <div class="price">
             <span class="f-c-warning"><em class="f-fs1">¥</em>29<em class="f-fs1">/团队/月</em></span>
 
           </div>
-          <div class="tex">
+          <div class="description">
             <span>不限项目数量</span>
             <span>不限接口数量</span>
             <span>团队人数限制20人</span>
@@ -29,12 +29,12 @@
           </div>
         </li>
         <li class="">
-          <div class="tit">接口监控</div>
-          <div class="pri">
+          <div class="title">接口监控</div>
+          <div class="price">
             <span class="f-c-warning"><em class="f-fs1">¥</em>99<em class="f-fs1">项目/月</em></span>
 
           </div>
-          <div class="tex">
+          <div class="description">
             <span>接口监控全部功能</span>
             <span>监控记录保留15天</span>
             <span>监控记录100万条额度</span>
@@ -48,12 +48,11 @@
           </div>
         </li>
         <li>
-          <div class="tit">网关服务</div>
-          <div class="pri">
+          <div class="title">网关服务</div>
+          <div class="price">
             <span class="f-c-warning"><em class="f-fs1">¥</em>1999<em class="f-fs1">项目/月</em></span>
-
           </div>
-          <div class="tex">
+          <div class="description">
             <span>网关服务全部功能</span>
             <span>每日请求量100万次</span>
             <span>团队人员全部可见</span>
@@ -68,12 +67,12 @@
       </ul>
     </div>
 
-    <div class="pd-100  f-border-b" style="background: #f5f5f5;">
+    <div class="pd-100  f-border-b bg-f5">
       <div class="title">他们都在选我们</div>
       <div class="description">API管理门户主要为开发企业搭建 API 门户，核心功能包括 API 文档管理、API 测试工具、API 监控系统等服务
         <br>对于大中型开发团队，API 内部管理比较注重隐私，特推出私有化版本
       </div>
-      <div class="u-appshows t-c">
+      <div class="appshows">
         <ul class="appshows-imgs">
           <li>
             <a title="中兴" href="https://www.zte.com.cn" target="_blank">
@@ -149,7 +148,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>

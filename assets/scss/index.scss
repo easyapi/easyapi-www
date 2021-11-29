@@ -217,7 +217,7 @@ body, button, input, keygen, legend, select, textarea {
 }
 
 .bg-f5 {
-  background-color: #f7f7f7;
+  background-color: #f5f5f5;
 }
 
 .f-prz {
@@ -924,91 +924,6 @@ body, button, input, keygen, legend, select, textarea {
   }
 }
 
-.u-banner-bg {
-  height: 680px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  .title {
-    padding-top: 184px;
-    text-align: center;
-    color: #fff;
-
-    &.color-gray {
-      color: #555;
-    }
-
-    h1 {
-      font-size: 4.8rem;
-      margin: 15px 0;
-    }
-
-    p {
-      font-size: 2rem;
-      line-height: 1.7;
-    }
-  }
-
-  .price-title {
-    padding-top: 190px;
-    text-align: center;
-    color: #fff;
-
-    &.color-gray {
-      color: #555;
-    }
-
-    h1 {
-      font-size: 4.8rem;
-      margin: 15px 0;
-    }
-
-    p {
-      font-size: 2rem;
-      line-height: 1.7;
-    }
-  }
-
-  .sysinfo {
-    padding-top: 184px;
-    color: #fff;
-
-    h1 {
-      font-size: 4.8rem;
-      margin: 15px 0;
-    }
-
-    p {
-      font-size: 2rem;
-      line-height: 1.7;
-      margin-bottom: 10px;
-    }
-
-    .btn {
-      background: #fff;
-      display: inline-block;
-      color: #777;
-      margin: 10px auto;
-      font-size: 1.4rem;
-      padding: 10px 20px;
-      border-radius: 5px;
-    }
-
-    .more {
-      a {
-        font-size: 1.5rem;
-        color: #fff;
-        display: inline-block;
-        margin: 10px;
-
-        &:first-child {
-          margin-left: 0;
-        }
-      }
-    }
-  }
-}
-
 .pd-100 {
   padding: 100px 0;
 
@@ -1192,57 +1107,6 @@ body, button, input, keygen, legend, select, textarea {
     }
   }
 
-  .u-appshows {
-    max-width: 1000px;
-    overflow: hidden;
-    margin: 50px auto;
-
-    .owl-item {
-      float: left;
-
-      a {
-        display: inline-block;
-        border: solid #ddd 1px;
-        width: 125px;
-        height: 60px;
-
-        img {
-          width: 125px;
-          height: 60px;
-          box-sizing: border-box;
-        }
-      }
-    }
-
-    .owl-stage-outer {
-      height: 80px;
-    }
-
-    .owl-dots {
-      text-align: center;
-      margin-top: 10px;
-
-      .owl-dot {
-        display: inline-block;
-        margin: 5px;
-
-        span {
-          background: #ddd;
-          width: 15px;
-          height: 15px;
-          display: inline-block;
-          border-radius: 50%;
-        }
-
-        &.active {
-          span {
-            background: gray;
-          }
-        }
-      }
-    }
-  }
-
   .u-casebox {
     max-width: 1000px;
     margin: 0 auto;
@@ -1417,74 +1281,6 @@ body, button, input, keygen, legend, select, textarea {
 
   &.f-border-t {
     border-bottom: solid #ddd 1px;
-  }
-}
-
-.u-infobox-price {
-  padding-bottom: 100px;
-
-  .u-price {
-    margin-top: -170px;
-    text-align: center;
-
-    li {
-      display: inline-block;
-      vertical-align: middle;
-      height: 400px;
-      width: 245px;
-      background: #fff;
-      margin: 10px 30px;
-      border: solid #ddd 1px;
-      border-radius: 10px;
-      overflow: hidden;
-
-      .tit {
-        padding: 25px 20px 10px;
-        font-size: 1.6rem;
-      }
-
-      .tex {
-        height: 170px;
-        line-height: 2;
-        padding-top: 20px;
-        font-size: 1.4rem;
-        color: gray;
-        margin: 0 20px;
-        border-top: solid #ddd 1px;
-
-        span {
-          display: block;
-          text-align: center;
-        }
-      }
-
-      .pri {
-        padding: 20px 0;
-
-        span {
-          display: block;
-          font-size: 4.3rem;
-          padding-bottom: 5px;
-
-          em {
-            margin-right: 5px;
-          }
-        }
-      }
-
-      .btn {
-        border: solid #18c1d6 1px;
-        display: inline-block;
-        padding: 5px 15px;
-        border-radius: 3px;
-        color: #18c1d6;
-
-        &:hover {
-          color: #fff;
-          background: #18c1d6;
-        }
-      }
-    }
   }
 }
 
