@@ -1,12 +1,12 @@
 ﻿<template>
-  <div>
-    <div class="card">
-      <h2 class="title">
-        <div class="content">联系我们</div>
-      </h2>
-      <div class="u-contact">
-        <div class="content">
-          <div class="tex ">
+  <div class="main">
+    <div class="content">
+      <div class="info-page">
+        <h2 class="title">
+          联系我们
+        </h2>
+        <div class="u-contact">
+          <div class="tex">
             <div id="allmap" style=""></div>
             <h3>无锡到群软件科技有限公司</h3>
 
@@ -66,7 +66,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>

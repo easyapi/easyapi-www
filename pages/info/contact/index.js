@@ -1,4 +1,6 @@
 import './index.scss'
+import Cookies from 'js-cookie'
+import {getApi} from "../../../api/account";
 
 export default {
   name: 'Index',
@@ -20,35 +22,31 @@ export default {
     }
   },
   mounted() {
-    // 百度地图API功能
-    var map = new BMap.Map("allmap");
-    var point = new BMap.Point(121.446005, 31.34974);
-    var marker = new BMap.Marker(point);  // 创建标注
-    map.addOverlay(marker);              // 将标注添加到地图中
-    map.centerAndZoom(point, 15);
-    var opts = {
-      width: 200,     // 信息窗口宽度
-      height: 100,     // 信息窗口高度
-      title: "上海帮趣网络技术有限公司"  // 信息窗口标题
-    }
-    var infoWindow = new BMap.InfoWindow("地址：中国·上海市 宝山区呼兰路911弄11号3号楼一层", opts);  // 创建信息窗口对象
-    marker.addEventListener("click", function () {
-      map.openInfoWindow(infoWindow, point); //开启信息窗口
-    });
-
-    if (Cookies.get("authenticationToken")) {
-      $.ajax({
-        method: 'GET',
-        url: 'https://account-api.easyapi.com/api/account',
-        beforeSend: function (request) {
-          request.setRequestHeader("Authorization", "Bearer " + (Cookies.get("authenticationToken")));
-        },
-        success: function (data) {
-          $("#register").addClass('dis_hide');
-          $("#photo").attr("src", data.photo + "!icon.jpg");
-          $("#avatar").removeClass('dis_hide');
-        }
+    this.init()
+  },
+  methods: {
+    init() {
+      var map = new BMap.Map("allmap", {
+        enableHighResolution: true
       });
+      var point = new BMap.Point(121.446005, 31.34974);
+      var marker = new BMap.Marker(point);
+      map.addOverlay(marker);              // 将标注添加到地图中
+      map.centerAndZoom(point, 15);
+      var opts = {
+        width: 200,     // 信息窗口宽度
+        height: 100,     // 信息窗口高度
+        title: "上海帮趣网络技术有限公司"  // 信息窗口标题
+      }
+      var infoWindow = new BMap.InfoWindow("地址：中国·上海市 宝山区呼兰路911弄11号3号楼一层", opts);  // 创建信息窗口对象
+      marker.addEventListener("click", function () {
+        map.openInfoWindow(infoWindow, point); //开启信息窗口
+      });
+      if (Cookies.get("authenticationToken")) {
+        getApi(this).then(res => {
+
+        })
+      }
     }
   }
 }

@@ -25,3 +25,12 @@ export const getUserTeamList = (context) => {
 export const changeTeam = (teamId, context) => {
   return context.$axios.put(`https://account-api.easyapi.com/team/${teamId}/change`)
 }
+
+/**
+ * 获取api信息
+ *
+ * @see https://www.easyapi.com
+ */
+export const getApi = (context) => {
+  return context.$axios.get(`https://account-api.easyapi.com/api/account`)
+}
