@@ -1,3 +1,199 @@
-.dis_showtxt p:hover {
-  color: #2EACCB !important;
+.u-together {
+  h3 {
+    border-bottom: solid #ddd 1px;
+    font-size: 2rem;
+    padding: 10px 0;
+    color: #555;
+    margin-bottom: 10px;
+
+    .f-ff0 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .u-aplist {
+    padding: 50px;
+
+    a {
+      width: 110px;
+      padding: 20px 40px 20px 0;
+      float: left;
+      text-align: center;
+    }
+
+    span {
+      text-align: center;
+      display: block;
+      color: gray;
+      font-size: 1.4rem;
+      margin-top: 5px;
+    }
+
+    img {
+      width: 110px;
+      height: 110px;
+      border-radius: 20px;
+    }
+  }
+
+  .u-links {
+    padding: 50px;
+    color: gray;
+
+    a {
+      color: #18c1d6;
+      font-size: 1.4rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .u-tobd {
+    padding: 50px;
+    background: #fff;
+
+    a {
+      padding: 2px;
+      float: left;
+      width: 126px;
+      height: 66px;
+      border: 1px solid #eee;
+      display: inline-block;
+      margin: 10px 24px 12px 0;
+
+      img {
+        width: 120px;
+        height: 60px;
+      }
+
+      &:hover {
+        border-color: #ddd;
+      }
+    }
+  }
+
+  .u-size {
+    padding: 50px;
+
+    em {
+      display: block;
+      height: 120px;
+
+      img {
+        width: 120px;
+      }
+    }
+
+    dl {
+      padding-top: 30px;
+
+      dd {
+        width: 120px;
+        float: left;
+        margin: 0 60px 50px 0;
+        text-align: center;
+
+        &.color1 {
+          em {
+            background: #18c1d6;
+          }
+        }
+
+        &.color2 {
+          em {
+            background: #555;
+          }
+        }
+
+        &.color3 {
+          em {
+            background: #333;
+          }
+        }
+
+        &.color4 {
+          em {
+            background: #fff;
+            border: solid #ddd 1px;
+          }
+        }
+      }
+    }
+
+    .colorbox {
+      em {
+        mg {
+          width: 60px;
+        }
+      }
+    }
+
+    span {
+      color: gray;
+      display: inline-block;
+      padding: 6px 0;
+    }
+
+    p {
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.u-contact {
+  margin-top: 50px;
+
+  .tex {
+    font-size: 1.4rem;
+
+    p {
+      line-height: 23px;
+      padding: 0;
+      color: #555;
+    }
+
+    h3 {
+      padding: 20px 0 5px;
+    }
+  }
+
+  .cerwm {
+    padding: 50px 0 5px;
+
+    .hd {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 15px;
+
+      a {
+        display: inline-block;
+        padding: 5px 2px;
+        color: gray;
+        margin-right: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .ermbx {
+    li {
+      float: left;
+      width: 120px;
+      margin-right: 50px;
+      font-size: 12px;
+
+      img {
+        width: 100%;
+      }
+
+      span {
+        display: block;
+        text-align: center;
+        padding: 5px 0;
+      }
+    }
+  }
 }

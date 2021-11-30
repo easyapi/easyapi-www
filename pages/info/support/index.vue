@@ -1,10 +1,8 @@
 ﻿<template>
-
-  <div>
+  <div class="main">
     <div class="content">
       <div class="info-page">
         <h2 class="title">支持名单</h2>
-
         <div class="u-donatelist f-cb">
           <ul class="ulist f-cb">
             <li>
@@ -89,7 +87,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>
