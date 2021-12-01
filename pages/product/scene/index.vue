@@ -1,24 +1,21 @@
 ﻿<template>
-  <div>
+  <div class="main">
     <div class="u-banner-bg">
-      <div class="content">
-        <div class="sysinfo f-tac">
-          <h1>API场景化服务</h1>
-          <p>EasyAPI顺应技术开发趋势，推出通过API实现特定的场景化服务</p>
-          <a href="/system/order/add" class="bug_btn">前往服务市场</a>
-          <div class="more">
-            体验API场景化服务的魅力
-          </div>
+      <div class="sysinfo f-tac">
+        <h1>API场景化服务</h1>
+        <p>EasyAPI顺应技术开发趋势，推出通过API实现特定的场景化服务</p>
+        <a href="/system/order/add" class="bug_btn">前往服务市场</a>
+        <div class="more">
+          体验API场景化服务的魅力
         </div>
       </div>
     </div>
     <div class="pd-100">
       <div class="title">什么是API场景化服务</div>
-      <div class="title">什么是API场景化服务</div>
       <div class="description">提供完善的后端管理服务，前端通过API实现定制化的的一种服务<br>
         我们的目标是为提供企业提供非核心功能标准化产品服务
       </div>
-      <ul class="u-iconui  content">
+      <ul class="u-iconui content">
         <li class="u-display">
           <img src="/images/info/open_icon19.png">
           <div class="lefttext">
@@ -26,7 +23,7 @@
             <span>传统的SaaS服务灵活方便是它的优点，但是不可定制化，不能满足企业的个性化展示需求</span>
           </div>
         </li>
-        <li class="u-display">
+        <li class="u-display-center">
           <img src="/images/info/open_icon20.png">
           <div class="lefttext">
             <p>API场景化服务</p>
@@ -46,7 +43,7 @@
     <div class="pd-100 " style="background-color: #f8f8f8">
       <div class="title">我们正在做的场景化服务</div>
       <div class="description"></div>
-      <ul class="u-iconui content">
+      <ul class="content icon-dispaly">
         <li>
           <img src="/images/info/open_icon11.png">
           <span>聚合通知</span>
@@ -90,7 +87,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>

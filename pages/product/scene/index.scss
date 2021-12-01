@@ -26,4 +26,50 @@
   background-image: url('/images/product/bg_scene.png');
   height: 520px;
   background-size: cover;
+
+  .sysinfo {
+    padding-top: 150px;
+    color: #ffffff;
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+  }
 }
+
+.u-display-center {
+  width: 280px;
+  height: 340px;
+  border: 1px solid #dbe1e8;
+  padding: 20px;
+}
+
+.u-display {
+  margin: auto 0;
+  width: 280px;
+  height: 300px;
+  border: 1px solid #dbe1e8;
+  padding: 20px;
+}
+
+.lefttext {
+  width: 180px;
+  margin: 0 auto;
+
+  p {
+    font-size: 20px;
+    color: #333;
+    padding: 0;
+  }
+
+  span {
+    font-size: 12px;
+    color: #828282;
+  }
+}
+
