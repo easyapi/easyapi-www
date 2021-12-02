@@ -16,27 +16,29 @@
         我们的目标是为提供企业提供非核心功能标准化产品服务
       </div>
       <ul class="u-iconui content">
-        <li class="u-display">
-          <img src="/images/info/open_icon19.png">
-          <div class="lefttext">
-            <p>SaaS服务</p>
-            <span>传统的SaaS服务灵活方便是它的优点，但是不可定制化，不能满足企业的个性化展示需求</span>
-          </div>
-        </li>
-        <li class="u-display-center">
-          <img src="/images/info/open_icon20.png">
-          <div class="lefttext">
-            <p>API场景化服务</p>
-            <span>可选择满足自己的场景化服务，如果前端展示需要修改，和方便，缺点需要一点开发工作量</span>
-          </div>
-        </li>
-        <li class="u-display">
-          <img src="/images/info/open_icon21.png">
-          <div class="lefttext">
-            <p>自主开发</p>
-            <span>优点完全可定制化，企业想要什么就开发什么，缺点短期开发出来的产品，问题较多，并且开发成本较大</span>
-          </div>
-        </li>
+        <div class="scene-icon">
+          <li class="u-display">
+            <img src="/images/info/open_icon19.png">
+            <div class="lefttext">
+              <p>SaaS服务</p>
+              <span>传统的SaaS服务灵活方便是它的优点，但是不可定制化，不能满足企业的个性化展示需求</span>
+            </div>
+          </li>
+          <li class="u-display-center">
+            <img src="/images/info/open_icon20.png">
+            <div class="lefttext">
+              <p>API场景化服务</p>
+              <span>可选择满足自己的场景化服务，如果前端展示需要修改，和方便，缺点需要一点开发工作量</span>
+            </div>
+          </li>
+          <li class="u-display">
+            <img src="/images/info/open_icon21.png">
+            <div class="lefttext">
+              <p>自主开发</p>
+              <span>优点完全可定制化，企业想要什么就开发什么，缺点短期开发出来的产品，问题较多，并且开发成本较大</span>
+            </div>
+          </li>
+        </div>
       </ul>
     </div>
 
