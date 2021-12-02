@@ -43,7 +43,7 @@
     <div class="pd-100 " style="background-color: #f8f8f8">
       <div class="title">我们正在做的场景化服务</div>
       <div class="description"></div>
-      <ul class="content icon-dispaly">
+        <ul class="content icon-dispaly">
         <li>
           <img src="/images/info/open_icon11.png">
           <span>聚合通知</span>

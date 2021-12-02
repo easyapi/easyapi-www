@@ -16,7 +16,34 @@
 }
 
 .u-tese {
-  padding: unset;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 51px;
+
+  li {
+    width: 50%;
+    text-align: left;
+    position: relative;
+    padding-bottom: 30px;
+
+    i {
+      color: #00a3c1;
+      position: absolute;
+      left: -30px;
+    }
+
+    h3 {
+      padding-bottom: 7px;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    p {
+      color: gray;
+      font-size: 1.4rem;
+    }
+  }
 }
 
 .dis_showtxt p:hover {
@@ -29,13 +56,13 @@
 }
 
 .u-tese-wrap {
-  width: 1104px;
+  width: 1200px;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .u-tese-wrap ul {
-  width: 1150px;
+  width: 1200px;
   margin: 0 auto;
 }
 
