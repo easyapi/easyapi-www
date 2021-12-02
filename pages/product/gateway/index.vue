@@ -60,7 +60,7 @@
       <div class="description">
         让API跟安全，更灵活
       </div>
-      <ul class="u-iconui content">
+      <ul class="icon-dispaly content">
         <li>
           <img src="/images/info/gateway_icon9.png">
           <span>降低成本</span>
