@@ -931,6 +931,27 @@ body, button, input, keygen, legend, select, textarea {
   margin: 0 auto;
 }
 
+.sysinfo {
+  padding-top: 150px;
+  color: #ffffff;
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .more {
+    a {
+      color: #ffffff;
+    }
+  }
+}
+
+
 .pd-100 {
   padding: 100px 0;
 
@@ -1006,7 +1027,7 @@ body, button, input, keygen, legend, select, textarea {
         color: gray;
         font-size: 1.2rem;
         line-height: 1.7;
-        padding: 10px 30px 0;
+        padding: 10px 45px 0;
       }
     }
   }
