@@ -18,6 +18,14 @@ export default {
           name: 'keyword',
           content: 'API文档管理,API管理系统,API接口管理系统,API管理平台,API管理,API,API接口,接口管理,API接口管理,API监控,API测试,API服务'
         }
+      ],
+      script: [
+        {
+          src: 'https://api.map.baidu.com/api?v=3.0&ak=S6mqljAtjGZzvmeVxrRR68rA'
+        },
+        {
+          src: "http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"
+        }
       ]
     }
   },

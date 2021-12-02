@@ -1,5 +1,5 @@
 <template>
-  <div class="header header-index">
+  <div :class="[isActive?'header':'other-header']" class="header-index">
     <div class="content">
       <nuxt-link to="/">
         <img class="logo f-fl" src="https://qiniu.easyapi.com/market/logo.svg">
@@ -202,31 +202,31 @@
         </div>
       </span>
         <!--<div class="navs f-fr" id="avatar">-->
-          <!--<div class="upbx">-->
-            <!--<div class="avatar dis_hide" style="padding-right: 40px;box-sizing: border-box;">-->
-              <!--<a class="f-fr " href="/project/" style="margin-top: -20px;">-->
-                <!--<img src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg"-->
-                <!--/>-->
-              <!--</a>-->
-              <!--<ul class="avatarnav_down">-->
-                <!--<li>-->
-                  <!--<a href="https://account.easyapi.com/notification/" style="color: #666">-->
-                    <!--我的通知-->
-                  <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                  <!--<a href="https://account.easyapi.com/setting/data" style="color: #666">-->
-                    <!--个人设置-->
-                  <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                  <!--<a href="https://account.easyapi.com/logout" style="color: #666">-->
-                    <!--退出-->
-                  <!--</a>-->
-                <!--</li>-->
-              <!--</ul>-->
-            <!--</div>-->
-          <!--</div>-->
+        <!--<div class="upbx">-->
+        <!--<div class="avatar dis_hide" style="padding-right: 40px;box-sizing: border-box;">-->
+        <!--<a class="f-fr " href="/project/" style="margin-top: -20px;">-->
+        <!--<img src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg"-->
+        <!--/>-->
+        <!--</a>-->
+        <!--<ul class="avatarnav_down">-->
+        <!--<li>-->
+        <!--<a href="https://account.easyapi.com/notification/" style="color: #666">-->
+        <!--我的通知-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="https://account.easyapi.com/setting/data" style="color: #666">-->
+        <!--个人设置-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="https://account.easyapi.com/logout" style="color: #666">-->
+        <!--退出-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
         <!--</div>-->
       </div>
     </div>
@@ -235,11 +235,50 @@
 
 <script>
   export default {
-    name: 'Header'
+    name: 'Header',
+    data() {
+      return {
+        isActive: true
+      }
+    },
+    watch: {
+      '$route'(res) {
+        if (res.path === "/info/about") {
+          this.isActive = false
+        }
+        console.log(res)
+      }
+    },
+    methods: {
+      indicatorStyle() {
+        return {header}
+      }
+    }
   }
 </script>
 
 <style scoped lang="scss">
+  .header {
+    position: relative;
+    top: 0;
+    height: 72px;
+    box-shadow: none;
+    background-color: (0, 0, 0, 0.3);
+  }
+
+  .other-header {
+    position: relative;
+    top: 0;
+    height: 72px;
+    box-shadow: none;
+    background-color: #18c1d6;
+  }
+
+  .header-index {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
 
   .header .navs span:after {
     content: '';

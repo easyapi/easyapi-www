@@ -13,13 +13,7 @@ module.exports = {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
       {rel: 'stylesheet', href: 'http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css '}
     ],
-    script: [{
-      src: 'https://api.map.baidu.com/api?v=3.0&ak=S6mqljAtjGZzvmeVxrRR68rA'
-    },
-      {
-        src: "http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"
-      }
-    ]
+    script: []
   },
   css: [
     '@/assets/scss/index.scss'

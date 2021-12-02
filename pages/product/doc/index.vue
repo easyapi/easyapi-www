@@ -1,5 +1,5 @@
 ﻿<template>
-  <div>
+  <div class="main">
     <div class="u-banner-bg">
       <div class="content">
         <div class="title">
@@ -11,7 +11,7 @@
     </div>
 
     <div class="pd-100 ">
-      <ul class="u-iconui content">
+      <ul class="icon-dispaly content">
         <li>
           <img src="/images/info/test-icon-1.png">
           <span>简单易用</span>
@@ -93,7 +93,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>
