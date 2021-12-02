@@ -29,7 +29,46 @@
 }
 
 .scene-icon {
+  text-align: center;
   max-width: 1000px;
+  margin: 20px auto 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+
+  li {
+    width: 230px;
+    display: inline-block;
+    padding-bottom: 25px;
+
+    img {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 10px;
+    }
+
+    i {
+      font-size: 60px;
+    }
+
+    span {
+      display: block;
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.7;
+      padding: 10px 30px 0;
+    }
+  }
+
+  &.one {
+    li {
+      width: 160px;
+    }
+  }
 }
 
 .u-display-center {
