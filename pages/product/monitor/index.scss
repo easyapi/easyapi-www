@@ -30,6 +30,26 @@
   background-image: url('/images/product/bg_monitor.png');
   background-size: cover;
   height: 520px;
+
+  .sysinfo {
+    padding-top: 150px;
+    color: #ffffff;
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .more {
+      a {
+        color: #ffffff;
+      }
+    }
+  }
 }
 
 .u-banner-bg .sysinfo h1 {
