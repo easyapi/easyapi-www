@@ -1,5 +1,5 @@
 ﻿<template>
-  <div class="main">
+  <div class="main mg-t-72">
     <div class="content">
       <img src="/images/info/about/team.png"/>
     </div>
@@ -67,7 +67,7 @@
 
     <div class="pd-100 bgfa bg-f5">
       <div class="title f-c-white f-c-gray">EasyAPI是什么</div>
-      <div class="description  f-c-white f-c-gray">
+      <div class="description  f-c-white f-c-gray content">
         EasyAPI最初是我们团队内部的工具，因为热爱，我们希望她能得到更多的人来使用，我们也会一直站在她的旁边优化她，完美她，希望广大的苦B开发人员，
         希望广大的苦B 的开发人员，程序员早日用上，致力于数十万移<br>动开发者,后端的开发人员提供全套的API系统解决方案（发布，测试，浏览，监控）
       </div>

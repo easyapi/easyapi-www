@@ -241,12 +241,41 @@
         isActive: true
       }
     },
+    mounted() {
+      let path = $nuxt.$route.path
+      if (path === "/info/about") {
+        this.isActive = false
+      }
+      if (path === "/info/together") {
+        this.isActive = false
+      }
+      if (path === "/info/contact") {
+        this.isActive = false
+      }
+      if (path === "/info/donate") {
+        this.isActive = false
+      }
+      if (path === "/post/") {
+        this.isActive = false
+      }
+    },
     watch: {
       '$route'(res) {
         if (res.path === "/info/about") {
           this.isActive = false
         }
-        console.log(res)
+        if (res.path === "/info/together") {
+          this.isActive = false
+        }
+        if (res.path === "/info/contact") {
+          this.isActive = false
+        }
+        if (res.path === "/info/donate") {
+          this.isActive = false
+        }
+        if (res.path === "/post/") {
+          this.isActive = false
+        }
       }
     },
     methods: {

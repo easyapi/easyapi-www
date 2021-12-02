@@ -381,6 +381,10 @@ body, button, input, keygen, legend, select, textarea {
   background: #fefefe;
 }
 
+.mg-t-72 {
+  margin-top: 72px;
+}
+
 .content {
   width: 1200px;
   margin: 0 auto;
@@ -403,6 +407,18 @@ body, button, input, keygen, legend, select, textarea {
 
 .dis_hide {
   display: none;
+}
+
+.bug_btn {
+  background: #fff;
+  display: inline-block;
+  color: #0981E0;
+  height: 46px;
+  line-height: 46px;
+  margin: 10px auto;
+  font-size: 16px;
+  padding: 0 40px;
+  border-radius: 5px;
 }
 
 .logo {
@@ -1116,68 +1132,66 @@ body, button, input, keygen, legend, select, textarea {
 
     .thisroll {
       position: relative;
+      display: flex;
+      justify-content: space-between;
 
-      .owl-stage-outer {
-        overflow: hidden;
+      .item {
+        position: relative;
+        border: solid #ddd 1px;
+        width: 220px;
+        height: 320px;
+        text-align: center;
 
-        .item {
-          position: relative;
-          border: solid #ddd 1px;
-          width: 220px;
-          height: 320px;
-          text-align: center;
+        img {
+          width: 80px;
+          height: 80px;
+        }
 
-          img {
-            width: 80px;
-            height: 80px;
+        .box {
+          margin-top: 100px;
+
+          span {
+            display: block;
+            margin-top: 10px;
+            color: gray;
+            font-size: 1.4rem;
+          }
+        }
+
+        .u-lay {
+          position: absolute;
+          display: none;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-image: -webkit-linear-gradient(top left, #34a1d6, #34c1d6 90%);
+          box-sizing: border-box;
+          padding: 60px 20px 0;
+          color: #fff;
+
+          h4 {
+            margin-top: 5px;
+            font-size: 1.5rem;
           }
 
-          .box {
-            margin-top: 100px;
-
-            span {
-              display: block;
-              margin-top: 10px;
-              color: gray;
-              font-size: 1.4rem;
-            }
+          .line {
+            display: inline-block;
+            height: 3px;
+            width: 50px;
+            background: #fff;
           }
 
+          p {
+            margin-top: 15px;
+            line-height: 24px;
+            font-size: 1.4rem;
+          }
+        }
+
+        &:hover {
           .u-lay {
-            position: absolute;
-            display: none;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: -webkit-linear-gradient(top left, #34a1d6, #34c1d6 90%);
-            box-sizing: border-box;
-            padding: 60px 20px 0;
-            color: #fff;
-
-            h4 {
-              margin-top: 5px;
-              font-size: 1.5rem;
-            }
-
-            .line {
-              display: inline-block;
-              height: 3px;
-              width: 50px;
-              background: #fff;
-            }
-
-            p {
-              margin-top: 15px;
-              line-height: 24px;
-              font-size: 1.4rem;
-            }
-          }
-
-          &:hover {
-            .u-lay {
-              display: block;
-            }
+            display: block;
           }
         }
       }
@@ -1336,6 +1350,7 @@ body, button, input, keygen, legend, select, textarea {
   background: #fff;
 
   .title {
+    color: black;
     border-bottom: solid #ddd 1px;
     font-size: 3rem;
     font-weight: 700;

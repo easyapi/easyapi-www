@@ -21,19 +21,31 @@ export default {
       ],
       script: [
         {
-          src: 'https://api.map.baidu.com/api?v=3.0&ak=S6mqljAtjGZzvmeVxrRR68rA'
+          type: 'text/javascript',
+          src: 'https://api.map.baidu.com/api?v=3.0&ak=S6mqljAtjGZzvmeVxrRR68rA',
+          body: true
         },
         {
-          src: "http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"
+          type: 'text/javascript',
+          src: "http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js",
+          body: true
         }
       ]
     }
   },
   mounted() {
+    this.reurl()
     this.init()
   },
   methods: {
+    reurl() { // 解决第一次进入不加载js文件
+      if (location.href.indexOf('#reloaded') === -1) {
+        location.href = location.href + '#reloaded'
+        location.reload()
+      }
+    },
     init() {
+      console.log(111)
       var map = new BMap.Map("allmap", {
         enableHighResolution: true
       });

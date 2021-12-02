@@ -1,6 +1,6 @@
 <template>
-  <div class="main">
-    <div v-if="!noData">
+  <div class="main mg-t-72">
+    <div v-if="!noData" class="content pd-t-20">
       <div v-for="item of list" :key="item.articleId">
         <ListItem v-bind:list="item"></ListItem>
       </div>

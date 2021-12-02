@@ -42,7 +42,7 @@
       </ul>
     </div>
 
-    <div class="pd-100 bgfa bg_img" style="background-image:url('/images/info/bg_open.png')">
+    <div class="pd-100 bgfa bg_img" style="background-image:url('/images/info/bg_open.png');background-size:cover;">
       <div class="title f-c-white">友好的界面交互</div>
       <div class="description f-c-white">通过搭建API开放平台，让您公司的数据更好的向合作伙伴、客户进行授权访问
         让贵公司的数据不断为贵公司产生价值
@@ -56,9 +56,6 @@
       <div class="title">客户案例</div>
       <div class="description">我们始终坚持为客户提供优质的服务</div>
       <div class="u-casebox" style="position:relative;">
-        <div class=" arrow_bug left-arrow">
-          <
-        </div>
         <div class="thisroll">
           <div class="item">
             <div class="box">
@@ -109,15 +106,13 @@
             </div>
           </div>
         </div>
-        <div class=" arrow_bug right-arrow"> ></div>
-
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>
