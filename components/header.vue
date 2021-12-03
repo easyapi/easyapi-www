@@ -264,8 +264,11 @@
     },
     watch: {
       '$route'(res) {
+        console.log(res.path)
         if (res.path === "/info/about") {
           this.isActive = false
+        } else {
+          this.isActive = true
         }
         if (res.path === "/info/together") {
           this.isActive = false
@@ -327,7 +330,23 @@
     background-size: 20px auto;
   }
 
+  .other-header .navs span:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: url(/images/angle.png) center no-repeat;
+    background-size: 20px auto;
+  }
+
   .header .navs span:hover:after {
+    background-image: url(/images/angle-1.png);
+  }
+
+  .other-header .navs span:hover:after {
     background-image: url(/images/angle-1.png);
   }
 </style>
