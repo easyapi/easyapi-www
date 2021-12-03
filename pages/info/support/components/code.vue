@@ -23,14 +23,14 @@
 </template>
 
 <script>
-  export default {
-    name: "code",
-    data() {
-      return {
-        dialogVisible: false
-      }
+export default {
+  name: "code",
+  data() {
+    return {
+      dialogVisible: false
     }
   }
+}
 </script>
 
 <style scoped>

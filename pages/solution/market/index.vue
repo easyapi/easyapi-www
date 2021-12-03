@@ -5,7 +5,7 @@
         <div class="sysinfo f-tac">
           <h1>API服务市场</h1>
           <p>为您的企业搭建API服务市场，建立自己的开放合作的行业生态圈</p>
-          <a href="/pages/info/contact.vue" class="bug_btn">立刻部署API服务市场</a>
+          <nuxt-link to="/info/contact" class="bug_btn">立刻部署API服务市场</nuxt-link>
           <div class="more">
             独立第三方API服务市场解决方案提供商
           </div>

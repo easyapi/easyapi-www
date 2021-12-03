@@ -5,7 +5,7 @@
         <div class="sysinfo f-tac">
           <h1>API开放平台</h1>
           <p>您有数据，我们有API开放平台解决方案</p>
-          <a href="/pages/info/contact.vue" class="bug_btn">立刻部署API开放平台</a>
+          <nuxt-link to="/info/contact" class="bug_btn">立刻部署API开放平台</nuxt-link>
           <div class="more">
             独立第三方API开放平台解决方案提供商
           </div>
@@ -112,7 +112,7 @@
 </template>
 
 <script>
-  import Index from './index'
+import Index from './index'
 
-  export default Index
+export default Index
 </script>
