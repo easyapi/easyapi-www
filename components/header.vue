@@ -258,6 +258,9 @@
       if (path === "/post/") {
         this.isActive = false
       }
+      if (path === "/info/support") {
+        this.isActive = false
+      }
     },
     watch: {
       '$route'(res) {
@@ -274,6 +277,9 @@
           this.isActive = false
         }
         if (res.path === "/post/") {
+          this.isActive = false
+        }
+        if (res.path === "/info/support") {
           this.isActive = false
         }
       }

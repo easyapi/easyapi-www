@@ -1,9 +1,12 @@
 import './index.scss'
+import Code from "./components/code";
+
 
 import Cookies from 'js-cookie'
 
 export default {
   name: 'Index',
+  components: {Code},
   head() {
     return {
       title: '首页 - EasyAPI服务平台',
@@ -21,7 +24,10 @@ export default {
       ]
     }
   },
-  mounted() {
-
+  methods: {
+    showCode() {
+      console.log(111)
+      this.$refs.child.dialogVisible = true
+    }
   }
 }

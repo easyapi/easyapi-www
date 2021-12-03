@@ -16,9 +16,13 @@ module.exports = {
     script: []
   },
   css: [
-    '@/assets/scss/index.scss'
+    '@/assets/scss/index.scss',
+    '@/assets/scss/element-variables.scss'
   ],
-  plugins: ['@/plugins/axios'],
+  plugins: [
+    '@/plugins/axios',
+    '@/plugins/element-ui',
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -32,6 +36,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    transpile: [/^element-ui/],
     extend(config, ctx) {
     },
     maxChunkSize: 300000, // 单个包最大尺寸
