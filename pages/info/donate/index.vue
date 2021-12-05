@@ -85,7 +85,8 @@
                 <p>充电宝</p>
                 <p>0.5股份</p>
                 <span>
-                <a class="btn btn-info " href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
+                <a @click="showCode" class="btn btn-info " href="javascript:;" data-toggle="modal"
+                   data-target=".bs-example-modal-lg">
                   支持15元
                 </a>
               </span>
@@ -102,7 +103,8 @@
                 <p>0.5股份</p>
 
                 <span>
-                <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
+                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
+                   data-target=".bs-example-modal-lg">
                   支持50元
                 </a>
               </span>
@@ -119,7 +121,8 @@
                 <p>0.5股份</p>
 
                 <span>
-                <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
+                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
+                   data-target=".bs-example-modal-lg">
                   支持100元
                 </a>
               </span>
@@ -136,7 +139,8 @@
                 <p>0.5股份</p>
 
                 <span>
-                <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
+                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
+                   data-target=".bs-example-modal-lg">
                   支持200元
                 </a>
               </span>
@@ -152,7 +156,8 @@
                 <p>充电宝<i class="iconfont icon-ok"></i></p>
                 <p>0.5股份</p>
                 <span>
-                <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
+                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
+                   data-target=".bs-example-modal-lg">
                   支持500元
                 </a>
               </span>
@@ -168,7 +173,8 @@
                 <p>充电宝<i class="iconfont icon-ok"></i></p>
                 <p>广告机会</p>
                 <span>
-                <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
+                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
+                   data-target=".bs-example-modal-lg">
                   支持2000元
                 </a>
               </span>
@@ -184,7 +190,8 @@
                 <p>充电宝<i class="iconfont icon-ok"></i></p>
                 <p>定制风格<i class="iconfont icon-ok"></i></p>
                 <span>
-                <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
+                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
+                   data-target=".bs-example-modal-lg">
                   支持5000元
                 </a>
               </span>
@@ -200,7 +207,8 @@
                 <p>充电宝<i class="iconfont icon-ok"></i></p>
                 <p>0.5股份<i class="iconfont icon-ok"></i></p>
                 <span>
-                <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">
+                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
+                   data-target=".bs-example-modal-lg">
                   支持10000元
                 </a>
               </span>
@@ -231,6 +239,7 @@
         </p>
       </div>
     </div>
+    <Code ref="child"></Code>
   </div>
 </template>
 

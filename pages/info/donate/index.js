@@ -1,7 +1,9 @@
 import './index.scss'
+import Code from "../support/components/code";
 
 export default {
   name: 'Donate',
+  components: {Code},
   head() {
     return {
       title: '支持我们 - EasyAPI服务平台',
@@ -11,4 +13,9 @@ export default {
       ]
     }
   },
+  methods: {
+    showCode() {
+      this.$refs.child.dialogVisible = true
+    }
+  }
 }

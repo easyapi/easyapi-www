@@ -261,6 +261,9 @@
       if (path === "/info/support") {
         this.isActive = false
       }
+      if (path === "/error") {
+        this.isActive = false
+      }
     },
     watch: {
       '$route'(res) {
@@ -283,6 +286,9 @@
           this.isActive = false
         }
         if (res.path === "/info/support") {
+          this.isActive = false
+        }
+        if (res.path === "/error") {
           this.isActive = false
         }
       }

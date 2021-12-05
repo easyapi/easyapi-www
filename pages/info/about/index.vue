@@ -80,7 +80,7 @@
        border-bottom: 2px solid #18c1d6;">团队文化</span>
       </div>
       <div class="description ">为客户创造价值</div>
-      <div class="culture f-l">
+      <div class="culture f-l content">
         <ul>
           <li>
             <img src="/images/info/about_3.png" alt="">
