@@ -1,5 +1,5 @@
 <template>
-  <div :class="[isActive?'header':'other-header']" class="header-index">
+  <div :class="[isActive?'other-header':'header']" class="header-index">
     <div class="content">
       <nuxt-link to="/">
         <img class="logo f-fl" src="https://qiniu.easyapi.com/market/logo.svg">
@@ -238,57 +238,89 @@
     name: 'Header',
     data() {
       return {
-        isActive: true
+        isActive: false
       }
     },
     mounted() {
       let path = $nuxt.$route.path
-      if (path === "/info/about") {
+      if (path === "/") {
+        this.isActive = false
+      } else {
+        this.isActive = true
+      }
+      if (path === "/product/doc") {
         this.isActive = false
       }
-      if (path === "/info/together") {
+      if (path === "/product/gateway") {
         this.isActive = false
       }
-      if (path === "/info/contact") {
+      if (path === "/product/interface") {
         this.isActive = false
       }
-      if (path === "/info/donate") {
+      if (path === "/product/monitor") {
         this.isActive = false
       }
-      if (path.indexOf("post") != -1) {
+      if (path === "/product/scene") {
         this.isActive = false
       }
-      if (path === "/info/support") {
+      if (path === "/product/test") {
         this.isActive = false
       }
-      if (path === "/error") {
+      if (path === "/info/price") {
+        this.isActive = false
+      }
+      if (path === "/solution/market") {
+        this.isActive = false
+      }
+      if (path === "/solution/open") {
+        this.isActive = false
+      }
+      if (path === "/solution/portal") {
+        this.isActive = false
+      }
+      if (path === "/info/github") {
         this.isActive = false
       }
     },
     watch: {
       '$route'(res) {
         console.log(res.path)
-        if (res.path === "/info/about") {
+        if (res.path === "/") {
           this.isActive = false
         } else {
           this.isActive = true
         }
-        if (res.path === "/info/together") {
+        if (res.path === "/product/doc") {
           this.isActive = false
         }
-        if (res.path === "/info/contact") {
+        if (res.path === "/product/gateway") {
           this.isActive = false
         }
-        if (res.path === "/info/donate") {
+        if (res.path === "/product/interface") {
           this.isActive = false
         }
-        if (res.path.indexOf("post") != -1) {
+        if (res.path === "/product/monitor") {
           this.isActive = false
         }
-        if (res.path === "/info/support") {
+        if (res.path === "/product/scene") {
           this.isActive = false
         }
-        if (res.path === "/error") {
+        if (res.path === "/product/test") {
+          this.isActive = false
+        }
+        if (res.path === "/info/price") {
+          this.isActive = false
+        }
+        if (res.path === "/solution/market") {
+          this.isActive = false
+        }
+        if (res.path === "/solution/open") {
+          this.isActive = false
+        }
+        if (res.path === "/solution/portal") {
+          this.isActive = false
+        }
+        if (res.path === "/info/github") {
           this.isActive = false
         }
       }
