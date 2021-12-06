@@ -88,7 +88,7 @@
       </div>
     </div>
 
-    <div class="card bor-b f-cb">
+    <div class="card bor-b f-cb bg-f7">
       <div class="card-item">
         <h1>常见问题</h1>
         <h3>开源的版权怎么区分？</h3>

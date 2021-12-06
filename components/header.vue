@@ -255,7 +255,7 @@
       if (path === "/info/donate") {
         this.isActive = false
       }
-      if (path === "/post/") {
+      if (path.indexOf("post") != -1) {
         this.isActive = false
       }
       if (path === "/info/support") {
@@ -282,7 +282,7 @@
         if (res.path === "/info/donate") {
           this.isActive = false
         }
-        if (res.path === "/post/") {
+        if (res.path.indexOf("post") != -1) {
           this.isActive = false
         }
         if (res.path === "/info/support") {

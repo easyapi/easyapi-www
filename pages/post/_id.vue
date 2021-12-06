@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class='container'>
+  <div class="mg-t-72">
+    <div class='container pd-t-20'>
       <div class='detail-wrapper'>
         <div class='detail-title'>
           <span>{{ article.title }}</span>
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Id from './_id'
+  import Id from './_id'
 
-export default Id
+  export default Id
 </script>
