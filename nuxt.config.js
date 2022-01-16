@@ -11,7 +11,7 @@ module.exports = {
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
-      {rel: 'stylesheet', href: 'http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css '}
+      {rel: 'stylesheet', href: 'https://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css '}
     ],
     script: []
   },

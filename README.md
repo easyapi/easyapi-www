@@ -1,13 +1,11 @@
 EasyAPI官网 https://www.easyapi.com
 --------
 
-EasyAPI官网，是一个纯静态项目工程，右上角使用Ajax调用EasyAPI获取账号信息接口，当账户登录显示用户信息。
+EasyAPI官网，是一个Nuxt静态项目工程，右上角调用EasyAPI获取账号信息接口，当账户登录显示用户信息。
 
 ## 开发建议
 
-- 公共样式表、脚步、图片放到easyapi-static项目中
-- 根据需要独立建立静态文件，css，images，js（命名参照jhipster框架，Bootstrap等）
-- 样式表使用less语法编写
+- 样式表使用scss语法编写
 
 ## 命名规范
 
@@ -20,17 +18,15 @@ EasyAPI官网，是一个纯静态项目工程，右上角使用Ajax调用EasyAP
 
 ``` bash
 ├── README.md
-├── product                 #产品目录
-├── info                    #信息页
-├── solution                #私有化解决方案
-├── changelog               #更新日志
-└── static                  #静态文件
+├── pages                 #页面目录
+├── plugins               #组件
+└── static                #静态文件
 
 ```
 
 ## 常见问题
 
-**1. 样式图片等无法访问，访问本地静态资源**
+**1. 如何启动项目**
 
-    请单独运行easyapi-static项目(https://github.com/easyapi/easyapi-static)，端口使用80，访问地址http://localhost。
-    使用SwitchHosts，设置127.0.0.1 static.easyapi.com。
+    cnpm i
+    cnpm run ev

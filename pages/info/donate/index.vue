@@ -83,7 +83,7 @@
                 <p>马克杯</p>
                 <p>T恤衫</p>
                 <p>充电宝</p>
-                <p>0.5股份</p>
+                <p>广告机会</p>
                 <span>
                 <a @click="showCode" class="btn btn-info " href="javascript:;" data-toggle="modal"
                    data-target=".bs-example-modal-lg">
@@ -100,8 +100,7 @@
                 <p>马克杯</p>
                 <p>T恤衫</p>
                 <p>充电宝</p>
-                <p>0.5股份</p>
-
+                <p>广告机会</p>
                 <span>
                 <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
                    data-target=".bs-example-modal-lg">
@@ -118,8 +117,7 @@
                 <p>马克杯<i class="iconfont icon-ok"></i></p>
                 <p>T恤衫</p>
                 <p>充电宝</p>
-                <p>0.5股份</p>
-
+                <p>广告机会</p>
                 <span>
                 <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
                    data-target=".bs-example-modal-lg">
@@ -136,8 +134,7 @@
                 <p>马克杯<i class="iconfont icon-ok"></i></p>
                 <p>T恤衫<i class="iconfont icon-ok"></i></p>
                 <p>充电宝</p>
-                <p>0.5股份</p>
-
+                <p>广告机会</p>
                 <span>
                 <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
                    data-target=".bs-example-modal-lg">
@@ -154,7 +151,7 @@
                 <p>马克杯<i class="iconfont icon-ok"></i></p>
                 <p>T恤衫<i class="iconfont icon-ok"></i></p>
                 <p>充电宝<i class="iconfont icon-ok"></i></p>
-                <p>0.5股份</p>
+                <p>广告机会</p>
                 <span>
                 <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
                    data-target=".bs-example-modal-lg">
@@ -188,7 +185,7 @@
                 <p>马克杯<i class="iconfont icon-ok"></i></p>
                 <p>T恤衫<i class="iconfont icon-ok"></i></p>
                 <p>充电宝<i class="iconfont icon-ok"></i></p>
-                <p>定制风格<i class="iconfont icon-ok"></i></p>
+                <p>广告机会<i class="iconfont icon-ok"></i></p>
                 <span>
                 <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
                    data-target=".bs-example-modal-lg">
@@ -205,7 +202,7 @@
                 <p>马克杯<i class="iconfont icon-ok"></i></p>
                 <p>T恤衫<i class="iconfont icon-ok"></i></p>
                 <p>充电宝<i class="iconfont icon-ok"></i></p>
-                <p>0.5股份<i class="iconfont icon-ok"></i></p>
+                <p>股份<i class="iconfont icon-ok"></i></p>
                 <span>
                 <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
                    data-target=".bs-example-modal-lg">
@@ -244,7 +241,7 @@
 </template>
 
 <script>
-  import Index from './index'
+import Index from './index'
 
-  export default Index
+export default Index
 </script>

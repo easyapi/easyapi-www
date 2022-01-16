@@ -13,7 +13,7 @@
         <div class="bg_white">
           <p>
             <span>
-              <a href="https://doc.easyapi.com">
+              <a href="https://team.easyapi.com/project/">
                 API文档中心
               </a>
             </span>
@@ -22,7 +22,7 @@
           <ul class="jump_link">
             <li>
               <img src="/images/info/down_icon1.png">
-              <a href="https://doc.easyapi.com">
+              <a href="https://team.easyapi.com/project/">
                 API文档中心
               </a>
             </li>
@@ -35,14 +35,8 @@
               </a>
             </li>
             <li>
-              <img src="/images/info/down_icon2.png">
-              <a href="https://gateway.easyapi.com">
-                API网关中心
-              </a>
-            </li>
-            <li>
               <img src="/images/info/header-icon1.png">
-              <a href="https://service.easyapi.com">
+              <a href="https://team.easyapi.com/service/">
                 API服务中心
               </a>
             </li>
@@ -53,10 +47,10 @@
     <div class="card-icon">
       <ul>
         <li>
-          <a href="/pages/product/doc.vue">
+          <a href="https://team.easyapi.com/project/">
             <img src="https://static.easyapi.com/images/index/ic1.png">
           </a>
-          <a href="/pages/product/doc.vue">
+          <a href="https://team.easyapi.com/project/">
           <span class="font_w">
             API文档
           </span>
@@ -66,10 +60,10 @@
           </a>
         </li>
         <li>
-          <a href="/pages/product/monitor.vue">
+          <a href="https://team.easyapi.com/project/">
             <img src="https://static.easyapi.com/images/index/ic2.png">
           </a>
-          <a href="/pages/product/monitor.vue">
+          <a href="https://team.easyapi.com/project/">
           <span class="font_w">
             API监控
           </span>
@@ -79,23 +73,10 @@
           </a>
         </li>
         <li>
-          <a href="/pages/product/gateway.vue">
-            <img src="https://static.easyapi.com/images/index/ic3.png">
-          </a>
-          <a href="/pages/product/gateway.vue">
-          <span class="font_w">
-            API网关
-          </span>
-            <p>
-              高性能、高可用的API网关服务
-            </p>
-          </a>
-        </li>
-        <li>
-          <a href="/pages/product/market.vue">
+          <a href="https://team.easyapi.com/service/">
             <img src="https://static.easyapi.com/images/index/ic4.png">
           </a>
-          <a href="/pages/product/market.vue">
+          <a href="https://team.easyapi.com/service/">
           <span class="font_w">
             API服务
           </span>
