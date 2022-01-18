@@ -5,7 +5,7 @@
         <div class="sysinfo">
           <h1>EasyAPI接口监控系统</h1>
           <p>专注API接口监控，让您的API接口更稳定，与APP更紧密</p>
-          <a href="https://monitor.easyapi.com" class="bug_btn">立即使用API监控</a>
+          <a href="https://team.easyapi.com/project/" class="bug_btn">立即使用API监控</a>
           <div class="more">
             <a href="https://help.easyapi.com/monitor/sdk">SDK下载</a> |
             <a href="https://help.easyapi.com/monitor/changelog">更新历史</a>

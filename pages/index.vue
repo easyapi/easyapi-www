@@ -30,7 +30,7 @@
             </li>
             <li>
               <img src="/images/info/down_icon5.png">
-              <a href="https://monitor.easyapi.com">
+              <a href="https://team.easyapi.com/project/">
                 API监控中心
               </a>
             </li>
