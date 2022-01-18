@@ -166,13 +166,11 @@
           </el-dropdown>
         </div>
         <span class="f-rel nav">
-        <p class="console">
-          控制台
-        </p>
-        <div class="popover">
-          <img class="popover-img" src="/images/info/narrow.png"/>
-          <ul>
-            <a href="https://team.easyapi.com/project/">
+          <el-popover
+            placement="bottom-start"
+            trigger="hover">
+            <ul class="console-ul">
+             <a href="https://team.easyapi.com/project/">
               <li>
                 <img class="console_icon" src="/images/info/down_icon7.png">
                 <div class="popover-content">
@@ -203,7 +201,8 @@
               </li>
             </a>
           </ul>
-        </div>
+          <p slot="reference" class="f-rel console navs-item">控制台</p>
+        </el-popover>
       </span>
       </div>
     </div>
@@ -211,188 +210,188 @@
 </template>
 
 <script>
-import Cookies from 'js-cookie'
-import {mapGetters} from 'vuex'
+  import Cookies from 'js-cookie'
+  import {mapGetters} from 'vuex'
 
-export default {
-  name: 'Header',
-  data() {
-    return {
-      isActive: false,
-      authenticationToken: Cookies.get('authenticationToken')
-    }
-  },
-  computed: {
-    ...mapGetters([
-      'photo',
-      'team'
-    ])
-  },
-  mounted() {
-    if (this.authenticationToken) {
-      this.$store.dispatch('getUser')
-    }
-    let path = $nuxt.$route.path
-    this.isActive = path !== "/";
-    if (path === "/product/doc") {
-      this.isActive = false
-    }
-    if (path === "/product/gateway") {
-      this.isActive = false
-    }
-    if (path === "/product/interface") {
-      this.isActive = false
-    }
-    if (path === "/product/monitor") {
-      this.isActive = false
-    }
-    if (path === "/product/scene") {
-      this.isActive = false
-    }
-    if (path === "/product/test") {
-      this.isActive = false
-    }
-    if (path === "/info/price") {
-      this.isActive = false
-    }
-    if (path === "/solution/market") {
-      this.isActive = false
-    }
-    if (path === "/solution/open") {
-      this.isActive = false
-    }
-    if (path === "/solution/portal") {
-      this.isActive = false
-    }
-    if (path === "/info/github") {
-      this.isActive = false
-    }
-  },
-  watch: {
-    '$route'(res) {
-      this.isActive = res.path !== "/";
-      if (res.path === "/product/doc") {
-        this.isActive = false
-      }
-      if (res.path === "/product/gateway") {
-        this.isActive = false
-      }
-      if (res.path === "/product/interface") {
-        this.isActive = false
-      }
-      if (res.path === "/product/monitor") {
-        this.isActive = false
-      }
-      if (res.path === "/product/scene") {
-        this.isActive = false
-      }
-      if (res.path === "/product/test") {
-        this.isActive = false
-      }
-      if (res.path === "/info/price") {
-        this.isActive = false
-      }
-      if (res.path === "/solution/market") {
-        this.isActive = false
-      }
-      if (res.path === "/solution/open") {
-        this.isActive = false
-      }
-      if (res.path === "/solution/portal") {
-        this.isActive = false
-      }
-      if (res.path === "/info/github") {
-        this.isActive = false
-      }
-    }
-  },
-  methods: {
-    indicatorStyle() {
-      return {header}
-    },
-    handleCommand(command) {
-      if (command === 'notice') {
-        this.$router.push(`/notification`)
-      } else if (command === 'edit') {
-        this.$router.push(`/user/edit`)
-      } else if (command === 'quitLogin') {
-        this.quitLogin()
+  export default {
+    name: 'Header',
+    data() {
+      return {
+        isActive: false,
+        authenticationToken: Cookies.get('authenticationToken')
       }
     },
-    quitLogin() {
-      this.$store.dispatch('logout')
-      window.location.href = 'https://account.easyapi.com/login/?from=https://team.easyapi.com'
+    computed: {
+      ...mapGetters([
+        'photo',
+        'team'
+      ])
     },
+    mounted() {
+      if (this.authenticationToken) {
+        this.$store.dispatch('getUser')
+      }
+      let path = $nuxt.$route.path
+      this.isActive = path !== "/";
+      if (path === "/product/doc") {
+        this.isActive = false
+      }
+      if (path === "/product/gateway") {
+        this.isActive = false
+      }
+      if (path === "/product/interface") {
+        this.isActive = false
+      }
+      if (path === "/product/monitor") {
+        this.isActive = false
+      }
+      if (path === "/product/scene") {
+        this.isActive = false
+      }
+      if (path === "/product/test") {
+        this.isActive = false
+      }
+      if (path === "/info/price") {
+        this.isActive = false
+      }
+      if (path === "/solution/market") {
+        this.isActive = false
+      }
+      if (path === "/solution/open") {
+        this.isActive = false
+      }
+      if (path === "/solution/portal") {
+        this.isActive = false
+      }
+      if (path === "/info/github") {
+        this.isActive = false
+      }
+    },
+    watch: {
+      '$route'(res) {
+        this.isActive = res.path !== "/";
+        if (res.path === "/product/doc") {
+          this.isActive = false
+        }
+        if (res.path === "/product/gateway") {
+          this.isActive = false
+        }
+        if (res.path === "/product/interface") {
+          this.isActive = false
+        }
+        if (res.path === "/product/monitor") {
+          this.isActive = false
+        }
+        if (res.path === "/product/scene") {
+          this.isActive = false
+        }
+        if (res.path === "/product/test") {
+          this.isActive = false
+        }
+        if (res.path === "/info/price") {
+          this.isActive = false
+        }
+        if (res.path === "/solution/market") {
+          this.isActive = false
+        }
+        if (res.path === "/solution/open") {
+          this.isActive = false
+        }
+        if (res.path === "/solution/portal") {
+          this.isActive = false
+        }
+        if (res.path === "/info/github") {
+          this.isActive = false
+        }
+      }
+    },
+    methods: {
+      indicatorStyle() {
+        return {header}
+      },
+      handleCommand(command) {
+        if (command === 'notice') {
+          this.$router.push(`/notification`)
+        } else if (command === 'edit') {
+          this.$router.push(`/user/edit`)
+        } else if (command === 'quitLogin') {
+          this.quitLogin()
+        }
+      },
+      quitLogin() {
+        this.$store.dispatch('logout')
+        window.location.href = 'https://account.easyapi.com/login/?from=https://team.easyapi.com'
+      },
+    }
   }
-}
 </script>
 
 <style scoped lang="scss">
-.header {
-  position: relative;
-  top: 0;
-  height: 72px;
-  box-shadow: none;
-  background-color: (0, 0, 0, 0.3);
-}
+  .header {
+    position: relative;
+    top: 0;
+    height: 72px;
+    box-shadow: none;
+    background-color: (0, 0, 0, 0.3);
+  }
 
-.other-header {
-  position: relative;
-  top: 0;
-  height: 72px;
-  box-shadow: none;
-  background-color: #18c1d6;
-}
+  .other-header {
+    position: relative;
+    top: 0;
+    height: 72px;
+    box-shadow: none;
+    background-color: #18c1d6;
+  }
 
-.header-index {
-  position: absolute;
-  left: 0;
-  right: 0;
-}
+  .header-index {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
 
-.header .navs span:after {
-  content: '';
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  background: url(/images/angle.png) center no-repeat;
-  background-size: 20px auto;
-}
+  .header .navs span:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: url(/images/angle.png) center no-repeat;
+    background-size: 20px auto;
+  }
 
-.other-header .navs span:after {
-  content: '';
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  background: url(/images/angle.png) center no-repeat;
-  background-size: 20px auto;
-}
+  .other-header .navs span:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: url(/images/angle.png) center no-repeat;
+    background-size: 20px auto;
+  }
 
-.header .navs span:hover:after {
-  background-image: url(/images/angle-1.png);
-}
+  .header .navs span:hover:after {
+    background-image: url(/images/angle-1.png);
+  }
 
-.other-header .navs span:hover:after {
-  background-image: url(/images/angle-1.png);
-}
+  .other-header .navs span:hover:after {
+    background-image: url(/images/angle-1.png);
+  }
 
-.team-head-left {
-  margin-right: 20px;
-  display: flex;
-  position: relative;
-}
+  .team-head-left {
+    margin-right: 20px;
+    display: flex;
+    position: relative;
+  }
 
-.team-head-left span {
-  margin-top: 12px;
-}
+  .team-head-left span {
+    margin-top: 12px;
+  }
 
-.team-icon {
-  margin-top: 8px;
-}
+  .team-icon {
+    margin-top: 8px;
+  }
 </style>
