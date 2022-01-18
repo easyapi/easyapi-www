@@ -12,7 +12,7 @@
     <div class="price-card f-border-b">
       <ul class="price-card-title">
         <li>
-          <div class="title">文档管理</div>
+          <div class="price-card-title-top">文档管理</div>
           <div class="price">
             <span class="f-c-warning"><em class="f-fs1">¥</em>29<em class="f-fs1">/团队/月</em></span>
 
@@ -29,7 +29,7 @@
           </div>
         </li>
         <li class="">
-          <div class="title">接口监控</div>
+          <div class="price-card-title-top">接口监控</div>
           <div class="price">
             <span class="f-c-warning"><em class="f-fs1">¥</em>99<em class="f-fs1">项目/月</em></span>
 
@@ -48,7 +48,7 @@
           </div>
         </li>
         <li>
-          <div class="title">网关服务</div>
+          <div class="price-card-title-top">网关服务</div>
           <div class="price">
             <span class="f-c-warning"><em class="f-fs1">¥</em>1999<em class="f-fs1">项目/月</em></span>
           </div>
