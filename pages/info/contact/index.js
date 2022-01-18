@@ -1,6 +1,6 @@
 import './index.scss'
 import Cookies from 'js-cookie'
-import {getApi} from "../../../api/account";
+import {getUser} from "../../../api/account";
 
 export default {
   name: 'Contact',
@@ -54,7 +54,7 @@ export default {
         map.openInfoWindow(infoWindow, point); //开启信息窗口
       });
       if (Cookies.get("authenticationToken")) {
-        getApi(this).then(res => {
+        getUser(this).then(res => {
 
         })
       }
