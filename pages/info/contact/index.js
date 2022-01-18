@@ -14,7 +14,7 @@ export default {
       script: [
         {
           type: 'text/javascript',
-          src: 'https://api.map.baidu.com/api?v=3.0&ak=S6mqljAtjGZzvmeVxrRR68rA',
+          src: 'https://api.map.baidu.com/api?v=3.0&ak=yZYo7WmkUj3bMFZMcP7PRSpuvjUfGw0B',
           body: true
         },
         {
