@@ -19,7 +19,7 @@ export default {
         },
         {
           type: 'text/javascript',
-          src: "http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js",
+          src: "https://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js",
           body: true
         }
       ]

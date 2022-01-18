@@ -23,8 +23,8 @@
             <p>&nbsp;</p>
 
             <p><a target="_blank"
-                  href="http://shang.qq.com/wpa/qunwpa?idkey=4976bbcfecb3dccced94a6c99ba612348bf9d52e3d438ec9556b24b562e9fd53"><img
-              border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="EasyAPI开发者交流群"
+                  href="https://shang.qq.com/wpa/qunwpa?idkey=4976bbcfecb3dccced94a6c99ba612348bf9d52e3d438ec9556b24b562e9fd53"><img
+              border="0" src="https://pub.idqqimg.com/wpa/images/group.png" alt="EasyAPI开发者交流群"
               title="EasyAPI开发者交流群"></a></p>
           </div>
 

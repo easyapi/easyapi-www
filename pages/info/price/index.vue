@@ -85,7 +85,7 @@
             </a>
           </li>
           <li>
-            <a title="平安银行" href="http://bank.pingan.com/" target="_blank">
+            <a title="平安银行" href="https://bank.pingan.com/" target="_blank">
               <img src="/images/info/pic_price_logo3.png">
             </a>
           </li>
@@ -100,7 +100,7 @@
             </a>
           </li>
           <li>
-            <a title="超级表格" href="http://www.chaojibiaoge.com/" target="_blank">
+            <a title="超级表格" href="https://www.chaojibiaoge.com/" target="_blank">
               <img src="/images/info/pic_price_logo6.png">
             </a>
 
