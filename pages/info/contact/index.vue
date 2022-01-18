@@ -7,7 +7,8 @@
         </h2>
         <div class="u-contact">
           <div class="tex">
-            <div id="allmap" style=""></div>
+            <baidu-map class="bm-view" ak="yZYo7WmkUj3bMFZMcP7PRSpuvjUfGw0B" :center="center" :zoom="zoom" :scroll-wheel-zoom='scroll'>
+            </baidu-map>
             <h3>无锡帮趣数据服务有限公司</h3>
 
             <p>地址：中国·无锡市 滨湖区吟白路1号超级计算无锡中心6楼</p>
@@ -66,7 +67,7 @@
 </template>
 
 <script>
-  import Index from './index'
+import Index from './index'
 
-  export default Index
+export default Index
 </script>
