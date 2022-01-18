@@ -426,10 +426,69 @@ body, button, input, keygen, legend, select, textarea {
   width: 120px;
 }
 
+.popover-ul {
+  //box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+  //position: absolute;
+  background: #fff;
+  border-radius: 6px;
+  width: 640px;
+  padding: 20px 0 0;
+  overflow: hidden;
+  left: 0;
+  z-index: 99999;
+
+  .a_link {
+    display: block;
+    margin: 0;
+    //padding: 0;
+  }
+
+  .popover-li {
+    float: left;
+    width: 50%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+    .icon_img {
+      width: 25px;
+      height: 25px;
+      float: left;
+    }
+
+    .popover-content {
+      float: right;
+      width: 86%;
+      margin-top: 4px;
+
+      p {
+        font-size: 16px;
+        color: #333;
+        line-height: 18px;
+      }
+
+      span {
+        color: #999;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0;
+        margin: 0;
+
+        &:after {
+          content: none;
+        }
+      }
+    }
+
+    &:hover {
+      background: #f5f5f5;
+    }
+  }
+}
+
 .navs {
   line-height: 68px;
   font-size: 1.6rem;
-  height: 58px;
+  height: 48px;
 
   a {
     color: #fff;
@@ -516,7 +575,7 @@ body, button, input, keygen, legend, select, textarea {
   span {
     display: inline-block;
     color: #fff;
-    margin-left: 20px;
+    //margin-left: 20px;
     padding: 0 10px;
     cursor: pointer;
 
@@ -531,10 +590,11 @@ body, button, input, keygen, legend, select, textarea {
 }
 
 .side-navs {
+  display: flex;
   float: right;
   width: 300px;
   text-align: right;
-  height: 80px;
+  height: 50px;
   padding-top: 12px;
 
   .popover {
@@ -585,7 +645,7 @@ body, button, input, keygen, legend, select, textarea {
       & > a {
         &:first-child {
           & > li {
-            border-bottom: 1px solid #ddd;
+            //border-bottom: 1px solid #ddd;
           }
         }
       }
@@ -626,6 +686,18 @@ body, button, input, keygen, legend, select, textarea {
   }
 
   .register {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    vertical-align: top;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .login {
     height: 40px;
     line-height: 40px;
     padding: 0 15px;
@@ -1531,7 +1603,7 @@ body, button, input, keygen, legend, select, textarea {
     &:nth-child(2) {
       display: block;
       width: 90%;
-      height: 1px;
+      //height: 1px;
       background: #ddd;
       margin: 5px auto;
       padding: 0;

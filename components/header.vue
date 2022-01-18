@@ -5,13 +5,13 @@
         <img class="logo f-fl" src="https://qiniu.easyapi.com/market/logo.svg">
       </nuxt-link>
       <div class="navs f-fl">
-       <span class="f-rel navs-item">
-        产品
-        <div class="popover">
-          <img class="popover-img" src="/images/info/narrow.png">
-          <ul>
+        <el-popover
+          placement="bottom-start"
+          width="650"
+          trigger="hover">
+          <ul class="popover-ul">
             <a href="/product/doc" class="a_link">
-              <li>
+              <li class="popover-li">
                 <img class="icon_img" src="/images/info/down_icon1.png">
                 <div class="popover-content">
                   <p>
@@ -24,7 +24,7 @@
               </li>
             </a>
             <a href="/product/gateway" class="a_link">
-              <li>
+              <li class="popover-li">
                 <img class="icon_img" src="/images/info/down_icon2.png">
                 <div class="popover-content">
                   <p>
@@ -37,7 +37,7 @@
               </li>
             </a>
             <a href="/product/test" class="a_link">
-              <li>
+              <li class="popover-li">
                 <img class="icon_img" src="/images/info/down_icon3.png">
                 <div class="popover-content">
                   <p>
@@ -50,7 +50,7 @@
               </li>
             </a>
             <a href="/product/interface" class="a_link">
-              <li>
+              <li class="popover-li">
                 <img class="icon_img" src="/images/info/down_icon4.png">
                 <div class="popover-content">
                   <p>
@@ -63,7 +63,7 @@
               </li>
             </a>
             <a href="/product/monitor" class="a_link">
-              <li>
+              <li class="popover-li">
                 <img class="icon_img" src="/images/info/down_icon5.png">
                 <div class="popover-content">
                   <p>
@@ -76,7 +76,7 @@
               </li>
             </a>
             <a href="/product/scene" class="a_link">
-              <li>
+              <li class="popover-li">
                 <img class="icon_img" src="/images/info/down_icon6.png">
                 <div class="popover-content">
                   <p>
@@ -89,18 +89,18 @@
               </li>
             </a>
           </ul>
-        </div>
-      </span>
+          <span slot="reference" class="f-rel navs-item">产品</span>
+        </el-popover>
         <a href="/info/price">
           价格
         </a>
-        <span class="f-rel navs-item">
-        私有化
-        <div class="popover">
-          <img class="popover-img" src="/images/info/narrow.png">
-          <ul>
+        <el-popover
+          placement="bottom-start"
+          width="650"
+          trigger="hover">
+          <ul class="popover-ul">
             <a href="/solution/portal" class="a_link">
-              <li>
+              <li class="popover-li">
                 <img class="icon_img" src="/images/info/header-icon2.png">
                 <div class="popover-content">
                   <p>
@@ -113,7 +113,7 @@
               </li>
             </a>
             <a href="/solution/market" class="a_link">
-              <li>
+              <li class="popover-li">
                 <img class="icon_img" src="/images/info/header-icon3.png">
                 <div class="popover-content">
                   <p>
@@ -126,7 +126,7 @@
               </li>
             </a>
             <a href="/solution/open" class="a_link">
-              <li>
+              <li class="popover-li">
                 <img class="icon_img" src="/images/info/header-icon1.png">
                 <div class="popover-content">
                   <p>
@@ -139,18 +139,32 @@
               </li>
             </a>
           </ul>
-        </div>
-      </span>
+          <span slot="reference" class="f-rel navs-item">私有化</span>
+        </el-popover>
         <a href="https://market.easyapi.com" target="_blank">
           API市场
         </a>
       </div>
       <div class="side-navs">
-        <a class="register" href="https://account.easyapi.com/signup" id="register">
+        <a v-if='!authenticationToken' class="register" href="https://account.easyapi.com/signup" id="register">
           注册
         </a>
-        <!-- <a class="navlogo" href="https://account.easyapi.com/login" id="login">登录</a> -->
-        <!-- id="console" -->
+        <a v-if='!authenticationToken' class="login" href="https://account.easyapi.com/login" id="login">
+          登录
+        </a>
+        <div class='team-head-left' v-if='authenticationToken'>
+          <el-dropdown trigger='click' @command='handleCommand'>
+            <span id='showTeamInfo' style='cursor: pointer'>
+              <img v-if='photo' class='team-icon' :src='photo' alt
+                   style='width:24px;height: 24px;border-radius: 20px'/>
+             </span>
+            <el-dropdown-menu slot='dropdown'>
+              <el-dropdown-item command='notice' icon='el-icon-edit'>我的通知</el-dropdown-item>
+              <el-dropdown-item command='edit' icon='el-icon-sort'>个人设置</el-dropdown-item>
+              <el-dropdown-item command='quitLogin' icon='el-icon-switch-button'>退出</el-dropdown-item>
+            </el-dropdown-menu>
+          </el-dropdown>
+        </div>
         <span class="f-rel nav">
         <p class="console">
           控制台
@@ -234,14 +248,27 @@
 </template>
 
 <script>
+  import Cookies from 'js-cookie'
+  import {mapGetters} from 'vuex'
+
   export default {
     name: 'Header',
     data() {
       return {
-        isActive: false
+        isActive: false,
+        authenticationToken: Cookies.get('authenticationToken')
       }
     },
+    computed: {
+      ...mapGetters([
+        'photo',
+        'team'
+      ])
+    },
     mounted() {
+      if (this.authenticationToken) {
+        this.$store.dispatch('getUser')
+      }
       let path = $nuxt.$route.path
       if (path === "/") {
         this.isActive = false
@@ -284,7 +311,6 @@
     },
     watch: {
       '$route'(res) {
-        console.log(res.path)
         if (res.path === "/") {
           this.isActive = false
         } else {
@@ -328,7 +354,20 @@
     methods: {
       indicatorStyle() {
         return {header}
-      }
+      },
+      handleCommand(command) {
+        if (command === 'notice') {
+          this.$router.push(`/notification`)
+        } else if (command === 'edit') {
+          this.$router.push(`/user/edit`)
+        } else if (command === 'quitLogin') {
+          this.quitLogin()
+        }
+      },
+      quitLogin() {
+        this.$store.dispatch('logout')
+        window.location.href = 'https://account.easyapi.com/login/?from=https://team.easyapi.com'
+      },
     }
   }
 </script>
@@ -386,5 +425,19 @@
 
   .other-header .navs span:hover:after {
     background-image: url(/images/angle-1.png);
+  }
+
+  .team-head-left {
+    margin-right: 20px;
+    display: flex;
+    position: relative;
+  }
+
+  .team-head-left span {
+    margin-top: 12px;
+  }
+
+  .team-icon {
+    margin-top: 8px;
   }
 </style>
