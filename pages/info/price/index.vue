@@ -24,7 +24,7 @@
             <span>超过20人支付5元/人/月</span>
           </div>
           <div class="free_use">
-            <a href="https://doc.easyapi.com">免费试用</a>
+            <a href="https://team.easyapi.com/project/">免费试用</a>
             <img src="/images/info/arrow-r.png"/>
           </div>
         </li>
@@ -43,7 +43,7 @@
             <span>可额外购买套餐</span>
           </div>
           <div class="free_use">
-            <a href="https://monitor.easyapi.com">免费试用</a>
+            <a href="https://team.easyapi.com/project/">免费试用</a>
             <img src="/images/info/arrow-r.png" alt=""/>
           </div>
         </li>

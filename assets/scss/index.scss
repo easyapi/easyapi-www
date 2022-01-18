@@ -1524,57 +1524,6 @@ body, button, input, keygen, legend, select, textarea {
   }
 }
 
-.u-changlogbanner {
-  height: 299px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  .title {
-    padding-top: 70px;
-    text-align: center;
-    color: #fff;
-
-    &.color-gray {
-      color: #555;
-    }
-
-    h1 {
-      font-size: 4.8rem;
-      margin: 15px 0;
-    }
-
-    p {
-      font-size: 2rem;
-      line-height: 1.7;
-    }
-  }
-}
-
-.u-changlog {
-  padding: 15px 0;
-  margin-top: 50px;
-
-  .u-hd {
-    text-align: center;
-
-    span {
-      font-size: 1.5rem;
-      display: inline-block;
-      background: #fff;
-      padding: 10px 0;
-      color: #18c1d6;
-    }
-  }
-
-  .line {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    border-right: solid #ddd 1px;
-    left: 50%;
-  }
-}
-
 .jump_link {
   position: absolute;
   top: 86px;
@@ -1585,7 +1534,7 @@ body, button, input, keygen, legend, select, textarea {
   background: #fff;
   visibility: hidden;
   line-height: 36px;
-  box-shadow: 0 2px 10px 5px #daecf0;
+  box-shadow: 0 1px 2px 1px #daecf0;
 
   & > li {
     margin: 5px 0;
@@ -1603,7 +1552,6 @@ body, button, input, keygen, legend, select, textarea {
     &:nth-child(2) {
       display: block;
       width: 90%;
-      //height: 1px;
       background: #ddd;
       margin: 5px auto;
       padding: 0;

@@ -26,16 +26,9 @@ export default {
     }
   },
   mounted() {
-    this.reurl()
     this.init()
   },
   methods: {
-    reurl() { // 解决第一次进入不加载js文件
-      if (location.href.indexOf('#reloaded') === -1) {
-        location.href = location.href + '#reloaded'
-        location.reload()
-      }
-    },
     init() {
       var map = new BMap.Map("allmap", {
         enableHighResolution: true
