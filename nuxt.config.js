@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: '{{ name }}',
+    title: '{{ name }} - EasyAPI',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
@@ -11,9 +11,7 @@ module.exports = {
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
-      {rel: 'stylesheet', href: 'https://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.css '}
     ],
-    script: []
   },
   css: [
     '@/assets/scss/index.scss',
@@ -21,7 +19,7 @@ module.exports = {
   ],
   plugins: [
     '@/plugins/axios',
-    {src: '@/plugins/element-ui', ssr: true},
+    "@/plugins/element-ui",
   ],
   /*
   ** Customize the progress bar color
@@ -32,6 +30,7 @@ module.exports = {
   loading: {
     color: '#3B8070'
   },
+  target: 'static',
   /*
   ** Build configuration
   */
@@ -40,7 +39,18 @@ module.exports = {
     extend(config, ctx) {
     },
     maxChunkSize: 300000, // 单个包最大尺寸
-    extractCSS: true // 单独提取CSS
+    extractCSS: true, // 单独提取CSS
+    babel: {
+      plugins: [
+        [
+          'component',
+          {
+            libraryName: 'element-ui',
+            styleLibraryName: 'theme-chalk'
+          }
+        ]
+      ]
+    }
   },
   server: {
     port: 3000
