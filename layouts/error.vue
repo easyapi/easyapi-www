@@ -10,12 +10,14 @@
       </div>
     </div>
     <div class="error mg-t-72" v-if="error.statusCode === 404">
-      <div class="error-content">
-        <div>
-          <p class="error-title">404</p>
-          <p class="error-subtitle">页面不存在</p>
+      <div class="error-card">
+        <div class="error-title">404! <span>你访问的页面不存在</span></div>
+        <img src="../assets/images/404.gif"/>
+        <div class="error-back">
+          <el-button type="primary">
+            <nuxt-link class="back-home" to="/">返回首页</nuxt-link>
+          </el-button>
         </div>
-        <img src="https://qiniu.easyapi.com/photo/girl32.jpg"/>
       </div>
     </div>
     <div class="error mg-t-72" v-else>
@@ -33,7 +35,7 @@
 <script>
   export default {
     props: ['error'],
-    layout: 'default',
+    layout: 'blog',
     mounted() {
       console.log(this.error)
     },
@@ -50,28 +52,42 @@
 </script>
 
 <style lang="scss" scoped>
-  .error-content {
-    width: 600px;
-    margin: 132px auto 60px;
+  .error-card {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    div {
-      border: 1px solid #ccc;
-      padding: 10px 20px;
-      background: #f5f5f5;
-      text-align: center;
+    .error-title {
+      font-size: 36px;
+      font-weight: 600;
 
-      .error-title {
-        font-size: 60px;
-        font-family: Trebuchet MS;
-      }
-
-      .error-subtitle {
-        font-size: 18px;
+      span {
+        font-size: 24px;
+        font-weight: 500;
       }
     }
 
     img {
+      margin-top: 10px;
+      width: 400px;
+      height: 300px;
+    }
+
+    .error-back {
+      margin-top: 10px;
       width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .el-button {
+        width: 100px;
+      }
+
+      .back-home {
+        color: #ffffff;
+      }
     }
   }
 </style>
