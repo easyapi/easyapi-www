@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: "code",
+  name: "Pay",
   data() {
     return {
       dialogVisible: false
@@ -33,6 +33,35 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+.layer-alertdon {
+  padding: 30px;
+
+  dl {
+    dd {
+      width: 50%;
+      float: left;
+      text-align: center;
+      padding: 15px 0;
+
+      img {
+        width: 140px;
+      }
+
+      span {
+        font-size: 15px;
+        display: inline-block;
+        padding: 5px;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: gray;
+  }
+}
 
 </style>

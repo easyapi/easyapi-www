@@ -1,17 +1,17 @@
 <template>
   <client-only>
-    <div :class="[isActive?'other-header':'header']" class="header-index">
+    <div class="header header-index">
       <div class="content">
-        <nuxt-link to="/">
+        <a href="/">
           <img class="logo f-fl" src="https://qiniu.easyapi.com/market/logo.svg">
-        </nuxt-link>
+        </a>
         <div class="navs f-fl">
           <el-popover
             placement="bottom-start"
             width="650"
             trigger="hover">
             <ul class="popover-ul">
-              <nuxt-link to="/product/doc" class="a_link">
+              <a href="/product/doc" class="a_link">
                 <li class="popover-li">
                   <img class="icon_img" src="/images/info/down_icon1.png">
                   <div class="popover-content">
@@ -23,8 +23,8 @@
                   </span>
                   </div>
                 </li>
-              </nuxt-link>
-              <nuxt-link to="/product/gateway" class="a_link">
+              </a>
+              <a href="/product/gateway" class="a_link">
                 <li class="popover-li">
                   <img class="icon_img" src="/images/info/down_icon2.png">
                   <div class="popover-content">
@@ -36,8 +36,8 @@
                   </span>
                   </div>
                 </li>
-              </nuxt-link>
-              <nuxt-link to="/product/test" class="a_link">
+              </a>
+              <a href="/product/test" class="a_link">
                 <li class="popover-li">
                   <img class="icon_img" src="/images/info/down_icon3.png">
                   <div class="popover-content">
@@ -49,8 +49,8 @@
                   </span>
                   </div>
                 </li>
-              </nuxt-link>
-              <nuxt-link to="/product/interface" class="a_link">
+              </a>
+              <a href="/product/interface" class="a_link">
                 <li class="popover-li">
                   <img class="icon_img" src="/images/info/down_icon4.png">
                   <div class="popover-content">
@@ -62,8 +62,8 @@
                   </span>
                   </div>
                 </li>
-              </nuxt-link>
-              <nuxt-link to="/product/monitor" class="a_link">
+              </a>
+              <a href="/product/monitor" class="a_link">
                 <li class="popover-li">
                   <img class="icon_img" src="/images/info/down_icon5.png">
                   <div class="popover-content">
@@ -75,8 +75,8 @@
                   </span>
                   </div>
                 </li>
-              </nuxt-link>
-              <nuxt-link to="/product/scene" class="a_link">
+              </a>
+              <a href="/product/scene" class="a_link">
                 <li class="popover-li">
                   <img class="icon_img" src="/images/info/down_icon6.png">
                   <div class="popover-content">
@@ -88,19 +88,19 @@
                   </span>
                   </div>
                 </li>
-              </nuxt-link>
+              </a>
             </ul>
             <span slot="reference" class="f-rel navs-item">产品</span>
           </el-popover>
-          <nuxt-link to="/info/price">
+          <a href="/info/price">
             价格
-          </nuxt-link>
+          </a>
           <el-popover
             placement="bottom-start"
             width="650"
             trigger="hover">
             <ul class="popover-ul">
-              <nuxt-link to="/solution/portal" class="a_link">
+              <a href="/solution/portal" class="a_link">
                 <li class="popover-li">
                   <img class="icon_img" src="/images/info/header-icon2.png">
                   <div class="popover-content">
@@ -112,8 +112,8 @@
                   </span>
                   </div>
                 </li>
-              </nuxt-link>
-              <nuxt-link to="/solution/market" class="a_link">
+              </a>
+              <a href="/solution/market" class="a_link">
                 <li class="popover-li">
                   <img class="icon_img" src="/images/info/header-icon3.png">
                   <div class="popover-content">
@@ -125,8 +125,8 @@
                   </span>
                   </div>
                 </li>
-              </nuxt-link>
-              <nuxt-link to="/solution/open" class="a_link">
+              </a>
+              <a href="/solution/open" class="a_link">
                 <li class="popover-li">
                   <img class="icon_img" src="/images/info/header-icon1.png">
                   <div class="popover-content">
@@ -138,7 +138,7 @@
                   </span>
                   </div>
                 </li>
-              </nuxt-link>
+              </a>
             </ul>
             <span slot="reference" class="f-rel navs-item">私有化</span>
           </el-popover>
@@ -219,7 +219,6 @@ export default {
   name: 'Header',
   data() {
     return {
-      isActive: false,
       authenticationToken: Cookies.get('authenticationToken')
     }
   },
@@ -233,84 +232,8 @@ export default {
     if (this.authenticationToken) {
       this.$store.dispatch('getUser')
     }
-    let path = $nuxt.$route.path
-    this.isActive = path !== "/";
-    if (path === "/product/doc") {
-      this.isActive = false
-    }
-    if (path === "/product/gateway") {
-      this.isActive = false
-    }
-    if (path === "/product/interface") {
-      this.isActive = false
-    }
-    if (path === "/product/monitor") {
-      this.isActive = false
-    }
-    if (path === "/product/scene") {
-      this.isActive = false
-    }
-    if (path === "/product/test") {
-      this.isActive = false
-    }
-    if (path === "/info/price") {
-      this.isActive = false
-    }
-    if (path === "/solution/market") {
-      this.isActive = false
-    }
-    if (path === "/solution/open") {
-      this.isActive = false
-    }
-    if (path === "/solution/portal") {
-      this.isActive = false
-    }
-    if (path === "/info/github") {
-      this.isActive = false
-    }
-  },
-  watch: {
-    '$route'(res) {
-      this.isActive = res.path !== "/";
-      if (res.path === "/product/doc") {
-        this.isActive = false
-      }
-      if (res.path === "/product/gateway") {
-        this.isActive = false
-      }
-      if (res.path === "/product/interface") {
-        this.isActive = false
-      }
-      if (res.path === "/product/monitor") {
-        this.isActive = false
-      }
-      if (res.path === "/product/scene") {
-        this.isActive = false
-      }
-      if (res.path === "/product/test") {
-        this.isActive = false
-      }
-      if (res.path === "/info/price") {
-        this.isActive = false
-      }
-      if (res.path === "/solution/market") {
-        this.isActive = false
-      }
-      if (res.path === "/solution/open") {
-        this.isActive = false
-      }
-      if (res.path === "/solution/portal") {
-        this.isActive = false
-      }
-      if (res.path === "/info/github") {
-        this.isActive = false
-      }
-    }
   },
   methods: {
-    indicatorStyle() {
-      return {header}
-    },
     handleCommand(command) {
       if (command === 'notice') {
         this.$router.push(`/notification`)
@@ -335,14 +258,6 @@ export default {
   height: 72px;
   box-shadow: none;
   background-color: (0, 0, 0, 0.3);
-}
-
-.other-header {
-  position: relative;
-  top: 0;
-  height: 72px;
-  box-shadow: none;
-  background-color: #18c1d6;
 }
 
 .header-index {

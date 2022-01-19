@@ -1,9 +1,9 @@
 import './index.scss'
-import Code from "./components/code";
+import Pay from "../../../components/pay";
 
 export default {
   name: 'InfoSupport',
-  components: {Code},
+  components: {Pay},
   head() {
     return {
       title: '支持名单 - EasyAPI服务平台',

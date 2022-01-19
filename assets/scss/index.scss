@@ -1491,35 +1491,6 @@ body, button, input, keygen, legend, select, textarea {
   color: #18c1d6;
 }
 
-.layer-alertdon {
-  padding: 30px;
-
-  dl {
-    dd {
-      width: 50%;
-      float: left;
-      text-align: center;
-      padding: 15px 0;
-
-      img {
-        width: 140px;
-      }
-
-      span {
-        font-size: 15px;
-        display: inline-block;
-        padding: 5px;
-      }
-    }
-  }
-
-  p {
-    font-size: 1.4rem;
-    line-height: 1.7;
-    color: gray;
-  }
-}
-
 .jump_link {
   position: absolute;
   top: 86px;
