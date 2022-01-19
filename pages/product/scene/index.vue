@@ -4,7 +4,7 @@
       <div class="sysinfo f-tac">
         <h1>API场景化服务</h1>
         <p>EasyAPI顺应技术开发趋势，推出通过API实现特定的场景化服务</p>
-        <a href="/system/order/add" class="bug_btn">前往服务市场</a>
+        <a href="https://market.easyapi.com/scene" class="bug_btn">前往服务市场</a>
         <div class="more">
           体验API场景化服务的魅力
         </div>
