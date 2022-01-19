@@ -21,7 +21,7 @@ module.exports = {
   ],
   plugins: [
     '@/plugins/axios',
-    '@/plugins/element-ui',
+    {src: '@/plugins/element-ui', ssr: true},
   ],
   /*
   ** Customize the progress bar color

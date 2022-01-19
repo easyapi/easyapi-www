@@ -71,8 +71,6 @@ export default {
       }
     },
   },
-  created() {
-  },
   mounted() {
     window.addEventListener('scroll', this.lazyLoading)
     this.getArticleList()
