@@ -67,7 +67,7 @@
             <li>
               <p><img src="/images/user-phone.png"></p>
               　
-              <nuxt-link to="/info/support" class="more">更多支持者</nuxt-link>
+              <a href="/info/support" class="more">更多支持者</a>
             </li>
           </ul>
         </div>

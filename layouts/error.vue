@@ -15,7 +15,7 @@
         <img src="../assets/images/404.gif"/>
         <div class="error-back">
           <el-button type="primary">
-            <nuxt-link class="back-home" to="/">返回首页</nuxt-link>
+            <a class="back-home" href="/">返回首页</a>
           </el-button>
         </div>
       </div>
@@ -33,61 +33,58 @@
 </template>
 
 <script>
-  export default {
-    props: ['error'],
-    layout: 'blog',
-    mounted() {
-      console.log(this.error)
-    },
-    head() {
-      return {
-        title: '错误 - EasyAPI服务平台',
-        meta: [
-          {hid: 'description', name: 'description', content: '错误'},
-          {hid: 'keyword', name: 'keyword', content: '错误'}
-        ]
-      }
-    },
-  }
+export default {
+  props: ['error'],
+  layout: 'simple',
+  head() {
+    return {
+      title: '错误 - EasyAPI服务平台',
+      meta: [
+        {hid: 'description', name: 'description', content: '错误'},
+        {hid: 'keyword', name: 'keyword', content: '错误'}
+      ]
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
-  .error-card {
-    padding: 20px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.error-card {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    .error-title {
-      font-size: 36px;
-      font-weight: 600;
+  .error-title {
+    font-size: 36px;
+    font-weight: 600;
 
-      span {
-        font-size: 24px;
-        font-weight: 500;
-      }
-    }
-
-    img {
-      margin-top: 10px;
-      width: 400px;
-      height: 300px;
-    }
-
-    .error-back {
-      margin-top: 10px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-
-      .el-button {
-        width: 100px;
-      }
-
-      .back-home {
-        color: #ffffff;
-      }
+    span {
+      font-size: 24px;
+      font-weight: 500;
     }
   }
+
+  img {
+    margin-top: 10px;
+    width: 400px;
+    height: 300px;
+  }
+
+  .error-back {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .el-button {
+      width: 100px;
+    }
+
+    .back-home {
+      color: #ffffff;
+    }
+  }
+}
 </style>

@@ -5,7 +5,7 @@
         <div class="sysinfo f-tac">
           <h1>API开放平台</h1>
           <p>您有数据，我们有API开放平台解决方案</p>
-          <nuxt-link to="/info/contact" class="bug_btn">立刻部署API开放平台</nuxt-link>
+          <a href="/info/contact" class="bug_btn">立刻部署API开放平台</a>
           <div class="more">
             独立第三方API开放平台解决方案提供商
           </div>

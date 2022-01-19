@@ -5,7 +5,7 @@
         <div class="sysinfo f-tac">
           <h1>API管理门户</h1>
           <p>为您的公司打造私有化API管理门户，提升API管理效率</p>
-          <nuxt-link to="/info/contact" class="bug_btn">立即提升API管理水平</nuxt-link>
+          <a href="/info/contact" class="bug_btn">立即提升API管理水平</a>
           <div class="more">
             独立第三方API管理门户解决方案提供商
           </div>
