@@ -157,51 +157,6 @@
   max-width: 1000px;
   overflow: hidden;
   margin: 50px auto;
-
-  .owl-item {
-    float: left;
-
-    a {
-      display: inline-block;
-      border: solid #ddd 1px;
-      width: 125px;
-      height: 60px;
-
-      img {
-        width: 125px;
-        height: 60px;
-        box-sizing: border-box;
-      }
-    }
-  }
-
-  .owl-stage-outer {
-    height: 80px;
-  }
-
-  .owl-dots {
-    text-align: center;
-    margin-top: 10px;
-
-    .owl-dot {
-      display: inline-block;
-      margin: 5px;
-
-      span {
-        background: #ddd;
-        width: 15px;
-        height: 15px;
-        display: inline-block;
-        border-radius: 50%;
-      }
-
-      &.active {
-        span {
-          background: gray;
-        }
-      }
-    }
-  }
 }
 
 .price-card .price-card-title li {
@@ -247,10 +202,6 @@
 .free_use a:hover {
   color: white;
   background: #18c1d6;
-}
-
-.dis_showtxt p:hover {
-  color: #2EACCB !important;
 }
 
 .price-card .price-card-title li:hover {

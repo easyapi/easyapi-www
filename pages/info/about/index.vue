@@ -1,4 +1,5 @@
-﻿<template>
+﻿
+<template>
   <div class="main mg-t-72">
     <div class="content">
       <img src="/images/info/about/team.png"/>
