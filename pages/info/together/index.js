@@ -1,7 +1,7 @@
 import './index.scss'
 
 export default {
-  name: 'Together',
+  name: 'InfoTogether',
   head() {
     return {
       title: '合作伙伴 - EasyAPI服务平台',

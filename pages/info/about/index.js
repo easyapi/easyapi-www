@@ -1,7 +1,7 @@
 import './index.scss'
 
 export default {
-  name: 'About',
+  name: 'InfoAbout',
   layout: "default",
   head() {
     return {

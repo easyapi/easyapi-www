@@ -2,7 +2,7 @@ import './index.scss'
 import BaiduMap from 'vue-baidu-map/components/map/Map.vue'
 
 export default {
-  name: 'Contact',
+  name: 'InfoContact',
   head() {
     return {
       title: '联系我们 - EasyAPI服务平台',

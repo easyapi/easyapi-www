@@ -1,7 +1,7 @@
 ﻿import './index.scss'
 
 export default {
-  name: 'Portal',
+  name: 'SolutionPortal',
   head() {
     return {
       title: 'API管理门户 - EasyAPI服务平台',

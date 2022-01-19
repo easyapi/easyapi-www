@@ -1,7 +1,7 @@
 import './index.scss'
 
 export default {
-  name: 'Price',
+  name: 'InfoPrice',
   head() {
     return {
       title: '价格 - EasyAPI服务平台',

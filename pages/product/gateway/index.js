@@ -1,7 +1,7 @@
 ﻿import './index.scss'
 
 export default {
-  name: 'Gateway',
+  name: 'ProductGateway',
   head() {
     return {
       title: '网关系统 - EasyAPI服务平台',

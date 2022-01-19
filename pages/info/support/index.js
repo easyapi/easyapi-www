@@ -2,7 +2,7 @@ import './index.scss'
 import Code from "./components/code";
 
 export default {
-  name: 'Support',
+  name: 'InfoSupport',
   components: {Code},
   head() {
     return {

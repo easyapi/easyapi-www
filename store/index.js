@@ -9,14 +9,8 @@ const store = () => new Vuex.Store({
   modules: {
     user
   },
-  state: {
-    serviceName: ''
-  },
-  mutations: {
-    SET_SERVICE_NAME: (state, name) => {
-      state.serviceName = name
-    }
-  },
+  state: {},
+  mutations: {},
   actions: {},
   getters
 

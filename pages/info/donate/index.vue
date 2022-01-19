@@ -236,7 +236,7 @@
         </p>
       </div>
     </div>
-    <Code ref="child"></Code>
+    <div><Code ref="child"></Code></div>
   </div>
 </template>
 

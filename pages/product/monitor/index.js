@@ -1,7 +1,7 @@
 ﻿import './index.scss'
 
 export default {
-  name: 'Monitor',
+  name: 'ProductMonitor',
   head() {
     return {
       title: '监控系统 - EasyAPI服务平台',

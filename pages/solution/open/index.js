@@ -1,7 +1,7 @@
 ﻿import './index.scss'
 
 export default {
-  name: 'Open',
+  name: 'SolutionOpen',
   head() {
     return {
       title: 'API开放平台 - EasyAPI服务平台',

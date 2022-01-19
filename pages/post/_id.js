@@ -3,7 +3,7 @@ import './_id.scss'
 import {getArticle} from '../../api/article'
 
 export default {
-  name: 'post-id',
+  name: 'PostDetail',
   head() {
     return {
       title: this.article.title + ' - EasyAPI服务市场',

@@ -2,7 +2,7 @@ import './index.scss'
 import Code from "../support/components/code";
 
 export default {
-  name: 'Donate',
+  name: 'InfoDonate',
   components: {Code},
   head() {
     return {

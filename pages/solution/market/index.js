@@ -1,7 +1,7 @@
 ﻿import './index.scss'
 
 export default {
-  name: 'Index',
+  name: 'SolutionMarket',
   head() {
     return {
       title: 'API服务市场 - EasyAPI服务平台',

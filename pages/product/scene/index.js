@@ -1,7 +1,7 @@
 ﻿import './index.scss'
 
 export default {
-  name: 'Index',
+  name: 'ProductScene',
   head() {
     return {
       title: '场景化服务 - EasyAPI服务平台',

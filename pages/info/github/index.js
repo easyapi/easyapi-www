@@ -1,7 +1,7 @@
 import './index.scss'
 
 export default {
-  name: 'GitHub',
+  name: 'InfoGitHub',
   head() {
     return {
       title: '前端开源 - EasyAPI服务平台',

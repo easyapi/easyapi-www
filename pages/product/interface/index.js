@@ -1,7 +1,7 @@
 ﻿import './index.scss'
 
 export default {
-  name: 'Interface',
+  name: 'ProductInterface',
   head() {
     return {
       title: '接口服务 - EasyAPI服务平台',

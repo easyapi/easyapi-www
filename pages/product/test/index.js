@@ -1,7 +1,7 @@
 ﻿import './index.scss'
 
 export default {
-  name: 'Test',
+  name: 'ProductTest',
   head() {
     return {
       title: '接口测试 - EasyAPI服务平台',

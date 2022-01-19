@@ -65,12 +65,12 @@
         </div>
       </div>
     </div>
-    <Code ref="child"></Code>
+    <div><Code ref="child"></Code></div>
   </div>
 </template>
 
 <script>
-  import Index from './index'
+import Index from './index'
 
-  export default Index
+export default Index
 </script>

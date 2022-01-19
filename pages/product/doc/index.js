@@ -1,7 +1,7 @@
 ﻿import './index.scss'
 
 export default {
-  name: 'Doc',
+  name: 'ProductDoc',
   head() {
     return {
       title: '文档管理 - EasyAPI服务平台',

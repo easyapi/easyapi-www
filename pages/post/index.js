@@ -4,7 +4,7 @@ import {getArticleList} from '../../api/article'
 import ListItem from './components/listItem'
 
 export default {
-  name: 'post',
+  name: 'Post',
   head() {
     return {
       title: '市场动态 - EasyAPI服务市场',
