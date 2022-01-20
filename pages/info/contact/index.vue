@@ -17,9 +17,9 @@
 
             <p>公司电话：0510-85180020</p>
 
-            <p>邮箱：leida#daoqun.com (将#替换为@)</p>
+            <p>邮箱：leida#easyapi.com (将#替换为@)</p>
 
-            <p>QQ：32498653客服小佳, 45583248客服小菲</p>
+            <p>QQ：149151419 产品经理</p>
 
             <p>&nbsp;</p>
 
@@ -36,7 +36,7 @@
             <ul class="link_list clearfix" style="overflow:hidden;">
               <li class="code">
                 <div class="code_img">
-                  <img src="https://qiniu.easyapi.com/weixin/weixin01.png">
+                  <img src="https://qiniu.easyapi.com/easyapi_contact_weixin.png">
                   <div class="line"></div>
                 </div>
                 <div class="link_infr">
