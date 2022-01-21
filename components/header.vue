@@ -7,6 +7,8 @@
         </a>
         <div class="navs f-fl">
           <el-popover
+            @show="showProduct"
+            @hide="hideProduct"
             placement="bottom-start"
             width="650"
             trigger="hover">
@@ -90,12 +92,17 @@
                 </li>
               </a>
             </ul>
-            <span slot="reference" class="f-rel navs-item">产品</span>
+            <span slot="reference" class="f-rel navs-item">产品
+              <i v-if="ifShowProduct" class="el-icon-caret-bottom"></i>
+            <i v-else class="el-icon-caret-top"></i>
+            </span>
           </el-popover>
           <a href="/info/price">
             价格
           </a>
           <el-popover
+            @show="showPrivatization"
+            @hide="hidePrivatization"
             placement="bottom-start"
             width="650"
             trigger="hover">
@@ -140,7 +147,10 @@
                 </li>
               </a>
             </ul>
-            <span slot="reference" class="f-rel navs-item">私有化</span>
+            <span slot="reference" class="f-rel navs-item">私有化
+            <i v-if="ifShowPrivatization" class="el-icon-caret-bottom"></i>
+            <i v-else class="el-icon-caret-top"></i>
+            </span>
           </el-popover>
           <a href="https://market.easyapi.com" target="_blank">
             API市场
@@ -209,102 +219,93 @@
 </template>
 
 <script>
-import Cookies from 'js-cookie'
-import {mapGetters} from 'vuex'
+  import Cookies from 'js-cookie'
+  import {mapGetters} from 'vuex'
 
-export default {
-  name: 'Header',
-  data() {
-    return {
-      authenticationToken: Cookies.get('authenticationToken')
-    }
-  },
-  computed: {
-    ...mapGetters([
-      'photo',
-      'team'
-    ])
-  },
-  mounted() {
-    if (this.authenticationToken) {
-      this.$store.dispatch('getUser')
-    }
-  },
-  methods: {
-    handleCommand(command) {
-      if (command === 'notice') {
-        window.open(`https://team.easyapi.com/notification`)
-      } else if (command === 'edit') {
-        window.open(`https://team.easyapi.com/user/edit`)
-      } else if (command === 'quitLogin') {
-        this.quitLogin()
+  export default {
+    name: 'Header',
+    data() {
+      return {
+        authenticationToken: Cookies.get('authenticationToken'),
+        ifShowProduct: true,
+        ifShowPrivatization: true,
       }
     },
-    quitLogin() {
-      this.$store.dispatch('logout')
-      window.location.href = 'https://account.easyapi.com/login/?from=https://team.easyapi.com'
+    computed: {
+      ...mapGetters([
+        'photo',
+        'team'
+      ])
     },
+    mounted() {
+      if (this.authenticationToken) {
+        this.$store.dispatch('getUser')
+      }
+    },
+    methods: {
+      showProduct() {
+        this.ifShowProduct = false
+      },
+      showPrivatization() {
+        this.ifShowPrivatization = false
+      },
+      hideProduct() {
+        this.ifShowProduct = true
+      },
+      hidePrivatization() {
+        this.ifShowPrivatization = true
+      },
+      handleCommand(command) {
+        if (command === 'notice') {
+          window.open(`https://team.easyapi.com/notification`)
+        } else if (command === 'edit') {
+          window.open(`https://team.easyapi.com/user/edit`)
+        } else if (command === 'quitLogin') {
+          this.quitLogin()
+        }
+      },
+      quitLogin() {
+        this.$store.dispatch('logout')
+        window.location.href = 'https://account.easyapi.com/login/?from=https://team.easyapi.com'
+      },
+    }
   }
-}
 </script>
 
 <style scoped lang="scss">
-.header {
-  position: relative;
-  top: 0;
-  height: 72px;
-  box-shadow: none;
-  background-color: (0, 0, 0, 0.3);
-}
+  .header {
+    position: relative;
+    top: 0;
+    height: 72px;
+    box-shadow: none;
+    background-color: (0, 0, 0, 0.3);
+  }
 
-.header-index {
-  position: absolute;
-  left: 0;
-  right: 0;
-}
+  .header-index {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
 
-.header .navs span:after {
-  content: '';
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  background: url(/images/angle.png) center no-repeat;
-  background-size: 20px auto;
-}
 
-.other-header .navs span:after {
-  content: '';
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  background: url(/images/angle.png) center no-repeat;
-  background-size: 20px auto;
-}
+  .header .navs span:hover:after {
+    background-image: url(/images/angle-1.png);
+  }
 
-.header .navs span:hover:after {
-  background-image: url(/images/angle-1.png);
-}
+  .other-header .navs span:hover:after {
+    background-image: url(/images/angle-1.png);
+  }
 
-.other-header .navs span:hover:after {
-  background-image: url(/images/angle-1.png);
-}
+  .team-head-left {
+    margin-right: 20px;
+    display: flex;
+    position: relative;
+  }
 
-.team-head-left {
-  margin-right: 20px;
-  display: flex;
-  position: relative;
-}
-
-.team-icon {
-  margin-top: 6px;
-  width: 30px;
-  height: 30px;
-  border-radius: 20px
-}
+  .team-icon {
+    margin-top: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px
+  }
 </style>
