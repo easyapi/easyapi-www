@@ -7,7 +7,7 @@
       <a href="/info/donate">支持我们</a>
       <a href="/post/">平台动态</a>
     </p>
-    <p>Copyright © 2015～2021 帮趣团队</p>
+    <p>Copyright © 2015～2022 帮趣团队</p>
     <p><a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备19007521号</a></p>
   </div>
 </template>
