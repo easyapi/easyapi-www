@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie'
-import { getUser } from '@/api/account'
+import {getUser} from '@/api/account'
 
 const user = {
   state: {
@@ -46,9 +46,6 @@ const user = {
     },
     SET_USER_TEAM: (state, userTeam) => {
       state.userTeam = userTeam
-    },
-    SET_TOKEN: (state, token) => {
-      state.token = token
     }
   },
 
@@ -56,19 +53,20 @@ const user = {
     /**
      * 获取用户信息
      */
-    getUser ({ commit }) {
+    getUser({commit}) {
       getUser(this).then(res => {
-        let user = res.data.content
-        commit('SET_USER_ID', user.id)
-        commit('SET_USERNAME', user.username)
-        commit('SET_NICKNAME', user.nickname)
-        commit('SET_PHOTO', user.photo)
-        commit('SET_MOBILE', user.mobile)
-        commit('SET_EMAIL', user.email)
-        commit('SET_TEAM', user.team)
-        commit('SET_TEAM_NAME', user.team.name)
-        commit('SET_TEAM_IMG', user.team.img || '')
-        commit('SET_USER_TEAM', user.userTeam)
+        if (res.data.code === 1) {
+          commit('SET_USER_ID', res.data.content.id)
+          commit('SET_USERNAME', res.data.content.username)
+          commit('SET_NICKNAME', res.data.content.nickname)
+          commit('SET_PHOTO', res.data.content.photo)
+          commit('SET_MOBILE', res.data.content.mobile)
+          commit('SET_EMAIL', res.data.content.email)
+          commit('SET_TEAM', res.data.content.team)
+          commit('SET_TEAM_NAME', res.data.content.team.name)
+          commit('SET_TEAM_IMG', res.data.content.team.img)
+          commit('SET_USER_TEAM', res.data.content.userTeam)
+        }
       }).catch(error => {
         Cookies.remove('authenticationToken')
       })
@@ -76,7 +74,7 @@ const user = {
     /**
      * 登出
      */
-    logout () {
+    logout() {
       Cookies.remove('authenticationToken')
     }
   }

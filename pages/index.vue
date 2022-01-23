@@ -13,32 +13,24 @@
         <div class="bg_white">
           <p>
             <span>
-              <a href="https://team.easyapi.com/project/">
-                API文档中心
-              </a>
+              <a href="https://team.easyapi.com/project/">API文档中心</a>
             </span>
           </p>
           <img src="/images/angle-1.png" alt="">
           <ul class="jump_link">
-            <li>
+            <li onclick="javascript:location.href='https://team.easyapi.com/project/'">
               <img src="/images/info/down_icon1.png">
-              <a href="https://team.easyapi.com/project/">
-                API文档中心
-              </a>
+              API文档中心
             </li>
             <li>
             </li>
-            <li>
+            <li onclick="javascript:location.href='https://team.easyapi.com/project/'">
               <img src="/images/info/down_icon5.png">
-              <a href="https://team.easyapi.com/project/">
-                API监控中心
-              </a>
+              API监控中心
             </li>
-            <li>
+            <li onclick="javascript:location.href='https://team.easyapi.com/service/'">
               <img src="/images/info/header-icon1.png">
-              <a href="https://team.easyapi.com/service/">
-                API服务中心
-              </a>
+              API服务中心
             </li>
           </ul>
         </div>
@@ -218,7 +210,7 @@
 </template>
 
 <script>
-  import Index from './index'
+import Index from './index'
 
-  export default Index
+export default Index
 </script>
