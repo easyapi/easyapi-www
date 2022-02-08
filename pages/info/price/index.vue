@@ -109,31 +109,26 @@
             <a title="程序员客栈" href="https://www.proginn.com" target="_blank">
               <img src="/images/info/pic_price_logo7.png">
             </a>
-
           </li>
           <li>
             <a title="计蒜客" href="https://www.jisuanke.com/" target="_blank">
               <img src="/images/info/pic_price_logo8.png">
             </a>
-
           </li>
           <li>
             <a title="中国电科" href="http://www.cetc.com.cn/" target="_blank">
               <img src="/images/info/pic_price_logo9.png">
             </a>
-
           </li>
           <li>
             <a title="华润创业" href="http://www.cre.com.hk/" target="_blank">
               <img src="/images/info/pic_price_logo10.png">
             </a>
-
           </li>
           <li>
             <a title="山东魏桥" href="http://www.weiqiaocy.com/" target="_blank">
               <img src="/images/info/pic_price_logo11.png">
             </a>
-
           </li>
           <li>
             <a title="服务区" href="https://www.fuwuqu.com/" target="_blank">

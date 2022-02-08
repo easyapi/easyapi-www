@@ -6,9 +6,9 @@
           简单，好用的API服务平台
         </h1>
         <p>
-          移动互联网时代，EasyAPI是一个为您提供API管理、API测试、API监控、API文档的综合性API服务平台。
+          新一代API接口管理平台，EasyAPI是一个为您提供API管理、API测试、API监控、API文档、API低代码服务的综合性API服务平台。
           <br>
-          你还在用Word管理接口文档吗？你还在使用拼接URL测试吗？你OUT了！
+          还有丰富的API接口服务
         </p>
         <div class="bg_white">
           <p>
@@ -16,7 +16,7 @@
               <a href="https://team.easyapi.com/project/">API文档中心</a>
             </span>
           </p>
-          <img src="/images/angle-1.png" alt="">
+          <img src="/images/arrow-up.png" alt="">
           <ul class="jump_link">
             <li onclick="javascript:location.href='https://team.easyapi.com/project/'">
               <img src="/images/info/down_icon1.png">
@@ -168,10 +168,10 @@
     <div class="card f-cb" style="background:#fafafa">
       <div class="card-item">
         <h1>
-          API网关，企业API安全基础构架正确之选
+          API低代码，助力企业数字化转型、业务快速迭代
         </h1>
         <p>
-          可以帮助开发者轻松创建、发布、维护、监控和保护任意规模的 API。
+          可以帮助开发者轻松开发、发布、维护、监控用低代码构建的API服务。
         </p>
         <div class="img">
           <img src="https://static.easyapi.com/images/index/img1.png">
