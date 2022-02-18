@@ -10,10 +10,10 @@
           <br>
           还有丰富的API接口服务
         </p>
-        <div class="bg_white">
+        <div class="bg_white" @click="jumpProject">
           <p>
             <span>
-              <a href="https://team.easyapi.com/project/">API文档中心</a>
+              <a>API文档中心</a>
             </span>
           </p>
           <img src="/images/arrow-up.png" alt="">
