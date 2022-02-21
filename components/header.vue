@@ -164,7 +164,7 @@
             登录
           </a>
           <div class='team-head-left' v-if='authenticationToken'>
-            <el-dropdown trigger='click' @command='handleCommand'>
+            <el-dropdown trigger='hover' @command='handleCommand'>
               <span id='showTeamInfo' style='cursor: pointer'>
                 <img v-if='photo' class='team-icon' :src='photo' alt/>
               </span>
@@ -219,93 +219,93 @@
 </template>
 
 <script>
-import Cookies from 'js-cookie'
-import {mapGetters} from 'vuex'
+  import Cookies from 'js-cookie'
+  import {mapGetters} from 'vuex'
 
-export default {
-  name: 'Header',
-  data() {
-    return {
-      authenticationToken: Cookies.get('authenticationToken'),
-      ifShowProduct: true,
-      ifShowPrivatization: true,
-    }
-  },
-  computed: {
-    ...mapGetters([
-      'photo',
-      'team'
-    ])
-  },
-  mounted() {
-    if (this.authenticationToken) {
-      this.$store.dispatch('getUser')
-    }
-  },
-  methods: {
-    showProduct() {
-      this.ifShowProduct = false
-    },
-    showPrivatization() {
-      this.ifShowPrivatization = false
-    },
-    hideProduct() {
-      this.ifShowProduct = true
-    },
-    hidePrivatization() {
-      this.ifShowPrivatization = true
-    },
-    handleCommand(command) {
-      if (command === 'notice') {
-        window.open(`https://team.easyapi.com/notification`)
-      } else if (command === 'edit') {
-        window.open(`https://team.easyapi.com/user/edit`)
-      } else if (command === 'quitLogin') {
-        this.quitLogin()
+  export default {
+    name: 'Header',
+    data() {
+      return {
+        authenticationToken: Cookies.get('authenticationToken'),
+        ifShowProduct: true,
+        ifShowPrivatization: true,
       }
     },
-    quitLogin() {
-      this.$store.dispatch('logout')
-      window.location.href = 'https://account.easyapi.com/login/?from=https://team.easyapi.com'
+    computed: {
+      ...mapGetters([
+        'photo',
+        'team'
+      ])
     },
+    mounted() {
+      if (this.authenticationToken) {
+        this.$store.dispatch('getUser')
+      }
+    },
+    methods: {
+      showProduct() {
+        this.ifShowProduct = false
+      },
+      showPrivatization() {
+        this.ifShowPrivatization = false
+      },
+      hideProduct() {
+        this.ifShowProduct = true
+      },
+      hidePrivatization() {
+        this.ifShowPrivatization = true
+      },
+      handleCommand(command) {
+        if (command === 'notice') {
+          window.open(`https://team.easyapi.com/notification`)
+        } else if (command === 'edit') {
+          window.open(`https://team.easyapi.com/user/edit`)
+        } else if (command === 'quitLogin') {
+          this.quitLogin()
+        }
+      },
+      quitLogin() {
+        this.$store.dispatch('logout')
+        window.location.href = 'https://account.easyapi.com/login/?from=https://team.easyapi.com'
+      },
+    }
   }
-}
 </script>
 
 <style scoped lang="scss">
-.header {
-  position: relative;
-  top: 0;
-  height: 72px;
-  box-shadow: none;
-  background-color: (0, 0, 0, 0.3);
-}
+  .header {
+    position: relative;
+    top: 0;
+    height: 72px;
+    box-shadow: none;
+    background-color: (0, 0, 0, 0.3);
+  }
 
-.header-index {
-  position: absolute;
-  left: 0;
-  right: 0;
-}
+  .header-index {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
 
 
-.header .navs span:hover:after {
-  background-image: url(/images/arrow-up.png);
-}
+  .header .navs span:hover:after {
+    background-image: url(/images/arrow-up.png);
+  }
 
-.other-header .navs span:hover:after {
-  background-image: url(/images/arrow-up.png);
-}
+  .other-header .navs span:hover:after {
+    background-image: url(/images/arrow-up.png);
+  }
 
-.team-head-left {
-  margin-right: 20px;
-  display: flex;
-  position: relative;
-}
+  .team-head-left {
+    margin-right: 20px;
+    display: flex;
+    position: relative;
+  }
 
-.team-icon {
-  margin-top: 6px;
-  width: 30px;
-  height: 30px;
-  border-radius: 20px
-}
+  .team-icon {
+    margin-top: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px
+  }
 </style>
