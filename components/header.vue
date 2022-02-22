@@ -1,6 +1,6 @@
 <template>
   <client-only>
-    <div class="header header-index">
+    <div :style="headerActive" class="header header-index">
       <div class="content">
         <a href="/">
           <img class="logo f-fl" src="https://qiniu.easyapi.com/market/logo.svg">
@@ -229,7 +229,15 @@
         authenticationToken: Cookies.get('authenticationToken'),
         ifShowProduct: true,
         ifShowPrivatization: true,
+        headerActive: {
+          // backgroundColor: 'red'
+        }
       }
+    },
+    watch: {
+      '$route'() {
+        console.log('watch里面', this.$route.name);
+      },
     },
     computed: {
       ...mapGetters([
@@ -240,6 +248,9 @@
     mounted() {
       if (this.authenticationToken) {
         this.$store.dispatch('getUser')
+      }
+      if (this.$route.name === 'post') {
+        this.headerActive = "background-color:#49CDDD"
       }
     },
     methods: {
