@@ -14,7 +14,7 @@ module.exports = {
     ],
   },
   css: [
-    '@/assets/scss/index.scss',
+    '@/assets/scss/base.scss',
     '@/assets/scss/element-variables.scss'
   ],
   plugins: [

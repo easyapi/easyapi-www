@@ -42,7 +42,7 @@
       </ul>
     </div>
 
-    <div class="pd-100 bgfa bg_img"
+    <div class="pd-100  bg_img"
          style="background-image:url('/images/solution/bg_portal2.png');background-size:cover;">
       <div class="title f-c-white">轻量级环境部署</div>
       <div class="description f-c-white">基于云服务器环境轻量级部署，前端源码开放，可自由修改符合自己公司的API门户风格
@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="pd-100 bgfa">
+    <div class="pd-100 ">
       <div class="title">客户案例</div>
       <div class="description">我们始终坚持为客户提供优质的服务</div>
       <div class="u-casebox" style="position:relative;">

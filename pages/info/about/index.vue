@@ -1,5 +1,4 @@
-﻿
-<template>
+﻿<template>
   <div class="main mg-t-72">
     <div class="content">
       <img src="/images/info/about/team.png"/>
@@ -66,7 +65,7 @@
       </div>
     </div>
 
-    <div class="pd-100 bgfa bg-f5">
+    <div class="pd-100  bg-f5">
       <div class="title f-c-white f-c-gray">EasyAPI是什么</div>
       <div class="description  f-c-white f-c-gray content">
         EasyAPI最初是我们团队内部的工具，因为热爱，我们希望她能得到更多的人来使用，我们也会一直站在她的旁边优化她，完美她，希望广大的苦B开发人员，
@@ -75,7 +74,7 @@
 
     </div>
 
-    <div class="pd-100 bgfa ">
+    <div class="pd-100">
       <div class="title">
       <span style="padding: 10px 10px;
        border-bottom: 2px solid #18c1d6;">团队文化</span>
@@ -102,7 +101,7 @@
       </div>
     </div>
 
-    <div class="pd-100 bgfa f-border-b">
+    <div class="pd-100  f-border-b">
       <div class="title">我们的目标</div>
       <div class="description ">
         EasyAPI最初是我们团队内部的工具，因为热爱，我们希望她能得到更多的人来使用，我们也会一直站在她的旁边优化她，完美她，希望广大的苦B开发人员，<br>程序猿早日用上，致力于为数十万移动开发者，后端开发人员提供全套的API系统解决方案（发布、浏览、测试、监控、网关、接口服务）。
@@ -112,7 +111,7 @@
 </template>
 
 <script>
-  import Index from './index'
+import Index from './index'
 
-  export default Index
+export default Index
 </script>

@@ -1,4 +1,5 @@
 ﻿import './index.scss'
+import "assets/scss/case.scss";
 
 export default {
   name: 'SolutionPortal',

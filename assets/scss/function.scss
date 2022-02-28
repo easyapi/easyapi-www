@@ -6,7 +6,6 @@ $gray-lighter: #ddd;
 /* function */
 .f-cb:after,.f-cbli li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
 .f-cb,.f-cbli li{zoom:1;}
-.f-ib{display:inline-block;*display:inline;*zoom:1;}
 .f-dn{display:none;}
 .f-db{display:block;}
 .f-fl{float:left;}
@@ -15,7 +14,6 @@ $gray-lighter: #ddd;
 .f-prz{position:relative;zoom:1;}
 .f-oh{overflow:hidden;}
 .f-ff0{font-family:"Microsoft YaHei";}
-.f-ff1{font-family:"Microsoft YaHei";}
 .f-fs1{font-size:1.2rem;}
 .f-fs2{font-size:1.4rem;}
 .f-fwn{font-weight:normal;}
@@ -38,7 +36,6 @@ $gray-lighter: #ddd;
 .f-csd{cursor:default;}
 .f-csh{cursor:help;}
 .f-csm{cursor:move;}
-.f-usn{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}
 .f-c-danger{color:$brand-danger}
 .f-c-gray{color:$gray-light;}
 .f-c-success{color:$brand-success;}
@@ -46,8 +43,3 @@ $gray-lighter: #ddd;
 .f-c-info{color:$brand-info;}
 .f-c-white{color:white;}
 .f-rel{position: relative;}
-.f-none{display: none;}
-
-.f-body-gray{
-  background:$body-gray;
-}

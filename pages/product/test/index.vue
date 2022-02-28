@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="pd-100 bgfa" style="background:#eff9fc">
+    <div class="pd-100 " style="background:#eff9fc">
       <div class="title">测试工具</div>
       <div class="description">致力于成为中国最好的API测试工具</div>
       <div class="oneimg">

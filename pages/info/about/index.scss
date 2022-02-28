@@ -14,9 +14,63 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
 .culture ul li {
   float: left;
+}
+
+
+.team-box {
+  text-align: center;
+
+  ul {
+    text-align: center;
+    padding: 0 0 0 100px;
+
+    li {
+      float: left;
+      width: 100px;
+      height: 150px;
+      margin: 20px 30px;
+
+      img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+
+      p {
+        color: gray;
+      }
+    }
+  }
+}
+
+.culture {
+  ul {
+    text-align: center;
+
+    li {
+      width: 300px;
+      display: inline-block;
+      margin: 0 25px;
+
+      img {
+        margin-bottom: 25px;
+      }
+
+      span {
+        font-size: 1.6rem;
+        display: block;
+        margin: 7px 0;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 1.7;
+        color: gray;
+      }
+    }
+  }
 }

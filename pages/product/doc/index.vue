@@ -56,7 +56,7 @@
       </ul>
     </div>
 
-    <div class="pd-100 bgfa nbottom" style="background:#f5f5f5">
+    <div class="pd-100  nbottom" style="background:#f5f5f5">
       <div class="title">文档清晰可见</div>
       <div class="description">接口文档隶属于项目，让文档管理更轻松</div>
       <div class="oneimg">
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <div class="pd-100 bgfa nbottom">
+    <div class="pd-100  nbottom">
       <div class="title">最方便的文档编辑</div>
       <div class="description">可能是国内最好的文档编辑工具，我们力争做的更好</div>
       <div class="oneimg">
@@ -73,7 +73,7 @@
     </div>
 
 
-    <div class="pd-100 bgfa nbottom" style="background:#f5f5f5">
+    <div class="pd-100  nbottom" style="background:#f5f5f5">
       <div class="title">关联数据结构
       </div>
       <div class="description">让移动端开发工程师，参照数据结构进行对象构建

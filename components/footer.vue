@@ -19,5 +19,24 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.footer {
+  text-align: center;
+  background: #fafafa;
+  color: gray;
+  padding: 70px 0 50px;
+  font-size: 1.2rem;
 
+  p {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: gray;
+    padding: 0 10px;
+
+    &:hover {
+      color: #555;
+    }
+  }
+}
 </style>

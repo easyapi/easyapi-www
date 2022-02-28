@@ -1,4 +1,5 @@
 import './index.scss'
+import 'assets/scss/donate.scss'
 import Pay from "../../../components/pay";
 
 export default {

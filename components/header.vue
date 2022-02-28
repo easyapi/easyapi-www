@@ -219,104 +219,294 @@
 </template>
 
 <script>
-  import Cookies from 'js-cookie'
-  import {mapGetters} from 'vuex'
+import Cookies from 'js-cookie'
+import {mapGetters} from 'vuex'
 
-  export default {
-    name: 'Header',
-    data() {
-      return {
-        authenticationToken: Cookies.get('authenticationToken'),
-        ifShowProduct: true,
-        ifShowPrivatization: true,
-        headerActive: {
-          // backgroundColor: 'red'
-        }
+export default {
+  name: 'Header',
+  data() {
+    return {
+      authenticationToken: Cookies.get('authenticationToken'),
+      ifShowProduct: true,
+      ifShowPrivatization: true,
+      headerActive: {
+        // backgroundColor: 'red'
       }
-    },
-    watch: {
-      '$route'() {
-        console.log('watch里面', this.$route.name);
-      },
-    },
-    computed: {
-      ...mapGetters([
-        'photo',
-        'team'
-      ])
-    },
-    mounted() {
-      if (this.authenticationToken) {
-        this.$store.dispatch('getUser')
-      }
-      if (this.$route.name === 'post') {
-        this.headerActive = "background-color:#49CDDD"
-      }
-    },
-    methods: {
-      showProduct() {
-        this.ifShowProduct = false
-      },
-      showPrivatization() {
-        this.ifShowPrivatization = false
-      },
-      hideProduct() {
-        this.ifShowProduct = true
-      },
-      hidePrivatization() {
-        this.ifShowPrivatization = true
-      },
-      handleCommand(command) {
-        if (command === 'notice') {
-          window.open(`https://team.easyapi.com/notification`)
-        } else if (command === 'edit') {
-          window.open(`https://team.easyapi.com/user/edit`)
-        } else if (command === 'quitLogin') {
-          this.quitLogin()
-        }
-      },
-      quitLogin() {
-        this.$store.dispatch('logout')
-        window.location.href = 'https://account.easyapi.com/login/?from=https://team.easyapi.com'
-      },
     }
+  },
+  watch: {
+    '$route'() {
+      console.log('watch里面', this.$route.name);
+    },
+  },
+  computed: {
+    ...mapGetters([
+      'photo',
+      'team'
+    ])
+  },
+  mounted() {
+    if (this.authenticationToken) {
+      this.$store.dispatch('getUser')
+    }
+    if (this.$route.name === 'post') {
+      this.headerActive = "background-color:#49CDDD"
+    }
+  },
+  methods: {
+    showProduct() {
+      this.ifShowProduct = false
+    },
+    showPrivatization() {
+      this.ifShowPrivatization = false
+    },
+    hideProduct() {
+      this.ifShowProduct = true
+    },
+    hidePrivatization() {
+      this.ifShowPrivatization = true
+    },
+    handleCommand(command) {
+      if (command === 'notice') {
+        window.open(`https://team.easyapi.com/notification`)
+      } else if (command === 'edit') {
+        window.open(`https://team.easyapi.com/user/edit`)
+      } else if (command === 'quitLogin') {
+        this.quitLogin()
+      }
+    },
+    quitLogin() {
+      this.$store.dispatch('logout')
+      window.location.href = 'https://account.easyapi.com/login/?from=https://team.easyapi.com'
+    },
   }
+}
 </script>
 
 <style scoped lang="scss">
-  .header {
-    position: relative;
-    top: 0;
-    height: 72px;
-    box-shadow: none;
-    background-color: (0, 0, 0, 0.3);
+.header {
+  position: relative;
+  top: 0;
+  height: 72px;
+  box-shadow: none;
+  background-color: (0, 0, 0, 0.3);
+}
+
+.header-index {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+
+.header .navs span:hover:after {
+  background-image: url(/images/arrow-up.png);
+}
+
+.other-header .navs span:hover:after {
+  background-image: url(/images/arrow-up.png);
+}
+
+.team-head-left {
+  margin-right: 20px;
+  display: flex;
+  position: relative;
+}
+
+.team-icon {
+  margin-top: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px
+}
+
+.side-navs {
+  display: flex;
+  float: right;
+  width: 300px;
+  text-align: right;
+  height: 50px;
+  padding-top: 12px;
+
+  .popover {
+    display: none;
+
+    .popover-img {
+      width: 20px;
+      height: 10px;
+      position: absolute;
+      top: 38px;
+      right: 24px;
+    }
   }
 
-  .header-index {
-    position: absolute;
-    left: 0;
-    right: 0;
+  span {
+    &:hover {
+      color: rgba(255, 255, 255, .7);
+
+      .popover {
+        display: block;
+      }
+    }
   }
 
+  a {
+    &:hover {
+      color: rgba(255, 255, 255, .5);
 
-  .header .navs span:hover:after {
-    background-image: url(/images/arrow-up.png);
+      .console {
+        background-color: rgba(255, 255, 255, .5);
+      }
+    }
   }
 
-  .other-header .navs span:hover:after {
-    background-image: url(/images/arrow-up.png);
+  .nav {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    vertical-align: top;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
   }
 
-  .team-head-left {
-    margin-right: 20px;
-    display: flex;
-    position: relative;
+  .register {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    vertical-align: top;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
   }
 
-  .team-icon {
-    margin-top: 6px;
-    width: 30px;
-    height: 30px;
-    border-radius: 20px
+  .login {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    vertical-align: top;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
   }
+
+  .console {
+    border: 1px solid #fff;
+    border-radius: 6px;
+    height: 32px;
+    line-height: 30px;
+    margin-top: 4px;
+    padding: 0 10px;
+  }
+}
+
+.navs {
+  line-height: 68px;
+  font-size: 1.6rem;
+  height: 48px;
+
+  a {
+    color: #fff;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 0 10px;
+
+    &:hover {
+      color: rgba(255, 255, 255, .5);
+    }
+  }
+
+  .popover {
+    display: none;
+
+    .popover-img {
+      width: 20px;
+      height: 10px;
+      position: absolute;
+      top: 58px;
+      left: 20px;
+    }
+
+    ul {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+      position: absolute;
+      background: #fff;
+      border-radius: 6px;
+      width: 640px;
+      padding: 20px 0 0;
+      overflow: hidden;
+      left: 0;
+      z-index: 99999;
+
+      .a_link {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        float: left;
+        width: 50%;
+        padding: 5px 20px 0 20px;
+        box-sizing: border-box;
+
+        .icon_img {
+          width: 25px;
+          height: 25px;
+          float: left;
+        }
+
+        .popover-content {
+          float: right;
+          width: 86%;
+          margin-top: 4px;
+
+          p {
+            font-size: 16px;
+            color: #333;
+            line-height: 18px;
+          }
+
+          span {
+            color: #999;
+            font-size: 12px;
+            line-height: 18px;
+            padding: 0;
+            margin: 0;
+
+            &:after {
+              content: none;
+            }
+          }
+        }
+
+        &:hover {
+          background: #f5f5f5;
+        }
+      }
+    }
+  }
+
+  span {
+    display: inline-block;
+    color: #fff;
+    padding: 0 10px;
+    cursor: pointer;
+
+    &:hover {
+      color: rgba(255, 255, 255, .5);
+
+      .popover {
+        display: block;
+      }
+    }
+  }
+}
 </style>
