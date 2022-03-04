@@ -1,12 +1,10 @@
 ﻿<template>
   <div>
-    <div class="u-banner-bg">
-      <div class="content">
-        <div class="title">
-          <h1>EasyAPI网关系统</h1>
-          <p>企业API安全基础构架正确之选</p>
-          <!-- <p>认证、鉴权、安全、流量控制、缓存、接口容器</p> -->
-        </div>
+    <div class="banner">
+      <div class="title">
+        <h1>EasyAPI网关系统</h1>
+        <p>企业API安全基础构架正确之选</p>
+        <!-- <p>认证、鉴权、安全、流量控制、缓存、接口容器</p> -->
       </div>
     </div>
     <div class="pd-100 f-border-b">

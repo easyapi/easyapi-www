@@ -46,10 +46,6 @@
   }
 }
 
-.dis_showtxt p:hover {
-  color: #2EACCB !important;
-}
-
 .u-tese li {
   width: auto;
   margin-right: 30px;
@@ -66,14 +62,12 @@
   margin: 0 auto;
 }
 
-.u-banner-bg .title {
-  padding-top: 184px;
-}
-
-.u-banner-bg {
+.banner {
   background-image: url('/images/product/bg_test.png');
-  height: 520px;
-  background-size: cover;
+
+  .title {
+    padding-top: 184px;
+  }
 }
 
 .title {

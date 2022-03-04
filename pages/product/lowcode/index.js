@@ -1,4 +1,5 @@
 ﻿import './index.scss'
+import '/assets/scss/banner.scss'
 
 export default {
   name: 'ProductGateway',

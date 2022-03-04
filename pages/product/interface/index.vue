@@ -1,14 +1,12 @@
 ﻿<template>
   <div>
-    <div class="u-banner-bg">
-      <div class="content">
-        <div class="sysinfo f-tac">
-          <h1>API接口服务</h1>
-          <p>提供专业的API数据服务，打造一站式的接口管理</p>
-          <a href="https://market.easyapi.com" class="bug_btn">前往服务市场</a>
-          <div class="more">
-            旗下站点 APIMarket
-          </div>
+    <div class="banner">
+      <div class="title">
+        <h1>API接口服务</h1>
+        <p>提供专业的API数据服务，打造一站式的接口管理</p>
+        <a href="https://market.easyapi.com" class="bug_btn">前往服务市场</a>
+        <div class="more">
+          旗下站点 APIMarket
         </div>
       </div>
     </div>
@@ -77,7 +75,7 @@
 </template>
 
 <script>
-  import Index from './index'
+import Index from './index'
 
-  export default Index
+export default Index
 </script>

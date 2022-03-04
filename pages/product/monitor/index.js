@@ -1,4 +1,5 @@
-﻿import './index.scss'
+﻿import '/assets/scss/banner.scss'
+import './index.scss'
 
 export default {
   name: 'ProductMonitor',

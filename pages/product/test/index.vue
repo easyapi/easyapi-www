@@ -1,12 +1,10 @@
 ﻿<template>
   <div>
-    <div class="u-banner-bg">
-      <div class="content">
-        <div class="title">
-          <h1>API自动化测试</h1>
-          <p>API测试是对移动端开发人员负责，我们支持粗放式测试，支持精细化自定义测试
-            协助您快速测试API接口，高标准交付</p>
-        </div>
+    <div class="banner">
+      <div class="title">
+        <h1>API自动化测试</h1>
+        <p>API测试是对移动端开发人员负责，我们支持粗放式测试，支持精细化自定义测试
+          协助您快速测试API接口，高标准交付</p>
       </div>
     </div>
 

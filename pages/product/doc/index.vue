@@ -1,12 +1,10 @@
 ﻿<template>
   <div class="main">
-    <div class="u-banner-bg">
-      <div class="content">
-        <div class="title">
-          <h1>EasyAPI文档管理</h1>
-          <p class="text-c">EasyAPI文档管理致力于API文档从过去的Word服务提升到在线管理，一切只为提升开发效率，<br>降低开发成本，打造一支高效的开发团队。
-            我们为开发者而创造，创造属于开发者的时代</p>
-        </div>
+    <div class="banner">
+      <div class="title">
+        <h1>EasyAPI文档管理</h1>
+        <p>EasyAPI文档管理致力于API文档从过去的Word服务提升到在线管理，一切只为提升开发效率，<br>降低开发成本，打造一支高效的开发团队。
+          我们为开发者而创造，创造属于开发者的时代</p>
       </div>
     </div>
 
@@ -93,7 +91,7 @@
 </template>
 
 <script>
-  import Index from './index'
+import Index from './index'
 
-  export default Index
+export default Index
 </script>

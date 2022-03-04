@@ -22,16 +22,24 @@
   color: #2EACCB !important;
 }
 
-.u-banner-bg .sysinfo {
-  padding-top: 154px;
-}
 
-.u-banner-bg {
+.banner {
   background-image: url('/images/product/bg_monitor.png');
-  background-size: cover;
-  height: 520px;
-}
 
-.u-banner-bg .sysinfo h1 {
-  margin-bottom: 29px;
+  .title {
+    padding-top: 154px;
+    text-align: left;
+
+    .more a {
+      color: #fff;
+    }
+
+    h1 {
+      margin-bottom: 29px;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
 }
