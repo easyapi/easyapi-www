@@ -12,12 +12,13 @@
     <div class="price-card f-border-b">
       <ul class="price-card-title">
         <li>
-          <div class="price-card-title-top">文档管理</div>
+          <div class="price-card-title-top">基础版</div>
           <div class="price">
             <span class="f-c-warning"><em class="f-fs1">¥</em>29<em class="f-fs1">/团队/月</em></span>
 
           </div>
           <div class="description">
+            <span>文档管理全部功能</span>
             <span>不限项目数量</span>
             <span>不限接口数量</span>
             <span>团队人数限制20人</span>
@@ -29,18 +30,17 @@
           </div>
         </li>
         <li class="">
-          <div class="price-card-title-top">接口监控</div>
+          <div class="price-card-title-top">高级版</div>
           <div class="price">
-            <span class="f-c-warning"><em class="f-fs1">¥</em>99<em class="f-fs1">项目/月</em></span>
+            <span class="f-c-warning"><em class="f-fs1">¥</em>99<em class="f-fs1">团队/月</em></span>
 
           </div>
           <div class="description">
             <span>接口监控全部功能</span>
-            <span>监控记录保留15天</span>
+            <span>监控记录保留30天</span>
             <span>监控记录100万条额度</span>
             <span>监控频率10万次/天</span>
-            <span>团队人员全部可见</span>
-            <span>可额外购买套餐</span>
+            <span>超出部分0.3元/万次</span>
           </div>
           <div class="free_use">
             <a href="https://team.easyapi.com/project/">免费试用</a>
@@ -48,20 +48,20 @@
           </div>
         </li>
         <li>
-          <div class="price-card-title-top">网关服务</div>
+          <div class="price-card-title-top">旗舰版</div>
           <div class="price">
-            <span class="f-c-warning"><em class="f-fs1">¥</em>1999<em class="f-fs1">项目/月</em></span>
+            <span class="f-c-warning"><em class="f-fs1">¥</em>199<em class="f-fs1">团队/月</em></span>
           </div>
           <div class="description">
-            <span>网关服务全部功能</span>
-            <span>每日请求量100万次</span>
-            <span>团队人员全部可见</span>
-            <span>超出部分0.05元/万次</span>
+            <span>API低代码全部功能</span>
+            <span>包含高级版全部功能</span>
+            <span>API每月请求量1000万次</span>
+            <span>访问频率100QPS</span>
+            <span>超出部分0.1元/万次</span>
           </div>
           <div class="free_use">
             <a href="https://gateway.easyapi.com">免费试用</a>
-            <img src="/images/info/arrow-r.png"/>
-
+            <img src="/images/info/arrow-r.png" alt=""/>
           </div>
         </li>
       </ul>
