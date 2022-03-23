@@ -14,9 +14,20 @@ export default {
       ]
     }
   },
+  data() {
+    return {
+      num: ""
+    }
+  },
   methods: {
     showCode() {
       this.$refs.child.dialogVisible = true
+    },
+    jumpGoogle() {
+      this.num = 1
+    },
+    jumpFirefox() {
+      this.num = 2
     }
   }
 }
