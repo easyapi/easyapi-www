@@ -2,20 +2,20 @@
 import '/assets/scss/banner.scss'
 
 export default {
-  name: 'ProductGateway',
+  name: 'ProductLowCode',
   head() {
     return {
-      title: '网关系统 - EasyAPI服务平台',
+      title: 'API低代码 - EasyAPI服务平台',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: '网关系统'
+          content: 'API低代码'
         },
         {
           hid: 'keyword',
           name: 'keyword',
-          content: '网关系统'
+          content: 'API低代码'
         }
       ]
     }
