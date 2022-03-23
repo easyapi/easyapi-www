@@ -91,7 +91,7 @@
         </p>
         <div class="pd-b-50 f-cb">
           <div class="inner-item f-fl">
-            <img src="https://static.easyapi.com/images/w1.png">
+            <img class="mx-auto" src="https://static.easyapi.com/images/w1.png">
             <span>
             Word
           </span>
@@ -107,7 +107,7 @@
             <img src="/images/info/ic_home_arrow.png">
           </div>
           <div class="inner-item f-fr">
-            <img src="https://static.easyapi.com/images/w2.png">
+            <img class="mx-auto" src="https://static.easyapi.com/images/w2.png">
             <span>
             EasyAPI
           </span>
@@ -130,7 +130,7 @@
         </p>
         <div class="inner pd-b-50 f-cb">
           <div class="inner-item">
-            <img src="https://static.easyapi.com/images/index-i-3.png">
+            <img class="mx-auto" src="https://static.easyapi.com/images/index-i-3.png">
             <span>
             开发效率提升
           </span>
@@ -141,7 +141,7 @@
             </p>
           </div>
           <div class="inner-item">
-            <img src="https://static.easyapi.com/images/index-i-2.png">
+            <img class="mx-auto" src="https://static.easyapi.com/images/index-i-2.png">
             <span>
             运维响应提升
           </span>
@@ -152,7 +152,7 @@
             </p>
           </div>
           <div class="inner-item">
-            <img src="https://static.easyapi.com/images/index-i-1.png">
+            <img class="mx-auto" src="https://static.easyapi.com/images/index-i-1.png">
             <span>
             业务风险降低
           </span>

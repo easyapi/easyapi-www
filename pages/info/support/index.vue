@@ -6,37 +6,37 @@
         <div class="u-donatelist f-cb">
           <ul class="ulist f-cb">
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/zhaozilong.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhaozilong.jpg"></p>
               <strong>赵子龙</strong>
               <span>Java工程师</span>
             </li>
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/tangwenchang.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/tangwenchang.jpg"></p>
               <strong>唐文昌</strong>
               <span>iOS工程师</span>
             </li>
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/banxin.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/banxin.jpg"></p>
               <strong>班新</strong>
               <span>Android工程师</span>
             </li>
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/zhangsheng.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhangsheng.jpg"></p>
               <strong>张胜</strong>
               <span>项目总监</span>
             </li>
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/huangmingjie.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/huangmingjie.jpg"></p>
               <strong>黄明杰</strong>
               <span>技术总监</span>
             </li>
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/zhanglinghui.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhanglinghui.jpg"></p>
               <strong>张凌辉</strong>
               <span>Java架构师</span>
             </li>
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/jiyixin.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/jiyixin.jpg"></p>
               <strong>季乙心</strong>
               <span>产品经理</span>
             </li>
@@ -65,12 +65,14 @@
         </div>
       </div>
     </div>
-    <div><Pay ref="child"></Pay></div>
+    <div>
+      <Pay ref="child"></Pay>
+    </div>
   </div>
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>

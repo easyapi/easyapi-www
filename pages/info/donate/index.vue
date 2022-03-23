@@ -30,42 +30,42 @@
           <div class="support">支持名单</div>
           <ul class="f-cb">
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/zhaozilong.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhaozilong.jpg"></p>
               <strong>赵子龙</strong>
               <span>Java工程师</span>
             </li>
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/tangwenchang.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/tangwenchang.jpg"></p>
               <strong>唐文昌</strong>
               <span>iOS工程师</span>
             </li>
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/banxin.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/banxin.jpg"></p>
               <strong>班新</strong>
               <span>Android工程师</span>
             </li>
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/zhangsheng.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhangsheng.jpg"></p>
               <strong>张胜</strong>
               <span>项目总监</span>
             </li>
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/huangmingjie.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/huangmingjie.jpg"></p>
               <strong>黄明杰</strong>
               <span>技术总监</span>
             </li>
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/zhanglinghui.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhanglinghui.jpg"></p>
               <strong>张凌辉</strong>
               <span>Java架构师</span>
             </li>
             <li>
-              <p><img src="https://qiniu.easyapi.com/user/jiyixin.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/jiyixin.jpg"></p>
               <strong>季乙心</strong>
               <span>产品经理</span>
             </li>
             <li>
-              <p><img src="/images/user-phone.png"></p>
+              <p><img class="mx-auto" src="/images/user-phone.png"></p>
               　
               <a href="/info/support" class="more">更多支持者</a>
             </li>
@@ -78,7 +78,7 @@
             <dl>
               <dt><span>￥15元</span><i>33人支持</i></dt>
               <dd>
-                <p>署名<i class="iconfont icon-ok"></i></p>
+                <p>署名<i class="el-icon-check"></i></p>
                 <p>鼠标垫</p>
                 <p>马克杯</p>
                 <p>T恤衫</p>
@@ -95,8 +95,8 @@
             <dl>
               <dt><span>￥50元</span><i>8人支持</i></dt>
               <dd>
-                <p>署名<i class="iconfont icon-ok"></i></p>
-                <p>鼠标垫<i class="iconfont icon-ok"></i></p>
+                <p>署名<i class="el-icon-check"></i></p>
+                <p>鼠标垫<i class="el-icon-check"></i></p>
                 <p>马克杯</p>
                 <p>T恤衫</p>
                 <p>充电宝</p>
@@ -112,9 +112,9 @@
             <dl>
               <dt><span>￥100元</span><i>18人支持</i></dt>
               <dd>
-                <p>署名<i class="iconfont icon-ok"></i></p>
-                <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-                <p>马克杯<i class="iconfont icon-ok"></i></p>
+                <p>署名<i class="el-icon-check"></i></p>
+                <p>鼠标垫<i class="el-icon-check"></i></p>
+                <p>马克杯<i class="el-icon-check"></i></p>
                 <p>T恤衫</p>
                 <p>充电宝</p>
                 <p>广告机会</p>
@@ -129,10 +129,10 @@
             <dl>
               <dt><span>￥200元</span><i>23人支持</i></dt>
               <dd>
-                <p>署名<i class="iconfont icon-ok"></i></p>
-                <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-                <p>马克杯<i class="iconfont icon-ok"></i></p>
-                <p>T恤衫<i class="iconfont icon-ok"></i></p>
+                <p>署名<i class="el-icon-check"></i></p>
+                <p>鼠标垫<i class="el-icon-check"></i></p>
+                <p>马克杯<i class="el-icon-check"></i></p>
+                <p>T恤衫<i class="el-icon-check"></i></p>
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
@@ -146,11 +146,11 @@
             <dl>
               <dt><span>￥500元</span><i>2人支持</i></dt>
               <dd>
-                <p>署名<i class="iconfont icon-ok"></i></p>
-                <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-                <p>马克杯<i class="iconfont icon-ok"></i></p>
-                <p>T恤衫<i class="iconfont icon-ok"></i></p>
-                <p>充电宝<i class="iconfont icon-ok"></i></p>
+                <p>署名<i class="el-icon-check"></i></p>
+                <p>鼠标垫<i class="el-icon-check"></i></p>
+                <p>马克杯<i class="el-icon-check"></i></p>
+                <p>T恤衫<i class="el-icon-check"></i></p>
+                <p>充电宝<i class="el-icon-check"></i></p>
                 <p>广告机会</p>
                 <span>
                 <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
@@ -163,11 +163,11 @@
             <dl>
               <dt><span>￥2000元</span><i>1人支持</i></dt>
               <dd>
-                <p>署名<i class="iconfont icon-ok"></i></p>
-                <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-                <p>马克杯<i class="iconfont icon-ok"></i></p>
-                <p>T恤衫<i class="iconfont icon-ok"></i></p>
-                <p>充电宝<i class="iconfont icon-ok"></i></p>
+                <p>署名<i class="el-icon-check"></i></p>
+                <p>鼠标垫<i class="el-icon-check"></i></p>
+                <p>马克杯<i class="el-icon-check"></i></p>
+                <p>T恤衫<i class="el-icon-check"></i></p>
+                <p>充电宝<i class="el-icon-check"></i></p>
                 <p>广告机会</p>
                 <span>
                 <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
@@ -180,12 +180,12 @@
             <dl>
               <dt><span>￥5000元</span><i>0人支持</i></dt>
               <dd>
-                <p>署名<i class="iconfont icon-ok"></i></p>
-                <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-                <p>马克杯<i class="iconfont icon-ok"></i></p>
-                <p>T恤衫<i class="iconfont icon-ok"></i></p>
-                <p>充电宝<i class="iconfont icon-ok"></i></p>
-                <p>广告机会<i class="iconfont icon-ok"></i></p>
+                <p>署名<i class="el-icon-check"></i></p>
+                <p>鼠标垫<i class="el-icon-check"></i></p>
+                <p>马克杯<i class="el-icon-check"></i></p>
+                <p>T恤衫<i class="el-icon-check"></i></p>
+                <p>充电宝<i class="el-icon-check"></i></p>
+                <p>广告机会<i class="el-icon-check"></i></p>
                 <span>
                 <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
                    data-target=".bs-example-modal-lg">
@@ -197,12 +197,12 @@
             <dl>
               <dt><span>￥10000元</span><i>0人支持</i></dt>
               <dd>
-                <p>署名<i class="iconfont icon-ok"></i></p>
-                <p>鼠标垫<i class="iconfont icon-ok"></i></p>
-                <p>马克杯<i class="iconfont icon-ok"></i></p>
-                <p>T恤衫<i class="iconfont icon-ok"></i></p>
-                <p>充电宝<i class="iconfont icon-ok"></i></p>
-                <p>股份<i class="iconfont icon-ok"></i></p>
+                <p>署名<i class="el-icon-check"></i></p>
+                <p>鼠标垫<i class="el-icon-check"></i></p>
+                <p>马克杯<i class="el-icon-check"></i></p>
+                <p>T恤衫<i class="el-icon-check"></i></p>
+                <p>充电宝<i class="el-icon-check"></i></p>
+                <p>股份<i class="el-icon-check"></i></p>
                 <span>
                 <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
                    data-target=".bs-example-modal-lg">
@@ -217,12 +217,14 @@
         </div>
       </div>
     </div>
-    <div><Pay ref="child"></Pay></div>
+    <div>
+      <Pay ref="child"></Pay>
+    </div>
   </div>
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>

@@ -11,7 +11,7 @@
     <div class="pd-100">
       <div class="title">您的API总有问题存在</div>
       <div class="oneimg wp clearfix">
-        <img src="/images/info/test_2.png">
+        <img class="mx-auto" src="/images/info/test_2.png">
       </div>
     </div>
 
@@ -19,7 +19,7 @@
       <div class="title">测试工具</div>
       <div class="description">致力于成为中国最好的API测试工具</div>
       <div class="oneimg">
-        <img src="/images/info/test_3.png">
+        <img class="mx-auto" src="/images/info/test_3.png">
       </div>
     </div>
 
@@ -29,8 +29,8 @@
         <ul class="u-tese content text_img_auto  f-cb add_img_line">
           <li>
             <!-- <i class="iconfont icon-xingxing"></i> -->
-            <div class="d_inline_block line_tips">
-              <img src="/images/info/document.png" alt="未加载">
+            <div class="line_tips flex">
+              <img class="" src="/images/info/document.png" alt="未加载">
               <div class="d_inline_block " style="padding-left: 15px;">
                 <h3>对接文档管理</h3>
                 <p>如果您在线管理接口，那么测试易如反掌</p>
@@ -39,7 +39,7 @@
           </li>
           <li>
             <!-- <i class="iconfont icon-xingxing"></i> -->
-            <div class="d_inline_block line_tips">
+            <div class="flex line_tips">
               <img src="/images/info/notice.png" alt="未加载">
               <div class="d_inline_block " style="padding-left: 15px;">
                 <h3>测试报告通知</h3>
@@ -50,7 +50,7 @@
           </li>
           <li>
             <!-- <i class="iconfont icon-xingxing"></i> -->
-            <div class="d_inline_block line_tips">
+            <div class="flex line_tips">
               <img src="/images/info/manange.png" alt="未加载">
               <div class="d_inline_block" style="padding-left: 15px;">
                 <h3>接口示例管理</h3>
@@ -60,7 +60,7 @@
           </li>
           <li>
             <!-- <i class="iconfont icon-xingxing"></i> -->
-            <div class="d_inline_block line_tips">
+            <div class="flex line_tips">
               <img src="/images/info/history.png" alt="未加载">
               <div class="d_inline_block" style="padding-left: 5px;">
                 <h3>历史测试记录一览</h3>
@@ -70,7 +70,7 @@
           </li>
           <li>
             <!-- <i class="iconfont icon-xingxing"></i> -->
-            <div class="d_inline_block line_tips">
+            <div class="flex line_tips">
 
               <img src="/images/info/sopport.png" alt="未加载">
               <div class="d_inline_block" style="padding-left: 15px;">
@@ -83,11 +83,10 @@
           <li>
 
             <!-- <i class="iconfont icon-xingxing"></i> -->
-            <div class="d_inline_block line_tips">
+            <div class="flex line_tips">
 
               <img src="/images/info/lessTime.png" alt="未加载">
               <div class="d_inline_block" style="padding-left: 15px;">
-
                 <h3>缩短测试时间</h3>
                 <p>为了提供自动化测试，方便测试工程师频繁测试，浪费时间成本</p>
               </div>
@@ -106,7 +105,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>

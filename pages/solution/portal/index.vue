@@ -20,23 +20,23 @@
       </div>
       <ul class="u-iconui one content">
         <li>
-          <img src="/images/info/open_icon6.png">
+          <img class="mx-auto" src="/images/info/open_icon6.png">
           <span>API编辑</span>
         </li>
         <li>
-          <img src="/images/info/open_icon7.png">
+          <img class="mx-auto" src="/images/info/open_icon7.png">
           <span>API浏览</span>
         </li>
         <li>
-          <img src="/images/info/open_icon8.png">
+          <img class="mx-auto" src="/images/info/open_icon8.png">
           <span>API测试</span>
         </li>
         <li>
-          <img src="/images/info/open_icon9.png">
+          <img class="mx-auto" src="/images/info/open_icon9.png">
           <span>API监控</span>
         </li>
         <li>
-          <img src="/images/info/open_icon10.png">
+          <img class="mx-auto" src="/images/info/open_icon10.png">
           <span>API门户</span>
         </li>
       </ul>
@@ -49,7 +49,7 @@
         立刻让自己公司的API管理更具有效率
       </div>
       <div class="oneimg">
-        <img src="/images/info/open_3.png">
+        <img class="mx-auto" src="/images/info/open_3.png">
       </div>
     </div>
 
@@ -60,11 +60,11 @@
         <div class="thisroll">
           <div class="item">
             <div class="box">
-              <img src="https://static.easyapi.com/images/app/yinwan.png">
+              <img class="mx-auto" src="https://static.easyapi.com/images/app/yinwan.png">
               <span>银湾社区开放平台</span>
             </div>
             <div class="u-lay">
-              <img src="https://static.easyapi.com/images/app/yinwan.png">
+              <img class="mx-auto" src="https://static.easyapi.com/images/app/yinwan.png">
               <h4>银湾社区开放平台</h4>
               <span class="line"></span>
               <p>近千个小区的数据，开放给第三方合作伙伴</p>
@@ -72,11 +72,11 @@
           </div>
           <div class="item">
             <div class="box">
-              <img src="https://static.easyapi.com/images/app/key.png">
+              <img class="mx-auto" src="https://static.easyapi.com/images/app/key.png">
               <span>银钥匙物业联盟开放平台</span>
             </div>
             <div class="u-lay">
-              <img src="https://static.easyapi.com/images/app/key.png">
+              <img class="mx-auto" src="https://static.easyapi.com/images/app/key.png">
               <h4>银钥匙物业联盟开放平台</h4>
               <span class="line"></span>
               <p>银钥匙物业联盟拥有会员企业1000家，通过API开放平台实现数据进行互联互通</p>
@@ -84,11 +84,11 @@
           </div>
           <div class="item">
             <div class="box">
-              <img src="https://static.easyapi.com/images/app/gl.png">
+              <img class="mx-auto" src="https://static.easyapi.com/images/app/gl.png">
               <span>国联供应链API开放平台</span>
             </div>
             <div class="u-lay">
-              <img src="https://static.easyapi.com/images/app/gl.png">
+              <img class="mx-auto" src="https://static.easyapi.com/images/app/gl.png">
               <h4>国联供应链API开放平台</h4>
               <span class="line"></span>
               <p>国联供应链服务需要整合上下游资源，通过API开放平台打通上下游资源</p>
@@ -96,11 +96,11 @@
           </div>
           <div class="item">
             <div class="box">
-              <img src="https://static.easyapi.com/images/app/jf_logo.png">
+              <img class="mx-auto" src="https://static.easyapi.com/images/app/jf_logo.png">
               <span>中国家纺城API开放平台</span>
             </div>
             <div class="u-lay">
-              <img src="https://static.easyapi.com/images/app/jf_logo.png">
+              <img class="mx-auto" src="https://static.easyapi.com/images/app/jf_logo.png">
               <h4>中国家纺城API开放平台</h4>
               <span class="line"></span>
               <p>打造世界一流的家纺线上API平台</p>

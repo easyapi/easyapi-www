@@ -17,21 +17,21 @@
       </div>
       <ul class="content scene-icon">
         <li class="u-display">
-          <img src="/images/info/open_icon19.png">
+          <img class="mx-auto" src="/images/info/open_icon19.png">
           <div class="lefttext">
             <p>SaaS服务</p>
             <span>传统的SaaS服务灵活方便是它的优点，但是不可定制化，不能满足企业的个性化展示需求</span>
           </div>
         </li>
         <li class="u-display-center">
-          <img src="/images/info/open_icon20.png">
+          <img class="mx-auto" src="/images/info/open_icon20.png">
           <div class="lefttext">
             <p>API场景化服务</p>
             <span>可选择满足自己的场景化服务，如果前端展示需要修改，和方便，缺点需要一点开发工作量</span>
           </div>
         </li>
         <li class="u-display">
-          <img src="/images/info/open_icon21.png">
+          <img class="mx-auto" src="/images/info/open_icon21.png">
           <div class="lefttext">
             <p>自主开发</p>
             <span>优点完全可定制化，企业想要什么就开发什么，缺点短期开发出来的产品，问题较多，并且开发成本较大</span>
@@ -45,35 +45,35 @@
       <div class="description"></div>
       <ul class="content icon-dispaly">
         <li>
-          <img src="/images/info/open_icon11.png">
+          <img class="mx-auto" src="/images/info/open_icon11.png">
           <span>聚合通知</span>
         </li>
         <li>
-          <img src="/images/info/open_icon12.png">
+          <img class="mx-auto" src="/images/info/open_icon12.png">
           <span>会员营销</span>
         </li>
         <li>
-          <img src="/images/info/open_icon13.png">
+          <img class="mx-auto" src="/images/info/open_icon13.png">
           <span>工单系统</span>
         </li>
         <li>
-          <img src="/images/info/open_icon14.png">
+          <img class="mx-auto" src="/images/info/open_icon14.png">
           <span>快速提现</span>
         </li>
         <li>
-          <img src="/images/info/open_icon15.png">
+          <img class="mx-auto" src="/images/info/open_icon15.png">
           <span>微商城</span>
         </li>
         <li>
-          <img src="/images/info/open_icon16.png">
+          <img class="mx-auto" src="/images/info/open_icon16.png">
           <span>积分商城</span>
         </li>
         <li>
-          <img src="/images/info/open_icon17.png">
+          <img class="mx-auto" src="/images/info/open_icon17.png">
           <span>邀请好友</span>
         </li>
         <li>
-          <img src="/images/info/open_icon18.png">
+          <img class="mx-auto" src="/images/info/open_icon18.png">
           <span>新人有礼</span>
         </li>
       </ul>

@@ -7,7 +7,8 @@
         </h2>
         <div class="u-contact">
           <div class="tex">
-            <baidu-map class="bm-view" ak="yZYo7WmkUj3bMFZMcP7PRSpuvjUfGw0B" :center="center" :zoom="zoom" :scroll-wheel-zoom='scroll'>
+            <baidu-map class="bm-view" ak="yZYo7WmkUj3bMFZMcP7PRSpuvjUfGw0B" :center="center" :zoom="zoom"
+                       :scroll-wheel-zoom='scroll'>
             </baidu-map>
             <h3>无锡帮趣数据服务有限公司</h3>
 
@@ -44,7 +45,7 @@
                 </div>
               </li>
               <li style="margin-left: 184px;">
-                <img src="/images/tips_promlem.png">
+                <img class="mx-auto" src="/images/tips_promlem.png">
                 <div class="link_infr">
                   <p style="color: #333;font-size: 18px;margin-bottom: 5px;">快速反馈问题</p>
                   <span style="color: #666;font-size: 14px;">7*24小时接受您的反馈并处理</span>
@@ -52,7 +53,7 @@
 
               </li>
               <li style="margin-left: 184px;">
-                <img src="/images/join_wechat.png">
+                <img class="mx-auto" src="/images/join_wechat.png">
                 <div class="link_infr">
                   <p style="color: #333;font-size: 18px;margin-bottom: 5px;">加入EasyAPI微信城市群</p>
                   <span style="color: #666;font-size: 14px;">上海 无锡 苏州 北京 深圳 广州 成都 重庆 西安</span>
@@ -67,7 +68,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>

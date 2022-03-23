@@ -12,42 +12,42 @@
         <div class="team-box f-cb">
           <ul>
             <li>
-              <img src="https://qiniu.easyapi.com/user/leida.jpg">
+              <img class="mx-auto" src="https://qiniu.easyapi.com/user/leida.jpg">
               <h4>张磊</h4>
               <p>产品经理</p>
             </li>
             <li>
-              <img src="https://qiniu.easyapi.com/user/afunti.jpg">
+              <img class="mx-auto" src="https://qiniu.easyapi.com/user/afunti.jpg">
               <h4>刘小春</h4>
               <p>前端工程师</p>
             </li>
             <li>
-              <img src="https://qiniu.easyapi.com/user/fangting.jpg!small.jpg">
+              <img class="mx-auto" src="https://qiniu.easyapi.com/user/fangting.jpg!small.jpg">
               <h4>房婷</h4>
               <p>UI设计师</p>
             </li>
             <li>
-              <img src="https://qiniu.easyapi.com/user/lililai.jpg">
+              <img class="mx-auto" src="https://qiniu.easyapi.com/user/lililai.jpg">
               <h4>李士万</h4>
               <p>程序员</p>
             </li>
             <li>
-              <img src="https://qiniu.easyapi.com/user/mary.jpg">
+              <img class="mx-auto" src="https://qiniu.easyapi.com/user/mary.jpg">
               <h4>管婵娴</h4>
               <p>模板贡献者</p>
             </li>
             <li>
-              <img src="https://qiniu.easyapi.com/user/suri.jpg">
+              <img class="mx-auto" src="https://qiniu.easyapi.com/user/suri.jpg">
               <h4>黄婷婷</h4>
               <p>模板贡献者</p>
             </li>
             <li>
-              <img src="https://qiniu.easyapi.com/user/zhaozilong.jpg!small.jpg">
+              <img class="mx-auto" src="https://qiniu.easyapi.com/user/zhaozilong.jpg!small.jpg">
               <h4>赵子龙</h4>
               <p>程序员</p>
             </li>
             <li>
-              <img src="https://static.easyapi.com/images/team/you.jpg">
+              <img class="mx-auto" src="https://static.easyapi.com/images/team/you.jpg">
               <h4>您</h4>
               <p>模板贡献者</p>
             </li>
@@ -98,7 +98,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>
