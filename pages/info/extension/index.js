@@ -4,7 +4,6 @@ import Pay from "../../../components/pay";
 
 export default {
   name: 'InfoExtension',
-  components: {Pay},
   head() {
     return {
       title: '浏览器插件 - EasyAPI服务平台',
@@ -14,20 +13,15 @@ export default {
       ]
     }
   },
-  data() {
-    return {
-      num: ""
-    }
-  },
   methods: {
-    showCode() {
-      this.$refs.child.dialogVisible = true
-    },
     jumpGoogle() {
-      this.num = 1
+      this.$message.warning("谷歌浏览器插件正在审核中")
     },
     jumpFirefox() {
-      this.num = 2
+      window.open("https://addons.mozilla.org/zh-CN/firefox/addon/easyapi%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search","_blank");
+    },
+    jumpZip() {
+      window.open("https://qiniu.easyapi.com/easyapi-extension.zip","_blank");
     }
   }
 }
