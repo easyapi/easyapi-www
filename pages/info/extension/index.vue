@@ -17,7 +17,7 @@
             <p class="text-center">推荐</p>
             <p class="text-center text-gray-400">（需要代理）</p>
           </div>
-          <div @click="jumpFirefox" class="flex cursor-pointer border-solid border w-48 p-1 mt-12 mx-auto">
+          <div @click="jumpFirefox" class="flex cursor-pointer border-solid border w-48 p-1 mt-12 mx-auto bg-blue-500">
             <img src="https://qiniu.easyapi.com/firefox-addons.svg" alt="火狐浏览器">
           </div>
           <div class="my-6">
@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>
