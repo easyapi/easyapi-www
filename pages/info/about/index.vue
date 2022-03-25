@@ -10,9 +10,9 @@
           上海帮趣网络技术有限公司创建于2014年，致力于成为中国领先的移动互联网工具提供商，公司核心团队，数年行业资深经验，开发过数十个移动APP，与行业合作伙伴保持业务沟通，加大移动互联网工具建设。公司总部位于上海博济智汇园、在无锡滨湖区创意产业园（蠡湖边）设立研发基地，是一家拥有自主知识产权的移动互联网企业。团队成员20人+。
         </div>
         <div class="team-box f-cb">
-          <ul>
+          <ul class="flex flex-wrap justify-around">
             <li>
-              <img class="mx-auto" src="https://qiniu.easyapi.com/user/leida.jpg">
+              <img class="mx-auto w-auto" src="https://qiniu.easyapi.com/user/leida.jpg">
               <h4>张磊</h4>
               <p>产品经理</p>
             </li>
@@ -90,7 +90,7 @@
 
     <div class="about-box">
       <div class="title">我们的目标</div>
-      <div class="description">
+      <div class="description content">
         EasyAPI最初是我们团队内部的工具，因为热爱，我们希望她能得到更多的人来使用，我们也会一直站在她的旁边优化她，完美她，希望广大的苦B开发人员，<br>程序猿早日用上，致力于为数十万移动开发者，后端开发人员提供全套的API系统解决方案（发布、浏览、测试、监控、网关、接口服务）。
       </div>
     </div>

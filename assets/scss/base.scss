@@ -4,11 +4,17 @@
 @import "function.scss";
 
 
-@media screen and (max-width: 1000px) {
-  .content {
-    width: 95vw;
-    margin: 0 auto
-  }
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
 }
 
 @-webkit-keyframes rotation {
@@ -172,8 +178,6 @@ body, button, input, keygen, legend, select, textarea {
 }
 
 .content {
-  width: 1200px;
-  margin: 0 auto;
 
   .title {
     color: #ffffff;
@@ -204,11 +208,6 @@ body, button, input, keygen, legend, select, textarea {
   font-size: 16px;
   padding: 0 40px;
   border-radius: 5px;
-}
-
-.logo {
-  margin-top: 17px;
-  width: 120px;
 }
 
 .popover-ul {

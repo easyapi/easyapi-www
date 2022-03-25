@@ -2,7 +2,7 @@
   background-color: #18c1d6;
 }
 
-.about{
+.about {
   margin-top: 72px;
 }
 
@@ -11,7 +11,6 @@
 
   .title {
     text-align: center;
-    font-size: 36px;
     font-weight: 400;
     margin-bottom: 12px;
     color: #333;
@@ -27,7 +26,6 @@
 
   .description {
     text-align: center;
-    font-size: 1.6rem;
     line-height: 1.7;
     margin-bottom: 50px;
     color: gray;
@@ -40,9 +38,7 @@
       color: #555;
     }
   }
-
 }
-
 
 
 .team-box {
@@ -50,19 +46,9 @@
 
   ul {
     text-align: center;
-    padding: 0 0 0 100px;
 
     li {
-      width: 15% !important;
-      float: left;
-      height: 150px;
-      margin: 20px 30px;
 
-      img {
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-      }
 
       p {
         color: gray;
@@ -71,35 +57,295 @@
   }
 }
 
-.culture {
-  margin: 0 auto;
+@media screen and (min-width: 1200px) {
+  .content {
+    width: 1200px;
+    margin: 0 auto
+  }
 
-  ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+  .team-box ul li img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
 
-    li {
-      float: left;
-      width: 300px;
-      display: inline-block;
-      margin: 0 25px;
+  .team-box ul li {
+    width: 25%;
+    height: 150px;
+  }
 
-      img {
-        margin-bottom: 25px;
+  .about-box .title {
+    font-size: 36px;
+  }
+
+  .about-box .description {
+    font-size: 1.6em
+  }
+
+  .culture {
+    margin: 0 auto;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      li {
+        float: left;
+        width: 33%;
+        display: inline-block;
+        margin: 0 25px;
+
+        img {
+          margin-bottom: 25px;
+        }
+
+        span {
+          font-size: 1.6rem;
+          display: block;
+          margin: 7px 0;
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          color: gray;
+        }
       }
+    }
+  }
+}
 
-      span {
-        font-size: 1.6rem;
-        display: block;
-        margin: 7px 0;
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .content {
+    width: 800px;
+    margin: 0 auto
+  }
+
+  .team-box ul li img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
+
+  .team-box ul li {
+    width: 25%;
+    height: 150px;
+  }
+
+  .about-box .title {
+    font-size: 36px;
+  }
+
+  .about-box .description {
+    font-size: 1.6em
+  }
+
+  .culture {
+    margin: 0 auto;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      li {
+        float: left;
+        width: 33%;
+        display: inline-block;
+        margin: 0 25px;
+
+        img {
+          margin-bottom: 25px;
+        }
+
+        span {
+          font-size: 1.6rem;
+          display: block;
+          margin: 7px 0;
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          color: gray;
+        }
       }
+    }
+  }
+}
 
-      p {
-        font-size: 1.4rem;
-        line-height: 1.7;
-        color: gray;
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .content {
+    width: 600px;
+    margin: 0 auto
+  }
+
+  .team-box ul li img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
+
+  .team-box ul li {
+    width: 25%;
+    height: 150px;
+  }
+
+  .about-box .title {
+    font-size: 36px;
+  }
+
+  .about-box .description {
+    font-size: 1.6em
+  }
+
+  .culture {
+    margin: 0 auto;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      li {
+        float: left;
+        width: 33%;
+        display: inline-block;
+        margin: 0 25px;
+
+        img {
+          margin-bottom: 25px;
+        }
+
+        span {
+          font-size: 1.6rem;
+          display: block;
+          margin: 7px 0;
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .content {
+    width: 500px;
+    margin: 0 auto
+  }
+
+  .team-box ul li img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
+
+  .team-box ul li {
+    width: 25%;
+    height: 150px;
+  }
+
+  .about-box .title {
+    font-size: 36px;
+  }
+
+  .about-box .description {
+    font-size: 1.6em
+  }
+
+  .culture {
+    margin: 0 auto;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      li {
+        float: left;
+        width: 33%;
+        display: inline-block;
+        margin: 0 25px;
+
+        img {
+          margin-bottom: 25px;
+        }
+
+        span {
+          font-size: 1.6rem;
+          display: block;
+          margin: 7px 0;
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .content {
+    width: 300px;
+    margin: 0 auto
+  }
+
+  .team-box ul li img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+
+  .team-box ul li {
+    width: 25%;
+    height: 100px;
+  }
+
+  .about-box .title {
+    font-size: 28px;
+  }
+
+  .about-box .description {
+    font-size: 0.6em
+  }
+
+  .culture {
+    ul {
+      width: 100%;
+
+      li {
+        text-align: center;
+        display: inline-block;
+        margin: 0 25px 10px 25px;
+
+        img {
+          margin-bottom: 10px;
+        }
+
+        span {
+          font-size: 1.6rem;
+          display: block;
+          margin: 7px 0;
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          color: gray;
+        }
       }
     }
   }
