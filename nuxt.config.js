@@ -11,6 +11,17 @@ module.exports = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'Home',
+        path: '/home',
+        component: resolve(__dirname, 'pages/index.vue')
+      })
+    }
+  },
+
   css: ['@/assets/scss/base.scss', '@/assets/scss/element-variables.scss'],
   plugins: ['@/plugins/axios', '@/plugins/element-ui'],
   /*
