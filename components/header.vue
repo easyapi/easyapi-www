@@ -309,14 +309,6 @@
 </script>
 
 <style scoped lang="scss">
-  .header {
-    position: relative;
-    top: 0;
-    height: 72px;
-    box-shadow: none;
-    background-color: (0, 0, 0, 0.3);
-  }
-
   .header-index {
     position: absolute;
     left: 0;
@@ -333,7 +325,7 @@
 
   @media screen and (min-width: 1000px) {
     .header {
-      position: relative;
+      /*position: relative;*/
       top: 0;
       height: 72px;
       box-shadow: none;
@@ -548,7 +540,7 @@
 
   @media screen and (min-width: 800px) and (max-width: 1000px) {
     .header {
-      position: relative;
+      /*position: relative;*/
       top: 0;
       height: 72px;
       box-shadow: none;
@@ -757,7 +749,7 @@
 
   @media screen and (min-width: 300px) and (max-width: 800px) {
     .header {
-      position: relative;
+      /*position: relative;*/
       top: 0;
       height: 52px;
       box-shadow: none;
