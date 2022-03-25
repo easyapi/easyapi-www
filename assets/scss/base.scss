@@ -3,18 +3,39 @@
 //功能样式
 @import "function.scss";
 
+@media screen and (min-width: 1200px) {
+  .content {
+    width: 1200px;
+    margin: 0 auto
+  }
+}
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .content {
+    width: 800px;
+    margin: 0 auto
+  }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1000px) {
+  .content {
+    width: 600px;
+    margin: 0 auto
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 800px) {
-
+  .content {
+    width: 500px;
+    margin: 0 auto
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
+  .content {
+    width: 300px;
+    margin: 0 auto
+  }
 }
 
 @-webkit-keyframes rotation {

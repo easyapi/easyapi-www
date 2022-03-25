@@ -2,108 +2,325 @@
   background-color: #18c1d6;
 }
 
-.link_list {
-  overflow: hidden;
-  padding-top: 50px;
-
-}
-
-.link_list li {
-  float: left;
-  text-align: center;
-  overflow: hidden;
-}
-
-.link_list .code .code_img {
-  overflow: hidden;
-}
-
-.link_list li img {
-}
-
-.link_list .code .code_img img {
-  width: 114px;
-  height: 114px;
-  float: left;
-}
-
-.link_list .code .code_img .line {
-  width: 2px;
-  height: 100px;
-  border-right: 2px solid #18c1d6;
-  float: left;
-  margin-top: 7px;
-  margin-left: 80px;
-}
-
-.link_list .code .link_infr {
-  clear: both;
-  margin-top: 10px;
-  text-align: left;
-}
-
-.link_list .code .link_infr span {
-  margin-left: 24px;
-}
-
-.u-contact {
-  margin-top: 50px;
-  padding: 20px 50px;
-
-  .tex {
-    font-size: 1.4rem;
-
-    p {
-      line-height: 23px;
-      padding: 0;
-      color: #555;
-    }
-
-    h3 {
-      padding: 20px 0 5px;
-    }
-  }
-
-  .cerwm {
-    padding: 50px 0 5px;
-
-    .hd {
-      border-bottom: 1px solid #ddd;
-      margin-bottom: 15px;
-
-      a {
-        display: inline-block;
-        padding: 5px 2px;
-        color: gray;
-        margin-right: 10px;
-        font-size: 14px;
-      }
-    }
-  }
-
-  .ermbx {
-    li {
-      float: left;
-      width: 120px;
-      margin-right: 50px;
-      font-size: 12px;
-
-      img {
-        width: 100%;
-      }
-
-      span {
-        display: block;
-        text-align: center;
-        padding: 5px 0;
-      }
-    }
-  }
-}
-
-
 .bm-view {
   width: 100%;
   height: 300px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .u-contact {
+    padding: 20px 50px;
+
+    .tex {
+      font-size: 1.4rem;
+
+      p {
+        line-height: 23px;
+        padding: 0;
+        color: #555;
+      }
+
+      h3 {
+        padding: 20px 0 5px;
+      }
+    }
+
+    .cerwm {
+      padding: 50px 0 5px;
+
+      .hd {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 15px;
+
+        a {
+          display: inline-block;
+          padding: 5px 2px;
+          color: gray;
+          margin-right: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .ermbx {
+      li {
+        float: left;
+        width: 120px;
+        margin-right: 50px;
+        font-size: 12px;
+
+        img {
+          width: 100%;
+        }
+
+        span {
+          display: block;
+          text-align: center;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+
+  .link_list {
+    overflow: hidden;
+    padding-top: 50px;
+
+    li {
+      float: left;
+      text-align: center;
+      overflow: hidden;
+
+      .link_infr {
+        clear: both;
+        margin-top: 10px;
+
+        p {
+          color: #333;
+          font-size: 18px;
+          margin-bottom: 5px;
+          text-align: center;
+        }
+
+        span {
+          color: #666;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .code_img {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 114px;
+        height: 114px;
+      }
+
+      .line {
+        width: 2px;
+        height: 100px;
+        border-right: 2px solid #18c1d6;
+        float: left;
+        margin-top: 7px;
+        margin-left: 80px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .u-contact {
+    margin-top: 50px;
+    padding: 20px 50px;
+
+    .tex {
+      font-size: 1.4rem;
+
+      p {
+        line-height: 23px;
+        padding: 0;
+        color: #555;
+      }
+
+      h3 {
+        padding: 20px 0 5px;
+      }
+    }
+
+    .cerwm {
+      padding: 50px 0 5px;
+
+      .hd {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 15px;
+
+        a {
+          display: inline-block;
+          padding: 5px 2px;
+          color: gray;
+          margin-right: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .ermbx {
+      li {
+        float: left;
+        width: 120px;
+        margin-right: 50px;
+        font-size: 12px;
+
+        img {
+          width: 100%;
+        }
+
+        span {
+          display: block;
+          text-align: center;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+
+  .link_list {
+    overflow: hidden;
+    padding-top: 50px;
+
+    li {
+      width: 33%;
+      text-align: center;
+      overflow: hidden;
+
+      .link_infr {
+        clear: both;
+        margin-top: 10px;
+
+        p {
+          color: #333;
+          font-size: 16px;
+          margin-bottom: 5px;
+          text-align: center;
+        }
+
+        span {
+          color: #666;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+
+    .code_img {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 114px;
+        height: 114px;
+      }
+
+      .line {
+        width: 2px;
+        height: 100px;
+        border-right: 2px solid #18c1d6;
+        float: left;
+        margin-top: 7px;
+        margin-left: 80px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .u-contact {
+    .u-contact-text {
+      padding: 0 15px;
+    }
+
+    .tex {
+      font-size: 1.4rem;
+
+      p {
+        line-height: 23px;
+        padding: 0;
+        color: #555;
+      }
+
+      h3 {
+        padding: 20px 0 5px;
+      }
+    }
+
+    .cerwm {
+      padding: 50px 0 5px;
+
+      .hd {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 15px;
+
+        a {
+          display: inline-block;
+          padding: 5px 2px;
+          color: gray;
+          margin-right: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .ermbx {
+      li {
+        float: left;
+        width: 120px;
+        margin-right: 50px;
+        font-size: 12px;
+
+        img {
+          width: 100%;
+        }
+
+        span {
+          display: block;
+          text-align: center;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+
+  .link_list {
+    overflow: hidden;
+    padding-top: 50px;
+
+    li {
+      width: 33%;
+      text-align: center;
+      overflow: hidden;
+
+      .link_infr {
+        clear: both;
+        margin-top: 10px;
+
+        p {
+          color: #333;
+          font-size: 16px;
+          margin-bottom: 5px;
+          text-align: center;
+        }
+
+        span {
+          color: #666;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+
+    .code_img {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 75px;
+        height: 75px;
+      }
+
+      .line {
+        width: 2px;
+        height: 100px;
+        border-right: 2px solid #18c1d6;
+        float: left;
+        margin-top: 7px;
+        margin-left: 80px;
+      }
+    }
+  }
 }
