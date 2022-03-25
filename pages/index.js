@@ -4,17 +4,17 @@ export default {
   name: 'Index',
   head() {
     return {
-      title: '首页 - EasyAPI服务平台',
+      title: 'EasyAPI - API文档管理、API测试、API监控、API低代码、API接口服务新一代工具',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'EasyAPI 简单，好用的API管理系统，移动互联网时代，每个应用都需要后台API支撑，通过API管理系统，后台与APP开发者进行很好的沟通，还在用Word文档写API吗，OUT了！'
+          content: 'EasyAPI 简单，好用的API管理系统，为您提供API文档管理、API测试、API监控、API低代码、API接口服务，新一代API管理工具。EasyAPI是国内第一家做API文档管理的产品。'
         },
         {
           hid: 'keyword',
           name: 'keyword',
-          content: 'API文档管理,API管理系统,API接口管理系统,API管理平台,API管理,API,API工具,API接口,接口管理,API接口管理,API监控,API测试,API服务'
+          content: 'API文档管理,API管理系统,API接口管理系统,API管理平台,API管理,API,API工具,API Mock,Mock API,API接口,接口管理,API接口管理,API监控,API测试,API服务,API低代码,API门户,API脚本,API服务市场'
         }
       ]
     }

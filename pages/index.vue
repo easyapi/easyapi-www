@@ -19,17 +19,17 @@
           <img src="/images/arrow-up.png" alt="">
           <ul class="jump_link">
             <li onclick="javascript:location.href='https://team.easyapi.com/project/'">
-              <img class="inline" src="/images/info/down_icon1.png">
+              <img class="inline" src="/images/info/down_icon1.png" alt="">
               API文档中心
             </li>
             <li>
             </li>
             <li onclick="javascript:location.href='https://team.easyapi.com/project/'">
-              <img class="inline" src="/images/info/down_icon5.png">
+              <img class="inline" src="/images/info/down_icon5.png" alt="">
               API监控中心
             </li>
             <li onclick="javascript:location.href='https://team.easyapi.com/service/'">
-              <img class="inline" src="/images/info/header-icon1.png">
+              <img class="inline" src="/images/info/header-icon1.png" alt="">
               API服务中心
             </li>
           </ul>
