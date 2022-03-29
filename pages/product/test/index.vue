@@ -19,7 +19,7 @@
       <div class="title">测试工具</div>
       <div class="description">致力于成为中国最好的API测试工具</div>
       <div class="oneimg">
-        <img class="mx-auto" src="/images/info/test_3.png">
+        <img class="mx-auto w-1200" src="https://qiniu.easyapi.com/TestInstrument.png">
       </div>
     </div>
 
