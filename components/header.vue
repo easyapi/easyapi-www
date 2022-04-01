@@ -217,9 +217,73 @@
     </div>
     <div v-else class="header header-index">
       <div class="content">
-        <a href="/">
-          <img class="logo float-left" src="https://qiniu.easyapi.com/market/logo.svg">
-        </a>
+        <div class="flex justify-between">
+          <a href="/">
+            <img class="logo float-left" src="https://qiniu.easyapi.com/market/logo.svg">
+          </a>
+          <div class="icon w-14 flex justify-between">
+            <i class="el-icon-user" @click="showNav('person')"></i>
+            <i class="el-icon-s-fold" @click="showNav('menu')"></i>
+          </div>
+        </div>
+      </div>
+      <div class="menu" v-if="ifNavShow">
+        <el-col v-if="type=='menu'" :span="24">
+          <el-menu
+            :default-active="this.$router.path"
+            class="el-menu-vertical-demo" router>
+            <div class="float-right mr-10">
+              <el-button type="text" icon="el-icon-close" @click="closeMenu">关 闭</el-button>
+            </div>
+            <div class="clear-both"></div>
+            <el-submenu index="1">
+              <template slot="title">
+                <span>产品</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="/product/doc">文档管理</el-menu-item>
+                <el-menu-item index="/product/test">接口测试</el-menu-item>
+                <el-menu-item index="/product/monitor">监控系统</el-menu-item>
+                <el-menu-item index="/product/lowcode">低代码</el-menu-item>
+                <el-menu-item index="/product/interface">接口服务</el-menu-item>
+                <el-menu-item index="/product/scene">场景化服务</el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
+            <el-menu-item index="/info/price">
+              <span slot="title">价格</span>
+            </el-menu-item>
+            <el-submenu index="3">
+              <template slot="title">
+                <span>私有化</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="/solution/portal">API管理门户</el-menu-item>
+                <el-menu-item index="/solution/open">API开放平台</el-menu-item>
+                <el-menu-item index="/solution/market">API服务市场</el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
+            <el-menu-item @click="jump">
+              <span slot="title">API市场</span>
+            </el-menu-item>
+          </el-menu>
+        </el-col>
+        <el-col v-if="type=='person'" :span="24">
+          <el-menu
+            class="el-menu-vertical-demo">
+            <div class="float-right mr-10">
+              <el-button type="text" icon="el-icon-close" @click="closeMenu">关 闭</el-button>
+            </div>
+            <div class="clear-both"></div>
+            <el-menu-item @click="jumpSign">
+              <span slot="title">注册</span>
+            </el-menu-item>
+            <el-menu-item @click="jumpLogin">
+              <span slot="title">登录</span>
+            </el-menu-item>
+          </el-menu>
+        </el-col>
+      </div>
+      <div v-if="ifNavShow" class='popContainer'>
       </div>
     </div>
   </client-only>
@@ -238,14 +302,18 @@
         ifShowProduct: true,
         ifShowPrivatization: true,
         ifShow: true,
+        ifNavShow: false,
+        type: "",
         headerActive: {
           // backgroundColor: 'red'
-        }
+        },
+        activeIndex: '1',
+        activeIndex2: '1'
       }
     },
     watch: {
       '$route'() {
-        console.log('watch里面', this.$route.name);
+        this.ifNavShow = false
       },
       screenWidth: {
         handler: function (val, oldVal) {
@@ -279,6 +347,22 @@
       }
     },
     methods: {
+      showNav(val) {
+        this.type = val
+        this.ifNavShow = !this.ifNavShow
+      },
+      closeMenu() {
+        this.ifNavShow = false
+      },
+      jump() {
+        window.open("https://market.easyapi.com")
+      },
+      jumpSign() {
+        window.open("https://account.easyapi.com/signup/")
+      },
+      jumpLogin() {
+        window.open("https://account.easyapi.com/login/")
+      },
       showProduct() {
         this.ifShowProduct = false
       },
@@ -307,7 +391,11 @@
     }
   }
 </script>
-
+<style>
+  .el-menu {
+    z-index: 50;
+  }
+</style>
 <style scoped lang="scss">
   .header-index {
     position: absolute;
@@ -552,6 +640,10 @@
       width: 100px;
     }
 
+    .icon {
+      margin-top: 24px;
+    }
+
     .navs {
       line-height: 68px;
       font-size: 1.6rem;
@@ -761,6 +853,16 @@
       width: 60px;
     }
 
+    .icon {
+      margin-top: 20px;
+      color: #ffffff;
+    }
+
+    .menu {
+      position: relative;
+      top: -36px;
+    }
+
     .navs {
       line-height: 50px;
       font-size: 0.6rem;
@@ -955,4 +1057,15 @@
       border-radius: 20px
     }
   }
+
+  .popContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 40;
+  }
+
 </style>
