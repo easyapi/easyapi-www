@@ -18,44 +18,44 @@
       <h1>为什么要加入？</h1>
       <ul>
         <li>
-          <a href="/pages/product/doc.vue">
-            <img class="mx-auto" src="/images/info/github/open1.png">
+          <a>
+            <img class="mx-auto" src="/images/info/github/open1.png" alt="">
           </a>
-          <a href="/pages/product/doc.vue">
-            <span class="font_w">提升前端技能</span>
+          <a>
+            <span class="font-bold">提升前端技能</span>
             <p>可能为成为一款不断商业化的Vue代表之作，作为前端一起学习进步</p>
           </a>
         </li>
         <li>
-          <a href="/pages/product/monitor.vue">
-            <img class="mx-auto" src="/images/info/github/open2.png">
+          <a>
+            <img class="mx-auto" src="/images/info/github/open2.png" alt="">
           </a>
-          <a href="/pages/product/monitor.vue">
-            <span class="font_w">技术创造价值</span>
+          <a>
+            <span class="font-bold">技术创造价值</span>
             <p>通过自己手中的技术，让产品给更多开发者带来价值，那种满足感无与伦比</p>
           </a>
         </li>
         <li>
-          <a href="/pages/product/gateway.vue">
-            <img class="mx-auto" src="/images/info/github/open3.png">
+          <a>
+            <img class="mx-auto" src="/images/info/github/open3.png" alt="">
           </a>
-          <a href="/pages/product/gateway.vue">
-            <span class="font_w">一份长期的事业</span>
+          <a>
+            <span class="font-bold">一份长期的事业</span>
             <p>EasyAPI致力于成为API领域的知名品牌，需要更多的伙伴一起来坚持这份长期事业</p>
           </a>
         </li>
         <li>
-          <a href="/pages/product/market.vue">
-            <img class="mx-auto" src="/images/info/github/open4.png"></a>
-          <a href="/pages/product/market.vue">
-            <span class="font_w">认识更多朋友</span>
+          <a>
+            <img class="mx-auto" src="/images/info/github/open4.png" alt=""></a>
+          <a>
+            <span class="font-bold">认识更多朋友</span>
             <p>结交来自五湖四海的技术朋友，每年至少1次集体出行</p>
           </a>
         </li>
       </ul>
     </div>
 
-    <div class="card pd-t-20 bg-f7 f-cb">
+    <div class="card f-cb text-center">
       <div class="card-item">
         <h1>需要做什么？</h1>
         <div class="pd-b-50 f-cb">
@@ -72,7 +72,7 @@
     </div>
 
 
-    <div class="card pd-t-20 bg-f7 f-cb" style="background: #fff;">
+    <div class="card f-cb text-center">
       <div class="card-item">
         <h1>你将获得什么？</h1>
         <div class="pd-b-50 f-cb">
@@ -88,7 +88,7 @@
       </div>
     </div>
 
-    <div class="card bor-b f-cb bg-f7">
+    <div class="card f-cb bg-f7">
       <div class="card-item">
         <h1>常见问题</h1>
         <h3>开源的版权怎么区分？</h3>
@@ -103,7 +103,7 @@
 </template>
 
 <script>
-  import Index from './index'
+import Index from './index'
 
-  export default Index
+export default Index
 </script>
