@@ -69,6 +69,7 @@ const user = {
         }
       }).catch(error => {
         Cookies.remove('authenticationToken')
+        Cookies.remove('authenticationToken', {path: '/', domain: '.easyapi.com'})
       })
     },
     /**
@@ -76,6 +77,7 @@ const user = {
      */
     logout() {
       Cookies.remove('authenticationToken')
+      Cookies.remove('authenticationToken', {path: '/', domain: '.easyapi.com'})
     }
   }
 }
