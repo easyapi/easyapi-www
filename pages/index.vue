@@ -103,8 +103,8 @@
               是时候和Word说再见了！
             </p>
           </div>
-          <div class="" style="display:inline-block;margin-top:60px;">
-            <img src="/images/info/ic_home_arrow.png">
+          <div style="display:inline-block;margin-top:60px;">
+            <img class="arrow" src="/images/info/ic_home_arrow.png">
           </div>
           <div class="inner-item f-fr">
             <img class="mx-auto" src="https://static.easyapi.com/images/w2.png">
