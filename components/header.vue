@@ -215,7 +215,7 @@
         </div>
       </div>
     </div>
-    <div v-else class="header header-index">
+    <div v-else class="header header-index" :style="headerActive">
       <div class="content">
         <div class="flex justify-between">
           <a href="/">
