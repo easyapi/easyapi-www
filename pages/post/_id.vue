@@ -1,6 +1,6 @@
 <template>
   <div class="mg-t-72">
-    <div class='container'>
+    <div class='content py-8'>
       <div class='post-detail'>
         <div class='post-title'>
           <span>{{ article.title }}</span>
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Id from './_id'
+  import Id from './_id'
 
-export default Id
+  export default Id
 </script>

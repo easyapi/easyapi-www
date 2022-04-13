@@ -336,7 +336,7 @@
       if (this.authenticationToken) {
         this.$store.dispatch('getUser')
       }
-      if (this.$route.name === 'post') {
+      if (this.$route.name === 'post' || this.$route.name === 'post-id') {
         this.headerActive = "background-color:#49CDDD"
       }
       this.screenWidth = document.body.clientWidth
