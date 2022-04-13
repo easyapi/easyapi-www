@@ -67,7 +67,7 @@
       </ul>
     </div>
 
-    <div class="pd-100  f-border-b bg-f5">
+    <div class="pd-100 f-border-b bg-f5">
       <div class="title">他们都在选我们</div>
       <div class="description">API管理门户主要为开发企业搭建 API 门户，核心功能包括 API 文档管理、API 测试工具、API 监控系统等服务
         <br>对于大中型开发团队，API 内部管理比较注重隐私，特推出私有化版本
