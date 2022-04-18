@@ -220,6 +220,8 @@
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
   .u-contact {
+    padding: 20px 25px;
+
     .u-contact-text {
       padding: 0 15px;
     }
@@ -280,9 +282,13 @@
     padding-top: 50px;
 
     li {
-      width: 33%;
+      width: 100%;
       text-align: center;
       overflow: hidden;
+
+      img {
+        width: 60px;
+      }
 
       .link_infr {
         clear: both;
@@ -290,14 +296,14 @@
 
         p {
           color: #333;
-          font-size: 16px;
+          font-size: 14px;
           margin-bottom: 5px;
           text-align: center;
         }
 
         span {
           color: #666;
-          font-size: 14px;
+          font-size: 12px;
           text-align: center;
         }
       }
