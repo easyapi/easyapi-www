@@ -153,6 +153,11 @@
       margin: 0 auto;
       padding-top: 30px;
 
+      .title {
+        color: black;
+        font-size: 24px;
+      }
+
       .img {
         width: 380px;
         margin-right: 100px;
@@ -325,9 +330,14 @@
     }
 
     .u-igateway {
-      max-width: 1000px;
+      max-width: 500px;
       margin: 0 auto;
       padding-top: 30px;
+
+      .title {
+        color: black;
+        font-size: 20px;
+      }
 
       .img {
         width: 380px;
@@ -335,17 +345,16 @@
       }
 
       .text {
-        width: 300px;
-        padding-top: 60px;
-        padding-left: 50px;
-        font-size: 20px;
+        width: 200px;
+        padding-left: 15px;
+        font-size: 16px;
       }
 
       p {
         color: gray;
         font-size: 1.6rem;
         padding-top: 10px;
-        line-height: 2.6;
+        line-height: 1.6;
 
         img {
           width: 25px;
@@ -380,7 +389,7 @@
 
     .title {
       text-align: center;
-      font-size: 36px;
+      font-size: 26px;
       font-weight: 400;
       margin-bottom: 12px;
       color: #333;
@@ -501,27 +510,24 @@
     }
 
     .u-igateway {
-      max-width: 1000px;
+      max-width: 300px;
       margin: 0 auto;
       padding-top: 30px;
 
       .img {
-        width: 380px;
-        margin-right: 100px;
+        width: 50%;
       }
 
       .text {
-        width: 300px;
-        padding-top: 60px;
-        padding-left: 50px;
-        font-size: 20px;
+        width: 50%;
+        padding: 0 15px;
+        font-size: 12px;
       }
 
       p {
         color: gray;
-        font-size: 1.6rem;
-        padding-top: 10px;
-        line-height: 2.6;
+        font-size: 1.4rem;
+        line-height: 1.4;
 
         img {
           width: 25px;
@@ -1075,6 +1081,50 @@ body, button, input, keygen, legend, select, textarea {
       }
     }
   }
+
+  .u-infofoot {
+    padding: 100px;
+    text-align: center;
+    background-image: -webkit-linear-gradient(top left, #34a1d6, #34c1d6 90%);
+
+    .codebox {
+      max-width: 300px;
+      overflow: hidden;
+      text-align: center;
+      margin: 10px auto;
+
+      .code {
+        overflow: hidden;
+        margin-top: 20px;
+      }
+    }
+
+    h3 {
+      margin: 20px;
+      font-size: 2.8rem;
+      font-weight: 400;
+      color: #fff;
+    }
+
+    a {
+      border: solid #fff 1px;
+      color: #fff;
+      font-size: 1.6rem;
+      padding: 8px 15px;
+      display: inline-block;
+      border-radius: 5px;
+
+      &:hover {
+        background: rgba(255, 255, 255, .2);
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      margin: 20px;
+      color: #fff;
+    }
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 800px) {
@@ -1248,6 +1298,50 @@ body, button, input, keygen, legend, select, textarea {
           }
         }
       }
+    }
+  }
+
+  .u-infofoot {
+    padding: 100px;
+    text-align: center;
+    background-image: -webkit-linear-gradient(top left, #34a1d6, #34c1d6 90%);
+
+    .codebox {
+      max-width: 300px;
+      overflow: hidden;
+      text-align: center;
+      margin: 10px auto;
+
+      .code {
+        overflow: hidden;
+        margin-top: 20px;
+      }
+    }
+
+    h3 {
+      margin: 20px;
+      font-size: 2.8rem;
+      font-weight: 400;
+      color: #fff;
+    }
+
+    a {
+      border: solid #fff 1px;
+      color: #fff;
+      font-size: 1.6rem;
+      padding: 8px 15px;
+      display: inline-block;
+      border-radius: 5px;
+
+      &:hover {
+        background: rgba(255, 255, 255, .2);
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      margin: 20px;
+      color: #fff;
     }
   }
 }
@@ -1425,6 +1519,53 @@ body, button, input, keygen, legend, select, textarea {
       }
     }
   }
+
+  .u-infofoot {
+    padding: 100px;
+    text-align: center;
+    background-image: -webkit-linear-gradient(top left, #34a1d6, #34c1d6 90%);
+
+    .codebox {
+      max-width: 300px;
+      overflow: hidden;
+      text-align: center;
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .code {
+        overflow: hidden;
+        margin-top: 20px;
+      }
+    }
+
+    h3 {
+      margin: 20px;
+      font-size: 2.8rem;
+      font-weight: 400;
+      color: #fff;
+    }
+
+    a {
+      border: solid #fff 1px;
+      color: #fff;
+      font-size: 1.6rem;
+      padding: 8px 15px;
+      display: inline-block;
+      border-radius: 5px;
+
+      &:hover {
+        background: rgba(255, 255, 255, .2);
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      margin: 20px;
+      color: #fff;
+    }
+  }
 }
 
 
@@ -1450,50 +1591,6 @@ body, button, input, keygen, legend, select, textarea {
     a {
       color: #ffffff;
     }
-  }
-}
-
-.u-infofoot {
-  padding: 100px;
-  text-align: center;
-  background-image: -webkit-linear-gradient(top left, #34a1d6, #34c1d6 90%);
-
-  .codebox {
-    width: 330px;
-    overflow: hidden;
-    text-align: center;
-    margin: 10px auto;
-
-    .code {
-      overflow: hidden;
-      margin-top: 20px;
-    }
-  }
-
-  h3 {
-    margin: 20px;
-    font-size: 2.8rem;
-    font-weight: 400;
-    color: #fff;
-  }
-
-  a {
-    border: solid #fff 1px;
-    color: #fff;
-    font-size: 1.6rem;
-    padding: 8px 15px;
-    display: inline-block;
-    border-radius: 5px;
-
-    &:hover {
-      background: rgba(255, 255, 255, .2);
-    }
-  }
-
-  p {
-    font-size: 1.8rem;
-    margin: 20px;
-    color: #fff;
   }
 }
 

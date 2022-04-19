@@ -3,3 +3,27 @@
   height: 520px;
   background-size: cover;
 }
+
+@media screen and (min-width: 800px) {
+  .market-img {
+    width: 500px;
+    margin-right: 0;
+    height: 400px
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .market-img {
+    width: 250px;
+    margin-right: 0;
+    height: 180px
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .market-img {
+    width: 150px;
+    margin-right: 0;
+    height: 100px
+  }
+}

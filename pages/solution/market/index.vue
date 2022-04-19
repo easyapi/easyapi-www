@@ -19,10 +19,10 @@
         基于我们的经验，为您的公司快速架构API服务市场，助力贵公司行业生态建设
       </div>
       <div class="u-igateway f-cb">
-        <img style="width: 500px;margin-right: 0;height:400px" class="f-fr img"
+        <img class="f-fr market-img"
              src="/images/info/market_img1.png">
         <div class="text f-fl" style="margin-top: 0px;">
-          <p style="color: #000;font-size: 24px;">服务市场门户</p>
+          <p class="title">服务市场门户</p>
           <p><img class="inline" style="width: 6px;height: 6px;"
                   src="/images/info/market_tag.png">实现API服务分类浏览，API服务搜索<br>
             <img class="inline" style="width: 6px;height: 6px;" src="/images/info/market_tag.png">了解API服务详情，API接口信息
@@ -36,10 +36,10 @@
     <div class="pd-100" style="background-color: #eee;padding-bottom: 0">
 
       <div class="u-igateway f-cb">
-        <img style="width: 500px;margin-right: 0;height:400px" class="f-fl img"
+        <img class="f-fl market-img"
              src="/images/info/market_img2.png">
         <div class="text f-fr" style="margin-top: 0px;">
-          <p style="color: #000;font-size: 24px;">开发者中心</p>
+          <p class="title">开发者中心</p>
           <p><img class="inline" style="width: 6px;height: 6px;" src="/images/info/market_tag.png">申请API服务，创建应用，获取密钥信息
             <br>
             <img class="inline" style="width: 6px;height: 6px;" src="/images/info/market_tag.png">API服务充值与续费，API调用请求明细
@@ -51,10 +51,10 @@
 
     <div class="pd-100" style="padding-bottom: 0">
       <div class="u-igateway f-cb">
-        <img style="width: 500px;margin-right: 0;height:400px" class="f-fr img"
+        <img class="f-fr market-img"
              src="/images/info/market_img3.png">
         <div class="text f-fl" style="margin-top: 0px;">
-          <p style="color: #000;font-size: 24px;">服务商管理中心</p>
+          <p class="title">服务商管理中心</p>
           <p><img class="inline" style="width: 6px;height: 6px;" src="/images/info/market_tag.png">申请成为平台服务商，实现API服务发布
             <br>
             <img class="inline" style="width: 6px;height: 6px;" src="/images/info/market_tag.png">了解自己的API服务销售业务开展情况
