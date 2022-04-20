@@ -10,9 +10,6 @@ const user = {
     mobile: '',
     email: '',
     team: '',
-    teamName: '',
-    teamImg: '',
-    userTeam: '',
     token: Cookies.get('authenticationToken')
   },
 
@@ -37,15 +34,6 @@ const user = {
     },
     SET_TEAM: (state, team) => {
       state.team = team
-    },
-    SET_TEAM_NAME: (state, teamName) => {
-      state.teamName = teamName
-    },
-    SET_TEAM_IMG: (state, teamImg) => {
-      state.teamImg = teamImg
-    },
-    SET_USER_TEAM: (state, userTeam) => {
-      state.userTeam = userTeam
     }
   },
 
@@ -63,9 +51,6 @@ const user = {
           commit('SET_MOBILE', res.data.content.mobile)
           commit('SET_EMAIL', res.data.content.email)
           commit('SET_TEAM', res.data.content.team)
-          commit('SET_TEAM_NAME', res.data.content.team.name)
-          commit('SET_TEAM_IMG', res.data.content.team.img)
-          commit('SET_USER_TEAM', res.data.content.userTeam)
         }
       }).catch(error => {
         Cookies.remove('authenticationToken')

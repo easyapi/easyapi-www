@@ -15,7 +15,7 @@
             <ul class="popover-ul">
               <a href="/product/doc" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon1.png">
+                  <img class="icon_img" src="/static/images/info/down_icon1.png">
                   <div class="popover-content">
                     <p>
                       文档管理
@@ -28,7 +28,7 @@
               </a>
               <a href="/product/lowcode" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/icon_lowcode.png">
+                  <img class="icon_img" src="/static/images/info/icon_lowcode.png">
                   <div class="popover-content">
                     <p>
                       低代码
@@ -41,7 +41,7 @@
               </a>
               <a href="/product/test" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon3.png">
+                  <img class="icon_img" src="/static/images/info/down_icon3.png">
                   <div class="popover-content">
                     <p>
                       接口测试
@@ -54,7 +54,7 @@
               </a>
               <a href="/product/interface" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon4.png">
+                  <img class="icon_img" src="/static/images/info/down_icon4.png">
                   <div class="popover-content">
                     <p>
                       接口服务
@@ -67,7 +67,7 @@
               </a>
               <a href="/product/monitor" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon5.png">
+                  <img class="icon_img" src="/static/images/info/down_icon5.png">
                   <div class="popover-content">
                     <p>
                       监控系统
@@ -80,7 +80,7 @@
               </a>
               <a href="/product/scene" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon6.png">
+                  <img class="icon_img" src="/static/images/info/down_icon6.png">
                   <div class="popover-content">
                     <p>
                       场景化服务
@@ -109,7 +109,7 @@
             <ul class="popover-ul">
               <a href="/solution/portal" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/header-icon2.png">
+                  <img class="icon_img" src="/static/images/info/header-icon2.png">
                   <div class="popover-content">
                     <p>
                       API管理门户
@@ -122,7 +122,7 @@
               </a>
               <a href="/solution/market" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/header-icon3.png">
+                  <img class="icon_img" src="/static/images/info/header-icon3.png">
                   <div class="popover-content">
                     <p>
                       API服务市场
@@ -135,7 +135,7 @@
               </a>
               <a href="/solution/open" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/header-icon1.png">
+                  <img class="icon_img" src="/static/images/info/header-icon1.png">
                   <div class="popover-content">
                     <p>
                       API开放平台
@@ -180,7 +180,7 @@
             <ul class="console-ul">
              <a href="https://team.easyapi.com/project/">
               <li>
-                <img class="console_icon" src="/images/info/down_icon7.png">
+                <img class="console_icon" src="/static/images/info/down_icon7.png">
                 <div class="popover-content">
                   <p>
                     API管理
@@ -190,7 +190,7 @@
             </a>
             <a href="https://team.easyapi.com/project/">
               <li>
-                <img class="console_icon" src="/images/info/down_icon8.png">
+                <img class="console_icon" src="/static/images/info/down_icon8.png">
                 <div class="popover-content">
                   <p>
                     API监控
@@ -200,7 +200,7 @@
             </a>
             <a href="https://team.easyapi.com/service/">
               <li>
-                <img class="console_icon" src="/images/info/down_icon9.png">
+                <img class="console_icon" src="/static/images/info/down_icon9.png">
                 <div class="popover-content">
                   <p>
                     API服务
@@ -404,11 +404,11 @@
   }
 
   .header .navs span:hover:after {
-    background-image: url(/images/arrow-up.png);
+    background-image: url(/static/images/arrow-up.png);
   }
 
   .other-header .navs span:hover:after {
-    background-image: url(/images/arrow-up.png);
+    background-image: url(/static/images/arrow-up.png);
   }
 
   @media screen and (min-width: 1000px) {
