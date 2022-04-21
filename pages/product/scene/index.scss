@@ -10,77 +10,216 @@
   background-image: url('/images/product/bg_scene.png');
 }
 
-.scene-icon {
-  text-align: center;
-  max-width: 1000px;
-  margin: 20px auto 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 800px) {
+  .scene-icon {
+    text-align: center;
+    max-width: 1000px;
+    margin: 20px auto 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 
-  li {
-    width: 230px;
-    display: inline-block;
-    padding-bottom: 25px;
+    li {
+      width: 230px;
+      display: inline-block;
+      padding-bottom: 25px;
 
-    img {
-      width: 90px;
-      height: 90px;
-      margin-bottom: 10px;
+      img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 10px;
+      }
+
+      i {
+        font-size: 60px;
+      }
+
+      span {
+        display: block;
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.7;
+        padding: 10px 30px 0;
+      }
     }
 
-    i {
-      font-size: 60px;
+    &.one {
+      li {
+        width: 160px;
+      }
+    }
+  }
+
+  .lefttext {
+    width: 180px;
+    margin: 0 auto;
+
+    p {
+      font-size: 20px;
+      color: #333;
+      padding: 0;
     }
 
     span {
-      display: block;
-      font-size: 16px;
+      font-size: 12px;
+      color: #828282;
     }
+  }
+
+  .u-display-center {
+    width: 280px;
+    height: 340px;
+    border: 1px solid #dbe1e8;
+    padding: 20px;
+  }
+
+  .u-display {
+    margin: auto 0;
+    width: 280px;
+    height: 300px;
+    border: 1px solid #dbe1e8;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .scene-icon {
+    text-align: center;
+    max-width: 1000px;
+    margin: 20px auto 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      width: 155px;
+      padding-bottom: 25px;
+
+      img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.4;
+        padding: 10px 0;
+      }
+    }
+
+    &.one {
+      li {
+        width: 160px;
+      }
+    }
+  }
+
+  .lefttext {
+    margin: 0 auto;
 
     p {
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 1.7;
-      padding: 10px 30px 0;
+      font-size: 20px;
+      color: #333;
+      padding: 0;
+    }
+
+    span {
+      font-size: 12px;
+      color: #828282;
     }
   }
 
-  &.one {
+  .u-display-center {
+    width: 155px;
+    height: 295px;
+    border: 1px solid #dbe1e8;
+    padding: 20px;
+  }
+
+  .u-display {
+    margin: auto 0;
+    width: 155px;
+    height: 255px;
+    border: 1px solid #dbe1e8;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .scene-icon {
+    text-align: center;
+    max-width: 1000px;
+    margin: 20px auto 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
     li {
-      width: 160px;
+      width: 90px;
+      padding-bottom: 25px;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.4;
+        padding: 5px 0;
+      }
+    }
+
+    &.one {
+      li {
+        width: 160px;
+      }
     }
   }
-}
 
-.u-display-center {
-  width: 280px;
-  height: 340px;
-  border: 1px solid #dbe1e8;
-  padding: 20px;
-}
+  .lefttext {
+    margin: 0 auto;
 
-.u-display {
-  margin: auto 0;
-  width: 280px;
-  height: 300px;
-  border: 1px solid #dbe1e8;
-  padding: 20px;
-}
+    p {
+      font-size: 20px;
+      color: #333;
+      padding: 0;
+    }
 
-.lefttext {
-  width: 180px;
-  margin: 0 auto;
-
-  p {
-    font-size: 20px;
-    color: #333;
-    padding: 0;
+    span {
+      font-size: 12px;
+      color: #828282;
+    }
   }
 
-  span {
-    font-size: 12px;
-    color: #828282;
+  .u-display-center {
+    width: 155px;
+    height: 295px;
+    border: 1px solid #dbe1e8;
+    padding: 10px;
+  }
+
+  .u-display {
+    margin: auto 0;
+    width: 155px;
+    height: 260px;
+    border: 1px solid #dbe1e8;
+    padding: 10px;
   }
 }
 
