@@ -386,7 +386,7 @@
       },
       quitLogin() {
         this.$store.dispatch('logout')
-        window.location.href = 'https://account.easyapi.com/login/?from=https://team.easyapi.com'
+        window.location.href = 'https://account.easyapi.com/login'
       },
     }
   }
