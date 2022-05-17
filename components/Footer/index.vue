@@ -45,11 +45,11 @@
       </div>
       <div class="w-3/12 flex justify-between text-c">
         <div>
-          <img class="w-40" src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg">
+          <img class="w-40" src="https://qiniu.easyapi.com/qrcode/leida.png">
           <p class="mt-5">技术咨询</p>
         </div>
         <div>
-          <img class="w-40" src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg">
+          <img class="w-40" src="https://qiniu.easyapi.com/qrcode/suri.png">
           <p class="mt-5">商务咨询</p>
         </div>
       </div>
@@ -62,47 +62,47 @@
 </template>
 
 <script>
-  export default {
-    name: 'Footer'
-  }
+export default {
+  name: 'Footer'
+}
 </script>
 
 <style scoped lang="scss">
-  .footer {
-    background: #3C3C3C;
+.footer {
+  background: #3C3C3C;
+  color: gray;
+  padding: 20px 150px 50px;
+  font-size: 1.2rem;
+
+  h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  a {
     color: gray;
-    padding: 20px 150px 50px;
-    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
 
-    h2 {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: gray;
-      display: block;
-      margin-bottom: 10px;
-
-      &:hover {
-        color: #555;
-      }
+    &:hover {
+      color: #555;
     }
   }
+}
 
-  .mg-15-auto {
-    margin: 15px auto;
-  }
+.mg-15-auto {
+  margin: 15px auto;
+}
 
-  .color-2D737C {
-    color: #2D737C;
-  }
+.color-2D737C {
+  color: #2D737C;
+}
 
-  .text-c {
-    text-align: center;
-  }
+.text-c {
+  text-align: center;
+}
 </style>
