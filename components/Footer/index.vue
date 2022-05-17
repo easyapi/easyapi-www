@@ -1,7 +1,7 @@
 <template>
   <div class="footer flex-c items-center">
     <div class="footer-item lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm flex justify-between mg-15-auto">
-      <div class="w-4/12">
+      <div class="w-3/12">
         <img class="w-40" src="https://qiniu.easyapi.com/EasyAPI_Logo.png">
         <p class="w-4/5 mt-6">
           新一代API接口管理平台，EasyAPI是一个为您提供API管理、API测试、API监控、API文档、API低代码服务的综合性API服务平台
@@ -12,7 +12,7 @@
           <img class="w-12" src="../../assets/images/GitHub.svg">
         </div>
       </div>
-      <div class="w-5/12 flex">
+      <div class="w-6/12 flex">
         <div class="w-1/4">
           <h2>产品介绍</h2>
           <a>API协作</a>
@@ -45,11 +45,11 @@
       </div>
       <div class="w-3/12 flex justify-between text-c">
         <div>
-          <img class="w-40" src="https://qiniu.easyapi.com/qrcode/leida.png">
+          <img class="w-32" src="https://qiniu.easyapi.com/qrcode/leida.png">
           <p class="mt-5">技术咨询</p>
         </div>
         <div>
-          <img class="w-40" src="https://qiniu.easyapi.com/qrcode/suri.png">
+          <img class="w-32" src="https://qiniu.easyapi.com/qrcode/suri.png">
           <p class="mt-5">商务咨询</p>
         </div>
       </div>
