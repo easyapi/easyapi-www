@@ -11,4 +11,9 @@ export default {
       ]
     }
   },
+  methods: {
+    jumpFree() {
+      window.location.href = "https://team.easyapi.com/project/"
+    }
+  }
 }

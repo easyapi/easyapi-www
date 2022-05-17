@@ -163,12 +163,13 @@
 
     .price-card-title {
       margin-top: -170px;
-      text-align: center;
+      display: flex;
+      justify-content: center;
 
       li {
         display: inline-block;
         vertical-align: middle;
-        height: 400px;
+        height: auto;
         width: 340px;
         background: #fff;
         margin: 10px 30px;
@@ -179,30 +180,54 @@
         .price-card-title-top {
           padding: 25px 20px 10px;
           font-size: 1.6rem;
+          text-align: center;
         }
 
         .description {
-          height: 170px;
-          line-height: 2;
-          padding-top: 20px;
-          font-size: 1.4rem;
-          color: gray;
-          margin: 0 20px;
-          border-top: solid #ddd 1px;
+          padding: 20px;
+
+          .mg-t-20 {
+            margin-top: 20px;
+          }
+
+          .item {
+            border-bottom: solid #ddd 1px;
+          }
 
           span {
-            display: block;
-            text-align: center;
+            color: #C6C6C6;
+            margin-bottom: 10px;
+          }
+
+          .el-icon-check {
+            color: #86BE54;
+          }
+
+          p {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
           }
         }
 
         .price {
           padding: 20px 0;
+          border-bottom: solid #ddd 1px;
+          text-align: center;
 
-          span {
+          .subtitle {
+            font-size: 12px;
+            color: #D2D2D2;
+          }
+
+          p {
             display: block;
             font-size: 4.3rem;
             padding-bottom: 5px;
+
+            span {
+              color: #00AEC5;
+            }
 
             em {
               margin-right: 5px;
@@ -254,11 +279,13 @@
     .price-card-title {
       margin-top: -170px;
       text-align: center;
+      display: flex;
+      justify-content: center;
 
       li {
         display: inline-block;
         vertical-align: middle;
-        height: 400px;
+        height: auto;
         width: 340px;
         background: #fff;
         margin: 10px 30px;
@@ -272,27 +299,50 @@
         }
 
         .description {
-          height: 170px;
-          line-height: 2;
-          padding-top: 20px;
-          font-size: 1.4rem;
-          color: gray;
-          margin: 0 20px;
-          border-top: solid #ddd 1px;
+          padding: 20px;
+
+          .mg-t-20 {
+            margin-top: 20px;
+          }
+
+          .item {
+            border-bottom: solid #ddd 1px;
+          }
 
           span {
-            display: block;
-            text-align: center;
+            color: #C6C6C6;
+            margin-bottom: 10px;
+          }
+
+          .el-icon-check {
+            color: #86BE54;
+          }
+
+          p {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
           }
         }
 
         .price {
           padding: 20px 0;
+          border-bottom: solid #ddd 1px;
+          text-align: center;
 
-          span {
+          .subtitle {
+            font-size: 12px;
+            color: #D2D2D2;
+          }
+
+          p {
             display: block;
             font-size: 4.3rem;
             padding-bottom: 5px;
+
+            span {
+              color: #00AEC5;
+            }
 
             em {
               margin-right: 5px;
@@ -348,7 +398,7 @@
       li {
         display: inline-block;
         vertical-align: middle;
-        height: 320px;
+        height: auto;
         width: 245px;
         background: #fff;
         margin: 10px 30px;
@@ -362,26 +412,50 @@
         }
 
         .description {
-          height: 170px;
-          line-height: 2;
-          padding-top: 20px;
-          font-size: 1.4rem;
-          color: gray;
-          margin: 0 20px;
-          border-top: solid #ddd 1px;
+          padding: 20px;
+
+          .mg-t-20 {
+            margin-top: 20px;
+          }
+
+          .item {
+            border-bottom: solid #ddd 1px;
+          }
 
           span {
-            display: block;
-            text-align: center;
+            color: #C6C6C6;
+            margin-bottom: 10px;
+          }
+
+          .el-icon-check {
+            color: #86BE54;
+          }
+
+          p {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
           }
         }
 
         .price {
+          padding: 20px 0;
+          border-bottom: solid #ddd 1px;
+          text-align: center;
 
-          span {
+          .subtitle {
+            font-size: 12px;
+            color: #D2D2D2;
+          }
+
+          p {
             display: block;
-            font-size: 2.8rem;
+            font-size: 4.3rem;
             padding-bottom: 5px;
+
+            span {
+              color: #00AEC5;
+            }
 
             em {
               margin-right: 5px;

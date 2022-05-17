@@ -14,54 +14,115 @@
         <li>
           <div class="price-card-title-top">基础版</div>
           <div class="price">
-            <span class="f-c-warning"><em class="f-fs1">¥</em>29<em class="f-fs1">/团队/月</em></span>
-
+            <p><span>￥29</span><em class="f-fs1">/团队/月</em></p>
+            <p class="subtitle">使用上限20人，增员￥5/月</p>
+            <el-button class="w-3/5" type="primary" plain @click="jumpFree">免费试用</el-button>
           </div>
           <div class="description">
-            <span>文档管理全部功能</span>
-            <span>不限项目数量</span>
-            <span>不限接口数量</span>
-            <span>团队人数限制20人</span>
-            <span>超过20人支付5元/人/月</span>
-          </div>
-          <div class="free_use">
-            <a href="https://team.easyapi.com/project/">免费试用</a>
-            <img src="/images/info/arrow-r.png"/>
+            <div class="item">
+              <span>服务</span>
+              <p>设计API<i class="el-icon-check"></i></p>
+              <p>API文档<i class="el-icon-check"></i></p>
+              <p>生成API文档<i class="el-icon-check"></i></p>
+              <p>API编辑历史<i class="el-icon-check"></i></p>
+              <p>导出Word<i class="el-icon-check"></i></p>
+              <p>API测试<i class="el-icon-check"></i></p>
+              <p>管理API测试用例<i class="el-icon-check"></i></p>
+              <p>环境管理<i class="el-icon-check"></i></p>
+              <p>数据结构管理<i class="el-icon-check"></i></p>
+              <p>返回码管理<i class="el-icon-check"></i></p>
+            </div>
+            <div class="item mg-t-20">
+              <span>监控</span>
+              <p>API自动监控</p>
+              <p>监控概况</p>
+              <p>自定义监控</p>
+              <p>响应异常</p>
+              <p>监控记录</p>
+              <p>报警规则</p>
+              <p>每日统计</p>
+            </div>
+            <div class="mg-t-20">
+              <span>API低代码</span>
+              <p>云接口管理</p>
+              <p>Node.js语法低代码</p>
+            </div>
           </div>
         </li>
-        <li class="">
+        <li>
           <div class="price-card-title-top">高级版</div>
           <div class="price">
-            <span class="f-c-warning"><em class="f-fs1">¥</em>99<em class="f-fs1">团队/月</em></span>
-
+            <p><span>￥99</span><em class="f-fs1">/团队/月</em></p>
+            <p class="subtitle">使用上限20人，增员￥5/月</p>
+            <el-button class="w-3/5" type="primary" plain @click="jumpFree">免费试用</el-button>
           </div>
           <div class="description">
-            <span>接口监控全部功能</span>
-            <span>监控记录保留30天</span>
-            <span>监控记录100万条额度</span>
-            <span>监控频率10万次/天</span>
-            <span>超出部分0.3元/万次</span>
-          </div>
-          <div class="free_use">
-            <a href="https://team.easyapi.com/project/">免费试用</a>
-            <img src="/images/info/arrow-r.png" alt=""/>
+            <div class="item">
+              <span>服务</span>
+              <p>设计API<i class="el-icon-check"></i></p>
+              <p>API文档<i class="el-icon-check"></i></p>
+              <p>生成API文档<i class="el-icon-check"></i></p>
+              <p>API编辑历史<i class="el-icon-check"></i></p>
+              <p>导出Word<i class="el-icon-check"></i></p>
+              <p>API测试<i class="el-icon-check"></i></p>
+              <p>管理API测试用例<i class="el-icon-check"></i></p>
+              <p>环境管理<i class="el-icon-check"></i></p>
+              <p>数据结构管理<i class="el-icon-check"></i></p>
+              <p>返回码管理<i class="el-icon-check"></i></p>
+            </div>
+            <div class="item mg-t-20">
+              <span>监控</span>
+              <p>API自动监控<i class="el-icon-check"></i></p>
+              <p>监控概况<i class="el-icon-check"></i></p>
+              <p>自定义监控<i class="el-icon-check"></i></p>
+              <p>响应异常<i class="el-icon-check"></i></p>
+              <p>监控记录<i class="el-icon-check"></i></p>
+              <p>报警规则<i class="el-icon-check"></i></p>
+              <p>每日统计<i class="el-icon-check"></i></p>
+            </div>
+            <div class="mg-t-20">
+              <span>API低代码</span>
+              <p>云接口管理</p>
+              <p>Node.js语法低代码</p>
+            </div>
           </div>
         </li>
         <li>
           <div class="price-card-title-top">旗舰版</div>
           <div class="price">
-            <span class="f-c-warning"><em class="f-fs1">¥</em>199<em class="f-fs1">团队/月</em></span>
+            <p><span>￥199</span><em class="f-fs1">/团队/月</em></p>
+            <p class="subtitle">使用上限20人，增员￥5/月</p>
+            <el-button class="w-3/5" type="primary" plain @click="jumpFree">免费试用</el-button>
           </div>
           <div class="description">
-            <span>API低代码全部功能</span>
-            <span>包含高级版全部功能</span>
-            <span>API每月请求量1000万次</span>
-            <span>访问频率100QPS</span>
-            <span>超出部分0.1元/万次</span>
-          </div>
-          <div class="free_use">
-            <a href="https://gateway.easyapi.com">免费试用</a>
-            <img src="/images/info/arrow-r.png" alt=""/>
+            <div class="item">
+              <span>服务</span>
+              <p>设计API<i class="el-icon-check"></i></p>
+              <p>API文档<i class="el-icon-check"></i></p>
+              <p>生成API文档<i class="el-icon-check"></i></p>
+              <p>API编辑历史<i class="el-icon-check"></i></p>
+              <p>导出Word<i class="el-icon-check"></i></p>
+              <p>API测试<i class="el-icon-check"></i></p>
+              <p>管理API测试用例<i class="el-icon-check"></i></p>
+              <p>环境管理<i class="el-icon-check"></i></p>
+              <p>数据结构管理<i class="el-icon-check"></i></p>
+              <p>返回码管理<i class="el-icon-check"></i></p>
+            </div>
+            <div class="item mg-t-20">
+              <span>监控<i class="el-icon-check"></i></span>
+              <p>API自动监控<i class="el-icon-check"></i></p>
+              <p>监控概况<i class="el-icon-check"></i></p>
+              <p>自定义监控<i class="el-icon-check"></i></p>
+              <p>响应异常<i class="el-icon-check"></i></p>
+              <p>监控记录<i class="el-icon-check"></i></p>
+              <p>报警规则<i class="el-icon-check"></i></p>
+              <p>每日统计<i class="el-icon-check"></i></p>
+            </div>
+            <div class="mg-t-20">
+              <span>API低代码</span>
+              <p>云接口管理<i class="el-icon-check"></i></p>
+              <p>Node.js语法低代码<i class="el-icon-check"></i></p>
+            </div>
           </div>
         </li>
       </ul>
