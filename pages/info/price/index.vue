@@ -109,7 +109,7 @@
               <p>返回码管理<i class="el-icon-check"></i></p>
             </div>
             <div class="item mg-t-20">
-              <span>监控<i class="el-icon-check"></i></span>
+              <span>监控</span>
               <p>API自动监控<i class="el-icon-check"></i></p>
               <p>监控概况<i class="el-icon-check"></i></p>
               <p>自定义监控<i class="el-icon-check"></i></p>
