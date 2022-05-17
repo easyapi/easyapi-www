@@ -16,7 +16,7 @@
           <div class="price">
             <p><span>￥29</span><em class="f-fs1">/团队/月</em></p>
             <p class="subtitle">使用上限20人，增员￥5/月</p>
-            <el-button class="w-3/5" type="primary" plain @click="jumpFree">免费试用</el-button>
+            <el-button class="w-full" type="primary" plain @click="jumpFree">免费试用</el-button>
           </div>
           <div class="description">
             <div class="item">
@@ -54,7 +54,7 @@
           <div class="price">
             <p><span>￥99</span><em class="f-fs1">/团队/月</em></p>
             <p class="subtitle">使用上限20人，增员￥5/月</p>
-            <el-button class="w-3/5" type="primary" plain @click="jumpFree">免费试用</el-button>
+            <el-button class="w-full" type="primary" plain @click="jumpFree">免费试用</el-button>
           </div>
           <div class="description">
             <div class="item">
@@ -90,9 +90,9 @@
         <li>
           <div class="price-card-title-top">旗舰版</div>
           <div class="price">
-            <p><span>￥199</span><em class="f-fs1">/团队/月</em></p>
+            <p><span>￥1999</span><em class="f-fs1">/团队/月</em></p>
             <p class="subtitle">使用上限20人，增员￥5/月</p>
-            <el-button class="w-3/5" type="primary" plain @click="jumpFree">免费试用</el-button>
+            <el-button class="w-full" type="primary" plain @click="jumpFree">免费试用</el-button>
           </div>
           <div class="description">
             <div class="item">

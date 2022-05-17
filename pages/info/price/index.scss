@@ -206,12 +206,13 @@
           p {
             display: flex;
             justify-content: space-between;
+            font-size: 14px;
             margin: 10px 0;
           }
         }
 
         .price {
-          padding: 20px 0;
+          padding: 0px 20px 20px;
           border-bottom: solid #ddd 1px;
           text-align: center;
 
@@ -326,7 +327,7 @@
         }
 
         .price {
-          padding: 20px 0;
+          padding: 0px 20px 20px;
           border-bottom: solid #ddd 1px;
           text-align: center;
 
@@ -439,7 +440,7 @@
         }
 
         .price {
-          padding: 20px 0;
+          padding: 0px 20px 20px;
           border-bottom: solid #ddd 1px;
           text-align: center;
 
