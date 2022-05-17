@@ -3,17 +3,17 @@
     <div class="footer-item lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm flex justify-between mg-15-auto">
       <div class="w-4/12">
         <img class="w-40" src="https://qiniu.easyapi.com/EasyAPI_Logo.png">
-        <p class="w-4/5">
+        <p class="w-4/5 mt-6">
           新一代API接口管理平台，EasyAPI是一个为您提供API管理、API测试、API监控、API文档、API低代码服务的综合性API服务平台
         </p>
         <p>联系电话：<span class="color-2D737C">13656171020</span></p>
         <div class="flex">
-          <img class="w-12" src="../../assets/images/wechat.svg">
+          <img class="w-12 mr-4" src="../../assets/images/wechat.svg">
           <img class="w-12" src="../../assets/images/GitHub.svg">
         </div>
       </div>
-      <div class="w-5/12 flex text-c">
-        <div class="w-1/4 justify-center">
+      <div class="w-5/12 flex">
+        <div class="w-1/4">
           <h2>产品介绍</h2>
           <a>API协作</a>
           <a>API低代码</a>
@@ -62,47 +62,51 @@
 </template>
 
 <script>
-export default {
-  name: 'Footer'
-}
+  export default {
+    name: 'Footer'
+  }
 </script>
 
 <style scoped lang="scss">
-.footer {
-  background: #3C3C3C;
-  color: gray;
-  padding: 20px 150px 50px;
-  font-size: 1.2rem;
-
-  h2 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  p {
-    margin-bottom: 10px;
-  }
-
-  a {
+  .footer {
+    background: #3C3C3C;
     color: gray;
-    display: block;
-    margin-bottom: 10px;
+    padding: 20px 150px 50px;
+    font-size: 1.2rem;
 
-    &:hover {
-      color: #555;
+    h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: gray;
+      display: block;
+      margin-bottom: 10px;
+
+      &:hover {
+        color: #555;
+      }
     }
   }
-}
 
-.mg-15-auto {
-  margin: 15px auto;
-}
+  .mg-15-auto {
+    margin: 15px auto;
+  }
 
-.color-2D737C {
-  color: #2D737C;
-}
+  .color-2D737C {
+    color: #2D737C;
+  }
 
-.text-c {
-  text-align: center;
-}
+  .text-c {
+    text-align: center;
+  }
+
+  .el-divider {
+    background-color: gray;
+  }
 </style>
