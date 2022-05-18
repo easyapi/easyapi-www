@@ -15,7 +15,7 @@
           <div class="price-card-title-top">基础版</div>
           <div class="price">
             <p><span>￥29</span><em class="f-fs1">/团队/月</em></p>
-            <p class="subtitle">使用上限20人，增员￥5/月</p>
+            <p class="subtitle">使用上限20人，增员￥5/人/月</p>
             <el-button class="w-full" type="primary" plain @click="jumpFree">免费试用</el-button>
           </div>
           <div class="description">
@@ -53,7 +53,7 @@
           <div class="price-card-title-top">高级版</div>
           <div class="price">
             <p><span>￥99</span><em class="f-fs1">/团队/月</em></p>
-            <p class="subtitle">使用上限20人，增员￥5/月</p>
+            <p class="subtitle">使用上限20人，增员￥5/人/月</p>
             <el-button class="w-full" type="primary" plain @click="jumpFree">免费试用</el-button>
           </div>
           <div class="description">
@@ -90,8 +90,8 @@
         <li>
           <div class="price-card-title-top">旗舰版</div>
           <div class="price">
-            <p><span>￥1999</span><em class="f-fs1">/团队/月</em></p>
-            <p class="subtitle">使用上限20人，增员￥5/月</p>
+            <p><span>￥199</span><em class="f-fs1">/团队/月</em></p>
+            <p class="subtitle">使用上限20人，增员￥5/人/月</p>
             <el-button class="w-full" type="primary" plain @click="jumpFree">免费试用</el-button>
           </div>
           <div class="description">
@@ -203,7 +203,7 @@
 </template>
 
 <script>
-  import Index from './index'
+import Index from './index'
 
-  export default Index
+export default Index
 </script>

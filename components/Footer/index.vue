@@ -3,38 +3,38 @@
     <div class="content">
       <div class="footer-item flex justify-between mg-15-auto">
         <div class="w-3/12">
-          <img class="w-40" src="https://qiniu.easyapi.com/EasyAPI_Logo.png">
+          <img class="w-40" src="https://qiniu.easyapi.com/market/logo.svg">
           <p class="w-4/5 mt-6">
             新一代API接口管理平台，EasyAPI是一个为您提供API管理、API测试、API监控、API文档、API低代码服务的综合性API服务平台
           </p>
-          <p>联系电话：<span class="color-00AEC5">13656171020</span></p>
+          <p>联系电话：<span class="color-00AEC5">136-5617-1020</span></p>
           <div class="flex">
-            <img class="w-12 mr-4" src="../../assets/images/wechat.svg">
-            <img class="w-12" src="../../assets/images/gitHub.svg">
+            <img class="w-12 mr-4" src="../../assets/images/wechat.svg" alt="">
+            <a href="https://github.com/easyapi" target="_blank"><img class="w-12" src="../../assets/images/github.svg" alt=""></a>
           </div>
         </div>
         <div class="w-6/12 flex justify-around">
           <div class="flex flex-col">
             <h2>产品介绍</h2>
-            <a>API协作</a>
-            <a>API低代码</a>
-            <a>API测试</a>
-            <a>API服务</a>
-            <a>API监控</a>
-            <a>API场景化服务</a>
+            <a href="/product/doc">API协作</a>
+            <a href="/product/lowcode">API低代码</a>
+            <a href="/product/test">API测试</a>
+            <a href="/product/interface">API服务</a>
+            <a href="/product/monitor">API监控</a>
+            <a href="/product/scene">API场景化服务</a>
           </div>
           <div class="flex flex-col">
             <h2>私有化方案</h2>
-            <a>API管理门户</a>
-            <a>API服务市场</a>
-            <a>API开放平台</a>
+            <a href="/solution/portal">API管理门户</a>
+            <a href="/solution/market">API服务市场</a>
+            <a href="/solution/open">API开放平台</a>
           </div>
           <div class="flex flex-col">
             <h2>使用文档</h2>
-            <a>帮助中心</a>
-            <a>BUG反馈</a>
-            <a>浏览器插件</a>
-            <a>前端开源计划</a>
+            <a href="https://help.easyapi.com" target="_blank">帮助中心</a>
+            <a href="https://support.qq.com/products/352231" target="_blank">BUG反馈</a>
+            <a href="/info/extension">浏览器插件</a>
+            <a href="/info/github">前端开源计划</a>
           </div>
           <div class="flex flex-col">
             <h2>关于</h2>
@@ -46,68 +46,68 @@
         </div>
         <div class="w-2/12 flex justify-end text-c">
           <div class="mr-12">
-            <img class="w-32" src="https://qiniu.easyapi.com/qrcode/leida.png">
+            <img class="w-32" src="https://qiniu.easyapi.com/qrcode/leida.png" alt="EasyAPI技术咨询">
             <p class="mt-5">技术咨询</p>
           </div>
           <div>
-            <img class="w-32" src="https://qiniu.easyapi.com/qrcode/suri.png">
+            <img class="w-32" src="https://qiniu.easyapi.com/qrcode/suri.png" alt="EasyAPI商务咨询">
             <p class="mt-5">商务咨询</p>
           </div>
         </div>
       </div>
       <el-divider class="mg-15-auto"></el-divider>
-      <div class="mg-15-auto text-c"><a href="https://beian.miit.gov.cn/" target="_blank">Copyright ©
-        2015～2022
-        上海帮趣网络技术有限公司</a></div>
+      <div class="mg-15-auto text-c">
+        <a href="https://beian.miit.gov.cn/" target="_blank">Copyright © 2015～2022 无锡帮趣数据服务有限公司</a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'Footer'
-  }
+export default {
+  name: 'Footer'
+}
 </script>
 
 <style scoped lang="scss">
-  .footer {
-    background: #3C3C3C;
+.footer {
+  background: #3C3C3C;
+  color: gray;
+  padding: 20px 0;
+  font-size: 1.2rem;
+
+  h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  a {
     color: gray;
-    padding: 20px 0;
-    font-size: 1.2rem;
+    margin-bottom: 10px;
 
-    h2 {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: gray;
-      margin-bottom: 10px;
-
-      &:hover {
-        color: #fff;
-      }
+    &:hover {
+      color: #fff;
     }
   }
+}
 
-  .mg-15-auto {
-    margin: 15px auto;
-  }
+.mg-15-auto {
+  margin: 15px auto;
+}
 
-  .color-00AEC5 {
-    color: #00AEC5;
-  }
+.color-00AEC5 {
+  color: #00AEC5;
+}
 
-  .text-c {
-    text-align: center;
-  }
+.text-c {
+  text-align: center;
+}
 
-  .el-divider {
-    background-color: #606266;
-  }
+.el-divider {
+  background-color: #606266;
+}
 </style>

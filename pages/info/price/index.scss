@@ -24,45 +24,6 @@
       line-height: 1.7;
     }
   }
-
-  .sysinfo {
-    padding-top: 184px;
-    color: #fff;
-
-    h1 {
-      font-size: 4.8rem;
-      margin: 15px 0;
-    }
-
-    p {
-      font-size: 2rem;
-      line-height: 1.7;
-      margin-bottom: 10px;
-    }
-
-    .btn {
-      background: #fff;
-      display: inline-block;
-      color: #777;
-      margin: 10px auto;
-      font-size: 1.4rem;
-      padding: 10px 20px;
-      border-radius: 5px;
-    }
-
-    .more {
-      a {
-        font-size: 1.5rem;
-        color: #fff;
-        display: inline-block;
-        margin: 10px;
-
-        &:first-child {
-          margin-left: 0;
-        }
-      }
-    }
-  }
 }
 
 .appshows {
@@ -212,7 +173,7 @@
         }
 
         .price {
-          padding: 0px 20px 20px;
+          padding: 0 20px 20px;
           border-bottom: solid #ddd 1px;
           text-align: center;
 
@@ -327,7 +288,7 @@
         }
 
         .price {
-          padding: 0px 20px 20px;
+          padding: 0 20px 20px;
           border-bottom: solid #ddd 1px;
           text-align: center;
 
@@ -440,7 +401,7 @@
         }
 
         .price {
-          padding: 0px 20px 20px;
+          padding: 0 20px 20px;
           border-bottom: solid #ddd 1px;
           text-align: center;
 
