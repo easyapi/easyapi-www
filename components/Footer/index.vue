@@ -7,14 +7,14 @@
           <p class="w-4/5 mt-6">
             新一代API接口管理平台，EasyAPI是一个为您提供API管理、API测试、API监控、API文档、API低代码服务的综合性API服务平台
           </p>
-          <p>联系电话：<span class="color-2D737C">13656171020</span></p>
+          <p>联系电话：<span class="color-00AEC5">13656171020</span></p>
           <div class="flex">
             <img class="w-12 mr-4" src="../../assets/images/wechat.svg">
             <img class="w-12" src="../../assets/images/gitHub.svg">
           </div>
         </div>
-        <div class="w-6/12 flex">
-          <div class="w-1/4">
+        <div class="w-6/12 flex justify-around">
+          <div class="flex flex-col">
             <h2>产品介绍</h2>
             <a>API协作</a>
             <a>API低代码</a>
@@ -23,20 +23,20 @@
             <a>API监控</a>
             <a>API场景化服务</a>
           </div>
-          <div class="w-1/4">
+          <div class="flex flex-col">
             <h2>私有化方案</h2>
             <a>API管理门户</a>
             <a>API服务市场</a>
             <a>API开放平台</a>
           </div>
-          <div class="w-1/4">
+          <div class="flex flex-col">
             <h2>使用文档</h2>
             <a>帮助中心</a>
             <a>BUG反馈</a>
             <a>浏览器插件</a>
             <a>前端开源计划</a>
           </div>
-          <div class="w-1/4">
+          <div class="flex flex-col">
             <h2>关于</h2>
             <a>关于我们</a>
             <a>合作伙伴</a>
@@ -44,8 +44,8 @@
             <a>支持我们</a>
           </div>
         </div>
-        <div class="w-3/12 flex justify-between text-c">
-          <div>
+        <div class="w-2/12 flex justify-end text-c">
+          <div class="mr-12">
             <img class="w-32" src="https://qiniu.easyapi.com/qrcode/leida.png">
             <p class="mt-5">技术咨询</p>
           </div>
@@ -87,11 +87,10 @@
 
     a {
       color: gray;
-      display: block;
       margin-bottom: 10px;
 
       &:hover {
-        color: #555;
+        color: #fff;
       }
     }
   }
@@ -100,8 +99,8 @@
     margin: 15px auto;
   }
 
-  .color-2D737C {
-    color: #2D737C;
+  .color-00AEC5 {
+    color: #00AEC5;
   }
 
   .text-c {
@@ -109,6 +108,6 @@
   }
 
   .el-divider {
-    background-color: gray;
+    background-color: #606266;
   }
 </style>
