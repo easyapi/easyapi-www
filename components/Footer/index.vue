@@ -9,8 +9,16 @@
           </p>
           <p>联系电话：<span class="color-00AEC5">136-5617-1020</span></p>
           <div class="flex">
-            <img class="w-12 mr-4" src="../../assets/images/wechat.svg" alt="">
-            <a href="https://github.com/easyapi" target="_blank"><img class="w-12" src="../../assets/images/github.svg" alt=""></a>
+            <el-popover
+              placement="top"
+              width="100"
+              trigger="hover">
+              <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg">
+              <a slot="reference"><img class="w-12 mr-4" src="../../assets/images/wechat.svg" alt=""></a>
+            </el-popover>
+
+            <a href="https://github.com/easyapi" target="_blank"><img class="w-12" src="../../assets/images/github.svg"
+                                                                      alt=""></a>
           </div>
         </div>
         <div class="w-6/12 flex justify-around">
@@ -64,50 +72,50 @@
 </template>
 
 <script>
-export default {
-  name: 'Footer'
-}
+  export default {
+    name: 'Footer'
+  }
 </script>
 
 <style scoped lang="scss">
-.footer {
-  background: #3C3C3C;
-  color: gray;
-  padding: 20px 0;
-  font-size: 1.2rem;
-
-  h2 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  p {
-    margin-bottom: 10px;
-  }
-
-  a {
+  .footer {
+    background: #3C3C3C;
     color: gray;
-    margin-bottom: 10px;
+    padding: 20px 0;
+    font-size: 1.2rem;
 
-    &:hover {
-      color: #fff;
+    h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: gray;
+      margin-bottom: 10px;
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
-}
 
-.mg-15-auto {
-  margin: 15px auto;
-}
+  .mg-15-auto {
+    margin: 15px auto;
+  }
 
-.color-00AEC5 {
-  color: #00AEC5;
-}
+  .color-00AEC5 {
+    color: #00AEC5;
+  }
 
-.text-c {
-  text-align: center;
-}
+  .text-c {
+    text-align: center;
+  }
 
-.el-divider {
-  background-color: #606266;
-}
+  .el-divider {
+    background-color: #606266;
+  }
 </style>
