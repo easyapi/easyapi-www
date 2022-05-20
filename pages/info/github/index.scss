@@ -68,9 +68,6 @@
 }
 
 .github-content > ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   width: 1200px;
   margin: auto;
 }
@@ -78,14 +75,10 @@
 .github-content > ul > li {
   width: 200px;
   text-align: center;
-}
-
-.github-content > ul > li > a {
   display: block;
-  margin-top: 20px;
 }
 
-.github-content > ul > li > a > span {
+.github-content > ul > li > span {
   font-family: MicrosoftYaHei;
   font-size: 20px;
   font-weight: bold;
