@@ -20,22 +20,22 @@
         <div class="w-1/4 p-12">
           <img class="mx-auto" src="/images/info/github/open1.png" alt="">
           <p class="font-bold text-3xl my-8 text-center">提升前端技能</p>
-          <p>可能为成为一款不断商业化的Vue代表之作，作为前端一起学习进步</p>
+          <p class="text-center">可能为成为一款不断商业化的Vue代表之作，作为前端一起学习进步</p>
         </div>
         <div class="w-1/4 p-12">
           <img class="mx-auto" src="/images/info/github/open2.png" alt="">
           <p class="font-bold text-3xl my-8 text-center">技术创造价值</p>
-          <p>通过自己手中的技术，让产品给更多开发者带来价值，那种满足感无与伦比</p>
+          <p class="text-center">通过自己手中的技术，让产品给更多开发者带来价值，那种满足感无与伦比</p>
         </div>
         <div class="w-1/4 p-12">
           <img class="mx-auto" src="/images/info/github/open3.png" alt="">
           <p class="font-bold text-3xl my-8 text-center">一份长期的事业</p>
-          <p>EasyAPI致力于成为API领域的知名品牌，需要更多的伙伴一起来坚持这份长期事业</p>
+          <p class="text-center">EasyAPI致力于成为API领域的知名品牌，需要更多的伙伴一起来坚持这份长期事业</p>
         </div>
         <div class="w-1/4 p-12">
           <img class="mx-auto" src="/images/info/github/open4.png" alt="">
           <p class="font-bold text-3xl my-8 text-center">认识更多朋友</p>
-          <p>结交来自五湖四海的技术朋友，每年至少1次集体出行</p>
+          <p class="text-center">结交来自五湖四海的技术朋友，每年至少1次集体出行</p>
         </div>
       </div>
     </div>
@@ -55,7 +55,6 @@
         </div>
       </div>
     </div>
-
 
     <div class="card f-cb text-center">
       <div class="card-item">
