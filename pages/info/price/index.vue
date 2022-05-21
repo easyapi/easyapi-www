@@ -45,6 +45,9 @@
             <div class="mg-t-20">
               <span>API低代码</span>
               <p>云接口管理</p>
+              <p>微页面接口管理</p>
+              <p>数据表自动化接口</p>
+              <p>数据库转API接口</p>
               <p>Node.js语法低代码</p>
             </div>
           </div>
@@ -83,6 +86,9 @@
             <div class="mg-t-20">
               <span>API低代码</span>
               <p>云接口管理</p>
+              <p>微页面接口管理</p>
+              <p>数据表自动化接口</p>
+              <p>数据库转API接口</p>
               <p>Node.js语法低代码</p>
             </div>
           </div>
@@ -121,6 +127,9 @@
             <div class="mg-t-20">
               <span>API低代码</span>
               <p>云接口管理<i class="el-icon-check"></i></p>
+              <p>微页面接口管理<i class="el-icon-check"></i></p>
+              <p>数据表自动化接口<i class="el-icon-check"></i></p>
+              <p>数据库转API接口<i class="el-icon-check"></i></p>
               <p>Node.js语法低代码<i class="el-icon-check"></i></p>
             </div>
           </div>
