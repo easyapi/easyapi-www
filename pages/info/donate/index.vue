@@ -4,7 +4,7 @@
       <div class="info-page">
         <h2 class="title">支持我们</h2>
         <div class="donate-img">
-          <img src="https://static.easyapi.com/images/info/donate.jpg">
+          <img src="https://static.easyapi.com/images/info/donate.jpg" alt="">
         </div>
         <div class="donate-description f-cb">
           <p>
@@ -66,7 +66,6 @@
             </li>
             <li>
               <p><img class="mx-auto" src="/images/user-phone.png"></p>
-              　
               <a href="/info/support" class="more">更多支持者</a>
             </li>
           </ul>
@@ -224,7 +223,7 @@
 </template>
 
 <script>
-  import Index from './index'
+import Index from './index'
 
-  export default Index
+export default Index
 </script>

@@ -1,7 +1,5 @@
 <template>
-  <el-dialog
-    :visible.sync="dialogVisible"
-    width="50%">
+  <el-dialog :visible.sync="dialogVisible" width="50%">
     <div id="laybox">
       <div class="layer-alertdon">
         <dl class=" clearfix">
@@ -23,45 +21,7 @@
 </template>
 
 <script>
-export default {
-  name: "Pay",
-  data() {
-    return {
-      dialogVisible: false
-    }
-  }
-}
+import Index from './index'
+
+export default Index
 </script>
-
-<style scoped lang="scss">
-
-.layer-alertdon {
-  padding: 30px;
-
-  dl {
-    dd {
-      width: 50%;
-      float: left;
-      text-align: center;
-      padding: 15px 0;
-
-      img {
-        width: 140px;
-      }
-
-      span {
-        font-size: 15px;
-        display: inline-block;
-        padding: 5px;
-      }
-    }
-  }
-
-  p {
-    font-size: 1.4rem;
-    line-height: 1.7;
-    color: gray;
-  }
-}
-
-</style>
