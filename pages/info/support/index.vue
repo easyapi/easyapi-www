@@ -60,7 +60,7 @@
           </div>
 
           <div class="u-open">
-            <el-button @click="showCode" size="small" type="primary" id="thisop">支持我们</el-button>
+            <el-button @click="showCode" type="primary">支持我们</el-button>
           </div>
         </div>
       </div>

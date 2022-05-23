@@ -19,6 +19,9 @@ export default {
     }
   },
   methods: {
+    /**
+     * 显示支持我们弹框
+     */
     showCode() {
       this.$refs.child.dialogVisible = true
     }
