@@ -1,10 +1,14 @@
 import './index.scss'
 import 'assets/scss/donate.scss'
-import Pay from "../../../components/Pay";
+import Pay from "./components/pay/index.vue"
 
 export default {
-  name: 'InfoSupport',
   components: {Pay},
+  data() {
+    return {
+      dialogVisible: false
+    }
+  },
   head() {
     return {
       title: '支持名单 - EasyAPI服务平台',

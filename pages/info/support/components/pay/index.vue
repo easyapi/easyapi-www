@@ -4,11 +4,11 @@
       <div class="layer-alertdon">
         <dl class=" clearfix">
           <dd>
-            <p><img src="https://static.easyapi.com/images/info/fanfanle.png"/></p>
+            <p><img class="mx-auto" src="https://static.easyapi.com/images/info/fanfanle.png"/></p>
             <span>微信扫一扫</span>
           </dd>
           <dd>
-            <p><img src="https://static.easyapi.com/images/info/leida.png"/></p>
+            <p><img class="mx-auto" src="https://static.easyapi.com/images/info/leida.png"/></p>
             <span>支付宝扫一扫</span>
           </dd>
         </dl>
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index.js'
 
-export default Index
+  export default Index
 </script>

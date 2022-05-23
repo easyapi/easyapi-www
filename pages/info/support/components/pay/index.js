@@ -1,7 +1,7 @@
 import './index.scss'
 
 export default {
-  name: "Pay",
+  name: "pay",
   data() {
     return {
       dialogVisible: false

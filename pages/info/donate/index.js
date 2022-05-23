@@ -1,6 +1,6 @@
 import './index.scss'
 import 'assets/scss/donate.scss'
-import Pay from "../../../components/Pay";
+import Pay from "../support/components/pay";
 
 export default {
   name: 'InfoDonate',
