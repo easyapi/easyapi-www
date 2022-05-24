@@ -1,7 +1,7 @@
 import './index.scss'
 
 import {getArticleList} from '../../api/article'
-import ListItem from './components/listItem'
+import Item from './components/item'
 
 export default {
   name: 'Post',
@@ -15,7 +15,7 @@ export default {
     }
   },
   components: {
-    ListItem,
+    Item,
   },
   data() {
     return {

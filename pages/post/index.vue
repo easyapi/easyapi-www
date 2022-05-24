@@ -2,7 +2,7 @@
   <div class="main mg-t-72">
     <div v-if="!noData" class="content pd-t-20">
       <div v-for="item of list" :key="item.articleId">
-        <ListItem v-bind:list="item"></ListItem>
+        <Item v-bind:list="item"></Item>
       </div>
     </div>
     <div v-else class="no-data">
