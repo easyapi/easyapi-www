@@ -92,9 +92,9 @@
                 </li>
               </a>
             </ul>
-            <span slot="reference" class="f-rel navs-item">产品
-              <i v-if="ifShowProduct" class="el-icon-caret-bottom"></i>
-            <i v-else class="el-icon-caret-top"></i>
+            <span slot="reference" class="f-rel navs-item"><a>产品<i v-if="ifShowProduct"
+                                                                   class="el-icon-caret-bottom"></i>
+            <i v-else class="el-icon-caret-top"></i></a>
             </span>
           </el-popover>
           <a href="/info/price">
@@ -147,9 +147,9 @@
                 </li>
               </a>
             </ul>
-            <span slot="reference" class="f-rel navs-item">私有化
+            <span slot="reference" class="f-rel navs-item"><a>私有化
             <i v-if="ifShowPrivatization" class="el-icon-caret-bottom"></i>
-            <i v-else class="el-icon-caret-top"></i>
+            <i v-else class="el-icon-caret-top"></i></a>
             </span>
           </el-popover>
           <a href="https://market.easyapi.com" target="_blank">
@@ -290,7 +290,7 @@
 </template>
 
 <script>
-import Index from './index'
+  import Index from './index'
 
-export default Index
+  export default Index
 </script>
