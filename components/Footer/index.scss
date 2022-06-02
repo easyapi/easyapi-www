@@ -1,5 +1,5 @@
 .footer {
-  background: #3C3C3C;
+  background: #27282C;
   color: gray;
   padding: 20px 0;
   font-size: 1.2rem;
@@ -7,6 +7,7 @@
   h2 {
     font-size: 16px;
     margin-bottom: 10px;
+    color: #FDFDFE;
   }
 
   p {
@@ -19,6 +20,7 @@
 
     &:hover {
       color: #fff;
+      text-decoration: underline;
     }
   }
 }

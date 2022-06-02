@@ -10,6 +10,11 @@
     margin-right: 0;
     height: 400px
   }
+
+  .market-img-top {
+    top: 30px;
+    left: -10px;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 800px) {
@@ -18,6 +23,11 @@
     margin-right: 0;
     height: 180px
   }
+
+  .market-img-top {
+    top: 22px;
+    left: -10px;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
@@ -25,5 +35,10 @@
     width: 150px;
     margin-right: 0;
     height: 100px
+  }
+
+  .market-img-top {
+    top: 8px;
+    left: -10px;
   }
 }

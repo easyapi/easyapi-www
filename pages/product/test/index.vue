@@ -62,7 +62,7 @@
             <!-- <i class="iconfont icon-xingxing"></i> -->
             <div class="flex line_tips">
               <img src="/images/info/history.png" alt="未加载">
-              <div class="d_inline_block" style="padding-left: 5px;">
+              <div class="d_inline_block" style="padding-left: 15px;">
                 <h3>历史测试记录一览</h3>
                 <p>还怕忘记测试的参数是什么吗？随时随地查看，方便多人开发</p>
               </div>

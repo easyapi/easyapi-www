@@ -4,7 +4,7 @@
       <div class="title">
         <h1>专业的API低代码(Low-Code)开发平台</h1>
         <p>快速实现业务、数据服务化，协助企业实现数字化升级</p>
-        <el-button size="small">立即体验</el-button>
+        <el-button  class="mg-t-10" size="small">立即体验</el-button>
       </div>
     </div>
     <div class="flex justify-between content py-24">
@@ -39,7 +39,7 @@
             </div>
             <div class="lowcode-box-item bg-white">
               <img src="https://qiniu.easyapi.com/AutomaticConstructionOfMassiveNonCoreBusinessModuleAPIs.png">
-              <h2>海量非核心业务模块API自动构建</h2>
+              <h2>非核心业务模块API自动构建</h2>
               <p>客户公司专注于核心业务，非核心业务接口，在这里统统都能找到，如果找不到，可以联系我们进行开发提供。</p>
               <el-button size="small" type="primary">海量接口 ></el-button>
             </div>
