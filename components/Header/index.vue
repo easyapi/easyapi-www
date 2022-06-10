@@ -97,7 +97,7 @@
             <i v-else class="el-icon-caret-top"></i></a>
             </span>
           </el-popover>
-          <a href="/info/price">
+          <a class="mg-x-30" href="/info/price">
             价格
           </a>
           <el-popover
@@ -152,7 +152,7 @@
             <i v-else class="el-icon-caret-top"></i></a>
             </span>
           </el-popover>
-          <a href="https://market.easyapi.com" target="_blank">
+          <a class="mg-x-30" href="https://market.easyapi.com" target="_blank">
             API市场
           </a>
         </div>
