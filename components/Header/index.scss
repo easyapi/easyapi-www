@@ -131,11 +131,12 @@
   .navs {
     line-height: 68px;
     font-size: 1.6rem;
+    margin-left: 20px;
     height: 48px;
 
     a {
       color: #fff;
-      padding: 10px;
+      padding: 10px 30px;
       border-radius: 15px;
 
       &:hover {
@@ -217,7 +218,6 @@
     span {
       display: inline-block;
       color: #fff;
-      padding: 0 10px;
       cursor: pointer;
 
       &:hover {
@@ -251,11 +251,12 @@
   .navs {
     line-height: 68px;
     font-size: 1.6rem;
+    margin-left: 20px;
     height: 48px;
 
     a {
       color: #fff;
-      padding: 10px;
+      padding: 10px 30px;
       border-radius: 15px;
 
       &:hover {
@@ -337,7 +338,6 @@
     span {
       display: inline-block;
       color: #fff;
-      padding: 0 10px;
       cursor: pointer;
 
       &:hover {
