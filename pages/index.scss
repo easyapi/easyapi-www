@@ -12,11 +12,11 @@
     font-size: 16px;
     line-height: 46px;
     font-weight: 600;
-    border-radius: 6px
+    border-radius: 6px;
   }
 
   .bg_white::before {
-    content: "";
+    content: '';
     z-index: -1;
     position: absolute;
     top: 0;
@@ -67,7 +67,6 @@
 
   .text_c {
     text-align: center !important;
-
   }
 
   .bg_white:hover {
@@ -80,7 +79,7 @@
   }
 
   .bg_white:active {
-    color: rgba(49, 176, 213, 0.6)
+    color: rgba(49, 176, 213, 0.6);
   }
 
   .jump_link {
@@ -156,11 +155,11 @@
     font-size: 16px;
     line-height: 46px;
     font-weight: 600;
-    border-radius: 6px
+    border-radius: 6px;
   }
 
   .bg_white::before {
-    content: "";
+    content: '';
     z-index: -1;
     position: absolute;
     top: 0;
@@ -211,7 +210,6 @@
 
   .text_c {
     text-align: center !important;
-
   }
 
   .bg_white:hover {
@@ -224,7 +222,7 @@
   }
 
   .bg_white:active {
-    color: rgba(49, 176, 213, 0.6)
+    color: rgba(49, 176, 213, 0.6);
   }
 
   .jump_link {
@@ -285,4 +283,3 @@
     }
   }
 }
-

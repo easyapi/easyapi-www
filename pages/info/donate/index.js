@@ -1,16 +1,16 @@
 import './index.scss'
 import 'assets/scss/donate.scss'
-import Pay from "../support/components/pay";
+import Pay from '../support/components/pay'
 
 export default {
   name: 'InfoDonate',
-  components: {Pay},
+  components: { Pay },
   head() {
     return {
       title: '支持我们 - EasyAPI服务平台',
       meta: [
-        {hid: 'description', name: 'description', content: '支持EasyAPI'},
-        {hid: 'keyword', name: 'keyword', content: '支持EasyAPI'}
+        { hid: 'description', name: 'description', content: '支持EasyAPI' },
+        { hid: 'keyword', name: 'keyword', content: '支持EasyAPI' }
       ]
     }
   },

@@ -1,6 +1,6 @@
 import './_id.scss'
 
-import {getArticle} from '../../api/article'
+import { getArticle } from '../../api/article'
 
 export default {
   name: 'PostDetail',
@@ -8,8 +8,8 @@ export default {
     return {
       title: this.article.title + ' - EasyAPI服务市场',
       meta: [
-        {hid: 'description', name: 'description', content: this.article.title},
-        {hid: 'keyword', name: 'keyword', content: '文章详情'}
+        { hid: 'description', name: 'description', content: this.article.title },
+        { hid: 'keyword', name: 'keyword', content: '文章详情' }
       ]
     }
   },
@@ -19,9 +19,7 @@ export default {
     }
   },
   async asyncData(context) {
-    let [res] = await Promise.all([
-      getArticle(context.route.params.id, context)
-    ])
+    let [res] = await Promise.all([getArticle(context.route.params.id, context)])
     return {
       article: res.data.content
     }

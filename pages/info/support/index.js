@@ -1,9 +1,9 @@
 import './index.scss'
 import 'assets/scss/donate.scss'
-import Pay from "./components/pay/index.vue"
+import Pay from './components/pay/index.vue'
 
 export default {
-  components: {Pay},
+  components: { Pay },
   data() {
     return {
       dialogVisible: false
@@ -13,8 +13,8 @@ export default {
     return {
       title: '支持名单 - EasyAPI服务平台',
       meta: [
-        {hid: 'description', name: 'description', content: 'EasyAPI支持名单'},
-        {hid: 'keyword', name: 'keyword', content: 'EasyAPI支持名单,支持我们'}
+        { hid: 'description', name: 'description', content: 'EasyAPI支持名单' },
+        { hid: 'keyword', name: 'keyword', content: 'EasyAPI支持名单,支持我们' }
       ]
     }
   },

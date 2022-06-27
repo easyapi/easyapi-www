@@ -4,68 +4,67 @@
       <div class="info-page">
         <h2 class="title">支持我们</h2>
         <div class="donate-img">
-          <img src="https://static.easyapi.com/images/info/donate.jpg" alt="">
+          <img src="https://static.easyapi.com/images/info/donate.jpg" alt="" />
         </div>
         <div class="donate-description f-cb">
           <p>
-            <em>如</em>果您觉得 EasyAPI
-            对您非常有用，您可以考虑通过捐赠来支持我们。
+            <em>如</em>果您觉得 EasyAPI 对您非常有用，您可以考虑通过捐赠来支持我们。
             您的捐赠将帮助我们应付日益增长的主机和宽带，
             以及软件开发、美工与网站编辑等方面费用，帮助我们在未来为您提供更加优质的内容和服务
             。我们非常感谢您的捐赠与支持。
           </p>
           <dl class="pay">
             <dd>
-              <p><img src="https://static.easyapi.com/images/info/fanfanle.png"></p>
+              <p><img src="https://static.easyapi.com/images/info/fanfanle.png" /></p>
               <span>微信扫一扫</span>
             </dd>
             <dd>
-              <p><img src="https://static.easyapi.com/images/info/leida.png"></p>
+              <p><img src="https://static.easyapi.com/images/info/leida.png" /></p>
               <span>支付宝扫一扫</span>
             </dd>
           </dl>
         </div>
 
-        <div class="supporter  f-cb">
+        <div class="supporter f-cb">
           <div class="support">支持名单</div>
           <ul class="f-cb">
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhaozilong.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhaozilong.jpg" /></p>
               <strong>赵子龙</strong>
               <span>Java工程师</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/tangwenchang.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/tangwenchang.jpg" /></p>
               <strong>唐文昌</strong>
               <span>iOS工程师</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/banxin.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/banxin.jpg" /></p>
               <strong>班新</strong>
               <span>Android工程师</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhangsheng.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhangsheng.jpg" /></p>
               <strong>张胜</strong>
               <span>项目总监</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/huangmingjie.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/huangmingjie.jpg" /></p>
               <strong>黄明杰</strong>
               <span>技术总监</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhanglinghui.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhanglinghui.jpg" /></p>
               <strong>张凌辉</strong>
               <span>Java架构师</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/jiyixin.jpg"></p>
+              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/jiyixin.jpg" /></p>
               <strong>季乙心</strong>
               <span>产品经理</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="/images/user-phone.png"></p>
+              <p><img class="mx-auto" src="/images/user-phone.png" /></p>
               <a href="/info/support" class="more">更多支持者</a>
             </li>
           </ul>
@@ -84,11 +83,16 @@
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
-                <a @click="showCode" class="btn btn-info " href="javascript:;" data-toggle="modal"
-                   data-target=".bs-example-modal-lg">
-                  支持15元
-                </a>
-              </span>
+                  <a
+                    @click="showCode"
+                    class="btn btn-info"
+                    href="javascript:;"
+                    data-toggle="modal"
+                    data-target=".bs-example-modal-lg"
+                  >
+                    支持15元
+                  </a>
+                </span>
               </dd>
             </dl>
             <dl>
@@ -101,11 +105,16 @@
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
-                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
-                   data-target=".bs-example-modal-lg">
-                  支持50元
-                </a>
-              </span>
+                  <a
+                    @click="showCode"
+                    class="btn btn-info"
+                    href="javascript:;"
+                    data-toggle="modal"
+                    data-target=".bs-example-modal-lg"
+                  >
+                    支持50元
+                  </a>
+                </span>
               </dd>
             </dl>
             <dl>
@@ -118,11 +127,16 @@
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
-                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
-                   data-target=".bs-example-modal-lg">
-                  支持100元
-                </a>
-              </span>
+                  <a
+                    @click="showCode"
+                    class="btn btn-info"
+                    href="javascript:;"
+                    data-toggle="modal"
+                    data-target=".bs-example-modal-lg"
+                  >
+                    支持100元
+                  </a>
+                </span>
               </dd>
             </dl>
             <dl>
@@ -135,11 +149,16 @@
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
-                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
-                   data-target=".bs-example-modal-lg">
-                  支持200元
-                </a>
-              </span>
+                  <a
+                    @click="showCode"
+                    class="btn btn-info"
+                    href="javascript:;"
+                    data-toggle="modal"
+                    data-target=".bs-example-modal-lg"
+                  >
+                    支持200元
+                  </a>
+                </span>
               </dd>
             </dl>
             <dl>
@@ -152,11 +171,16 @@
                 <p>充电宝<i class="el-icon-check"></i></p>
                 <p>广告机会</p>
                 <span>
-                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
-                   data-target=".bs-example-modal-lg">
-                  支持500元
-                </a>
-              </span>
+                  <a
+                    @click="showCode"
+                    class="btn btn-info"
+                    href="javascript:;"
+                    data-toggle="modal"
+                    data-target=".bs-example-modal-lg"
+                  >
+                    支持500元
+                  </a>
+                </span>
               </dd>
             </dl>
             <dl>
@@ -169,11 +193,16 @@
                 <p>充电宝<i class="el-icon-check"></i></p>
                 <p>广告机会</p>
                 <span>
-                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
-                   data-target=".bs-example-modal-lg">
-                  支持2000元
-                </a>
-              </span>
+                  <a
+                    @click="showCode"
+                    class="btn btn-info"
+                    href="javascript:;"
+                    data-toggle="modal"
+                    data-target=".bs-example-modal-lg"
+                  >
+                    支持2000元
+                  </a>
+                </span>
               </dd>
             </dl>
             <dl>
@@ -186,11 +215,16 @@
                 <p>充电宝<i class="el-icon-check"></i></p>
                 <p>广告机会<i class="el-icon-check"></i></p>
                 <span>
-                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
-                   data-target=".bs-example-modal-lg">
-                  支持5000元
-                </a>
-              </span>
+                  <a
+                    @click="showCode"
+                    class="btn btn-info"
+                    href="javascript:;"
+                    data-toggle="modal"
+                    data-target=".bs-example-modal-lg"
+                  >
+                    支持5000元
+                  </a>
+                </span>
               </dd>
             </dl>
             <dl>
@@ -203,16 +237,23 @@
                 <p>充电宝<i class="el-icon-check"></i></p>
                 <p>股份<i class="el-icon-check"></i></p>
                 <span>
-                <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal"
-                   data-target=".bs-example-modal-lg">
-                  支持10000元
-                </a>
-              </span>
+                  <a
+                    @click="showCode"
+                    class="btn btn-info"
+                    href="javascript:;"
+                    data-toggle="modal"
+                    data-target=".bs-example-modal-lg"
+                  >
+                    支持10000元
+                  </a>
+                </span>
               </dd>
             </dl>
           </div>
-          <p class="foo f-cb">注意：请通过上面支付宝，微信支付支持费用，可加微信好友，或者QQ149151419联系，需要您提供快递地址，我们会立即安排发货，
-            一旦支付成功将无法取消支持，我们由衷感谢您的支持，将持续提供完善的产品服务。 </p>
+          <p class="foo f-cb">
+            注意：请通过上面支付宝，微信支付支持费用，可加微信好友，或者QQ149151419联系，需要您提供快递地址，我们会立即安排发货，
+            一旦支付成功将无法取消支持，我们由衷感谢您的支持，将持续提供完善的产品服务。
+          </p>
         </div>
       </div>
     </div>

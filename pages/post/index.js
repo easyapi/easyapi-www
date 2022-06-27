@@ -1,6 +1,6 @@
 import './index.scss'
 
-import {getArticleList} from '../../api/article'
+import { getArticleList } from '../../api/article'
 import Item from './components/item'
 
 export default {
@@ -9,13 +9,13 @@ export default {
     return {
       title: '市场动态 - EasyAPI服务市场',
       meta: [
-        {hid: 'description', name: 'description', content: '市场动态'},
-        {hid: 'keyword', name: 'keyword', content: '市场动态'},
-      ],
+        { hid: 'description', name: 'description', content: '市场动态' },
+        { hid: 'keyword', name: 'keyword', content: '市场动态' }
+      ]
     }
   },
   components: {
-    Item,
+    Item
   },
   data() {
     return {
@@ -26,8 +26,8 @@ export default {
       pagination: {
         size: 15,
         page: 0,
-        totalPages: 0,
-      },
+        totalPages: 0
+      }
     }
   },
   methods: {
@@ -44,9 +44,9 @@ export default {
       this.loading = true
       let params = {
         size: this.pagination.size,
-        page: this.pagination.page,
+        page: this.pagination.page
       }
-      getArticleList(params, this).then((res) => {
+      getArticleList(params, this).then(res => {
         this.loading = false
         if (res.data.code === 1) {
           this.list = this.list.concat(res.data.content)
@@ -58,8 +58,7 @@ export default {
     },
     lazyLoading() {
       // 滚动到底部，再加载的处理事件
-      let scrollTop =
-        document.documentElement.scrollTop || document.body.scrollTop
+      let scrollTop = document.documentElement.scrollTop || document.body.scrollTop
       let clientHeight = document.documentElement.clientHeight
       let scrollHeight = document.documentElement.scrollHeight
       if (scrollHeight - clientHeight - scrollTop <= 150) {
@@ -69,10 +68,10 @@ export default {
           this.getPageList()
         }
       }
-    },
+    }
   },
   mounted() {
     window.addEventListener('scroll', this.lazyLoading)
     this.getArticleList()
-  },
+  }
 }

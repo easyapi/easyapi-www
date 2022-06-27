@@ -4,8 +4,10 @@
       <div class="content">
         <div class="price-title">
           <h1>支持我们创造更好的 API 产品</h1>
-          <p>EasyAPI为您的团队提供易用、好用的API服务，我们专注于围绕应用API服务<br>
-            一起携手创造更好的API服务</p>
+          <p>
+            EasyAPI为您的团队提供易用、好用的API服务，我们专注于围绕应用API服务<br />
+            一起携手创造更好的API服务
+          </p>
         </div>
       </div>
     </div>
@@ -139,70 +141,70 @@
 
     <div class="pd-100 f-border-b bg-f5">
       <div class="title">他们都在选我们</div>
-      <div class="description">API管理门户主要为开发企业搭建 API 门户，核心功能包括 API 文档管理、API 测试工具、API 监控系统等服务
-        <br>对于大中型开发团队，API 内部管理比较注重隐私，特推出私有化版本
+      <div class="description">
+        API管理门户主要为开发企业搭建 API 门户，核心功能包括 API 文档管理、API 测试工具、API 监控系统等服务
+        <br />对于大中型开发团队，API 内部管理比较注重隐私，特推出私有化版本
       </div>
       <div class="appshows content">
         <ul class="appshows-imgs">
           <li>
             <a title="中兴" href="https://www.zte.com.cn" target="_blank">
-              <img src="/images/info/pic_price_logo1.png">
+              <img src="/images/info/pic_price_logo1.png" />
             </a>
           </li>
           <li>
             <a title="华为" href="https://www.huawei.com" target="_blank">
-              <img src="/images/info/pic_price_logo2.png">
+              <img src="/images/info/pic_price_logo2.png" />
             </a>
           </li>
           <li>
             <a title="平安银行" href="https://bank.pingan.com/" target="_blank">
-              <img src="/images/info/pic_price_logo3.png">
+              <img src="/images/info/pic_price_logo3.png" />
             </a>
           </li>
           <li>
             <a title="翼龙贷" href="https://www.eloancn.com/" target="_blank">
-              <img src="/images/info/pic_price_logo4.png">
+              <img src="/images/info/pic_price_logo4.png" />
             </a>
           </li>
           <li>
             <a title="宝象金融" href="https://www.bxjr.com/" target="_blank">
-              <img src="/images/info/pic_price_logo5.png">
+              <img src="/images/info/pic_price_logo5.png" />
             </a>
           </li>
           <li>
             <a title="超级表格" href="https://www.chaojibiaoge.com/" target="_blank">
-              <img src="/images/info/pic_price_logo6.png">
+              <img src="/images/info/pic_price_logo6.png" />
             </a>
-
           </li>
           <li>
             <a title="程序员客栈" href="https://www.proginn.com" target="_blank">
-              <img src="/images/info/pic_price_logo7.png">
+              <img src="/images/info/pic_price_logo7.png" />
             </a>
           </li>
           <li>
             <a title="计蒜客" href="https://www.jisuanke.com/" target="_blank">
-              <img src="/images/info/pic_price_logo8.png">
+              <img src="/images/info/pic_price_logo8.png" />
             </a>
           </li>
           <li>
             <a title="中国电科" href="http://www.cetc.com.cn/" target="_blank">
-              <img src="/images/info/pic_price_logo9.png">
+              <img src="/images/info/pic_price_logo9.png" />
             </a>
           </li>
           <li>
             <a title="华润创业" href="http://www.cre.com.hk/" target="_blank">
-              <img src="/images/info/pic_price_logo10.png">
+              <img src="/images/info/pic_price_logo10.png" />
             </a>
           </li>
           <li>
             <a title="山东魏桥" href="http://www.weiqiaocy.com/" target="_blank">
-              <img src="/images/info/pic_price_logo11.png">
+              <img src="/images/info/pic_price_logo11.png" />
             </a>
           </li>
           <li>
             <a title="服务区" href="https://www.fuwuqu.com/" target="_blank">
-              <img src="/images/info/pic_price_logo12.png">
+              <img src="/images/info/pic_price_logo12.png" />
             </a>
           </li>
         </ul>

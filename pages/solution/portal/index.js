@@ -1,5 +1,5 @@
 ﻿import './index.scss'
-import "assets/scss/case.scss";
+import 'assets/scss/case.scss'
 import '/assets/scss/banner.scss'
 
 export default {
@@ -20,5 +20,5 @@ export default {
         }
       ]
     }
-  },
+  }
 }

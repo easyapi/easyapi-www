@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie'
-import {getUser} from '@/api/account'
+import { getUser } from '@/api/account'
 
 const user = {
   state: {
@@ -41,28 +41,30 @@ const user = {
     /**
      * 获取用户信息
      */
-    getUser({commit}) {
-      getUser(this).then(res => {
-        if (res.data.code === 1) {
-          commit('SET_USER_ID', res.data.content.id)
-          commit('SET_USERNAME', res.data.content.username)
-          commit('SET_NICKNAME', res.data.content.nickname)
-          commit('SET_PHOTO', res.data.content.photo)
-          commit('SET_MOBILE', res.data.content.mobile)
-          commit('SET_EMAIL', res.data.content.email)
-          commit('SET_TEAM', res.data.content.team)
-        }
-      }).catch(error => {
-        Cookies.remove('authenticationToken')
-        Cookies.remove('authenticationToken', {path: '/', domain: '.easyapi.com'})
-      })
+    getUser({ commit }) {
+      getUser(this)
+        .then(res => {
+          if (res.data.code === 1) {
+            commit('SET_USER_ID', res.data.content.id)
+            commit('SET_USERNAME', res.data.content.username)
+            commit('SET_NICKNAME', res.data.content.nickname)
+            commit('SET_PHOTO', res.data.content.photo)
+            commit('SET_MOBILE', res.data.content.mobile)
+            commit('SET_EMAIL', res.data.content.email)
+            commit('SET_TEAM', res.data.content.team)
+          }
+        })
+        .catch(error => {
+          Cookies.remove('authenticationToken')
+          Cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
+        })
     },
     /**
      * 登出
      */
     logout() {
       Cookies.remove('authenticationToken')
-      Cookies.remove('authenticationToken', {path: '/', domain: '.easyapi.com'})
+      Cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
     }
   }
 }

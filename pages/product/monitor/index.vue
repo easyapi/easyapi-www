@@ -14,30 +14,32 @@
       </div>
     </div>
 
-    <div class="pd-100  f-border-b">
+    <div class="pd-100 f-border-b">
       <div class="title">接口性能分析</div>
-      <div class="description">分析App对应的API接口请求性能，包含HTTP响应时间、吞吐率、HTTP错误率，解析崩溃率分析等等<br>
+      <div class="description">
+        分析App对应的API接口请求性能，包含HTTP响应时间、吞吐率、HTTP错误率，解析崩溃率分析等等<br />
         帮您快速优化后端服务性能
       </div>
       <div class="oneimg">
-        <img class="mx-auto" src="/images/info/monitor_2.png">
+        <img class="mx-auto" src="/images/info/monitor_2.png" />
       </div>
     </div>
 
-    <div class="pd-100  f-border-b">
+    <div class="pd-100 f-border-b">
       <div class="title">业务风险降低</div>
-      <div class="description">实时反馈APP与API的交互情况，请求参数，返回结果，瞬间重现问题场景 <br>
+      <div class="description">
+        实时反馈APP与API的交互情况，请求参数，返回结果，瞬间重现问题场景 <br />
         实现发现问题，快速解决问题
       </div>
       <div class="oneimg">
-        <img class="mx-auto" src="/images/info/monitor_3.png"/>
+        <img class="mx-auto" src="/images/info/monitor_3.png" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import Index from './index'
+import Index from './index'
 
-  export default Index
+export default Index
 </script>
