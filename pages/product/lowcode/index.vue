@@ -12,12 +12,15 @@
       <div class="py-16">
         <h1>API低代码开发平台介绍</h1>
         <div class="line"></div>
-        <span class="lowcode-introduce"
-          >API低代码开发平台是一款基于微服务构架的专注API高效开发的专业化平台，平台相比<br />
-          于传统API开发模式具有更轻量级、更快速、更全面、更低代码量、更易于学习等特点，<br />
-          通过平台可以实现以少量的代码快速发布各种API服务(数据服务，算法服务...)。使用本<br />
-          平台普通工程师通过浏览器即可快速实现API的开发和发布，API开发效率提升80%以上。</span
-        >
+        <span class="lowcode-introduce">
+          API低代码开发平台是一款基于微服务构架的专注API高效开发的专业化平台，平台相比
+          <br />
+          于传统API开发模式具有更轻量级、更快速、更全面、更低代码量、更易于学习等特点，
+          <br />
+          通过平台可以实现以少量的代码快速发布各种API服务(数据服务，算法服务...)。使用本
+          <br />
+          平台普通工程师通过浏览器即可快速实现API的开发和发布，API开发效率提升80%以上。
+        </span>
       </div>
     </div>
     <div class="lowcode-box bg">
@@ -28,9 +31,7 @@
             <div class="lowcode-box-item bg-white">
               <img src="https://qiniu.easyapi.com/VisualOutputStandardReturnContent.png" />
               <h2>可视化输出标准返回内容</h2>
-              <p>
-                支持HTML（HTML+CSS+JavaScript编程、微页面拖拽设计），JSON（自动表单化或者表格化），XML，文本，可视化输出。
-              </p>
+              <p>支持HTML（HTML+CSS+JavaScript编程、微页面拖拽设计），JSON（自动表单化或者表格化），XML，文本，可视化输出。</p>
               <el-button size="small" type="primary">帮助中心 ></el-button>
             </div>
             <div class="lowcode-box-item bg-white">

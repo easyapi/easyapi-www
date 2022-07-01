@@ -11,7 +11,8 @@
     <div class="pd-100">
       <div class="title">什么是API场景化服务</div>
       <div class="description">
-        提供完善的后端管理服务，前端通过API实现定制化的的一种服务<br />
+        提供完善的后端管理服务，前端通过API实现定制化的的一种服务
+        <br />
         我们的目标是为提供企业提供非核心功能标准化产品服务
       </div>
       <ul class="content scene-icon">

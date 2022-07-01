@@ -40,7 +40,7 @@
             <img src="https://static.easyapi.com/images/index/ic1.png" />
           </a>
           <a href="https://team.easyapi.com/project/">
-            <span class="font_w"> API文档 </span>
+            <span class="font_w">API文档</span>
             <p>结构化文档操作，自动化测试</p>
           </a>
         </li>
@@ -49,7 +49,7 @@
             <img src="https://static.easyapi.com/images/index/ic2.png" />
           </a>
           <a href="https://team.easyapi.com/project/">
-            <span class="font_w"> API监控 </span>
+            <span class="font_w">API监控</span>
             <p>提升接口运维响应效率</p>
           </a>
         </li>
@@ -58,7 +58,7 @@
             <img src="https://static.easyapi.com/images/index/ic4.png" />
           </a>
           <a href="https://team.easyapi.com/service/">
-            <span class="font_w"> API服务 </span>
+            <span class="font_w">API服务</span>
             <p>API接口服务领域的专业服务商</p>
           </a>
         </li>
@@ -75,7 +75,7 @@
         <div class="pd-b-50 f-cb">
           <div class="inner-item f-fl">
             <img class="mx-auto" src="https://static.easyapi.com/images/w1.png" />
-            <span> Word </span>
+            <span>Word</span>
             <p class="text_c">
               World软件打开延迟，卡顿，内容丢失？ 一次
               <br />
@@ -89,10 +89,8 @@
           </div>
           <div class="inner-item f-fr">
             <img class="mx-auto" src="https://static.easyapi.com/images/w2.png" />
-            <span> EasyAPI </span>
-            <p class="text_c">
-              简单易用，接口变更动态一目了然。不限制使用人数，不限制项目数量，基于阿里云安全稳定高速。
-            </p>
+            <span>EasyAPI</span>
+            <p class="text_c">简单易用，接口变更动态一目了然。不限制使用人数，不限制项目数量，基于阿里云安全稳定高速。</p>
           </div>
         </div>
       </div>
@@ -108,7 +106,7 @@
         <div class="inner pd-b-50 f-cb">
           <div class="inner-item">
             <img class="mx-auto" src="https://static.easyapi.com/images/index-i-3.png" />
-            <span> 开发效率提升 </span>
+            <span>开发效率提升</span>
             <p>
               再也不用来回调试接口
               <br />
@@ -117,7 +115,7 @@
           </div>
           <div class="inner-item">
             <img class="mx-auto" src="https://static.easyapi.com/images/index-i-2.png" />
-            <span> 运维响应提升 </span>
+            <span>运维响应提升</span>
             <p>
               还原用户场景
               <br />
@@ -126,7 +124,7 @@
           </div>
           <div class="inner-item">
             <img class="mx-auto" src="https://static.easyapi.com/images/index-i-1.png" />
-            <span> 业务风险降低 </span>
+            <span>业务风险降低</span>
             <p>
               实时反馈APP与API的交互情况
               <br />

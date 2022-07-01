@@ -14,7 +14,8 @@
     <div class="pd-100">
       <div class="title">最专业API开放平台供应商</div>
       <div class="description">
-        基于EasyAPI成熟的API文档、API监控、API网关系统<br />
+        基于EasyAPI成熟的API文档、API监控、API网关系统
+        <br />
         为您通过国内最重要的API开发平台解决方案，30天建立属于自己的开放平台
       </div>
       <ul class="u-iconui one content">
@@ -43,9 +44,7 @@
 
     <div class="pd-100 bg_img" style="background-image: url('/images/info/bg_open.png'); background-size: cover">
       <div class="title f-c-white">友好的界面交互</div>
-      <div class="description f-c-white">
-        通过搭建API开放平台，让您公司的数据更好的向合作伙伴、客户进行授权访问 让贵公司的数据不断为贵公司产生价值
-      </div>
+      <div class="description f-c-white">通过搭建API开放平台，让您公司的数据更好的向合作伙伴、客户进行授权访问 让贵公司的数据不断为贵公司产生价值</div>
       <div class="oneimg">
         <img class="mx-auto" src="/images/info/open_3.png" />
       </div>

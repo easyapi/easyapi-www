@@ -10,29 +10,54 @@
     <div class="pd-100 f-border-b">
       <div class="title">构建面向未来的 API 网关</div>
       <div class="description">
-        API网关是数据及系统的集成的基础设施，支持将云端应用及数据通过简单、快速地配置转化成 API<br />
+        API网关是数据及系统的集成的基础设施，支持将云端应用及数据通过简单、快速地配置转化成 API
+        <br />
         同时提供安全独立的数据门户以及统一管控的开发者中心，帮助用户实现数据开放及共享
       </div>
       <ul class="u-iconui content">
         <li>
           <img src="/images/info/gateway_icon1.png" />
           <span>安全保障</span>
-          <p>用户鉴权身份验证 <br />签名防止请求篡改<br />调用权限审核把控</p>
+          <p>
+            用户鉴权身份验证
+            <br />
+            签名防止请求篡改
+            <br />
+            调用权限审核把控
+          </p>
         </li>
         <li>
           <img src="/images/info/gateway_icon2.png" />
           <span>独立访问</span>
-          <p>集成数据独享存储<br />开放门户单独部署<br />自定义域名及门户</p>
+          <p>
+            集成数据独享存储
+            <br />
+            开放门户单独部署
+            <br />
+            自定义域名及门户
+          </p>
         </li>
         <li>
           <img src="/images/info/gateway_icon3.png" />
           <span>简单应用</span>
-          <p>自动实现主机部署<br />零代码配置化操作<br />自动实现接口SDK</p>
+          <p>
+            自动实现主机部署
+            <br />
+            零代码配置化操作
+            <br />
+            自动实现接口SDK
+          </p>
         </li>
         <li>
           <img src="/images/info/gateway_icon4.png" />
           <span>场景灵活</span>
-          <p>多种集成业务场景<br />功能模块按需配置<br />支持多数据源集成</p>
+          <p>
+            多种集成业务场景
+            <br />
+            功能模块按需配置
+            <br />
+            支持多数据源集成
+          </p>
         </li>
       </ul>
     </div>
@@ -42,10 +67,17 @@
         <img class="f-fr img_w" src="/images/info/gateway_2.png" />
         <div class="text f-fl">
           <p class="f_2">
-            <img src="/images/info/gateway_icon5.png" />快速创建API接口<br />
-            <img src="/images/info/gateway_icon6.png" />自动是吸纳数据网关<br />
-            <img src="/images/info/gateway_icon7.png" />API接口网关版本管理<br />
-            <img src="/images/info/gateway_icon8.png" />数据可根据需要返回
+            <img src="/images/info/gateway_icon5.png" />
+            快速创建API接口
+            <br />
+            <img src="/images/info/gateway_icon6.png" />
+            自动是吸纳数据网关
+            <br />
+            <img src="/images/info/gateway_icon7.png" />
+            API接口网关版本管理
+            <br />
+            <img src="/images/info/gateway_icon8.png" />
+            数据可根据需要返回
           </p>
         </div>
       </div>

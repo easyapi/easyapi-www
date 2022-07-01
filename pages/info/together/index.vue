@@ -7,20 +7,27 @@
           <div class="u-aplist f-cb">
             <h3>合作伙伴</h3>
             <a title="吾音疗疾" href="http://www.wuyinliaoji.com" target="_blank">
-              <img src="https://static.easyapi.com/images/app/wuyinliaoji.png" /><span>吾音疗疾</span>
+              <img src="https://static.easyapi.com/images/app/wuyinliaoji.png" />
+              <span>吾音疗疾</span>
             </a>
             <a title="优云" href="https://www.uyun.cn" target="_blank">
-              <img src="https://static.easyapi.com/images/app/uyun.png" /><span>优云运维</span>
+              <img src="https://static.easyapi.com/images/app/uyun.png" />
+              <span>优云运维</span>
             </a>
             <a title="麦客" href="https://www.mikecrm.com" target="_blank">
-              <img src="https://static.easyapi.com/images/app/mikecrm.png" /><span>麦客</span>
+              <img src="https://static.easyapi.com/images/app/mikecrm.png" />
+              <span>麦客</span>
             </a>
           </div>
           <div class="u-links">
-            <a href="https://bangqu.com" title="帮趣网" target="_blank">帮趣网</a> +
-            <a href="https://game.bangqu.com" title="帮趣游戏" target="_blank">帮趣游戏</a> +
-            <a href="http://www.yinwan.com" title="银湾社区生活网" target="_blank">银湾社区生活网</a> +
-            <a href="http://www.opark.com/" title="OPark" target="_blank">OPark园区在线</a> +
+            <a href="https://bangqu.com" title="帮趣网" target="_blank">帮趣网</a>
+            +
+            <a href="https://game.bangqu.com" title="帮趣游戏" target="_blank">帮趣游戏</a>
+            +
+            <a href="http://www.yinwan.com" title="银湾社区生活网" target="_blank">银湾社区生活网</a>
+            +
+            <a href="http://www.opark.com/" title="OPark" target="_blank">OPark园区在线</a>
+            +
           </div>
 
           <div class="u-tobd f-cb">
@@ -115,7 +122,10 @@
           </div>
 
           <div class="u-size">
-            <h3>素材 <span class="f-ff0">文字描述：EasyAPI，EasyAPI服务平台</span></h3>
+            <h3>
+              素材
+              <span class="f-ff0">文字描述：EasyAPI，EasyAPI服务平台</span>
+            </h3>
             <dl class="f-cb">
               <dd>
                 <em><img src="https://static.easyapi.com/images/sucai/icon-1m.png" /></em>

@@ -8,10 +8,9 @@
         </div>
         <div class="donate-description f-cb">
           <p>
-            <em>如</em>果您觉得 EasyAPI 对您非常有用，您可以考虑通过捐赠来支持我们。
-            您的捐赠将帮助我们应付日益增长的主机和宽带，
-            以及软件开发、美工与网站编辑等方面费用，帮助我们在未来为您提供更加优质的内容和服务
-            。我们非常感谢您的捐赠与支持。
+            <em>如</em>
+            果您觉得 EasyAPI 对您非常有用，您可以考虑通过捐赠来支持我们。 您的捐赠将帮助我们应付日益增长的主机和宽带，
+            以及软件开发、美工与网站编辑等方面费用，帮助我们在未来为您提供更加优质的内容和服务 。我们非常感谢您的捐赠与支持。
           </p>
           <dl class="pay">
             <dd>
@@ -74,178 +73,234 @@
           <div class="support">支持项目</div>
           <div class="box">
             <dl>
-              <dt><span>￥15元</span><i>33人支持</i></dt>
+              <dt>
+                <span>￥15元</span>
+                <i>33人支持</i>
+              </dt>
               <dd>
-                <p>署名<i class="el-icon-check"></i></p>
+                <p>
+                  署名
+                  <i class="el-icon-check"></i>
+                </p>
                 <p>鼠标垫</p>
                 <p>马克杯</p>
                 <p>T恤衫</p>
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
-                  <a
-                    @click="showCode"
-                    class="btn btn-info"
-                    href="javascript:;"
-                    data-toggle="modal"
-                    data-target=".bs-example-modal-lg"
-                  >
-                    支持15元
-                  </a>
+                  <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">支持15元</a>
                 </span>
               </dd>
             </dl>
             <dl>
-              <dt><span>￥50元</span><i>8人支持</i></dt>
+              <dt>
+                <span>￥50元</span>
+                <i>8人支持</i>
+              </dt>
               <dd>
-                <p>署名<i class="el-icon-check"></i></p>
-                <p>鼠标垫<i class="el-icon-check"></i></p>
+                <p>
+                  署名
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  鼠标垫
+                  <i class="el-icon-check"></i>
+                </p>
                 <p>马克杯</p>
                 <p>T恤衫</p>
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
-                  <a
-                    @click="showCode"
-                    class="btn btn-info"
-                    href="javascript:;"
-                    data-toggle="modal"
-                    data-target=".bs-example-modal-lg"
-                  >
-                    支持50元
-                  </a>
+                  <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">支持50元</a>
                 </span>
               </dd>
             </dl>
             <dl>
-              <dt><span>￥100元</span><i>18人支持</i></dt>
+              <dt>
+                <span>￥100元</span>
+                <i>18人支持</i>
+              </dt>
               <dd>
-                <p>署名<i class="el-icon-check"></i></p>
-                <p>鼠标垫<i class="el-icon-check"></i></p>
-                <p>马克杯<i class="el-icon-check"></i></p>
+                <p>
+                  署名
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  鼠标垫
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  马克杯
+                  <i class="el-icon-check"></i>
+                </p>
                 <p>T恤衫</p>
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
-                  <a
-                    @click="showCode"
-                    class="btn btn-info"
-                    href="javascript:;"
-                    data-toggle="modal"
-                    data-target=".bs-example-modal-lg"
-                  >
-                    支持100元
-                  </a>
+                  <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">支持100元</a>
                 </span>
               </dd>
             </dl>
             <dl>
-              <dt><span>￥200元</span><i>23人支持</i></dt>
+              <dt>
+                <span>￥200元</span>
+                <i>23人支持</i>
+              </dt>
               <dd>
-                <p>署名<i class="el-icon-check"></i></p>
-                <p>鼠标垫<i class="el-icon-check"></i></p>
-                <p>马克杯<i class="el-icon-check"></i></p>
-                <p>T恤衫<i class="el-icon-check"></i></p>
+                <p>
+                  署名
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  鼠标垫
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  马克杯
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  T恤衫
+                  <i class="el-icon-check"></i>
+                </p>
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
-                  <a
-                    @click="showCode"
-                    class="btn btn-info"
-                    href="javascript:;"
-                    data-toggle="modal"
-                    data-target=".bs-example-modal-lg"
-                  >
-                    支持200元
-                  </a>
+                  <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">支持200元</a>
                 </span>
               </dd>
             </dl>
             <dl>
-              <dt><span>￥500元</span><i>2人支持</i></dt>
+              <dt>
+                <span>￥500元</span>
+                <i>2人支持</i>
+              </dt>
               <dd>
-                <p>署名<i class="el-icon-check"></i></p>
-                <p>鼠标垫<i class="el-icon-check"></i></p>
-                <p>马克杯<i class="el-icon-check"></i></p>
-                <p>T恤衫<i class="el-icon-check"></i></p>
-                <p>充电宝<i class="el-icon-check"></i></p>
+                <p>
+                  署名
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  鼠标垫
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  马克杯
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  T恤衫
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  充电宝
+                  <i class="el-icon-check"></i>
+                </p>
                 <p>广告机会</p>
                 <span>
-                  <a
-                    @click="showCode"
-                    class="btn btn-info"
-                    href="javascript:;"
-                    data-toggle="modal"
-                    data-target=".bs-example-modal-lg"
-                  >
-                    支持500元
-                  </a>
+                  <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">支持500元</a>
                 </span>
               </dd>
             </dl>
             <dl>
-              <dt><span>￥2000元</span><i>1人支持</i></dt>
+              <dt>
+                <span>￥2000元</span>
+                <i>1人支持</i>
+              </dt>
               <dd>
-                <p>署名<i class="el-icon-check"></i></p>
-                <p>鼠标垫<i class="el-icon-check"></i></p>
-                <p>马克杯<i class="el-icon-check"></i></p>
-                <p>T恤衫<i class="el-icon-check"></i></p>
-                <p>充电宝<i class="el-icon-check"></i></p>
+                <p>
+                  署名
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  鼠标垫
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  马克杯
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  T恤衫
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  充电宝
+                  <i class="el-icon-check"></i>
+                </p>
                 <p>广告机会</p>
                 <span>
-                  <a
-                    @click="showCode"
-                    class="btn btn-info"
-                    href="javascript:;"
-                    data-toggle="modal"
-                    data-target=".bs-example-modal-lg"
-                  >
-                    支持2000元
-                  </a>
+                  <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">支持2000元</a>
                 </span>
               </dd>
             </dl>
             <dl>
-              <dt><span>￥5000元</span><i>0人支持</i></dt>
+              <dt>
+                <span>￥5000元</span>
+                <i>0人支持</i>
+              </dt>
               <dd>
-                <p>署名<i class="el-icon-check"></i></p>
-                <p>鼠标垫<i class="el-icon-check"></i></p>
-                <p>马克杯<i class="el-icon-check"></i></p>
-                <p>T恤衫<i class="el-icon-check"></i></p>
-                <p>充电宝<i class="el-icon-check"></i></p>
-                <p>广告机会<i class="el-icon-check"></i></p>
+                <p>
+                  署名
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  鼠标垫
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  马克杯
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  T恤衫
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  充电宝
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  广告机会
+                  <i class="el-icon-check"></i>
+                </p>
                 <span>
-                  <a
-                    @click="showCode"
-                    class="btn btn-info"
-                    href="javascript:;"
-                    data-toggle="modal"
-                    data-target=".bs-example-modal-lg"
-                  >
-                    支持5000元
-                  </a>
+                  <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">支持5000元</a>
                 </span>
               </dd>
             </dl>
             <dl>
-              <dt><span>￥10000元</span><i>0人支持</i></dt>
+              <dt>
+                <span>￥10000元</span>
+                <i>0人支持</i>
+              </dt>
               <dd>
-                <p>署名<i class="el-icon-check"></i></p>
-                <p>鼠标垫<i class="el-icon-check"></i></p>
-                <p>马克杯<i class="el-icon-check"></i></p>
-                <p>T恤衫<i class="el-icon-check"></i></p>
-                <p>充电宝<i class="el-icon-check"></i></p>
-                <p>股份<i class="el-icon-check"></i></p>
+                <p>
+                  署名
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  鼠标垫
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  马克杯
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  T恤衫
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  充电宝
+                  <i class="el-icon-check"></i>
+                </p>
+                <p>
+                  股份
+                  <i class="el-icon-check"></i>
+                </p>
                 <span>
-                  <a
-                    @click="showCode"
-                    class="btn btn-info"
-                    href="javascript:;"
-                    data-toggle="modal"
-                    data-target=".bs-example-modal-lg"
-                  >
-                    支持10000元
-                  </a>
+                  <a @click="showCode" class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg">支持10000元</a>
                 </span>
               </dd>
             </dl>

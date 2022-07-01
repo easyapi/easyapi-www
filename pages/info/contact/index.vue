@@ -5,14 +5,7 @@
         <h2 class="title">联系我们</h2>
         <div class="u-contact">
           <div class="tex">
-            <baidu-map
-              class="bm-view"
-              ak="yZYo7WmkUj3bMFZMcP7PRSpuvjUfGw0B"
-              :center="center"
-              :zoom="zoom"
-              :scroll-wheel-zoom="scroll"
-            >
-            </baidu-map>
+            <baidu-map class="bm-view" ak="yZYo7WmkUj3bMFZMcP7PRSpuvjUfGw0B" :center="center" :zoom="zoom" :scroll-wheel-zoom="scroll"></baidu-map>
             <div class="u-contact-text">
               <h3>无锡帮趣数据服务有限公司</h3>
 
@@ -29,16 +22,8 @@
               <p>&nbsp;</p>
 
               <p>
-                <a
-                  target="_blank"
-                  href="https://shang.qq.com/wpa/qunwpa?idkey=4976bbcfecb3dccced94a6c99ba612348bf9d52e3d438ec9556b24b562e9fd53"
-                >
-                  <img
-                    border="0"
-                    src="https://pub.idqqimg.com/wpa/images/group.png"
-                    alt="EasyAPI开发者交流群"
-                    title="EasyAPI开发者交流群"
-                  />
+                <a target="_blank" href="https://shang.qq.com/wpa/qunwpa?idkey=4976bbcfecb3dccced94a6c99ba612348bf9d52e3d438ec9556b24b562e9fd53">
+                  <img border="0" src="https://pub.idqqimg.com/wpa/images/group.png" alt="EasyAPI开发者交流群" title="EasyAPI开发者交流群" />
                 </a>
               </p>
             </div>

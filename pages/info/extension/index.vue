@@ -3,9 +3,7 @@
     <div class="content">
       <div class="info-page">
         <h2 class="p-12 text-5xl text-center">EasyAPI浏览器插件</h2>
-        <p class="text-center text-gray-400 pb-12">
-          EasyAPI量身定制的Chrome、Firefox浏览器插件，可以快速跨域接口测试等工作
-        </p>
+        <p class="text-center text-gray-400 pb-12">EasyAPI量身定制的Chrome、Firefox浏览器插件，可以快速跨域接口测试等工作</p>
         <div class="w-2/5 p-12 bg-white shadow-md border-solid border rounded mx-auto">
           <p class="text-2xl py-6 text-center col-18C1D6 bg-CBEFF3">最新版本：v0.1</p>
           <div @click="jumpGoogle" class="cursor-pointer flex border-solid border w-60 p-1 mt-12 mx-auto">
@@ -30,7 +28,10 @@
           </div>
           <p class="mt-4 text-center">推荐，针对国内无法访问Chrome商店的用户，各种Chrome内核浏览器兼容</p>
           <p class="mt-4 text-center col-18C1D6 underline cursor-pointer">本地安装教程</p>
-          <p class="mt-4 text-center">*本地安装特别注意需要开启浏览器的<span class="col-18C1D6">开发者模式</span></p>
+          <p class="mt-4 text-center">
+            *本地安装特别注意需要开启浏览器的
+            <span class="col-18C1D6">开发者模式</span>
+          </p>
         </div>
       </div>
     </div>

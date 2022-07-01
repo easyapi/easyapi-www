@@ -12,7 +12,8 @@
     <div class="pd-100">
       <div class="title">精选API接口服务</div>
       <div class="description">
-        通过整合不同接口服务，提供标准化接口文档 <br />
+        通过整合不同接口服务，提供标准化接口文档
+        <br />
         未来同一API接口可绑定多个供应商，随时切换，真正实现API接口的100%可用
       </div>
       <ul class="u-iconui one content">
