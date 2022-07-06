@@ -39,7 +39,7 @@
     margin-top: 6px;
     width: 30px;
     height: 30px;
-    border-radius: 20px
+    border-radius: 20px;
   }
 
   .side-navs {
@@ -63,7 +63,7 @@
 
     span {
       &:hover {
-        color: rgba(255, 255, 255, .7);
+        color: rgba(255, 255, 255, 0.7);
 
         .popover {
           display: block;
@@ -73,10 +73,10 @@
 
     a {
       &:hover {
-        color: rgba(255, 255, 255, .5);
+        color: rgba(255, 255, 255, 0.5);
 
         .console {
-          background-color: rgba(255, 255, 255, .5);
+          background-color: rgba(255, 255, 255, 0.5);
         }
       }
     }
@@ -140,7 +140,7 @@
       border-radius: 15px;
 
       &:hover {
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(255, 255, 255, 0.5);
       }
     }
 
@@ -156,7 +156,7 @@
       }
 
       ul {
-        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         position: absolute;
         background: #fff;
         border-radius: 6px;
@@ -221,7 +221,7 @@
       cursor: pointer;
 
       &:hover {
-        color: rgba(255, 255, 255, .5);
+        color: rgba(255, 255, 255, 0.5);
 
         .popover {
           display: block;
@@ -260,7 +260,7 @@
       border-radius: 15px;
 
       &:hover {
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(255, 255, 255, 0.5);
       }
     }
 
@@ -276,7 +276,7 @@
       }
 
       ul {
-        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         position: absolute;
         background: #fff;
         border-radius: 6px;
@@ -341,7 +341,7 @@
       cursor: pointer;
 
       &:hover {
-        color: rgba(255, 255, 255, .5);
+        color: rgba(255, 255, 255, 0.5);
 
         .popover {
           display: block;
@@ -371,7 +371,7 @@
 
     span {
       &:hover {
-        color: rgba(255, 255, 255, .7);
+        color: rgba(255, 255, 255, 0.7);
 
         .popover {
           display: block;
@@ -381,10 +381,10 @@
 
     a {
       &:hover {
-        color: rgba(255, 255, 255, .5);
+        color: rgba(255, 255, 255, 0.5);
 
         .console {
-          background-color: rgba(255, 255, 255, .5);
+          background-color: rgba(255, 255, 255, 0.5);
         }
       }
     }
@@ -440,7 +440,7 @@
     margin-top: 6px;
     width: 30px;
     height: 30px;
-    border-radius: 20px
+    border-radius: 20px;
   }
 }
 
@@ -478,7 +478,7 @@
       border-radius: 15px;
 
       &:hover {
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(255, 255, 255, 0.5);
       }
     }
 
@@ -494,7 +494,7 @@
       }
 
       ul {
-        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         position: absolute;
         background: #fff;
         border-radius: 6px;
@@ -560,7 +560,7 @@
       cursor: pointer;
 
       &:hover {
-        color: rgba(255, 255, 255, .5);
+        color: rgba(255, 255, 255, 0.5);
 
         .popover {
           display: block;
@@ -590,7 +590,7 @@
 
     span {
       &:hover {
-        color: rgba(255, 255, 255, .7);
+        color: rgba(255, 255, 255, 0.7);
 
         .popover {
           display: block;
@@ -600,10 +600,10 @@
 
     a {
       &:hover {
-        color: rgba(255, 255, 255, .5);
+        color: rgba(255, 255, 255, 0.5);
 
         .console {
-          background-color: rgba(255, 255, 255, .5);
+          background-color: rgba(255, 255, 255, 0.5);
         }
       }
     }
@@ -659,7 +659,7 @@
     margin-top: 3px;
     width: 28px;
     height: 28px;
-    border-radius: 20px
+    border-radius: 20px;
   }
 }
 

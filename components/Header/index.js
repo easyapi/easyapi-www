@@ -1,7 +1,7 @@
 import './index.scss'
 
 import Cookies from 'js-cookie'
-import {mapGetters} from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'Header',
@@ -13,38 +13,36 @@ export default {
       ifShowPrivatization: true,
       ifShow: true,
       ifNavShow: false,
-      type: "",
-      headerActive: "",
+      type: '',
+      headerActive: '',
       activeIndex: '1',
       activeIndex2: '1'
     }
   },
   watch: {
-    '$route'() {
+    $route() {
       this.ifNavShow = false
     },
     screenWidth: {
       handler: function (val, oldVal) {
-        this.ifShow = val >= 800;
+        this.ifShow = val >= 800
       },
       immediate: true
     }
   },
   computed: {
-    ...mapGetters([
-      'photo',
-      'team'
-    ])
+    ...mapGetters(['photo', 'team'])
   },
   mounted() {
     if (this.authenticationToken) {
       this.$store.dispatch('getUser')
     }
     if (this.$route.name === 'post' || this.$route.name === 'post-id') {
-      this.headerActive = "background-color:#49CDDD"
+      this.headerActive = 'background-color:#49CDDD'
     }
     this.screenWidth = document.body.clientWidth
-    window.onresize = () => {   //屏幕尺寸变化就重新赋值
+    window.onresize = () => {
+      //屏幕尺寸变化就重新赋值
       return (() => {
         this.screenWidth = document.body.clientWidth
       })()
@@ -59,13 +57,13 @@ export default {
       this.ifNavShow = false
     },
     jump() {
-      window.open("https://market.easyapi.com")
+      window.open('https://market.easyapi.com')
     },
     jumpSign() {
-      window.open("https://account.easyapi.com/signup/")
+      window.open('https://account.easyapi.com/signup/')
     },
     jumpLogin() {
-      window.open("https://account.easyapi.com/login/")
+      window.open('https://account.easyapi.com/login/')
     },
     showProduct() {
       this.ifShowProduct = false
@@ -91,6 +89,6 @@ export default {
     quitLogin() {
       this.$store.dispatch('logout')
       window.location.href = 'https://account.easyapi.com/login'
-    },
+    }
   }
 }
