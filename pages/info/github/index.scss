@@ -1,16 +1,16 @@
-.bg_white {
-  background: #f0bf43 !important;
-  border-bottom: 4px solid #bf9f43;
-  position: relative;
-  display: inline-block;
-  color: #ffffff;
-  height: 68px;
-  padding: 10px 60px;
-  font-size: 16px;
-  line-height: 46px;
-  font-weight: 600;
-  border-radius: 6px;
-}
+//.bg_white {
+//  background: #f0bf43 !important;
+//  border-bottom: 4px solid #bf9f43;
+//  position: relative;
+//  display: inline-block;
+//  color: #ffffff;
+//  height: 68px;
+//  padding: 10px 60px;
+//  font-size: 16px;
+//  line-height: 46px;
+//  font-weight: 600;
+//  border-radius: 6px;
+//}
 
 .img > img {
   width: 100%;
@@ -59,14 +59,6 @@
   padding-bottom: 70px;
 }
 
-.github-content > h1 {
-  text-align: center;
-  font-weight: normal;
-  color: #555555;
-  font-size: 4.8rem;
-  padding: 100px 0 60px;
-}
-
 .github-content > ul {
   width: 1200px;
   margin: auto;
@@ -110,9 +102,6 @@
   vertical-align: top;
 }
 
-.card-content-item {
-  width: 383px !important;
-}
 
 .card span {
   width: 383px;
@@ -122,4 +111,156 @@
   border-top: none;
   color: #000000;
   padding: 0 !important;
+}
+
+@media screen and (min-width: 1000px) {
+  .card-content-item {
+    width: 383px;
+  }
+
+  .bg_button {
+    background: #f0bf43 !important;
+    border-bottom: 4px solid #bf9f43;
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    height: 68px;
+    padding: 10px 60px;
+    font-size: 16px;
+    line-height: 46px;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+
+  .bg_button > p a {
+    font-size: 26px;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+
+  .github-content > h1 {
+    text-align: center;
+    font-weight: normal;
+    color: #555555;
+    font-size: 4.8rem;
+    padding: 100px 0 60px;
+  }
+
+  .github-content-item {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .card-content-item {
+    width: 303px;
+  }
+
+  .bg_button {
+    background: #f0bf43 !important;
+    border-bottom: 4px solid #bf9f43;
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    height: 68px;
+    padding: 8px 58px;
+    font-size: 14px;
+    line-height: 42px;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+
+  .bg_button > p a {
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+
+  .github-content > h1 {
+    text-align: center;
+    font-weight: normal;
+    color: #555555;
+    font-size: 4.8rem;
+    padding: 100px 0 60px;
+  }
+
+  .github-content-item {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .card-content-item {
+    width: 200px;
+  }
+
+  .bg_button {
+    background: #f0bf43 !important;
+    border-bottom: 4px solid #bf9f43;
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    height: 68px;
+    padding: 8px 58px;
+    font-size: 14px;
+    line-height: 42px;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+
+  .bg_button > p a {
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+
+  .github-content > h1 {
+    text-align: center;
+    font-weight: normal;
+    color: #555555;
+    font-size: 3.2rem;
+    padding: 100px 0 60px;
+  }
+
+  .github-content-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .card-content-item {
+    width: 140px;
+  }
+
+  .bg_button {
+    background: #f0bf43 !important;
+    border-bottom: 4px solid #bf9f43;
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    height: 48px;
+    padding: 0px 38px;
+    font-size: 14px;
+    line-height: 42px;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+
+  .bg_button > p a {
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+
+  .github-content > h1 {
+    text-align: center;
+    font-weight: normal;
+    color: #555555;
+    font-size: 2.4rem;
+    padding: 100px 0 60px;
+  }
+
+  .github-content-item {
+    width: 50%;
+  }
 }
