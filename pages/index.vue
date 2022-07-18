@@ -8,28 +8,12 @@
           <br />
           还有丰富的API接口服务
         </p>
-        <div class="bg_white" @click="jumpProject">
+        <div class="bg_white" @click="gotoTeam">
           <p>
             <span>
-              <a>API文档中心</a>
+              <a>前往开发者控制台</a>
             </span>
           </p>
-          <img src="/images/arrow-up.png" alt="" />
-          <ul class="jump_link">
-            <li onclick="javascript:location.href='https://team.easyapi.com/project/'">
-              <img class="inline" src="/images/info/down_icon1.png" alt="" />
-              API文档中心
-            </li>
-            <li></li>
-            <li onclick="javascript:location.href='https://team.easyapi.com/project/'">
-              <img class="inline" src="/images/info/down_icon5.png" alt="" />
-              API监控中心
-            </li>
-            <li onclick="javascript:location.href='https://team.easyapi.com/service/'">
-              <img class="inline" src="/images/info/header-icon1.png" alt="" />
-              API服务中心
-            </li>
-          </ul>
         </div>
       </div>
     </div>

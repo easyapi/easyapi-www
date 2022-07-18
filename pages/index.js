@@ -1,4 +1,6 @@
 ﻿import './index.scss'
+import Cookies from 'js-cookie'
+import { getUser } from '@/api/account'
 
 export default {
   name: 'Index',
@@ -21,9 +23,22 @@ export default {
       ]
     }
   },
+  mounted() {
+    if ($nuxt.$route.path === '/' && Cookies.get('authenticationToken')) {
+      getUser(this).then(res => {
+        if (res.data.code === 1) {
+          window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com'
+        }
+      })
+    }
+  },
   methods: {
-    jumpProject() {
-      window.location.href = 'https://team.easyapi.com/project/'
+    gotoTeam() {
+      getUser(this).then(res => {
+        if (res.data.code === 1) {
+          window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com'
+        }
+      })
     }
   }
 }

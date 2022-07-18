@@ -128,35 +128,7 @@
             </el-dropdown>
           </div>
           <span class="f-rel nav">
-            <el-popover placement="bottom-start" trigger="hover">
-              <ul class="console-ul">
-                <a href="https://team.easyapi.com/project/">
-                  <li>
-                    <img class="console_icon" src="/images/info/down_icon7.png" />
-                    <div class="popover-content">
-                      <p>API管理</p>
-                    </div>
-                  </li>
-                </a>
-                <a href="https://team.easyapi.com/project/">
-                  <li>
-                    <img class="console_icon" src="/images/info/down_icon8.png" />
-                    <div class="popover-content">
-                      <p>API监控</p>
-                    </div>
-                  </li>
-                </a>
-                <a href="https://team.easyapi.com/service/">
-                  <li>
-                    <img class="console_icon" src="/images/info/down_icon9.png" />
-                    <div class="popover-content">
-                      <p>API服务</p>
-                    </div>
-                  </li>
-                </a>
-              </ul>
-              <p slot="reference" class="f-rel console navs-item">控制台</p>
-            </el-popover>
+            <p class="f-rel console navs-item" @click="gotoTeam">控制台</p>
           </span>
         </div>
       </div>
