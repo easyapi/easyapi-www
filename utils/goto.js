@@ -5,11 +5,12 @@ import { getUser } from '@/api/account'
  */
 export const gotoTeam = (path, context) => {
   getUser(context).then(res => {
+    let href = 'https://team.easyapi.com' + path
     if (res.data.code === 1 && res.data.content.team) {
-      if (!res.data.content.team.url) {
-        window.location.href = 'https://team.easyapi.com' + path
+      if (res.data.content.team.url) {
+        href = 'https://' + res.data.content.team.url + '.easyapi.com' + path
       }
-      window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com' + path
     }
+    window.location.href = href
   })
 }
