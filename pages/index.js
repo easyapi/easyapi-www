@@ -1,6 +1,6 @@
 ﻿import './index.scss'
 import Cookies from 'js-cookie'
-import {getUser} from '@/api/account'
+import {gotoTeam} from '../utils/goto'
 
 export default {
   name: 'Index',
@@ -25,26 +25,12 @@ export default {
   },
   mounted() {
     if ($nuxt.$route.path === '/' && Cookies.get('authenticationToken')) {
-      getUser(this).then(res => {
-        if (res.data.code === 1 && res.data.content.team) {
-          if (!res.data.content.team.url) {
-            return
-          }
-          window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com'
-        }
-      })
+      gotoTeam(this)
     }
   },
   methods: {
     gotoTeam() {
-      getUser(this).then(res => {
-        if (res.data.code === 1 && res.data.content.team) {
-          if (!res.data.content.team.url) {
-            return
-          }
-          window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com'
-        }
-      })
+      gotoTeam('', this)
     }
   }
 }

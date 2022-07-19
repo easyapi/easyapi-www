@@ -2,7 +2,7 @@ import './index.scss'
 
 import Cookies from 'js-cookie'
 import { mapGetters } from 'vuex'
-import { getUser } from '@/api/account'
+import { gotoTeam } from '../../utils/goto'
 
 export default {
   name: 'Header',
@@ -67,14 +67,7 @@ export default {
       window.open('https://account.easyapi.com/login/')
     },
     gotoTeam() {
-      getUser(this).then(res => {
-        if (res.data.code === 1 && res.data.content.team) {
-          if (!res.data.content.team.url) {
-            return
-          }
-          window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com'
-        }
-      })
+      gotoTeam('', this)
     },
     showProduct() {
       this.ifShowProduct = false
@@ -90,9 +83,9 @@ export default {
     },
     handleCommand(command) {
       if (command === 'notice') {
-        window.open(`https://team.easyapi.com/notification`)
+        gotoTeam('/notification', this)
       } else if (command === 'edit') {
-        window.open(`https://team.easyapi.com/user/edit`)
+        gotoTeam('/user/edit', this)
       } else if (command === 'quitLogin') {
         this.quitLogin()
       }

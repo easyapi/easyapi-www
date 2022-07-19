@@ -10,9 +10,7 @@ export default function ({ $axios, redirect }) {
     const code = parseInt(error.response && error.response.status)
     if (code === 400) {
       if (error.response.data.code === -9) {
-        window.location.href = 'https://account.easyapi.com/login?from=https://wwww.easyapi.com'
-      } else if (error.response.data.code === -8) {
-        window.location.href = 'https://team.easyapi.com/new?from=https://www.easyapi.com'
+        window.location.href = 'https://account.easyapi.com/login?from=https://wwww.easyapi.com/home'
       } else {
         this.$message.warning(error.response.data.message)
       }

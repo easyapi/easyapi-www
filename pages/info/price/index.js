@@ -1,4 +1,5 @@
 import './index.scss'
+import { gotoTeam } from '../../../utils/goto'
 
 export default {
   name: 'InfoPrice',
@@ -12,8 +13,8 @@ export default {
     }
   },
   methods: {
-    jumpFree() {
-      window.location.href = 'https://team.easyapi.com/project/'
+    gotoTeam() {
+      gotoTeam('', this)
     }
   }
 }
