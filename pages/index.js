@@ -26,7 +26,7 @@ export default {
   mounted() {
     if ($nuxt.$route.path === '/' && Cookies.get('authenticationToken')) {
       getUser(this).then(res => {
-        if (res.data.code === 1) {
+        if (res.data.code === 1 && res.data.content.team) {
           window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com'
         }
       })
@@ -35,7 +35,7 @@ export default {
   methods: {
     gotoTeam() {
       getUser(this).then(res => {
-        if (res.data.code === 1) {
+        if (res.data.code === 1 && res.data.content.team) {
           window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com'
         }
       })

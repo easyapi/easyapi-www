@@ -68,7 +68,7 @@ export default {
     },
     gotoTeam() {
       getUser(this).then(res => {
-        if (res.data.code === 1) {
+        if (res.data.code === 1 && res.data.content.team) {
           window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com'
         }
       })
