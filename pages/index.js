@@ -1,6 +1,7 @@
 ﻿import './index.scss'
 import Cookies from 'js-cookie'
-import { gotoTeam } from '../api/account'
+import { getUser } from '../api/account'
+import { gotoTeam } from '../utils/goto'
 
 export default {
   name: 'Index',
