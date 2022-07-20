@@ -26,13 +26,19 @@ export default {
   },
   mounted() {
     if ($nuxt.$route.path === '/' && Cookies.get('authenticationToken')) {
-      getUser(this).then(res => {
-        if (res.data.code === 1 && res.data.content.team) {
-          if (res.data.content.team.url) {
-            window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com'
+      getUser(this)
+        .then(res => {
+          if (res.data.code === 1 && res.data.content.team) {
+            if (res.data.content.team.url) {
+              window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com'
+            }
           }
-        }
-      })
+        })
+        .catch(error => {
+          Cookies.remove('authenticationToken')
+          Cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
+          window.location.href = 'https://account.easyapi.com/login'
+        })
     }
   },
   methods: {
