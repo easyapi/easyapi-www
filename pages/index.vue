@@ -11,7 +11,7 @@
         <div class="bg_white" @click="gotoTeam">
           <p>
             <span>
-              <a>前往开发者控制台</a>
+              <a>前往API管理门户</a>
             </span>
           </p>
         </div>

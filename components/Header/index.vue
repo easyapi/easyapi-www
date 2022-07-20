@@ -128,7 +128,7 @@
             </el-dropdown>
           </div>
           <span class="f-rel nav">
-            <p class="f-rel console navs-item" @click="gotoTeam">控制台</p>
+            <p class="f-rel console navs-item" @click="gotoTeam">管理门户</p>
           </span>
         </div>
       </div>
