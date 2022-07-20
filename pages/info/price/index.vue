@@ -22,7 +22,7 @@
               <em class="f-fs1">/团队/月</em>
             </p>
             <p class="subtitle">使用上限20人，增员￥5/人/月</p>
-            <el-button class="w-full" type="primary" plain @click="gotoTeam">免费试用</el-button>
+            <el-button class="w-full" type="primary" plain @click="gotoTeam">免费试用 90天</el-button>
           </div>
           <div class="description">
             <div class="item">
@@ -96,7 +96,7 @@
               <em class="f-fs1">/团队/月</em>
             </p>
             <p class="subtitle">使用上限20人，增员￥5/人/月</p>
-            <el-button class="w-full" type="primary" plain @click="gotoTeam">免费试用</el-button>
+            <el-button class="w-full" type="primary" plain @click="gotoTeam">免费试用 90天</el-button>
           </div>
           <div class="description">
             <div class="item">
@@ -191,7 +191,7 @@
               <em class="f-fs1">/团队/月</em>
             </p>
             <p class="subtitle">使用上限20人，增员￥5/人/月</p>
-            <el-button class="w-full" type="primary" plain @click="gotoTeam">免费试用</el-button>
+            <el-button class="w-full" type="primary" plain @click="gotoTeam">免费试用 90天</el-button>
           </div>
           <div class="description">
             <div class="item">
