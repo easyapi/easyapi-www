@@ -26,6 +26,7 @@ export default {
     },
     screenWidth: {
       handler: function (val, oldVal) {
+        console.log(val)
         this.ifShow = val >= 800
       },
       immediate: true
