@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Header />
+    <Header :screenWidth="screenWidth" />
     <nuxt />
-    <Footer />
+    <Footer :screenWidth="screenWidth" />
   </div>
 </template>
 <script>
@@ -13,6 +13,20 @@ export default {
   components: {
     Header,
     Footer
+  },
+  data(){
+    return{
+      screenWidth: null,
+    }
+  },
+  mounted() {
+    this.screenWidth = document.body.clientWidth
+    window.onresize = () => {
+      //屏幕尺寸变化就重新赋值
+      return (() => {
+        this.screenWidth = document.body.clientWidth
+      })()
+    }
   }
 }
 </script>

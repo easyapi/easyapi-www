@@ -6,9 +6,9 @@ import { gotoTeam } from '../../utils/goto'
 
 export default {
   name: 'Header',
+  props: ['screenWidth'],
   data() {
     return {
-      screenWidth: null,
       authenticationToken: Cookies.get('authenticationToken'),
       ifShowProduct: true,
       ifShowPrivatization: true,
@@ -26,7 +26,6 @@ export default {
     },
     screenWidth: {
       handler: function (val, oldVal) {
-        console.log(val)
         this.ifShow = val >= 800
       },
       immediate: true
@@ -41,13 +40,6 @@ export default {
     }
     if (this.$route.name === 'post' || this.$route.name === 'post-id') {
       this.headerActive = 'background-color:#18c1d6'
-    }
-    this.screenWidth = document.body.clientWidth
-    window.onresize = () => {
-      //屏幕尺寸变化就重新赋值
-      return (() => {
-        this.screenWidth = document.body.clientWidth
-      })()
     }
   },
   methods: {

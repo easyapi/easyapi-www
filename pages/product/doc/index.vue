@@ -1,7 +1,7 @@
 ﻿<template>
   <div class="main">
     <div class="banner">
-      <div class="title">
+      <div class="title mx-auto">
         <h1>EasyAPI文档管理</h1>
         <p>
           EasyAPI文档管理致力于API文档从过去的Word服务提升到在线管理，一切只为提升开发效率，

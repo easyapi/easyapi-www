@@ -1,5 +1,5 @@
 <template>
-  <div v-if="ifShow" class="footer flex-c items-center">
+  <div v-if="ifShowFooter" class="footer flex-c items-center">
     <div class="content">
       <div class="footer-item flex justify-between mg-15-auto">
         <div class="w-3/12">
