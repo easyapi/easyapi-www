@@ -1,5 +1,5 @@
 .footer {
-  background: #27282C;
+  background: #27282c;
   color: gray;
   padding: 20px 0;
   font-size: 1.2rem;
@@ -7,7 +7,7 @@
   h2 {
     font-size: 14px;
     margin-bottom: 10px;
-    color: #FDFDFE;
+    color: #fdfdfe;
   }
 
   p {
@@ -25,12 +25,40 @@
   }
 }
 
+.mobile-footer {
+  background: #27282c;
+  color: gray;
+  padding: 20px 0;
+  font-size: 1.2rem;
+
+  .el-menu {
+    border-right: 1px solid #27282c;
+
+    a {
+      color: #ffffff;
+      margin-bottom: 10px;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .el-submenu__title {
+    padding: 0 !important;
+  }
+
+  .el-submenu .el-menu-item {
+    padding: 0 25px !important;
+  }
+}
+
 .mg-15-auto {
   margin: 15px auto;
 }
 
 .color-00AEC5 {
-  color: #00AEC5;
+  color: #00aec5;
 }
 
 .el-divider {
