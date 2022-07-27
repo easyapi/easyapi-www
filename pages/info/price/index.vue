@@ -26,7 +26,7 @@
           </div>
           <div class="description">
             <div class="item">
-              <span>服务</span>
+              <span>API协作</span>
               <p>
                 设计API
                 <i class="el-icon-check"></i>
@@ -69,7 +69,7 @@
               </p>
             </div>
             <div class="item mg-t-20">
-              <span>监控</span>
+              <span>API监控</span>
               <p>API自动监控</p>
               <p>监控概况</p>
               <p>自定义监控</p>
@@ -100,7 +100,7 @@
           </div>
           <div class="description">
             <div class="item">
-              <span>服务</span>
+              <span>API协作</span>
               <p>
                 设计API
                 <i class="el-icon-check"></i>
@@ -143,7 +143,7 @@
               </p>
             </div>
             <div class="item mg-t-20">
-              <span>监控</span>
+              <span>API监控</span>
               <p>
                 API自动监控
                 <i class="el-icon-check"></i>
@@ -195,7 +195,7 @@
           </div>
           <div class="description">
             <div class="item">
-              <span>服务</span>
+              <span>API协作</span>
               <p>
                 设计API
                 <i class="el-icon-check"></i>
@@ -238,7 +238,7 @@
               </p>
             </div>
             <div class="item mg-t-20">
-              <span>监控</span>
+              <span>API监控</span>
               <p>
                 API自动监控
                 <i class="el-icon-check"></i>
