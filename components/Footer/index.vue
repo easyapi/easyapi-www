@@ -47,7 +47,7 @@
             <a href="/info/about">关于我们</a>
             <a href="/info/together">合作伙伴</a>
             <a href="/info/contact">联系我们</a>
-            <a href="/info/support">支持我们</a>
+            <a href="/info/donate">支持我们</a>
             <a href="/post/">平台动态</a>
           </div>
         </div>
