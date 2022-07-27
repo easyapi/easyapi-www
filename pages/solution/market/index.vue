@@ -72,11 +72,11 @@
       <h3>想了解更多的内容</h3>
       <div class="codebox">
         <div class="code f-fl">
-          <img src="/images/info/code.png" />
+          <img src="https://qiniu.easyapi.com/contact/leida-weixin.png" />
           <p>微信联系</p>
         </div>
         <div class="code f-fr">
-          <img src="/images/info/code.png" />
+          <img src="https://qiniu.easyapi.com/contact/leida-qq.png" />
           <p>QQ联系</p>
         </div>
       </div>
