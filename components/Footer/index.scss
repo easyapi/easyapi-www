@@ -44,8 +44,14 @@
     }
   }
 
+  .el-submenu .el-menu-item {
+    font-size: 12px;
+  }
+
   .el-submenu__title {
     padding: 0 !important;
+    color: #C0C4CC !important;
+    background-color: #27282c!important;
   }
 
   .el-submenu .el-menu-item {

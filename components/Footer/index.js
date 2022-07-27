@@ -15,5 +15,19 @@ export default {
       },
       immediate: true
     }
+  },
+  methods: {
+    jump(val) {
+      if (val === '帮助中心') {
+        window.open('https://help.easyapi.com', '_blank')
+      } else {
+        window.open('https://support.qq.com/products/352231', '_blank')
+      }
+    },
+    handleOpen(key, keyPath) {
+      console.log(document.getElementsByClassName('el-submenu__title'))
+      console.log(key, keyPath)
+    },
+    handleClose() {}
   }
 }

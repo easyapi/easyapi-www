@@ -73,8 +73,8 @@
       <div>
         <img class="w-40" src="https://qiniu.easyapi.com/market/logo.svg" />
       </div>
-      <div class="mt-16">
-        <el-menu background-color="#27282C" text-color="#fff" class="el-menu-vertical-demo" router>
+      <div class="mt-12">
+        <el-menu background-color="#27282c" text-color="#fff" active-text-color="#fff"  class="el-menu-vertical-demo" router>
           <el-submenu index="1">
             <template slot="title">
               <span>产品介绍</span>
@@ -103,8 +103,8 @@
               <span>使用文档</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index=""><a href="https://help.easyapi.com" target="_blank">帮助中心</a></el-menu-item>
-              <el-menu-item index=""><a href="https://support.qq.com/products/352231" target="_blank">BUG反馈</a></el-menu-item>
+              <el-menu-item @click="jump('帮助中心')" index="/">帮助中心</el-menu-item>
+              <el-menu-item @click="jump('BUG反馈')" index="/">BUG反馈</el-menu-item>
               <el-menu-item index="/info/extension">浏览器插件</el-menu-item>
               <el-menu-item index="/post/">前端开源计划</el-menu-item>
             </el-menu-item-group>
