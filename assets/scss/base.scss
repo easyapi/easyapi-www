@@ -1043,44 +1043,6 @@ body, button, input, keygen, legend, select, textarea {
         }
       }
     }
-
-    .card-icon {
-      max-width: 1000px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 80px 0;
-
-      li {
-        width: 24%;
-        display: inline-block;
-        text-align: center;
-
-        img {
-          width: 120px;
-        }
-
-        span {
-          display: block;
-          padding: 10px 0 5px;
-          font-size: 1.6rem;
-        }
-
-        p {
-          color: gray;
-          font-size: 1.4rem;
-        }
-
-        a {
-          cursor: pointer;
-          display: inline-block;
-          color: #555;
-
-          &:hover {
-            color: #222;
-          }
-        }
-      }
-    }
   }
 
   .u-infofoot {
@@ -1263,44 +1225,6 @@ body, button, input, keygen, legend, select, textarea {
         }
       }
     }
-
-    .card-icon {
-      max-width: 500px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 40px 0;
-
-      li {
-        width: 24%;
-        display: inline-block;
-        text-align: center;
-
-        img {
-          width: 80px;
-        }
-
-        span {
-          display: block;
-          padding: 10px 0 5px;
-          font-size: 1.6rem;
-        }
-
-        p {
-          color: gray;
-          font-size: 1.4rem;
-        }
-
-        a {
-          cursor: pointer;
-          display: inline-block;
-          color: #555;
-
-          &:hover {
-            color: #222;
-          }
-        }
-      }
-    }
   }
 
   .u-infofoot {
@@ -1479,44 +1403,6 @@ body, button, input, keygen, legend, select, textarea {
             color: #888;
             line-height: 25px;
             padding: 8px 15px 20px;
-          }
-        }
-      }
-    }
-
-    .card-icon {
-      max-width: 500px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 40px 0;
-
-      li {
-        width: 24%;
-        display: inline-block;
-        text-align: center;
-
-        img {
-          width: 60px;
-        }
-
-        span {
-          display: block;
-          padding: 8px 0 5px;
-          font-size: 1.4rem;
-        }
-
-        p {
-          color: gray;
-          font-size: 1.2rem;
-        }
-
-        a {
-          cursor: pointer;
-          display: inline-block;
-          color: #555;
-
-          &:hover {
-            color: #222;
           }
         }
       }
