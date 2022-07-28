@@ -17,21 +17,21 @@
         </div>
       </div>
     </div>
-    <div class="">
-      <ul>
-        <li @click="gotoTeam">
-          <img src="https://static.easyapi.com/images/index/ic1.png"/>
-          <span class="">API文档</span>
+    <div class="sm:mx-auto max-width-1000 sm:py-16">
+      <ul class="flex justify-center">
+        <li @click="gotoTeam" class="flex flex-col cursor-pointer items-center sm:w-40 lg:w-80 text-center">
+          <img class="lg:w-7/12 md:w-32 sm:w-28" src="https://static.easyapi.com/images/index/ic1.png"/>
+          <span class="my-4 text-2xl font-black">API文档</span>
           <p>结构化文档操作，自动化测试</p>
         </li>
-        <li @click="gotoTeam">
-          <img src="https://static.easyapi.com/images/index/ic2.png"/>
-          <span class="">API监控</span>
+        <li @click="gotoTeam" class="flex flex-col cursor-pointer items-center sm:w-40 md:mx-4 lg:w-80 text-center">
+          <img class="lg:w-7/12 md:w-32 sm:w-28" src="https://static.easyapi.com/images/index/ic2.png"/>
+          <span class="my-4 text-2xl font-black">API监控</span>
           <p>提升接口运维响应效率</p>
         </li>
-        <li @click="gotoTeam">
-          <img src="https://static.easyapi.com/images/index/ic4.png"/>
-          <span class="">API服务</span>
+        <li @click="gotoTeam" class="flex flex-col cursor-pointer items-center sm:w-40 lg:w-80 text-center">
+          <img class="lg:w-7/12 md:w-32 sm:w-28" src="https://static.easyapi.com/images/index/ic4.png"/>
+          <span class="my-4 text-2xl font-black">API服务</span>
           <p>API接口服务领域的专业服务商</p>
         </li>
       </ul>
