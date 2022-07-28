@@ -5,7 +5,7 @@
         <h1>简单，好用的API服务平台</h1>
         <p>
           新一代API接口管理平台，EasyAPI是一个为您提供API管理、API测试、API监控、API文档、API低代码服务的综合性API服务平台。
-          <br/>
+          <br />
           还有丰富的API接口服务
         </p>
         <div class="bg_white" @click="gotoTeam">
@@ -19,20 +19,20 @@
     </div>
     <div class="sm:mx-auto max-width-1000 sm:py-16">
       <ul class="flex justify-center">
-        <li @click="gotoTeam" class="flex flex-col cursor-pointer items-center sm:w-40 lg:w-80 text-center">
-          <img class="lg:w-7/12 md:w-32 sm:w-28" src="https://static.easyapi.com/images/index/ic1.png"/>
-          <span class="my-4 text-2xl font-black">API文档</span>
-          <p>结构化文档操作，自动化测试</p>
+        <li @click="gotoTeam" class="flex flex-col cursor-pointer items-center sm:w-50 lg:w-1/3 text-center">
+          <img class="lg:w-5/12 md:w-36 sm:w-28" src="https://static.easyapi.com/images/index/ic1.png" />
+          <span class="my-6 text-2xl font-black text-gray-600">API文档</span>
+          <p class="text-xl text-gray-500">结构化文档操作，自动化测试</p>
         </li>
-        <li @click="gotoTeam" class="flex flex-col cursor-pointer items-center sm:w-40 md:mx-4 lg:w-80 text-center">
-          <img class="lg:w-7/12 md:w-32 sm:w-28" src="https://static.easyapi.com/images/index/ic2.png"/>
-          <span class="my-4 text-2xl font-black">API监控</span>
-          <p>提升接口运维响应效率</p>
+        <li @click="gotoTeam" class="flex flex-col cursor-pointer items-center sm:w-50 md:mx-4 lg:w-1/3 text-center">
+          <img class="lg:w-5/12 md:w-36 sm:w-28" src="https://static.easyapi.com/images/index/ic2.png" />
+          <span class="my-6 text-2xl font-black text-gray-600">API监控</span>
+          <p class="text-xl text-gray-500">提升接口运维响应效率</p>
         </li>
-        <li @click="gotoTeam" class="flex flex-col cursor-pointer items-center sm:w-40 lg:w-80 text-center">
-          <img class="lg:w-7/12 md:w-32 sm:w-28" src="https://static.easyapi.com/images/index/ic4.png"/>
-          <span class="my-4 text-2xl font-black">API服务</span>
-          <p>API接口服务领域的专业服务商</p>
+        <li @click="gotoTeam" class="flex flex-col cursor-pointer items-center sm:w-50 lg:w-1/3 text-center">
+          <img class="lg:w-5/12 md:w-36 sm:w-28" src="https://static.easyapi.com/images/index/ic4.png" />
+          <span class="my-6 text-2xl font-black text-gray-600">API服务</span>
+          <p class="text-xl text-gray-500">API接口服务领域的专业服务商</p>
         </li>
       </ul>
     </div>
@@ -41,26 +41,26 @@
         <h1>在线管理，API文档实时更新</h1>
         <p>
           在线添加，编辑接口，API系统实时更新，保证团队成员始终浏览到文档的最新状态告
-          <br/>
+          <br />
           别 World 文档传阅版本混乱
         </p>
         <div class="pd-b-50 f-cb">
           <div class="inner-item f-fl">
-            <img class="mx-auto" src="https://static.easyapi.com/images/w1.png"/>
+            <img class="mx-auto" src="https://static.easyapi.com/images/w1.png" />
             <span>Word</span>
             <p class="text_c">
               World软件打开延迟，卡顿，内容丢失？ 一次
-              <br/>
+              <br />
               文档编辑，需要多人互传，版本更新混乱？
-              <br/>
+              <br />
               是时候和Word说再见了！
             </p>
           </div>
           <div style="display: inline-block; margin-top: 60px">
-            <img class="arrow" src="/images/info/ic_home_arrow.png"/>
+            <img class="arrow" src="/images/info/ic_home_arrow.png" />
           </div>
           <div class="inner-item f-fr">
-            <img class="mx-auto" src="https://static.easyapi.com/images/w2.png"/>
+            <img class="mx-auto" src="https://static.easyapi.com/images/w2.png" />
             <span>EasyAPI</span>
             <p class="text_c">简单易用，接口变更动态一目了然。不限制使用人数，不限制项目数量，基于阿里云安全稳定高速。</p>
           </div>
@@ -72,34 +72,34 @@
         <h1>监控系统，提升接口性能</h1>
         <p>
           除了崩溃监控，其实我们还要对API进行详细监控，实时反馈接口相应数据，
-          <br/>
+          <br />
           为您准确分析性能数据。
         </p>
         <div class="inner pd-b-50 f-cb">
           <div class="inner-item">
-            <img class="mx-auto" src="https://static.easyapi.com/images/index-i-3.png"/>
+            <img class="mx-auto" src="https://static.easyapi.com/images/index-i-3.png" />
             <span>开发效率提升</span>
             <p>
               再也不用来回调试接口
-              <br/>
+              <br />
               更快速开发
             </p>
           </div>
           <div class="inner-item">
-            <img class="mx-auto" src="https://static.easyapi.com/images/index-i-2.png"/>
+            <img class="mx-auto" src="https://static.easyapi.com/images/index-i-2.png" />
             <span>运维响应提升</span>
             <p>
               还原用户场景
-              <br/>
+              <br />
               快速解决问题
             </p>
           </div>
           <div class="inner-item">
-            <img class="mx-auto" src="https://static.easyapi.com/images/index-i-1.png"/>
+            <img class="mx-auto" src="https://static.easyapi.com/images/index-i-1.png" />
             <span>业务风险降低</span>
             <p>
               实时反馈APP与API的交互情况
-              <br/>
+              <br />
               及早发现及早解决
             </p>
           </div>
@@ -111,7 +111,7 @@
         <h1>API低代码，助力企业数字化转型、业务快速迭代</h1>
         <p>可以帮助开发者轻松开发、发布、维护、监控用低代码构建的API服务。</p>
         <div class="img">
-          <img src="https://static.easyapi.com/images/index/img1.png"/>
+          <img src="https://static.easyapi.com/images/index/img1.png" />
         </div>
       </div>
     </div>
@@ -120,7 +120,7 @@
         <h1>API接口服务，选择优质的接口</h1>
         <p>致力于成为最专业稳定的接口服务商</p>
         <div class="img">
-          <img src="https://static.easyapi.com/images/index/img2.png"/>
+          <img src="https://static.easyapi.com/images/index/img2.png" />
         </div>
       </div>
     </div>
@@ -129,11 +129,11 @@
         <h1>更多API解决方案，欢迎联系</h1>
         <p>
           我们是国内专注API领域的专业开发团队
-          <br/>
+          <br />
           期待你的咨询合作
         </p>
         <div class="img">
-          <img src="/images/info/pic_homg_more.png"/>
+          <img src="/images/info/pic_homg_more.png" />
         </div>
       </div>
     </div>
