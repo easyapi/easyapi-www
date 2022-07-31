@@ -1,6 +1,6 @@
 import './index.scss'
 import 'assets/scss/donate.scss'
-import Pay from './components/pay/index.vue'
+import Pay from './components/pay/index'
 
 export default {
   components: { Pay },

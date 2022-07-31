@@ -154,7 +154,7 @@
             <div class="clear-both"></div>
             <el-submenu index="1">
               <template slot="title">
-                <span>产品</span>
+                <a>产品</a>
               </template>
               <el-menu-item-group>
                 <el-menu-item index="/product/doc">文档管理</el-menu-item>
@@ -166,11 +166,11 @@
               </el-menu-item-group>
             </el-submenu>
             <el-menu-item index="/info/price">
-              <span slot="title">价格</span>
+              <a slot="title">价格</a>
             </el-menu-item>
             <el-submenu index="3">
               <template slot="title">
-                <span>私有化</span>
+                <a>私有化</a>
               </template>
               <el-menu-item-group>
                 <el-menu-item index="/solution/portal">API管理门户</el-menu-item>
@@ -179,7 +179,7 @@
               </el-menu-item-group>
             </el-submenu>
             <el-menu-item @click="jump">
-              <span slot="title">API市场</span>
+              <a slot="title">API市场</a>
             </el-menu-item>
           </el-menu>
         </el-col>

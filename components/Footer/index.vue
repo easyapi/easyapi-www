@@ -62,7 +62,7 @@
           </div>
         </div>
       </div>
-      <el-divider class="mg-15-auto"></el-divider>
+      <el-divider></el-divider>
       <div class="mg-15-auto text-center">
         <a href="https://beian.miit.gov.cn/" target="_blank">Copyright © 2015～2022 无锡帮趣数据服务有限公司</a>
       </div>
