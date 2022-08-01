@@ -65,7 +65,7 @@
         </div>
       </div>
     </div>
-    <Pay ref="child"></Pay>
+    <!--<Pay ref="child"></Pay>-->
   </div>
 </template>
 
