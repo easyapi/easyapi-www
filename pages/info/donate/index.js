@@ -1,6 +1,6 @@
 import './index.scss'
 import 'assets/scss/donate.scss'
-import Pay from '../support/components/pay'
+import Pay from '../support/components/pay/index.vue'
 
 export default {
   name: 'InfoDonate',

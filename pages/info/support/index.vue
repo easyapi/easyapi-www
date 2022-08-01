@@ -40,11 +40,6 @@
               <strong>季乙心</strong>
               <span>产品经理</span>
             </li>
-            <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/jiyixin.jpg" /></p>
-              <strong>季乙心</strong>
-              <span>产品经理</span>
-            </li>
           </ul>
 
           <div class="utex f-cb">
@@ -70,7 +65,7 @@
         </div>
       </div>
     </div>
-    <!--<Pay ref="child"></Pay>-->
+    <Pay ref="child"></Pay>
   </div>
 </template>
 
