@@ -67,6 +67,7 @@
         <a href="https://beian.miit.gov.cn/" target="_blank">Copyright © 2015～2022 无锡帮趣数据服务有限公司</a>
       </div>
     </div>
+    <div class="text-center"><a href="https://beian.miit.gov.cn" target="_blank">沪ICP备19007521号</a></div>
   </div>
   <div v-else class="mobile-footer">
     <div class="w-4/5 mx-auto">
@@ -74,7 +75,7 @@
         <img class="w-40" src="https://qiniu.easyapi.com/market/logo.svg" />
       </div>
       <div class="mt-12">
-        <el-menu background-color="#27282c" text-color="#fff" active-text-color="#fff"  class="el-menu-vertical-demo" router>
+        <el-menu background-color="#27282c" text-color="#fff" active-text-color="#fff" class="el-menu-vertical-demo" router>
           <el-submenu index="1">
             <template slot="title">
               <span>产品介绍</span>
@@ -139,6 +140,7 @@
         </div>
       </div>
     </div>
+    <div class="text-center"><a href="https://beian.miit.gov.cn" target="_blank">沪ICP备19007521号</a></div>
   </div>
 </template>
 
