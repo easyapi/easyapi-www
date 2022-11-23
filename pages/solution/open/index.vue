@@ -16,7 +16,7 @@
       <div class="description">
         基于EasyAPI成熟的API文档、API监控、API网关系统
         <br />
-        为您通过国内最重要的API开发平台解决方案，30天建立属于自己的开放平台
+        为您提供国内最专业的API开发平台解决方案，30天建立属于自己的开放平台
       </div>
       <ul class="u-iconui one content">
         <li>

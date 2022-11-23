@@ -20,7 +20,7 @@
       </div>
       <div class="u-igateway f-cb">
         <img class="f-fr market-img" src="/images/info/market_img1.png" />
-        <div class="text f-fl" style="margin-top: 0px">
+        <div class="text f-fl" style="margin-top: 0">
           <p class="title">服务市场门户</p>
           <div class="flex relative">
             <img class="absolute market-img-top" style="width: 6px; height: 6px" src="/images/info/market_tag.png" />
@@ -37,7 +37,7 @@
     <div class="pd-100" style="background-color: #eee; padding-bottom: 0">
       <div class="u-igateway f-cb">
         <img class="f-fl market-img" src="/images/info/market_img2.png" />
-        <div class="text f-fr" style="margin-top: 0px">
+        <div class="text f-fr" style="margin-top: 0">
           <p class="title">开发者中心</p>
           <div class="flex relative">
             <img class="absolute market-img-top" style="width: 6px; height: 6px" src="/images/info/market_tag.png" />
@@ -54,7 +54,7 @@
     <div class="pd-100" style="padding-bottom: 0">
       <div class="u-igateway f-cb">
         <img class="f-fr market-img" src="/images/info/market_img3.png" />
-        <div class="text f-fl" style="margin-top: 0px">
+        <div class="text f-fl" style="margin-top: 0">
           <p class="title">服务商管理中心</p>
           <div class="flex relative">
             <img class="absolute market-img-top" style="width: 6px; height: 6px" src="/images/info/market_tag.png" />
