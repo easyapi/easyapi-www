@@ -1,6 +1,6 @@
 import './_id.scss'
 
-import { getArticle } from '../../api/article'
+import { getArticle } from '~/api/article'
 
 export default {
   name: 'PostDetail',

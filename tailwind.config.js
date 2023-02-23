@@ -1,22 +1,26 @@
 module.exports = {
-  content: [],
+  mode: 'jit',
+  content: ['./components/**/*.{vue,js}', './layouts/**/*.vue', './pages/**/*.vue', './plugins/**/*.{js,ts}'],
   theme: {
-    screens: {
-      'sm': '300px',
-      // => @media (min-width: 300px) { ... }
-
-      'md': '500px',
-      // => @media (min-width: 500px) { ... }
-
-      'lg': '800px',
-      // => @media (min-width: 800px) { ... }
-
-      'xl': '1000px',
-      // => @media (min-width: 1000px) { ... }
-
-      '2xl': '1200px',
-      // => @media (min-width: 1200px) { ... }
-    }
+    container: {
+      padding: {
+        'DEFAULT': '1rem',
+        'sm': '2rem',
+        'lg': '4rem',
+        'xl': '5rem',
+        '2xl': '6rem',
+      },
+    },
+    extend: {},
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography'),
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          maxWidth: '100%',
+        },
+      })
+    },
+  ],
 }

@@ -1,27 +1,16 @@
-# dependencies
 node_modules
-
-# Nuxt build
+*.log*
 .nuxt
-
-# Nuxt generate
+.nitro
+.cache
+.output
+.env
+.idea
 dist
 
-# Lock files
-yarn.lock
-package-lock.json
-
-# local env files
-.env.local
-.env.*.local
-
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Editor directories and files
-.idea
-
-# Mac OSX
+# Misc
 .DS_Store
+
+#Auto files
+components.d.ts
+auto-imports.d.ts

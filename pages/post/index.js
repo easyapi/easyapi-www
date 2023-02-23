@@ -1,6 +1,6 @@
 import './index.scss'
 
-import { getArticleList } from '../../api/article'
+import { getArticleList } from '~/api/article'
 import Item from './components/item'
 
 export default {

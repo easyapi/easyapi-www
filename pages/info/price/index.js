@@ -1,5 +1,5 @@
 import './index.scss'
-import { gotoTeam } from '../../../utils/goto'
+import { gotoTeam } from '~/utils/goto'
 
 export default {
   name: 'InfoPrice',

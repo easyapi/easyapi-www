@@ -1,7 +1,9 @@
 ﻿import './index.scss'
-import Cookies from 'js-cookie'
-import { getUser } from '../api/account'
-import { gotoTeam } from '../utils/goto'
+import { getUser } from '~/api/account'
+import { gotoTeam } from '~/utils/goto'
+import { useCookies } from '@vueuse/integrations/useCookies'
+
+const cookies = useCookies()
 
 export default {
   name: 'Index',
@@ -35,8 +37,8 @@ export default {
           }
         })
         .catch(error => {
-          Cookies.remove('authenticationToken')
-          Cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
+          cookies.remove('authenticationToken')
+          cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
           window.location.href = 'https://account.easyapi.com/login'
         })
     }

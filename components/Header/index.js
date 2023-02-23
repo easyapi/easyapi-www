@@ -1,15 +1,17 @@
 import './index.scss'
 
-import Cookies from 'js-cookie'
 import { mapGetters } from 'vuex'
-import { gotoTeam } from '../../utils/goto'
+import { gotoTeam } from '~/utils/goto'
+import { useCookies } from '@vueuse/integrations/useCookies'
+
+const cookies = useCookies()
 
 export default {
   name: 'Header',
   props: ['screenWidth'],
   data() {
     return {
-      authenticationToken: Cookies.get('authenticationToken'),
+      authenticationToken: cookies.get('authenticationToken'),
       ifShowProduct: true,
       ifShowPrivatization: true,
       ifShow: true,

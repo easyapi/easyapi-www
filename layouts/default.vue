@@ -1,19 +1,13 @@
 <template>
   <div>
     <Header :screenWidth="screenWidth" />
-    <nuxt />
+    <slot />
     <Footer :screenWidth="screenWidth" />
   </div>
 </template>
 <script>
-import Header from '../components/Header/index.vue'
-import Footer from '../components/Footer/index.vue'
 
 export default {
-  components: {
-    Header,
-    Footer
-  },
   data(){
     return{
       screenWidth: null,
@@ -30,4 +24,3 @@ export default {
   }
 }
 </script>
-<style></style>
