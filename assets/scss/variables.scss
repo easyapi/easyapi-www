@@ -1,3 +1,4 @@
+
 $gray-base: #000;
 $gray-darker: lighten($gray-base, 13.5%); // #222
 $gray-dark: lighten($gray-base, 20%); // #333
@@ -21,3 +22,9 @@ $body-bg: #fff;
 $body-gray: lighten($gray-base, 99.5%);
 //** Global text color on `<body>`.
 $text-color: $gray-dark;
+
+$brand-danger:red;
+$gray-light: gray;
+$brand-success: #87bf54;
+$brand-warning: orange;
+$gray-lighter: #ddd;

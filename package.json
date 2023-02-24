@@ -25,7 +25,8 @@
     "stompjs": "2.3.3",
     "unplugin-auto-import": "^0.14.4",
     "unplugin-vue-components": "^0.24.0",
-    "vue-baidu-map": "^0.21.22"
+    "vue-baidu-map": "^0.21.22",
+    "vuex": "4.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.2",
@@ -41,6 +42,8 @@
     "element-plus": "^2.2.32",
     "eslint": "^8.34.0",
     "typescript": "^4.9.5",
-    "sass": "^1.58.3"
+    "sass": "^1.58.3",
+    "sass-loader": "^13.2.0",
+    "vite-plugin-svg-icons": "^2.0.1"
   }
 }

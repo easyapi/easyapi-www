@@ -1,8 +1,8 @@
 import './index.scss'
 
 import { mapGetters } from 'vuex'
-import { gotoTeam } from '~/utils/goto'
 import { useCookies } from '@vueuse/integrations/useCookies'
+import { gotoTeam } from '~/utils/goto'
 
 const cookies = useCookies()
 
@@ -19,7 +19,7 @@ export default {
       type: '',
       headerActive: '',
       activeIndex: '1',
-      activeIndex2: '1'
+      activeIndex2: '1',
     }
   },
   watch: {
@@ -27,22 +27,21 @@ export default {
       this.ifNavShow = false
     },
     screenWidth: {
-      handler: function (val, oldVal) {
+      handler(val, oldVal) {
         this.ifShow = val >= 800
       },
-      immediate: true
-    }
+      immediate: true,
+    },
   },
   computed: {
-    ...mapGetters(['photo', 'team'])
+    ...mapGetters(['photo', 'team']),
   },
   mounted() {
-    if (this.authenticationToken) {
+    if (this.authenticationToken)
       this.$store.dispatch('getUser')
-    }
-    if (this.$route.name === 'post' || this.$route.name === 'post-id') {
+
+    if (this.$route.name === 'post' || this.$route.name === 'post-id')
       this.headerActive = 'background-color:#18c1d6'
-    }
   },
   methods: {
     showNav(val) {
@@ -77,17 +76,16 @@ export default {
       this.ifShowPrivatization = true
     },
     handleCommand(command) {
-      if (command === 'notice') {
+      if (command === 'notice')
         gotoTeam('/notification', this)
-      } else if (command === 'edit') {
+      else if (command === 'edit')
         gotoTeam('/user/edit', this)
-      } else if (command === 'quitLogin') {
+      else if (command === 'quitLogin')
         this.quitLogin()
-      }
     },
     quitLogin() {
       this.$store.dispatch('logout')
       window.location.href = 'https://account.easyapi.com/login'
-    }
-  }
+    },
+  },
 }

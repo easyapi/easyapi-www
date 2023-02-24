@@ -18,6 +18,13 @@ export default defineNuxtConfig({
   build: {
     transpile: lifecycle === 'build' ? ['element-plus'] : [],
   },
+  css: [
+    '~/assets/scss/banner.scss',
+    '~/assets/scss/base.scss',
+    '~/assets/scss/case.scss',
+    '~/assets/scss/donate.scss',
+    '~/assets/scss/function.scss',
+  ],
   components: true,
   vite: {
     plugins: [
@@ -37,6 +44,13 @@ export default defineNuxtConfig({
       chunkSizeWarningLimit: 4096,
       rollupOptions: {
         output: {},
+      },
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "~/assets/scss/variables.scss";',
+        },
       },
     },
   },

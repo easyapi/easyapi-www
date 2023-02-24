@@ -1,8 +1,5 @@
-$brand-danger:red;
-$gray-light: gray;
-$brand-success: #87bf54;
-$brand-warning: orange;
-$gray-lighter: #ddd;
+@import './variables.scss';
+
 /* function */
 .f-cb:after,.f-cbli li:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
 .f-cb,.f-cbli li{zoom:1;}
