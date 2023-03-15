@@ -22,7 +22,7 @@
                   <img class="icon_img" src="/images/info/icon_lowcode.png" />
                   <div class="popover-content">
                     <p>低代码</p>
-                    <span>轻松构建API接口服务，阻力企业数字化服务，支持多种开发语言</span>
+                    <span>轻松构建API接口服务，助力企业数字化服务，支持多种开发语言</span>
                   </div>
                 </li>
               </a>
