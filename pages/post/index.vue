@@ -1,25 +1,108 @@
+<script setup lang="ts">
+import Item from './components/item.vue'
+import { getArticleList } from '~/api/article'
+import {onMounted, reactive} from "vue";
+
+useHead({
+  title: '市场动态 - EasyAPI服务平台',
+  meta: [{ name: 'description', content: '市场动态' },
+    { name: 'keyword', content: '市场动态' }],
+})
+
+const state = reactive({
+  list: [],
+  loading: false,
+  noData: false,
+  noMoreData: false
+})
+
+const pagination = reactive({
+  size: 15,
+  page: 0,
+  totalPages: 0
+})
+
+function getPageList() {
+  this.pagination.page = this.pagination.page + 1
+  if (this.pagination.page === this.pagination.totalPages) {
+    this.noMoreData = true
+  }
+  if (this.pagination.page < this.pagination.totalPages) {
+    this.getArticleList()
+  }
+}
+function getArticleList() {
+  this.loading = true
+  let params = {
+    size: this.pagination.size,
+    page: this.pagination.page
+  }
+  getArticleList(params, this).then(res => {
+    this.loading = false
+    if (res.data.code === 1) {
+      this.list = this.list.concat(res.data.content)
+      this.pagination.totalPages = res.data.totalPages
+    } else {
+      this.noData = true
+    }
+  })
+}
+function lazyLoading() {
+  // 滚动到底部，再加载的处理事件
+  let scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+  let clientHeight = document.documentElement.clientHeight
+  let scrollHeight = document.documentElement.scrollHeight
+  if (scrollHeight - clientHeight - scrollTop <= 150) {
+    // 滚动到底部，逻辑代码
+    //事件处理
+    if (!this.loading) {
+      this.getPageList()
+    }
+  }
+}
+onMounted(()=>{
+  window.addEventListener('scroll', this.lazyLoading)
+  this.getArticleList()
+})
+</script>
 <template>
   <div class="main mg-t-94">
-    <div v-if="!noData" class="content pd-t-20">
-      <div v-for="item of list" :key="item.articleId">
+    <div v-if="!state.noData" class="content pd-t-20">
+      <div v-for="item of state.list" :key="item.articleId">
         <Item v-bind:list="item"></Item>
       </div>
     </div>
     <div v-else class="no-data">
       <el-empty description="暂无数据"></el-empty>
     </div>
-    <div class="loading" v-if="loading">
+    <div class="loading" v-if="state.loading">
       <Icon type="ios-loading" size="18" class="demo-spin-icon-load"></Icon>
       <div>加载中......</div>
     </div>
-    <div class="noMoreData" v-if="noMoreData">
+    <div class="noMoreData" v-if="state.noMoreData">
       <div>没有更多数据了...</div>
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.loading {
+  text-align: center;
+  color: #2d8cf0;
+}
 
-<script>
-import Index from './index'
+.noMoreData {
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: #666;
+}
 
-export default Index
-</script>
+.no-data {
+  margin: 400px auto;
+  text-align: center;
+}
+
+.mg-t-94 {
+  margin-top: 94px;
+}
+
+</style>

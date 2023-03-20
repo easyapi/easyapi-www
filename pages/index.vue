@@ -1,4 +1,37 @@
-﻿<template>
+﻿<script setup lang="ts">
+import { onMounted, reactive, ref } from 'vue'
+const cookies = useCookies()
+import {getUser} from "~/api/account";
+import {gotoTeam} from "~/utils/goto";
+import {useCookies} from "@vueuse/integrations/useCookies";
+
+useHead({
+  title: 'EasyAPI - API文档管理、API测试、API监控、API低代码、API接口服务新一代工具',
+  meta: [{ name: 'description', content: 'EasyAPI 简单，好用的API管理系统，为您提供API文档管理、API测试、API监控、API低代码、API接口服务，新一代API管理工具。EasyAPI是国内第一家做API文档管理的产品。' },
+    { name: 'keyword', content: 'API文档管理,API管理系统,API接口管理系统,API管理平台,API管理,API,API工具,API Mock,Mock API,API接口,接口管理,API接口管理,API监控,API测试,API服务,API低代码,API门户,API脚本,API服务市场' }],
+})
+function gotoTeam() {
+  gotoTeam('', this)
+}
+onMounted(() => {
+  // if ($nuxt.$route.path === '/' && cookies.get('authenticationToken')) {
+  //   getUser(this)
+  //     .then(res => {
+  //       if (res.data.code === 1 && res.data.content.team) {
+  //         if (res.data.content.team.url) {
+  //           window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com'
+  //         }
+  //       }
+  //     })
+  //     .catch(error => {
+  //       cookies.remove('authenticationToken')
+  //       cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
+  //       window.location.href = 'https://account.easyapi.com/login'
+  //     })
+  // }
+})
+</script>
+<template>
   <div class="main">
     <div class="card card-bg f-cb">
       <div class="card-info">
@@ -140,8 +173,3 @@
   </div>
 </template>
 
-<script>
-import Index from './index'
-
-export default Index
-</script>

@@ -1,3 +1,23 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+const route = process.client ? useRoute() : {}
+
+import {getArticle} from "~/api/article";
+useHead({
+  title: this.article.title + ' - EasyAPI服务市场',
+  meta: [{ name: 'description', content: this.article.title },
+    { name: 'keyword', content: '文章详情' }],
+})
+
+const article = ref({})
+
+async function asyncData(context) {
+  let [res] = await Promise.all([getArticle(route.params.id, context)])
+  return {
+    article: res.data.content
+  }
+}
+</script>
 <template>
   <div class="mg-t-72">
     <div class="content py-8">
@@ -11,9 +31,67 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.container {
+  padding: 20px 0 20px 0;
+}
 
-<script>
-import Id from './_id'
+@media screen and (min-width: 500px) {
+  .post-detail {
+    padding: 0 58px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+  }
+}
 
-export default Id
-</script>
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .post-detail {
+    padding: 0 28px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+  }
+}
+
+.post-title {
+  padding-bottom: 30px;
+  font-size: 14px;
+  color: #a9a9a9;
+  text-align: center;
+  padding-top: 32px;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-title span {
+  display: block;
+  color: #333;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.post-title_time {
+  margin-top: 5px;
+  display: block;
+}
+
+.post-content {
+  padding: 30px 0 20px 0;
+}
+
+.post-detail p {
+  margin-bottom: 10px;
+}
+
+.post-detail img {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+</style>

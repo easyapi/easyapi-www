@@ -6,5 +6,5 @@ import http from '~/api/request'
  * @see https://www.easyapi.com
  */
 export const getUser = () => {
-  return http.get(`${http.accountUrl}/account`)
+  return http.get(`${useRuntimeConfig().public.baseUrl}/account`)
 }

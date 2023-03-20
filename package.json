@@ -10,10 +10,10 @@
     "url": "git+https://github.com/easyapi/easyapi-www.git"
   },
   "scripts": {
-    "dev": "nuxt dev",
-    "build": "nuxt build",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "dev": "nuxi dev --dotenv .env.development",
+    "build": "nuxi build --dotenv .env.production",
+    "generate": "nuxi generate --dotenv .env.production",
+    "preview": "nuxi preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
