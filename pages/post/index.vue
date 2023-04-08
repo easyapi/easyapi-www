@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { onMounted, reactive } from 'vue'
 import Item from './components/item.vue'
-import { getArticleList } from '~/api/article'
-import {onMounted, reactive} from "vue";
+import { article } from '~/api/article'
 
 useHead({
   title: '市场动态 - EasyAPI服务平台',
@@ -13,31 +13,30 @@ const state = reactive({
   list: [],
   loading: false,
   noData: false,
-  noMoreData: false
+  noMoreData: false,
 })
 
 const pagination = reactive({
   size: 15,
   page: 0,
-  totalPages: 0
+  totalPages: 0,
 })
 
 function getPageList() {
   this.pagination.page = this.pagination.page + 1
-  if (this.pagination.page === this.pagination.totalPages) {
+  if (this.pagination.page === this.pagination.totalPages)
     this.noMoreData = true
-  }
-  if (this.pagination.page < this.pagination.totalPages) {
+
+  if (this.pagination.page < this.pagination.totalPages)
     this.getArticleList()
-  }
 }
 function getArticleList() {
   this.loading = true
-  let params = {
+  const params = {
     size: this.pagination.size,
-    page: this.pagination.page
+    page: this.pagination.page,
   }
-  getArticleList(params, this).then(res => {
+  article.getArticleList(params).then((res) => {
     this.loading = false
     if (res.data.code === 1) {
       this.list = this.list.concat(res.data.content)
@@ -49,41 +48,42 @@ function getArticleList() {
 }
 function lazyLoading() {
   // 滚动到底部，再加载的处理事件
-  let scrollTop = document.documentElement.scrollTop || document.body.scrollTop
-  let clientHeight = document.documentElement.clientHeight
-  let scrollHeight = document.documentElement.scrollHeight
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+  const clientHeight = document.documentElement.clientHeight
+  const scrollHeight = document.documentElement.scrollHeight
   if (scrollHeight - clientHeight - scrollTop <= 150) {
     // 滚动到底部，逻辑代码
-    //事件处理
-    if (!this.loading) {
+    // 事件处理
+    if (!this.loading)
       this.getPageList()
-    }
   }
 }
-onMounted(()=>{
+onMounted(() => {
   window.addEventListener('scroll', this.lazyLoading)
   this.getArticleList()
 })
 </script>
+
 <template>
   <div class="main mg-t-94">
     <div v-if="!state.noData" class="content pd-t-20">
       <div v-for="item of state.list" :key="item.articleId">
-        <Item v-bind:list="item"></Item>
+        <Item :list="item" />
       </div>
     </div>
     <div v-else class="no-data">
-      <el-empty description="暂无数据"></el-empty>
+      <el-empty description="暂无数据" />
     </div>
-    <div class="loading" v-if="state.loading">
-      <Icon type="ios-loading" size="18" class="demo-spin-icon-load"></Icon>
+    <div v-if="state.loading" class="loading">
+      <Icon type="ios-loading" size="18" class="demo-spin-icon-load" />
       <div>加载中......</div>
     </div>
-    <div class="noMoreData" v-if="state.noMoreData">
+    <div v-if="state.noMoreData" class="noMoreData">
       <div>没有更多数据了...</div>
     </div>
   </div>
 </template>
+
 <style lang="scss" scoped>
 .loading {
   text-align: center;
@@ -104,5 +104,4 @@ onMounted(()=>{
 .mg-t-94 {
   margin-top: 94px;
 }
-
 </style>

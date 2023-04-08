@@ -1,4 +1,6 @@
 ﻿<script setup lang="ts">
+import { useHead } from '@vueuse/head'
+
 useHead({
   title: '浏览器插件 - EasyAPI服务平台',
   meta: [{ name: 'description', content: 'EasyAPI浏览器插件' },

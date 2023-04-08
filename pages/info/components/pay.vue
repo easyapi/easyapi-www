@@ -1,13 +1,21 @@
+<script setup lang="ts">
+import { reactive } from 'vue'
+
+const data = reactive({
+  dialogVisible: false,
+})
+</script>
+
 <template>
-  <el-dialog :visible.sync="dialogVisible" width="50%">
+  <el-dialog v-model:visible="dialogVisible" width="50%">
     <div class="pay-dialog">
       <dl class="clearfix">
         <dd>
-          <p><img class="mx-auto" src="https://static.easyapi.com/images/info/fanfanle.png" alt="微信扫一扫" /></p>
+          <p><img class="mx-auto" src="https://static.easyapi.com/images/info/fanfanle.png" alt="微信扫一扫"></p>
           <span>微信扫一扫</span>
         </dd>
         <dd>
-          <p><img class="mx-auto" src="https://static.easyapi.com/images/info/leida.png" alt="支付宝扫一扫" /></p>
+          <p><img class="mx-auto" src="https://static.easyapi.com/images/info/leida.png" alt="支付宝扫一扫"></p>
           <span>支付宝扫一扫</span>
         </dd>
       </dl>
@@ -19,16 +27,6 @@
   </el-dialog>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      dialogVisible: false
-    }
-  }
-}
-
-</script>
 <style lang="scss" scoped>
 .pay-dialog {
   padding: 30px;
@@ -58,5 +56,4 @@ export default {
     color: gray;
   }
 }
-
 </style>

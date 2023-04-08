@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-const route = process.client ? useRoute() : {}
 
-import {getArticle} from "~/api/article";
+import { article } from '~/api/article'
+
+const route = process.client ? useRoute() : {}
 useHead({
-  title: this.article.title + ' - EasyAPI服务市场',
+  title: `${this.article.title} - EasyAPI服务市场`,
   meta: [{ name: 'description', content: this.article.title },
     { name: 'keyword', content: '文章详情' }],
 })
@@ -12,12 +13,13 @@ useHead({
 const article = ref({})
 
 async function asyncData(context) {
-  let [res] = await Promise.all([getArticle(route.params.id, context)])
+  const [res] = await Promise.all([article.getArticle(route.params.id, context)])
   return {
-    article: res.data.content
+    article: res.data.content,
   }
 }
 </script>
+
 <template>
   <div class="mg-t-72">
     <div class="content py-8">
@@ -26,11 +28,12 @@ async function asyncData(context) {
           <span>{{ article.title }}</span>
           <label class="post-title_time">{{ article.updateTime.split(' ')[0] }}</label>
         </div>
-        <div class="post-content" v-html="article.content"></div>
+        <div class="post-content" v-html="article.content" />
       </div>
     </div>
   </div>
 </template>
+
 <style lang="scss" scoped>
 .container {
   padding: 20px 0 20px 0;
@@ -93,5 +96,4 @@ async function asyncData(context) {
   padding: 5px;
   border: 1px solid #ddd;
 }
-
 </style>

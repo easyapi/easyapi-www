@@ -1,5 +1,6 @@
 ﻿<script setup lang="ts">
 import Pay from './components/pay.vue'
+import { useHead } from '@vueuse/head'
 
 useHead({
   title: '支持我们 - EasyAPI服务平台',

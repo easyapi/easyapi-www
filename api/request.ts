@@ -6,7 +6,7 @@ import { ElMessage } from 'element-plus'
  * @param options
  * @param headers
  */
-const fetch = async (url: string, options?: any, headers?: any): Promise<ApiResponse> => {
+async function fetch(url: string, options?: any, headers?: any): Promise<ApiResponse> {
   try {
     const customHeaders = { Authorization: `Bearer ${useCookie('authenticationToken').value}`, ...headers }
     const res = await $fetch<ApiResponse>(url,
@@ -18,9 +18,9 @@ const fetch = async (url: string, options?: any, headers?: any): Promise<ApiResp
       type: 'error',
       message: error.data.message,
     })
-    if (error.data.code === -9) {
+    if (error.data.code === -9)
       window.location.href = 'https://account.easyapi.com/login?from=https://wwww.easyapi.com/home'
-    }
+
     return error.data
   }
 }

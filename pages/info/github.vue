@@ -1,4 +1,6 @@
 ﻿<script setup lang="ts">
+import { useHead } from '@vueuse/head'
+
 useHead({
   title: '前端开源 - EasyAPI服务平台',
   meta: [{ name: 'description', content: 'EasyAPI前端开源计划' },

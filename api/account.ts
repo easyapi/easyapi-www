@@ -1,10 +1,12 @@
 import http from '~/api/request'
 
-/**
- * 获取用户信息
- *
- * @see https://www.easyapi.com
- */
-export const getUser = () => {
-  return http.get(`${useRuntimeConfig().public.baseUrl}/account`)
+export const account = {
+  /**
+   * 获取用户信息
+   *
+   * @see https://www.easyapi.com
+   */
+  getUser() {
+    return http.get(`${useRuntimeConfig().public.baseUrl}/account`)
+  },
 }
