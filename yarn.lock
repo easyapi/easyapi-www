@@ -1300,10 +1300,10 @@
     eslint-plugin-vue "^9.7.0"
     local-pkg "^0.4.2"
 
-"@nuxtjs/tailwindcss@^6.6.5":
-  version "6.6.5"
-  resolved "https://mirrors.cloud.tencent.com/npm/@nuxtjs/tailwindcss/-/tailwindcss-6.6.5.tgz#a13d44309fbeb51b7d830cec77298b2edd36615d"
-  integrity sha512-MqiH8x1aUaGbqgGlDO63pLPQAwEvFcSAXBd1R0ZWXoQvOKuAdsy1L9a+Q6eH9Zmdn4WpVZ7Y81iFJRQu3tIT1w==
+"@nuxtjs/tailwindcss@^6.6.6":
+  version "6.6.6"
+  resolved "https://mirrors.cloud.tencent.com/npm/@nuxtjs/tailwindcss/-/tailwindcss-6.6.6.tgz#4d5d17719c85647ed410dc0936a12ece87882194"
+  integrity sha512-cUiwO28TQYww+2H8x1BtxGjYpzzAdiHi2S4z6seGDM0g0sv5P1Zn8VO6N9crSxNkAZjKVhof9CD+D8ykMloZbA==
   dependencies:
     "@nuxt/kit" "^3.3.1"
     "@nuxt/postcss8" "^1.1.3"
@@ -1484,10 +1484,10 @@
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.191.tgz#09511e7f7cba275acd8b419ddac8da9a6a79e2fa"
   integrity sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==
 
-"@types/lodash@^4.14.192":
-  version "4.14.192"
-  resolved "https://mirrors.cloud.tencent.com/npm/@types/lodash/-/lodash-4.14.192.tgz#5790406361a2852d332d41635d927f1600811285"
-  integrity sha512-km+Vyn3BYm5ytMO13k9KTp27O75rbQ0NFw+U//g+PX7VZyjCioXaRFisqSIJRECljcTv73G3i6BpglNGHgUQ5A==
+"@types/lodash@^4.14.194":
+  version "4.14.194"
+  resolved "https://mirrors.cloud.tencent.com/npm/@types/lodash/-/lodash-4.14.194.tgz#b71eb6f7a0ff11bff59fc987134a093029258a76"
+  integrity sha512-r22s9tAS7imvBt2lyHC9B8AGwWnXaYb1tY09oyLkXDs4vArpYJzw09nj8MLx5VfciBPGIb+ZwG0ssYnEPJxn/g==
 
 "@types/mdast@^3.0.0":
   version "3.0.10"
@@ -7464,10 +7464,10 @@ sass-loader@^13.2.2:
     klona "^2.0.6"
     neo-async "^2.6.2"
 
-sass@^1.61.0:
-  version "1.61.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/sass/-/sass-1.61.0.tgz#d1f6761bb833887b8fdab32a24e052c40531d02b"
-  integrity sha512-PDsN7BrVkNZK2+dj/dpKQAWZavbAQ87IXqVvw2+oEYI+GwlTWkvbQtL7F2cCNbMqJEYKPh1EcjSxsnqIb/kyaQ==
+sass@^1.62.0:
+  version "1.62.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/sass/-/sass-1.62.0.tgz#3686b2195b93295d20765135e562366b33ece37d"
+  integrity sha512-Q4USplo4pLYgCi+XlipZCWUQz5pkg/ruSSgJ0WRDSb/+3z9tXUOkQ7QPYn4XrhZKYAK4HlpaQecRwKLJX6+DBg==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"

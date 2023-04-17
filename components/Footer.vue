@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { getCurrentInstance, onMounted, reactive, ref, watch } from 'vue'
+import { reactive, ref, watch } from 'vue'
 
 const props = defineProps(['screenWidth'])
 const screenWidth = ref(null)
-const { proxy: $vm } = getCurrentInstance()
 
 const data = reactive({
-  ifShowFooter: '',
+  ifShowFooter: true,
 })
 function jump(val) {
   if (val === '帮助中心')
@@ -14,14 +13,7 @@ function jump(val) {
   else
     window.open('https://support.qq.com/products/352231', '_blank')
 }
-function handleOpen(key, keyPath) {
-  console.log(document.getElementsByClassName('el-sub-menu__title'))
-}
-function handleClose() {}
 
-onMounted(() => {
-})
-//
 watch(() => props.screenWidth,
   (val, oldVal) => {
     data.ifShowFooter = props.screenWidth >= 800
@@ -34,7 +26,7 @@ watch(() => props.screenWidth,
 <template>
   <div v-show="data.ifShowFooter" class="bottom-footer flex-c items-center">
     <div class="content">
-      <div class="footer-item flex justify-between mg-15-auto">
+      <div class="footer-item flex justify-between my-7">
         <div class="w-3/12">
           <img class="w-40" src="https://qiniu.easyapi.com/market/logo.svg">
           <p class="w-4/5 mt-6 text-xl">
@@ -104,7 +96,7 @@ watch(() => props.screenWidth,
         </div>
       </div>
       <el-divider />
-      <div class="mg-15-auto text-center">
+      <div class="my-7 text-center">
         <a href="https://beian.miit.gov.cn/" target="_blank">Copyright © 2015～2022 无锡帮趣数据服务有限公司</a>
       </div>
     </div>
@@ -118,7 +110,7 @@ watch(() => props.screenWidth,
         <img class="w-40" src="https://qiniu.easyapi.com/market/logo.svg">
       </div>
       <div class="mt-12">
-        <el-menu background-color="#27282c" text-color="#fff" active-text-color="#fff" class="el-menu-vertical-demo" >
+        <el-menu background-color="#27282c" text-color="#fff" active-text-color="#fff" class="el-menu-vertical-demo">
           <el-sub-menu index="1">
             <template #title>
               <span>产品介绍</span>
@@ -287,10 +279,6 @@ watch(() => props.screenWidth,
   .el-sub-menu .el-menu-item {
     padding: 0 25px !important;
   }
-}
-
-.mg-15-auto {
-  margin: 15px auto;
 }
 
 .color-00AEC5 {

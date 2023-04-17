@@ -1,14 +1,13 @@
 <script>
 import { mapGetters } from 'vuex'
 import { useCookies } from '@vueuse/integrations/useCookies'
+import { Fold, Place } from '@element-plus/icons-vue'
 import { gotoTeam } from '~/utils/goto'
-import { Place, Fold } from '@element-plus/icons-vue'
 
 const cookies = useCookies()
 
 export default {
-  name: 'Header',
-  components: {Place, Fold},
+  components: { Place, Fold },
   props: ['screenWidth'],
   data() {
     return {
@@ -165,7 +164,7 @@ export default {
               </a>
             </ul>
             <template #reference>
-              <span  class="f-rel navs-item">
+              <span class="f-rel navs-item">
                 <a>
                   产品
                   <i v-if="ifShowProduct" class="el-icon-caret-bottom" />
@@ -251,8 +250,12 @@ export default {
             <img class="logo float-left" src="https://qiniu.easyapi.com/market/logo.svg">
           </a>
           <div class="icon w-14 flex justify-between">
-            <el-icon @click="showNav('person')" size="15" color="#ffffff"><Place /></el-icon>
-            <el-icon @click="showNav('menu')" size="15" color="#ffffff"><Fold /></el-icon>
+            <el-icon size="15" color="#ffffff" @click="showNav('person')">
+              <Place />
+            </el-icon>
+            <el-icon size="15" color="#ffffff" @click="showNav('menu')">
+              <Fold />
+            </el-icon>
           </div>
         </div>
       </div>
@@ -328,12 +331,12 @@ export default {
             <div class="clear-both" />
             <el-menu-item @click="jumpSign">
               <template #title>
-                <span >注册</span>
+                <span>注册</span>
               </template>
             </el-menu-item>
             <el-menu-item @click="jumpLogin">
               <template #title>
-                <span >登录</span>
+                <span>登录</span>
               </template>
             </el-menu-item>
           </el-menu>
