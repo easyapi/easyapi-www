@@ -148,7 +148,7 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-import '@/assets/scss/banner.scss'
+@import '@/assets/scss/banner.scss';
 
 .f_2 {
   font-size: 1.9rem !important;

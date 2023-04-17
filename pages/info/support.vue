@@ -15,9 +15,10 @@ const dialogVisible = ref(false)
  * 显示支持我们弹框
  */
 function showCode() {
-  this.$refs.child.dialogVisible = true
+  dialogVisible.value = true
 }
 </script>
+
 <template>
   <div class="main">
     <div class="content">
@@ -85,11 +86,11 @@ function showCode() {
         </div>
       </div>
     </div>
-    <Pay ref="child"></Pay>
+    <Pay ref="child" v-model="dialogVisible"></Pay>
   </div>
 </template>
 <style lang="scss" scoped>
-import '@assets/scss/donate.scss'
+@import '@/assets/scss/donate.scss';
 
 .header {
   background-color: #18c1d6;

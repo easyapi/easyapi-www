@@ -20,6 +20,7 @@ function jumpZip() {
   window.open('https://qiniu.easyapi.com/easyapi-extension.zip', '_blank')
 }
 </script>
+
 <template>
   <div class="main">
     <div class="content">
@@ -59,8 +60,9 @@ function jumpZip() {
     </div>
   </div>
 </template>
+
 <style lang="scss" scoped>
-import '@assets/scss/donate.scss'
+@import '@/assets/scss/donate.scss';
 .header {
   background-color: #18c1d6;
 }

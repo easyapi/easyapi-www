@@ -13,7 +13,7 @@ useHead({
     { name: 'keyword', content: 'API文档管理,API管理系统,API接口管理系统,API管理平台,API管理,API,API工具,API Mock,Mock API,API接口,接口管理,API接口管理,API监控,API测试,API服务,API低代码,API门户,API脚本,API服务市场' }],
 })
 function gotoTeam() {
-  gotoTeam('', this)
+  gotoTeam('')
 }
 onMounted(() => {
   // if ($nuxt.$route.path === '/' && cookies.get('authenticationToken')) {
@@ -183,3 +183,9 @@ onMounted(() => {
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.max-width-1000{
+  max-width: 1000px;
+}
+</style>

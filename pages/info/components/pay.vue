@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import { reactive } from 'vue'
+const props = defineProps(['dialogVisible'])
 
 const data = reactive({
-  dialogVisible: false,
+  dialogVisible: props.dialogVisible,
 })
+
 </script>
 
 <template>
-  <el-dialog v-model:visible="dialogVisible" width="50%">
+  <el-dialog v-model="data.dialogVisible" width="50%" append-to-body>
     <div class="pay-dialog">
       <dl class="clearfix">
         <dd>

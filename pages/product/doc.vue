@@ -110,7 +110,7 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-import '@/assets/scss/banner.scss'
+@import '@/assets/scss/banner.scss';
 
 .dis_showtxt p:hover {
   color: #2eaccb !important;

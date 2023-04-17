@@ -24,9 +24,7 @@ onMounted(() => {
 //
 watch(() => props.screenWidth,
   (val, oldVal) => {
-    console.log(props.screenWidth,99999999)
     data.ifShowFooter = props.screenWidth >= 800
-    console.log(data.ifShowFooter,'結果')
   },
   {
     deep: true,

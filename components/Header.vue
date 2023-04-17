@@ -96,7 +96,7 @@ export default {
   <client-only>
     <div v-show="ifShow" :style="headerActive" class="header header-index">
       <div class="content">
-        <a href="/home">
+        <a href="/">
           <img class="logo float-left" src="https://qiniu.easyapi.com/market/logo.svg">
         </a>
         <div class="navs f-fl">

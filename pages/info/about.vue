@@ -120,3 +120,329 @@ useHead({
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.header {
+  background-color: #18c1d6;
+}
+
+.about {
+  margin-top: 72px;
+}
+
+.about-box {
+  padding: 50px 0;
+
+  .title {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: #333;
+
+    &.f-c-white {
+      color: #fff;
+    }
+
+    &.f-c-gray {
+      color: #555;
+    }
+  }
+
+  .description {
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 50px;
+    color: gray;
+
+    &.f-c-white {
+      color: #fff;
+    }
+
+    &.f-c-gray {
+      color: #555;
+    }
+  }
+}
+
+.team-box {
+  text-align: center;
+
+  ul {
+    text-align: center;
+
+    li {
+      p {
+        color: gray;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-box ul li img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
+
+  .team-box ul li {
+    width: 25%;
+    height: 150px;
+  }
+
+  .about-box .title {
+    font-size: 36px;
+  }
+
+  .about-box .description {
+    font-size: 1.6em;
+  }
+
+  .culture {
+    margin: 0 auto;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      li {
+        float: left;
+        width: 33%;
+        display: inline-block;
+        margin: 0 25px;
+
+        img {
+          margin-bottom: 25px;
+        }
+
+        span {
+          font-size: 1.6rem;
+          display: block;
+          margin: 7px 0;
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .team-box ul li img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
+
+  .team-box ul li {
+    width: 25%;
+    height: 150px;
+  }
+
+  .about-box .title {
+    font-size: 36px;
+  }
+
+  .about-box .description {
+    font-size: 1.6em;
+  }
+
+  .culture {
+    margin: 0 auto;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      li {
+        float: left;
+        width: 33%;
+        display: inline-block;
+        margin: 0 25px;
+
+        img {
+          margin-bottom: 25px;
+        }
+
+        span {
+          font-size: 1.6rem;
+          display: block;
+          margin: 7px 0;
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .team-box ul li img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
+
+  .team-box ul li {
+    width: 25%;
+    height: 150px;
+  }
+
+  .about-box .title {
+    font-size: 36px;
+  }
+
+  .about-box .description {
+    font-size: 1.6em;
+  }
+
+  .culture {
+    margin: 0 auto;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      li {
+        float: left;
+        width: 33%;
+        display: inline-block;
+        margin: 0 25px;
+
+        img {
+          margin-bottom: 25px;
+        }
+
+        span {
+          font-size: 1.6rem;
+          display: block;
+          margin: 7px 0;
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .team-box ul li img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
+
+  .team-box ul li {
+    width: 25%;
+    height: 150px;
+  }
+
+  .about-box .title {
+    font-size: 36px;
+  }
+
+  .about-box .description {
+    font-size: 1.6em;
+  }
+
+  .culture {
+    margin: 0 auto;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      li {
+        float: left;
+        width: 33%;
+        display: inline-block;
+        margin: 0 25px;
+
+        img {
+          margin-bottom: 25px;
+        }
+
+        span {
+          font-size: 1.6rem;
+          display: block;
+          margin: 7px 0;
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .team-box ul li img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+
+  .team-box ul li {
+    width: 25%;
+    height: 100px;
+  }
+
+  .about-box .title {
+    font-size: 28px;
+  }
+
+  .about-box .description {
+    font-size: 0.6em;
+  }
+
+  .culture {
+    ul {
+      width: 100%;
+
+      li {
+        text-align: center;
+        display: inline-block;
+        margin: 0 25px 10px 25px;
+
+        img {
+          margin-bottom: 10px;
+        }
+
+        span {
+          font-size: 1.6rem;
+          display: block;
+          margin: 7px 0;
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 1.7;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+</style>

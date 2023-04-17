@@ -333,5 +333,772 @@ function showCode() {
 </template>
 
 <style lang="scss" scoped>
-import '@assets/scss/donate.scss'
+@import '@/assets/scss/donate.scss';
+@media screen and (min-width: 1200px) {
+  .donate-description {
+    padding: 10px 50px 100px;
+
+    p {
+      width: 60%;
+      float: left;
+      padding-top: 20px;
+      font-size: 1.4rem;
+      color: #555;
+      line-height: 29px;
+
+      em {
+        font-size: 22px;
+        font-style: normal;
+        padding-right: 3px;
+      }
+    }
+
+    .pay {
+      width: 40%;
+      float: right;
+      text-align: center;
+
+      img {
+        width: 180px;
+        height: 180px;
+        border-radius: 5px;
+      }
+
+      dd {
+        width: 160px;
+        margin-left: 20px;
+        text-align: center;
+        display: inline-block;
+        float: right;
+
+        p {
+          width: 160px;
+          padding-bottom: 20px;
+          text-align: center;
+          //background: url(../../../static/images/info/about_1.png) bottom center no-repeat;
+
+          img {
+            width: 160px;
+            height: 160px;
+          }
+        }
+
+        span {
+          display: inline-block;
+          margin-top: 5px;
+          font-size: 1.4rem;
+          color: #555;
+        }
+      }
+    }
+  }
+
+  .support-project {
+    dt {
+      border-bottom: solid #ddd 1px;
+      padding: 5px 20px;
+      height: 38px;
+      line-height: 38px;
+
+      span {
+        float: left;
+        font-size: 1.5rem;
+      }
+
+      i {
+        float: right;
+        color: gray;
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+
+    .box {
+      padding: 20px 0 0 20px;
+      margin: 0 auto;
+
+      dl {
+        border: solid #ddd 1px;
+        border-radius: 5px;
+        width: 20%;
+        float: left;
+        margin: 2%;
+
+        dd {
+          p {
+            border-bottom: 1px dashed #ddd;
+            font-size: 1.4rem;
+            color: gray;
+            padding: 9px 20px;
+
+            i {
+              float: right;
+              color: #87bf54;
+              display: block;
+            }
+          }
+
+          span {
+            text-align: center;
+            display: block;
+            padding: 10px 0;
+          }
+
+          .btn {
+            background-color: #18c1d6;
+            padding: 3px 10px;
+            font-size: 1.4rem;
+            color: #fff;
+            border-radius: 3px;
+            border-bottom: 2px solid #15a6b8;
+
+            &:hover {
+              background-color: #16b3c6;
+            }
+          }
+        }
+      }
+    }
+
+    .foo {
+      padding: 15px 60px 15px 40px;
+      color: gray;
+      font-size: 1.4rem;
+      line-height: 1.7;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .donate-description {
+    padding: 10px 50px 100px;
+
+    p {
+      width: 60%;
+      float: left;
+      padding-top: 20px;
+      font-size: 1.4rem;
+      color: #555;
+      line-height: 29px;
+
+      em {
+        font-size: 22px;
+        font-style: normal;
+        padding-right: 3px;
+      }
+    }
+
+    .pay {
+      width: 40%;
+      float: right;
+      text-align: center;
+
+      dd {
+        width: 100px;
+        margin-left: 20px;
+        text-align: center;
+        display: inline-block;
+        float: right;
+
+        p {
+          width: 160px;
+          padding-bottom: 20px;
+          text-align: center;
+          //background: url(../../../static/images/info/about_1.png) bottom center no-repeat;
+
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        span {
+          display: inline-block;
+          margin-top: 5px;
+          font-size: 1.4rem;
+          color: #555;
+        }
+      }
+    }
+  }
+
+  .support-project {
+    dt {
+      border-bottom: solid #ddd 1px;
+      padding: 5px 20px;
+      height: 38px;
+      line-height: 38px;
+
+      span {
+        float: left;
+        font-size: 1.5rem;
+      }
+
+      i {
+        float: right;
+        color: gray;
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+
+    .box {
+      padding: 20px 0 0 20px;
+      margin: 0 auto;
+
+      dl {
+        border: solid #ddd 1px;
+        border-radius: 5px;
+        width: 20%;
+        float: left;
+        margin: 2%;
+
+        dd {
+          p {
+            border-bottom: 1px dashed #ddd;
+            font-size: 1.4rem;
+            color: gray;
+            padding: 9px 20px;
+
+            i {
+              float: right;
+              color: #87bf54;
+              display: block;
+            }
+          }
+
+          span {
+            text-align: center;
+            display: block;
+            padding: 10px 0;
+          }
+
+          .btn {
+            background-color: #18c1d6;
+            padding: 3px 10px;
+            font-size: 1.4rem;
+            color: #fff;
+            border-radius: 3px;
+            border-bottom: 2px solid #15a6b8;
+
+            &:hover {
+              background-color: #16b3c6;
+            }
+          }
+        }
+      }
+    }
+
+    .foo {
+      padding: 15px 60px 15px 40px;
+      color: gray;
+      font-size: 1.4rem;
+      line-height: 1.7;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .donate-description {
+    padding: 10px 50px 100px;
+
+    p {
+      width: 60%;
+      float: left;
+      padding-top: 20px;
+      font-size: 1.4rem;
+      color: #555;
+      line-height: 29px;
+
+      em {
+        font-size: 22px;
+        font-style: normal;
+        padding-right: 3px;
+      }
+    }
+
+    .pay {
+      width: 40%;
+      float: right;
+      text-align: center;
+
+      dd {
+        width: 100px;
+        margin-left: 20px;
+        text-align: center;
+        display: inline-block;
+        float: right;
+
+        p {
+          width: 160px;
+          padding-bottom: 20px;
+          text-align: center;
+          //background: url(../../../static/images/info/about_1.png) bottom center no-repeat;
+
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        span {
+          display: inline-block;
+          margin-top: 5px;
+          font-size: 1.4rem;
+          color: #555;
+        }
+      }
+    }
+  }
+
+  .support-project {
+    dt {
+      border-bottom: solid #ddd 1px;
+      padding: 5px 5px;
+      height: 38px;
+      line-height: 38px;
+
+      span {
+        float: left;
+        font-size: 1.5rem;
+      }
+
+      i {
+        float: right;
+        color: gray;
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+
+    .box {
+      padding: 20px 0 0 20px;
+      margin: 0 auto;
+
+      dl {
+        border: solid #ddd 1px;
+        border-radius: 5px;
+        width: 20%;
+        float: left;
+        margin: 2%;
+
+        dd {
+          p {
+            border-bottom: 1px dashed #ddd;
+            font-size: 1.4rem;
+            color: gray;
+            padding: 9px 15px;
+
+            i {
+              float: right;
+              color: #87bf54;
+              display: block;
+            }
+          }
+
+          span {
+            text-align: center;
+            display: block;
+            padding: 10px 0;
+          }
+
+          .btn {
+            background-color: #18c1d6;
+            padding: 3px 10px;
+            font-size: 1.4rem;
+            color: #fff;
+            border-radius: 3px;
+            border-bottom: 2px solid #15a6b8;
+
+            &:hover {
+              background-color: #16b3c6;
+            }
+          }
+        }
+      }
+    }
+
+    .foo {
+      padding: 15px 60px 15px 40px;
+      color: gray;
+      font-size: 1.4rem;
+      line-height: 1.7;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .donate-description {
+    padding: 10px 50px 100px;
+
+    p {
+      width: 60%;
+      float: left;
+      padding-top: 20px;
+      font-size: 1.4rem;
+      color: #555;
+      line-height: 29px;
+
+      em {
+        font-size: 22px;
+        font-style: normal;
+        padding-right: 3px;
+      }
+    }
+
+    .pay {
+      width: 40%;
+      float: right;
+      text-align: center;
+
+      dd {
+        width: 100px;
+        margin-left: 20px;
+        text-align: center;
+        display: inline-block;
+        float: right;
+
+        p {
+          width: 160px;
+          padding-bottom: 20px;
+          text-align: center;
+          //background: url(../../../static/images/info/about_1.png) bottom center no-repeat;
+
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        span {
+          display: inline-block;
+          margin-top: 5px;
+          font-size: 1.4rem;
+          color: #555;
+        }
+      }
+    }
+  }
+
+  .support-project {
+    dt {
+      border-bottom: solid #ddd 1px;
+      padding: 5px 5px;
+      height: 38px;
+      line-height: 38px;
+
+      span {
+        float: left;
+        font-size: 1.5rem;
+      }
+
+      i {
+        float: right;
+        color: gray;
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+
+    .box {
+      padding: 20px 0 0 20px;
+      margin: 0 auto;
+
+      dl {
+        border: solid #ddd 1px;
+        border-radius: 5px;
+        width: 44%;
+        float: left;
+        margin: 2%;
+
+        dd {
+          p {
+            border-bottom: 1px dashed #ddd;
+            font-size: 1.4rem;
+            color: gray;
+            padding: 9px 15px;
+
+            i {
+              float: right;
+              color: #87bf54;
+              display: block;
+            }
+          }
+
+          span {
+            text-align: center;
+            display: block;
+            padding: 10px 0;
+          }
+
+          .btn {
+            background-color: #18c1d6;
+            padding: 3px 10px;
+            font-size: 1.4rem;
+            color: #fff;
+            border-radius: 3px;
+            border-bottom: 2px solid #15a6b8;
+
+            &:hover {
+              background-color: #16b3c6;
+            }
+          }
+        }
+      }
+    }
+
+    .foo {
+      padding: 15px 60px 15px 40px;
+      color: gray;
+      font-size: 1.4rem;
+      line-height: 1.7;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .supporter {
+    ul {
+      font-size: 1.4rem;
+      padding: 20px 45px;
+
+      li {
+        text-align: center;
+        width: 110px;
+        float: left;
+        margin: 10px;
+        padding-bottom: 20px;
+
+        p {
+          img {
+            width: 60px;
+            border-radius: 50%;
+            height: 60px;
+          }
+        }
+
+        strong {
+          display: block;
+          font-weight: 400;
+          padding: 8px 0 5px;
+        }
+
+        span {
+          display: block;
+          color: gray;
+        }
+
+        a {
+          &.more {
+            display: block;
+            color: #18c1d6;
+          }
+        }
+      }
+    }
+  }
+
+  .donate-img {
+    padding: 0 30px 30px;
+    margin: 20px;
+    background: url(../../../static/images/info/about_0.png) bottom no-repeat;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .donate-description {
+    padding: 10px 10px 50px;
+
+    p {
+      width: 60%;
+      float: left;
+      padding-top: 20px;
+      font-size: 1.4rem;
+      color: #555;
+      line-height: 29px;
+
+      em {
+        font-size: 22px;
+        font-style: normal;
+        padding-right: 3px;
+      }
+    }
+
+    .pay {
+      width: 40%;
+      float: right;
+      text-align: center;
+
+      dd {
+        width: 80px;
+        margin-left: 20px;
+        text-align: center;
+        display: inline-block;
+        float: right;
+
+        p {
+          width: 80px;
+          padding-bottom: 20px;
+          text-align: center;
+          //background: url(../../../static/images/info/about_1.png) bottom center no-repeat;
+
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+
+        span {
+          display: inline-block;
+          margin-top: 5px;
+          font-size: 1.4rem;
+          color: #555;
+        }
+      }
+    }
+  }
+
+  .support-project {
+    dt {
+      border-bottom: solid #ddd 1px;
+      padding: 5px 5px;
+      height: 38px;
+      line-height: 38px;
+
+      span {
+        float: left;
+        font-size: 1.5rem;
+      }
+
+      i {
+        float: right;
+        color: gray;
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+
+    .box {
+      padding: 20px 0 0 20px;
+      margin: 0 auto;
+
+      dl {
+        border: solid #ddd 1px;
+        border-radius: 5px;
+        width: 44%;
+        float: left;
+        margin: 2%;
+
+        dd {
+          p {
+            border-bottom: 1px dashed #ddd;
+            font-size: 1.4rem;
+            color: gray;
+            padding: 9px 15px;
+
+            i {
+              float: right;
+              color: #87bf54;
+              display: block;
+            }
+          }
+
+          span {
+            text-align: center;
+            display: block;
+            padding: 10px 0;
+          }
+
+          .btn {
+            background-color: #18c1d6;
+            padding: 3px 10px;
+            font-size: 1.4rem;
+            color: #fff;
+            border-radius: 3px;
+            border-bottom: 2px solid #15a6b8;
+
+            &:hover {
+              background-color: #16b3c6;
+            }
+          }
+        }
+      }
+    }
+
+    .foo {
+      padding: 15px 60px 15px 40px;
+      color: gray;
+      font-size: 1.4rem;
+      line-height: 1.7;
+    }
+  }
+
+  .supporter {
+    ul {
+      font-size: 1.4rem;
+      padding: 20px 45px;
+
+      li {
+        text-align: center;
+        width: 45px;
+        float: left;
+        margin: 10px;
+        padding-bottom: 20px;
+
+        p {
+          img {
+            width: 45px;
+            border-radius: 50%;
+            height: 45px;
+          }
+        }
+
+        strong {
+          display: block;
+          font-weight: 400;
+          padding: 8px 0 5px;
+        }
+
+        span {
+          display: block;
+          color: gray;
+        }
+
+        a {
+          &.more {
+            display: block;
+            color: #18c1d6;
+          }
+        }
+      }
+    }
+  }
+
+  .donate-img {
+    margin: 20px;
+    //background: url(../../../static/images/info/about_0.png) bottom no-repeat;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.header {
+  background-color: #18c1d6;
+}
+
+.btn {
+  padding: 5px 20px;
+}
+
+.support {
+  font-size: 2rem;
+  padding: 10px 40px;
+  color: #333;
+}
 </style>
