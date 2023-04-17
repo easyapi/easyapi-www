@@ -82,11 +82,7 @@ const map = reactive({
   </div>
 </template>
 
-<style lang="scss">
-.header {
-  background-color: #18c1d6;
-}
-
+<style lang="scss" scoped>
 .bm-view {
   width: 100%;
   height: 300px;

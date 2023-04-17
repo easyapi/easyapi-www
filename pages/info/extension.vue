@@ -63,9 +63,6 @@ function jumpZip() {
 
 <style lang="scss" scoped>
 @import '@/assets/scss/donate.scss';
-.header {
-  background-color: #18c1d6;
-}
 
 .col-18C1D6 {
   color: #18c1d6;

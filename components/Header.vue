@@ -40,8 +40,15 @@ export default {
   mounted() {
     if (this.authenticationToken)
       this.$store.dispatch('getUser')
-
-    if (this.$route.name === 'post' || this.$route.name === 'post-id')
+    if (
+      this.$route.name === 'post'
+      || this.$route.name === 'info-about'
+      || this.$route.name === 'info-about'
+      || this.$route.name === 'info-together'
+      || this.$route.name === 'info-donate'
+      || this.$route.name === 'info-extension'
+      || this.$route.name === 'post-id'
+    )
       this.headerActive = 'background-color:#18c1d6'
   },
   methods: {

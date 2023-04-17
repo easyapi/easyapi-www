@@ -333,11 +333,8 @@ function showCode() {
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '@/assets/scss/donate.scss';
-.header {
-  background-color: #18c1d6;
-}
 @media screen and (min-width: 1200px) {
   .donate-description {
     padding: 10px 50px 100px;
