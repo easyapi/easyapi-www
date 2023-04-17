@@ -8,20 +8,15 @@ const route = useRoute()
 const articleDetail = ref({})
 
 async function asyncData() {
-  const result = await article.getArticle(route.params.id)
-  if(result.code === 1){
+  const result = await article.getArticle(route.params.id as any)
+  if (result.code === 1) {
     articleDetail.value = result.content
+    document.title = `${result.content.title} - EasyAPI服务市场`
   }
 }
 
-onMounted(() =>{
+onMounted(() => {
   asyncData()
-})
-
-useHead({
-  title: `${ articleDetail.title } - EasyAPI服务市场`,
-  meta: [{ name: 'description', content: articleDetail.title },
-    { name: 'keyword', content: '文章详情' }],
 })
 </script>
 
