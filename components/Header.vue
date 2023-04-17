@@ -2,11 +2,13 @@
 import { mapGetters } from 'vuex'
 import { useCookies } from '@vueuse/integrations/useCookies'
 import { gotoTeam } from '~/utils/goto'
+import { Place, Fold } from '@element-plus/icons-vue'
 
 const cookies = useCookies()
 
 export default {
   name: 'Header',
+  components: {Place, Fold},
   props: ['screenWidth'],
   data() {
     return {
@@ -92,7 +94,7 @@ export default {
 
 <template>
   <client-only>
-    <div v-if="ifShow" :style="headerActive" class="header header-index">
+    <div v-show="ifShow" :style="headerActive" class="header header-index">
       <div class="content">
         <a href="/home">
           <img class="logo float-left" src="https://qiniu.easyapi.com/market/logo.svg">
@@ -155,13 +157,15 @@ export default {
                 </li>
               </a>
             </ul>
-            <span slot="reference" class="f-rel navs-item">
-              <a>
-                产品
-                <i v-if="ifShowProduct" class="el-icon-caret-bottom" />
-                <i v-else class="el-icon-caret-top" />
-              </a>
-            </span>
+            <template #reference>
+              <span  class="f-rel navs-item">
+                <a>
+                  产品
+                  <i v-if="ifShowProduct" class="el-icon-caret-bottom" />
+                  <i v-else class="el-icon-caret-top" />
+                </a>
+              </span>
+            </template>
           </el-popover>
           <a href="/info/price">价格</a>
           <el-popover placement="bottom-start" width="650" trigger="hover" @show="showPrivatization" @hide="hidePrivatization">
@@ -194,13 +198,15 @@ export default {
                 </li>
               </a>
             </ul>
-            <span slot="reference" class="f-rel navs-item">
-              <a>
-                私有化
-                <i v-if="ifShowPrivatization" class="el-icon-caret-bottom" />
-                <i v-else class="el-icon-caret-top" />
-              </a>
-            </span>
+            <template #reference>
+              <span class="f-rel navs-item">
+                <a>
+                  私有化
+                  <i v-if="ifShowPrivatization" class="el-icon-caret-bottom" />
+                  <i v-else class="el-icon-caret-top" />
+                </a>
+              </span>
+            </template>
           </el-popover>
           <a href="https://market.easyapi.com" target="_blank">API市场</a>
         </div>
@@ -231,15 +237,15 @@ export default {
         </div>
       </div>
     </div>
-    <div v-else class="header header-index" :style="headerActive">
+    <div v-show="!ifShow" class="header header-index" :style="headerActive">
       <div class="content">
         <div class="flex justify-between">
           <a href="/">
             <img class="logo float-left" src="https://qiniu.easyapi.com/market/logo.svg">
           </a>
           <div class="icon w-14 flex justify-between">
-            <i class="el-icon-user" @click="showNav('person')" />
-            <i class="el-icon-s-fold" @click="showNav('menu')" />
+            <el-icon @click="showNav('person')" size="15" color="#ffffff"><Place /></el-icon>
+            <el-icon @click="showNav('menu')" size="15" color="#ffffff"><Fold /></el-icon>
           </div>
         </div>
       </div>
@@ -252,7 +258,7 @@ export default {
               </el-button>
             </div>
             <div class="clear-both" />
-            <el-submenu index="1">
+            <el-sub-menu index="1">
               <template #title>
                 <a>产品</a>
               </template>
@@ -276,11 +282,13 @@ export default {
                   场景化服务
                 </el-menu-item>
               </el-menu-item-group>
-            </el-submenu>
+            </el-sub-menu>
             <el-menu-item index="/info/price">
-              <a slot="title">价格</a>
+              <template #title>
+                <a>价格</a>
+              </template>
             </el-menu-item>
-            <el-submenu index="3">
+            <el-sub-menu index="3">
               <template #title>
                 <a>私有化</a>
               </template>
@@ -295,9 +303,11 @@ export default {
                   API服务市场
                 </el-menu-item>
               </el-menu-item-group>
-            </el-submenu>
+            </el-sub-menu>
             <el-menu-item @click="jump">
-              <a slot="title">API市场</a>
+              <template #title>
+                <a>API市场</a>
+              </template>
             </el-menu-item>
           </el-menu>
         </el-col>
@@ -310,10 +320,14 @@ export default {
             </div>
             <div class="clear-both" />
             <el-menu-item @click="jumpSign">
-              <span slot="title">注册</span>
+              <template #title>
+                <span >注册</span>
+              </template>
             </el-menu-item>
             <el-menu-item @click="jumpLogin">
-              <span slot="title">登录</span>
+              <template #title>
+                <span >登录</span>
+              </template>
             </el-menu-item>
           </el-menu>
         </el-col>

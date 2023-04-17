@@ -6,7 +6,7 @@ const screenWidth = ref(null)
 const { proxy: $vm } = getCurrentInstance()
 
 const data = reactive({
-  ifShowFooter: true,
+  ifShowFooter: '',
 })
 function jump(val) {
   if (val === '帮助中心')
@@ -15,29 +15,26 @@ function jump(val) {
     window.open('https://support.qq.com/products/352231', '_blank')
 }
 function handleOpen(key, keyPath) {
-  console.log(document.getElementsByClassName('el-submenu__title'))
+  console.log(document.getElementsByClassName('el-sub-menu__title'))
 }
 function handleClose() {}
 
 onMounted(() => {
-  this.screenWidth = document.body.clientWidth
-  window.onresize = () => {
-    // 屏幕尺寸变化就重新赋值
-    return (() => {
-      this.screenWidth = document.body.clientWidth
-    })()
-  }
 })
-
-watch(() => /* Warn: Unknown source: screenWidth */ $vm.screenWidth, (val, oldVal) => {
-  data.ifShowFooter = val >= 800
-}, {
-  immediate: true,
-})
+//
+watch(() => props.screenWidth,
+  (val, oldVal) => {
+    console.log(props.screenWidth,99999999)
+    data.ifShowFooter = props.screenWidth >= 800
+    console.log(data.ifShowFooter,'結果')
+  },
+  {
+    deep: true,
+  })
 </script>
 
 <template>
-  <div v-if="ifShowFooter" class="bottom-footer flex-c items-center">
+  <div v-show="data.ifShowFooter" class="bottom-footer flex-c items-center">
     <div class="content">
       <div class="footer-item flex justify-between mg-15-auto">
         <div class="w-3/12">
@@ -52,7 +49,9 @@ watch(() => /* Warn: Unknown source: screenWidth */ $vm.screenWidth, (val, oldVa
           <div class="flex">
             <el-popover placement="top" width="100" trigger="hover">
               <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg">
-              <a slot="reference"><img class="w-12 mr-4" src="../../assets/images/wechat.svg" alt=""></a>
+              <template #reference>
+                <a><img class="w-12 mr-4" src="../../assets/images/wechat.svg" alt=""></a>
+              </template>
             </el-popover>
             <a href="https://github.com/easyapi" target="_blank">
               <img class="w-12" src="../../assets/images/github.svg" alt="">
@@ -115,14 +114,14 @@ watch(() => /* Warn: Unknown source: screenWidth */ $vm.screenWidth, (val, oldVa
       <a href="https://beian.miit.gov.cn" target="_blank">沪ICP备19007521号</a>
     </div>
   </div>
-  <div v-else class="mobile-footer">
+  <div v-show="!data.ifShowFooter" class="mobile-footer">
     <div class="w-4/5 mx-auto">
       <div>
         <img class="w-40" src="https://qiniu.easyapi.com/market/logo.svg">
       </div>
       <div class="mt-12">
-        <el-menu background-color="#27282c" text-color="#fff" active-text-color="#fff" class="el-menu-vertical-demo" router>
-          <el-submenu index="1">
+        <el-menu background-color="#27282c" text-color="#fff" active-text-color="#fff" class="el-menu-vertical-demo" >
+          <el-sub-menu index="1">
             <template #title>
               <span>产品介绍</span>
             </template>
@@ -146,8 +145,8 @@ watch(() => /* Warn: Unknown source: screenWidth */ $vm.screenWidth, (val, oldVa
                 API场景化服务
               </el-menu-item>
             </el-menu-item-group>
-          </el-submenu>
-          <el-submenu index="2">
+          </el-sub-menu>
+          <el-sub-menu index="2">
             <template #title>
               <span>私有化方案</span>
             </template>
@@ -162,8 +161,8 @@ watch(() => /* Warn: Unknown source: screenWidth */ $vm.screenWidth, (val, oldVa
                 API开放平台
               </el-menu-item>
             </el-menu-item-group>
-          </el-submenu>
-          <el-submenu index="3">
+          </el-sub-menu>
+          <el-sub-menu index="3">
             <template #title>
               <span>使用文档</span>
             </template>
@@ -181,8 +180,8 @@ watch(() => /* Warn: Unknown source: screenWidth */ $vm.screenWidth, (val, oldVa
                 前端开源计划
               </el-menu-item>
             </el-menu-item-group>
-          </el-submenu>
-          <el-submenu index="4">
+          </el-sub-menu>
+          <el-sub-menu index="4">
             <template #title>
               <span>关于</span>
             </template>
@@ -203,17 +202,19 @@ watch(() => /* Warn: Unknown source: screenWidth */ $vm.screenWidth, (val, oldVa
                 平台动态
               </el-menu-item>
             </el-menu-item-group>
-          </el-submenu>
+          </el-sub-menu>
         </el-menu>
       </div>
       <div class="mt-16">
         <div class="flex">
           <el-popover placement="top" width="100" trigger="hover">
             <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg">
-            <a slot="reference"><img class="w-12 mr-4" src="../../assets/images/wechat.svg" alt=""></a>
+            <template #reference>
+              <a><img class="w-12 mr-4" src="@/assets/images/wechat.svg" alt=""></a>
+            </template>
           </el-popover>
           <a href="https://github.com/easyapi" target="_blank">
-            <img class="w-12 mr-4" src="../../assets/images/github.svg" alt="">
+            <img class="w-12 mr-4" src="@/assets/images/github.svg" alt="">
           </a>
           <p class="flex items-center">
             联系电话：
@@ -275,17 +276,17 @@ watch(() => /* Warn: Unknown source: screenWidth */ $vm.screenWidth, (val, oldVa
     }
   }
 
-  .el-submenu .el-menu-item {
+  .el-sub-menu .el-menu-item {
     font-size: 12px;
   }
 
-  .el-submenu__title {
+  .el-sub-menu__title {
     padding: 0 !important;
     color: #c0c4cc !important;
     background-color: #27282c !important;
   }
 
-  .el-submenu .el-menu-item {
+  .el-sub-menu .el-menu-item {
     padding: 0 25px !important;
   }
 }
