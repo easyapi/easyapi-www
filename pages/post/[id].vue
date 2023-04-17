@@ -1,23 +1,28 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-import { article } from '~/api/article'
+import { article } from '@/api/article'
 
-const route = process.client ? useRoute() : {}
-useHead({
-  title: `${this.article.title} - EasyAPI服务市场`,
-  meta: [{ name: 'description', content: this.article.title },
-    { name: 'keyword', content: '文章详情' }],
-})
+const route = useRoute()
 
-const article = ref({})
+const articleDetail = ref({})
 
-async function asyncData(context) {
-  const [res] = await Promise.all([article.getArticle(route.params.id, context)])
-  return {
-    article: res.data.content,
+async function asyncData() {
+  const result = await article.getArticle(route.params.id)
+  if(result.code === 1){
+    articleDetail.value = result.content
   }
 }
+
+onMounted(() =>{
+  asyncData()
+})
+
+useHead({
+  title: `${ articleDetail.title } - EasyAPI服务市场`,
+  meta: [{ name: 'description', content: articleDetail.title },
+    { name: 'keyword', content: '文章详情' }],
+})
 </script>
 
 <template>
@@ -25,10 +30,10 @@ async function asyncData(context) {
     <div class="content py-8">
       <div class="post-detail">
         <div class="post-title">
-          <span>{{ article.title }}</span>
-          <label class="post-title_time">{{ article.updateTime.split(' ')[0] }}</label>
+          <span>{{ articleDetail.title }}</span>
+          <label class="post-title_time">{{ articleDetail.updateTime }}</label>
         </div>
-        <div class="post-content" v-html="article.content" />
+        <div class="post-content" v-html="articleDetail.content" />
       </div>
     </div>
   </div>

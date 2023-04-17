@@ -7,9 +7,10 @@ useHead({
   meta: [{ name: 'description', content: '支持EasyAPI' },
     { name: 'keyword', content: '支持EasyAPI' }],
 })
+const dialogVisible = ref(false)
 
 function showCode() {
-  this.$refs.child.dialogVisible = true
+  dialogVisible.value = true
 }
 </script>
 <template>
@@ -327,13 +328,16 @@ function showCode() {
       </div>
     </div>
     <div>
-      <Pay ref="child"></Pay>
+      <Pay ref="child" v-model="dialogVisible"></Pay>
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@/assets/scss/donate.scss';
+.header {
+  background-color: #18c1d6;
+}
 @media screen and (min-width: 1200px) {
   .donate-description {
     padding: 10px 50px 100px;
@@ -901,7 +905,7 @@ function showCode() {
   .donate-img {
     padding: 0 30px 30px;
     margin: 20px;
-    background: url(../../../static/images/info/about_0.png) bottom no-repeat;
+    //background: url(../../../static/images/info/about_0.png) bottom no-repeat;
 
     img {
       width: 100%;

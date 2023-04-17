@@ -82,7 +82,7 @@ const map = reactive({
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .header {
   background-color: #18c1d6;
 }

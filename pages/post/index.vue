@@ -23,26 +23,27 @@ const pagination = reactive({
 })
 
 function getPageList() {
-  this.pagination.page = this.pagination.page + 1
-  if (this.pagination.page === this.pagination.totalPages)
-    this.noMoreData = true
+  pagination.page = pagination.page + 1
+  if (pagination.page === pagination.totalPages)
+    state.noMoreData = true
 
-  if (this.pagination.page < this.pagination.totalPages)
-    this.getArticleList()
+  if (pagination.page < pagination.totalPages)
+    getArticleList()
 }
+
 function getArticleList() {
-  this.loading = true
+  state.loading = true
   const params = {
-    size: this.pagination.size,
-    page: this.pagination.page,
+    size: pagination.size,
+    page:pagination.page,
   }
   article.getArticleList(params).then((res) => {
-    this.loading = false
-    if (res.data.code === 1) {
-      this.list = this.list.concat(res.data.content)
-      this.pagination.totalPages = res.data.totalPages
+    state.loading = false
+    if (res.code === 1) {
+      state.list = state.list.concat(res.content)
+      pagination.totalPages = res.totalPages
     } else {
-      this.noData = true
+      state.noData = true
     }
   })
 }
@@ -54,13 +55,13 @@ function lazyLoading() {
   if (scrollHeight - clientHeight - scrollTop <= 150) {
     // 滚动到底部，逻辑代码
     // 事件处理
-    if (!this.loading)
-      this.getPageList()
+    if (!state.loading)
+      getPageList()
   }
 }
 onMounted(() => {
-  window.addEventListener('scroll', this.lazyLoading)
-  this.getArticleList()
+  window.addEventListener('scroll', lazyLoading)
+  getArticleList()
 })
 </script>
 
