@@ -286,6 +286,6 @@ watch(() => props.screenWidth,
 }
 
 .el-divider {
-  background-color: #606266;
+  border-top-color: #606266 !important;
 }
 </style>
