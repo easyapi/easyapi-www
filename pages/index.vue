@@ -1,6 +1,6 @@
 ﻿<script setup lang="ts">
 import { onMounted } from 'vue'
-import { useHead } from '@vueuse/head'
+import { useHead } from '@unhead/vue'
 
 import { useCookies } from '@vueuse/integrations/useCookies'
 import { gotoTeam } from '~/utils/goto'

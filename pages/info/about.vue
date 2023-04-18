@@ -1,5 +1,5 @@
 ﻿<script setup lang="ts">
-import { useHead } from '@vueuse/head'
+import { useHead } from '@unhead/vue'
 
 useHead({
   title: '关于我们 - EasyAPI服务平台',

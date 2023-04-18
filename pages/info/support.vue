@@ -1,7 +1,7 @@
 ﻿<script setup lang="ts">
 import { ref } from 'vue'
 import Pay from './components/pay.vue'
-import { useHead } from '@vueuse/head'
+import { useHead } from '@unhead/vue'
 
 useHead({
   title: '支持名单 - EasyAPI服务平台',

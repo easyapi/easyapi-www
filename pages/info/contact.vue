@@ -2,7 +2,7 @@
 import { reactive } from 'vue'
 
 import BaiduMap from 'vue-baidu-map/components/map/Map.vue'
-import { useHead } from '@vueuse/head'
+import { useHead } from '@unhead/vue'
 
 useHead({
   title: '联系我们 - EasyAPI服务平台',

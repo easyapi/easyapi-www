@@ -1,5 +1,5 @@
 ﻿<script setup lang="ts">
-import { useHead } from '@vueuse/head'
+import { useHead } from '@unhead/vue'
 import { ref } from 'vue'
 import Pay from './components/pay.vue'
 
