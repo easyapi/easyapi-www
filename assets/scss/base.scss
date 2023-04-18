@@ -8,6 +8,43 @@
     width: 1200px;
     margin: 0 auto
   }
+  .pd-100 {
+    padding: 100px 0;
+    .u-igateway {
+      max-width: 500px;
+      margin: 0 auto;
+      padding-top: 30px;
+
+      .title {
+        color: black;
+        font-size: 20px;
+      }
+
+      .img {
+       width: 380px;
+       margin-right: 100px;
+      }
+
+      .text {
+        width: 500px;
+        padding-left: 15px;
+        font-size: 16px;
+      }
+
+      p {
+        color: gray;
+        font-size: 1.6rem;
+        padding-top: 10px;
+        line-height: 1.6;
+
+        img {
+          width: 25px;
+          margin-right: 5px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
@@ -166,7 +203,6 @@
       .text {
         width: 300px;
         padding-top: 60px;
-        padding-left: 50px;
         font-size: 20px;
       }
 
