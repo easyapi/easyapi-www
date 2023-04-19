@@ -1,6 +1,6 @@
 ﻿<script setup lang="ts">
 import { useHead } from '@unhead/vue'
-import { gotoTeam } from '~/utils/goto'
+import { gotoEasyTeam } from '~/utils/goto'
 
 useHead({
   title: '价格 - EasyAPI服务平台',
@@ -8,7 +8,7 @@ useHead({
     { name: 'keyword', content: '价格' }],
 })
 function gotoTeam() {
-  gotoTeam('', this)
+  gotoEasyTeam('')
 }
 </script>
 
@@ -40,7 +40,7 @@ function gotoTeam() {
             <p class="subtitle">
               使用上限20人，增员￥5/人/月
             </p>
-            <el-button class="w-full" type="primary" plain @click="gotoTeam">
+            <el-button class="w-full btn" type="primary" plain @click="gotoTeam">
               免费试用 90天
             </el-button>
           </div>
@@ -120,7 +120,7 @@ function gotoTeam() {
             <p class="subtitle">
               使用上限20人，增员￥5/人/月
             </p>
-            <el-button class="w-full" type="primary" plain @click="gotoTeam">
+            <el-button class="w-full btn" type="primary" plain @click="gotoTeam">
               免费试用 90天
             </el-button>
           </div>
@@ -221,7 +221,7 @@ function gotoTeam() {
             <p class="subtitle">
               使用上限20人，增员￥5/人/月
             </p>
-            <el-button class="w-full" type="primary" plain @click="gotoTeam">
+            <el-button class="w-full btn" type="primary" plain @click="gotoTeam">
               免费试用 90天
             </el-button>
           </div>
@@ -837,7 +837,7 @@ function gotoTeam() {
           display: inline-block;
           padding: 5px 15px;
           border-radius: 3px;
-          color: #18c1d6;
+          color: #18c1d6 ;
 
           &:hover {
             color: #fff;

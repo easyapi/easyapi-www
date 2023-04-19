@@ -6,12 +6,12 @@ const cookies = useCookies()
 /**
  * 跳转到团队页面
  */
-export function gotoTeam(path, context) {
-  account.getUser(context)
+export function gotoEasyTeam(path) {
+  account.getUser(path)
     .then((res) => {
       let href = `https://team.easyapi.com${path}`
-      if (res.data.code === 1 && res.data.content.team) {
-        if (res.data.content.team.url)
+      if (res.code === 1 && res.content.team) {
+        if (res.content.team.url)
           href = `https://${res.data.content.team.url}.easyapi.com${path}`
       }
       window.location.href = href

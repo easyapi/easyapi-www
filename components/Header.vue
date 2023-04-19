@@ -2,7 +2,7 @@
 import { mapGetters } from 'vuex'
 import { useCookies } from '@vueuse/integrations/useCookies'
 import { Fold, Place } from '@element-plus/icons-vue'
-import { gotoTeam } from '~/utils/goto'
+import { gotoEasyTeam } from '~/utils/goto'
 
 const cookies = useCookies()
 
@@ -36,9 +36,7 @@ export default {
   computed: {
     ...mapGetters(['photo', 'team']),
   },
-  mounted() {
-    if (this.authenticationToken)
-      this.$store.dispatch('getUser')
+  beforeMount() {
     if (
       this.$route.name === 'post'
       || this.$route.name === 'info-about'
@@ -47,8 +45,15 @@ export default {
       || this.$route.name === 'info-donate'
       || this.$route.name === 'info-extension'
       || this.$route.name === 'post-id'
+      || this.$route.name === 'info-support'
+      || this.$route.name === 'info-contact'
     )
       this.headerActive = 'background-color:#18c1d6'
+  },
+  mounted() {
+    if (this.authenticationToken)
+      this.$store.dispatch('getUser')
+
   },
   methods: {
     showNav(val) {
@@ -68,7 +73,7 @@ export default {
       window.open('https://account.easyapi.com/login/')
     },
     gotoTeam() {
-      gotoTeam('', this)
+      gotoEasyTeam('')
     },
     showProduct() {
       this.ifShowProduct = false
@@ -84,9 +89,9 @@ export default {
     },
     handleCommand(command) {
       if (command === 'notice')
-        gotoTeam('/notification', this)
+        gotoEasyTeam('/notification')
       else if (command === 'edit')
-        gotoTeam('/user/edit', this)
+        gotoEasyTeam('/user/edit')
       else if (command === 'quitLogin')
         this.quitLogin()
     },

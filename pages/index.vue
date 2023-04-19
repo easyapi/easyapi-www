@@ -3,7 +3,7 @@ import { onMounted } from 'vue'
 import { useHead } from '@unhead/vue'
 
 import { useCookies } from '@vueuse/integrations/useCookies'
-// import { gotoTeam } from '~/utils/goto'
+import { gotoEasyTeam } from '~/utils/goto'
 
 export default defineComponent({
   name: 'home',
@@ -16,7 +16,7 @@ export default defineComponent({
     })
 
     const gotoTeam = () => {
-      gotoTeam('')
+      gotoEasyTeam('')
     }
 
     onMounted(() => {

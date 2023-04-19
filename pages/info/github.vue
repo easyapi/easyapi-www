@@ -84,7 +84,7 @@ useHead({
     <div class="card f-cb bg-f7">
       <div class="card-item">
         <h1>常见问题</h1>
-        <h3>开源的版权怎么区分？</h3>
+        <h3 >开源的版权怎么区分？</h3>
         <p>
           EasyAPI产品上线后，为了满足广大开发者用户的使用，特推出前端开源产品，为了充分发挥我们的用户群体优势，希望大家共同完善EasyAPI产品，EasyAPI自始至终版权均为EasyAPI运营公司
           所有，EasyAPI给予开发者投入回报包括收入分成，免费试用特权，旅游奖励。
@@ -98,6 +98,7 @@ useHead({
     </div>
   </div>
 </template>
+
 <style lang="scss" scoped>
 .img > img {
   width: 100%;
