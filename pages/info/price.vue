@@ -40,7 +40,7 @@ function gotoTeam() {
             <p class="subtitle">
               使用上限20人，增员￥5/人/月
             </p>
-            <el-button class="w-full btn" type="primary" plain @click="gotoTeam">
+            <el-button size="large" class="w-full btn" type="primary" plain @click="gotoTeam">
               免费试用 90天
             </el-button>
           </div>
@@ -88,7 +88,7 @@ function gotoTeam() {
                 <i class="el-icon-check" />
               </p>
             </div>
-            <div class="item mg-t-20">
+            <div class="item mt-8">
               <span>API监控</span>
               <p>API自动监控</p>
               <p>监控概况</p>
@@ -98,7 +98,7 @@ function gotoTeam() {
               <p>报警规则</p>
               <p>每日统计</p>
             </div>
-            <div class="mg-t-20">
+            <div class="mt-8">
               <span>API低代码</span>
               <p>云接口管理</p>
               <p>微页面接口管理</p>
@@ -120,7 +120,7 @@ function gotoTeam() {
             <p class="subtitle">
               使用上限20人，增员￥5/人/月
             </p>
-            <el-button class="w-full btn" type="primary" plain @click="gotoTeam">
+            <el-button size="large" class="w-full btn" type="primary" plain @click="gotoTeam">
               免费试用 90天
             </el-button>
           </div>
@@ -168,7 +168,7 @@ function gotoTeam() {
                 <i class="el-icon-check" />
               </p>
             </div>
-            <div class="item mg-t-20">
+            <div class="item mt-8">
               <span>API监控</span>
               <p>
                 API自动监控
@@ -199,7 +199,7 @@ function gotoTeam() {
                 <i class="el-icon-check" />
               </p>
             </div>
-            <div class="mg-t-20">
+            <div class="mt-8">
               <span>API低代码</span>
               <p>云接口管理</p>
               <p>微页面接口管理</p>
@@ -221,7 +221,7 @@ function gotoTeam() {
             <p class="subtitle">
               使用上限20人，增员￥5/人/月
             </p>
-            <el-button class="w-full btn" type="primary" plain @click="gotoTeam">
+            <el-button size="large" class="w-full btn" type="primary" plain @click="gotoTeam">
               免费试用 90天
             </el-button>
           </div>
@@ -269,7 +269,7 @@ function gotoTeam() {
                 <i class="el-icon-check" />
               </p>
             </div>
-            <div class="item mg-t-20">
+            <div class="item mt-8">
               <span>API监控</span>
               <p>
                 API自动监控
@@ -300,7 +300,7 @@ function gotoTeam() {
                 <i class="el-icon-check" />
               </p>
             </div>
-            <div class="mg-t-20">
+            <div class="mt-8">
               <span>API低代码</span>
               <p>
                 云接口管理
@@ -554,10 +554,6 @@ function gotoTeam() {
         .description {
           padding: 20px;
 
-          .mg-t-20 {
-            margin-top: 20px;
-          }
-
           .item {
             border-bottom: solid #ddd 1px;
           }
@@ -670,7 +666,7 @@ function gotoTeam() {
         .description {
           padding: 20px;
 
-          .mg-t-20 {
+          .mt-8 {
             margin-top: 20px;
           }
 
@@ -782,10 +778,6 @@ function gotoTeam() {
 
         .description {
           padding: 20px;
-
-          .mg-t-20 {
-            margin-top: 20px;
-          }
 
           .item {
             border-bottom: solid #ddd 1px;
