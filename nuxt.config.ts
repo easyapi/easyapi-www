@@ -14,6 +14,15 @@ export default defineNuxtConfig({
   build: {
     transpile: lifecycle === 'build' ? ['element-plus'] : [],
   },
+  hooks: {
+    'pages:extend': function (routes) {
+      routes.push({
+        path: '/home',
+        name: 'home',
+        file: '~/pages/index.vue',
+      })
+    },
+  },
   css: [
     '~/assets/scss/banner.scss',
     '~/assets/scss/base.scss',
