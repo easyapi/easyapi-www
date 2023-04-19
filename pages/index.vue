@@ -6,7 +6,7 @@ import { useCookies } from '@vueuse/integrations/useCookies'
 import { gotoEasyTeam } from '~/utils/goto'
 
 export default defineComponent({
-  name: 'home',
+  name: 'Home',
   setup() {
     const cookies = useCookies()
     useHead({
@@ -186,7 +186,7 @@ export default defineComponent({
           期待你的咨询合作
         </p>
         <div class="img">
-          <img src="/images/info/pic_homg_more.png">
+          <img src="/images/info/pic_home_more.png">
         </div>
       </div>
     </div>

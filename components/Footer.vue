@@ -97,7 +97,7 @@ watch(() => props.screenWidth,
       </div>
       <el-divider />
       <div class="my-7 text-center">
-        <a href="https://beian.miit.gov.cn/" target="_blank">Copyright © 2015～2022 无锡帮趣数据服务有限公司</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank">Copyright © 2015～2023 无锡帮趣数据服务有限公司</a>
       </div>
     </div>
     <div class="text-center">
