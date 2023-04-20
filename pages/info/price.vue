@@ -1,12 +1,14 @@
 ﻿<script setup lang="ts">
 import { useHead } from '@unhead/vue'
 import { gotoEasyTeam } from '~/utils/goto'
+import { Check } from '@element-plus/icons-vue'
 
 useHead({
   title: '价格 - EasyAPI服务平台',
   meta: [{ name: 'description', content: 'EasyAPI服务平台价格体系' },
     { name: 'keyword', content: '价格' }],
 })
+
 function gotoTeam() {
   gotoEasyTeam('')
 }
@@ -49,43 +51,43 @@ function gotoTeam() {
               <span>API协作</span>
               <p>
                 设计API
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 API文档
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 生成API文档
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 API编辑历史
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 导出Word
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 API测试
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 管理API测试用例
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 环境管理
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 数据结构管理
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 返回码管理
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
             </div>
             <div class="item mt-8">
@@ -129,74 +131,74 @@ function gotoTeam() {
               <span>API协作</span>
               <p>
                 设计API
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 API文档
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 生成API文档
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 API编辑历史
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 导出Word
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 API测试
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 管理API测试用例
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 环境管理
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 数据结构管理
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 返回码管理
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
             </div>
             <div class="item mt-8">
               <span>API监控</span>
               <p>
                 API自动监控
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 监控概况
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 自定义监控
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 响应异常
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 监控记录
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 报警规则
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 每日统计
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
             </div>
             <div class="mt-8">
@@ -230,97 +232,97 @@ function gotoTeam() {
               <span>API协作</span>
               <p>
                 设计API
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 API文档
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 生成API文档
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 API编辑历史
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 导出Word
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 API测试
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 管理API测试用例
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 环境管理
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 数据结构管理
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 返回码管理
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
             </div>
             <div class="item mt-8">
               <span>API监控</span>
               <p>
                 API自动监控
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 监控概况
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 自定义监控
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 响应异常
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 监控记录
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 报警规则
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 每日统计
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
             </div>
             <div class="mt-8">
               <span>API低代码</span>
               <p>
                 云接口管理
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 微页面接口管理
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 数据表自动化接口
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 数据库转API接口
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
               <p>
                 Node.js语法低代码
-                <i class="el-icon-check" />
+                <el-icon><Check /></el-icon>
               </p>
             </div>
           </div>
@@ -432,6 +434,10 @@ function gotoTeam() {
       line-height: 1.7;
     }
   }
+}
+
+.el-icon{
+  color: #86be54 !important;
 }
 
 .appshows {
