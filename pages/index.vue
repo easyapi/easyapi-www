@@ -5,10 +5,13 @@ import { useHead } from '@unhead/vue'
 import { useCookies } from '@vueuse/integrations/useCookies'
 import { gotoEasyTeam } from '~/utils/goto'
 
+import {account} from "@/api/account"
+
 export default defineComponent({
   name: 'Home',
   setup() {
     const cookies = useCookies()
+    const route = useRoute()
     useHead({
       title: 'EasyAPI - API文档管理、API测试、API监控、API低代码、API接口服务新一代工具',
       meta: [{ name: 'description', content: 'EasyAPI 简单，好用的API管理系统，为您提供API文档管理、API测试、API监控、API低代码、API接口服务，新一代API管理工具。EasyAPI是国内第一家做API文档管理的产品。' },
@@ -20,21 +23,21 @@ export default defineComponent({
     }
 
     onMounted(() => {
-      // if ($nuxt.$route.path === '/' && cookies.get('authenticationToken')) {
-      //   getUser(this)
-      //     .then(res => {
-      //       if (res.data.code === 1 && res.data.content.team) {
-      //         if (res.data.content.team.url) {
-      //           window.location.href = 'https://' + res.data.content.team.url + '.easyapi.com'
-      //         }
-      //       }
-      //     })
-      //     .catch(error => {
-      //       cookies.remove('authenticationToken')
-      //       cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
-      //       window.location.href = 'https://account.easyapi.com/login'
-      //     })
-      // }
+      if (route.path === '/' && cookies.get('authenticationToken')) {
+        account.getUser()
+          .then((res) => {
+            if (res.code === 1 && res.content.team) {
+              if (res.content.team.url) {
+                window.location.href = `https://${res.content.team.url}.easyapi.com`
+              }
+            }
+          })
+          .catch((error) => {
+            cookies.remove('authenticationToken')
+            cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
+            window.location.href = 'https://account.easyapi.com/login'
+          })
+      }
     })
     return {
       gotoTeam,

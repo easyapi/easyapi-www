@@ -40,11 +40,11 @@ watch(() => props.screenWidth,
             <el-popover placement="top" width="100" trigger="hover">
               <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg">
               <template #reference>
-                <a><img class="w-12 mr-4" src="../../assets/images/wechat.svg" alt=""></a>
+                <a><img class="w-12 mr-4" src="../assets/images/wechat.svg" alt=""></a>
               </template>
             </el-popover>
             <a href="https://github.com/easyapi" target="_blank">
-              <img class="w-12" src="../../assets/images/github.svg" alt="">
+              <img class="w-12" src="../assets/images/github.svg" alt="">
             </a>
           </div>
         </div>
@@ -200,11 +200,11 @@ watch(() => props.screenWidth,
           <el-popover placement="top" width="100" trigger="hover">
             <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg">
             <template #reference>
-              <a><img class="w-12 mr-4" src="@/assets/images/wechat.svg" alt=""></a>
+              <a><img class="w-12 mr-4 outline" src="../assets/images/wechat.svg" alt=""></a>
             </template>
           </el-popover>
           <a href="https://github.com/easyapi" target="_blank">
-            <img class="w-12 mr-4" src="@/assets/images/github.svg" alt="">
+            <img class="w-12 mr-4" src="../assets/images/github.svg" alt="">
           </a>
           <p class="flex items-center">
             联系电话：

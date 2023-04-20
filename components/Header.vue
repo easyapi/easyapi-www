@@ -1,13 +1,14 @@
 <script>
-import { mapGetters } from 'vuex'
+import { CaretTop, CaretBottom } from '@element-plus/icons-vue'
 import { useCookies } from '@vueuse/integrations/useCookies'
-import { Fold, Place } from '@element-plus/icons-vue'
+import { Edit, Fold, Place, Sort, Switch } from '@element-plus/icons-vue'
 import { gotoEasyTeam } from '~/utils/goto'
+import { userStore } from '@/store/user'
 
 const cookies = useCookies()
 
 export default {
-  components: { Place, Fold },
+  components: { Edit, Fold, Place, Sort, Switch, CaretTop, CaretBottom },
   props: ['screenWidth'],
   data() {
     return {
@@ -20,6 +21,7 @@ export default {
       headerActive: '',
       activeIndex: '1',
       activeIndex2: '1',
+      userStore: userStore(),
     }
   },
   watch: {
@@ -32,9 +34,6 @@ export default {
       },
       immediate: true,
     },
-  },
-  computed: {
-    ...mapGetters(['photo', 'team']),
   },
   beforeMount() {
     if (
@@ -52,8 +51,7 @@ export default {
   },
   mounted() {
     if (this.authenticationToken)
-      this.$store.dispatch('getUser')
-
+      userStore().getUser()
   },
   methods: {
     showNav(val) {
@@ -172,8 +170,8 @@ export default {
               <span class="f-rel navs-item">
                 <a>
                   产品
-                  <i v-if="ifShowProduct" class="el-icon-caret-bottom" />
-                  <i v-else class="el-icon-caret-top" />
+                  <el-icon v-if="ifShowProduct"><CaretBottom /></el-icon>
+                  <el-icon v-else><CaretTop /></el-icon>
                 </a>
               </span>
             </template>
@@ -213,8 +211,8 @@ export default {
               <span class="f-rel navs-item">
                 <a>
                   私有化
-                  <i v-if="ifShowPrivatization" class="el-icon-caret-bottom" />
-                  <i v-else class="el-icon-caret-top" />
+                  <el-icon v-if="ifShowPrivatization"><CaretBottom /></el-icon>
+                  <el-icon v-else><CaretTop /></el-icon>
                 </a>
               </span>
             </template>
@@ -227,19 +225,24 @@ export default {
           <div v-if="authenticationToken" class="team-head-left">
             <el-dropdown trigger="hover" @command="handleCommand">
               <span id="showTeamInfo" style="cursor: pointer">
-                <img v-if="photo" class="team-icon" :src="photo" alt>
+                <img v-if="userStore.photo" class="team-icon" :src="userStore.photo">
               </span>
-              <el-dropdown-menu slot="dropdown">
-                <el-dropdown-item command="notice" icon="el-icon-edit">
-                  我的通知
-                </el-dropdown-item>
-                <el-dropdown-item command="edit" icon="el-icon-sort">
-                  个人设置
-                </el-dropdown-item>
-                <el-dropdown-item command="quitLogin" icon="el-icon-switch-button">
-                  退出
-                </el-dropdown-item>
-              </el-dropdown-menu>
+              <template #dropdown>
+                <el-dropdown-menu>
+                  <el-dropdown-item command="notice">
+                    <el-icon><Edit /></el-icon>
+                    <span>我的通知</span>
+                  </el-dropdown-item>
+                  <el-dropdown-item command="edit">
+                    <el-icon><Sort /></el-icon>
+                    <span>个人设置</span>
+                  </el-dropdown-item>
+                  <el-dropdown-item command="quitLogin">
+                    <el-icon><Switch /></el-icon>
+                    <span>退出</span>
+                  </el-dropdown-item>
+                </el-dropdown-menu>
+              </template>
             </el-dropdown>
           </div>
           <span class="f-rel nav">

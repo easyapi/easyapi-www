@@ -2,12 +2,14 @@
 import { useHead } from '@unhead/vue'
 import { ref } from 'vue'
 import Pay from './components/pay.vue'
+import { Check } from '@element-plus/icons-vue'
 
 useHead({
   title: '支持我们 - EasyAPI服务平台',
   meta: [{ name: 'description', content: '支持EasyAPI' },
     { name: 'keyword', content: '支持EasyAPI' }],
 })
+
 const dialogVisible = ref(false)
 
 function showCode() {
@@ -103,7 +105,7 @@ function showCode() {
               <dd>
                 <p>
                   署名
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>鼠标垫</p>
                 <p>马克杯</p>
@@ -111,7 +113,7 @@ function showCode() {
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
-                  <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg" @click="showCode">支持15元</a>
+                  <el-button type="primary" size="small" @click="showCode">支持15元</el-button>
                 </span>
               </dd>
             </dl>
@@ -123,18 +125,18 @@ function showCode() {
               <dd>
                 <p>
                   署名
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   鼠标垫
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>马克杯</p>
                 <p>T恤衫</p>
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
-                  <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg" @click="showCode">支持50元</a>
+                  <el-button type="primary" size="small" @click="showCode">支持50元</el-button>
                 </span>
               </dd>
             </dl>
@@ -146,21 +148,21 @@ function showCode() {
               <dd>
                 <p>
                   署名
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   鼠标垫
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   马克杯
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>T恤衫</p>
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
-                  <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg" @click="showCode">支持100元</a>
+                  <el-button type="primary" size="small" @click="showCode">支持100元</el-button>
                 </span>
               </dd>
             </dl>
@@ -172,24 +174,24 @@ function showCode() {
               <dd>
                 <p>
                   署名
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   鼠标垫
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   马克杯
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   T恤衫
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>充电宝</p>
                 <p>广告机会</p>
                 <span>
-                  <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg" @click="showCode">支持200元</a>
+                  <el-button type="primary" size="small" @click="showCode">支持200元</el-button>
                 </span>
               </dd>
             </dl>
@@ -201,27 +203,27 @@ function showCode() {
               <dd>
                 <p>
                   署名
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   鼠标垫
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   马克杯
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   T恤衫
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   充电宝
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>广告机会</p>
                 <span>
-                  <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg" @click="showCode">支持500元</a>
+                  <el-button type="primary" size="small" @click="showCode">支持500元</el-button>
                 </span>
               </dd>
             </dl>
@@ -233,27 +235,27 @@ function showCode() {
               <dd>
                 <p>
                   署名
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   鼠标垫
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   马克杯
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   T恤衫
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   充电宝
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>广告机会</p>
                 <span>
-                  <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg" @click="showCode">支持2000元</a>
+                     <el-button type="primary" size="small" @click="showCode">支持2000元</el-button>
                 </span>
               </dd>
             </dl>
@@ -265,30 +267,30 @@ function showCode() {
               <dd>
                 <p>
                   署名
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   鼠标垫
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   马克杯
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   T恤衫
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   充电宝
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   广告机会
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <span>
-                  <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg" @click="showCode">支持5000元</a>
+                    <el-button type="primary" size="small" @click="showCode">支持5000元</el-button>
                 </span>
               </dd>
             </dl>
@@ -300,30 +302,30 @@ function showCode() {
               <dd>
                 <p>
                   署名
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   鼠标垫
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   马克杯
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   T恤衫
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   充电宝
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <p>
                   股份
-                  <i class="el-icon-check" />
+                   <el-icon><Check /></el-icon>
                 </p>
                 <span>
-                  <a class="btn btn-info" href="javascript:;" data-toggle="modal" data-target=".bs-example-modal-lg" @click="showCode">支持10000元</a>
+                    <el-button type="primary" size="small" @click="showCode">支持10000元</el-button>
                 </span>
               </dd>
             </dl>
@@ -910,7 +912,7 @@ function showCode() {
   .donate-img {
     padding: 0 30px 30px;
     margin: 20px;
-    //background: url(../../../static/images/info/about_0.png) bottom no-repeat;
+    background: url('/images/about_0.png') bottom no-repeat;
 
     img {
       width: 100%;

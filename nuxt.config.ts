@@ -24,6 +24,7 @@ export default defineNuxtConfig({
     },
   },
   css: [
+    '~/assets/scss/element.scss',
     '~/assets/scss/banner.scss',
     '~/assets/scss/base.scss',
     '~/assets/scss/case.scss',
