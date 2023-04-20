@@ -37,12 +37,14 @@ watch(() => props.screenWidth,
             <span class="color-00AEC5">136-5617-1020</span>
           </p>
           <div class="flex">
-            <el-popover placement="top" width="100" trigger="hover">
-              <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg">
-              <template #reference>
-                <a><img class="w-12 mr-4" src="../assets/images/wechat.svg" alt=""></a>
-              </template>
-            </el-popover>
+            <client-only>
+              <el-popover placement="top" width="100" trigger="hover">
+                <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg">
+                <template #reference>
+                  <a><img class="w-12 mr-4" src="../assets/images/wechat.svg" alt=""></a>
+                </template>
+              </el-popover>
+            </client-only>
             <a href="https://github.com/easyapi" target="_blank">
               <img class="w-12" src="../assets/images/github.svg" alt="">
             </a>
@@ -197,12 +199,14 @@ watch(() => props.screenWidth,
       </div>
       <div class="mt-16">
         <div class="flex">
-          <el-popover placement="top" width="100" trigger="hover">
-            <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg">
-            <template #reference>
-              <a><img class="w-12 mr-4 outline" src="../assets/images/wechat.svg" alt=""></a>
-            </template>
-          </el-popover>
+          <client-only>
+            <el-popover placement="top" width="100" trigger="hover">
+              <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg">
+              <template #reference>
+                <a><img class="w-12 mr-4 outline" src="../assets/images/wechat.svg" alt=""></a>
+              </template>
+            </el-popover>
+          </client-only>
           <a href="https://github.com/easyapi" target="_blank">
             <img class="w-12 mr-4" src="../assets/images/github.svg" alt="">
           </a>
