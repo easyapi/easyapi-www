@@ -5,7 +5,7 @@ import { useHead } from '@unhead/vue'
 import { useCookies } from '@vueuse/integrations/useCookies'
 import { gotoEasyTeam } from '~/utils/goto'
 
-import {account} from "@/api/account"
+import { account } from '@/api/account'
 
 export default defineComponent({
   name: 'Home',
@@ -24,19 +24,16 @@ export default defineComponent({
 
     onMounted(() => {
       if (route.path === '/' && cookies.get('authenticationToken')) {
-        account.getUser()
-          .then((res) => {
-            if (res.code === 1 && res.content.team) {
-              if (res.content.team.url) {
-                window.location.href = `https://${res.content.team.url}.easyapi.com`
-              }
-            }
-          })
-          .catch((error) => {
-            cookies.remove('authenticationToken')
-            cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
-            window.location.href = 'https://account.easyapi.com/login'
-          })
+        account.getUser().then((res) => {
+          if (res.code === 1 && res.content.team) {
+            if (res.content.team.url)
+              window.location.href = `https://${res.content.team.url}.easyapi.com`
+          }
+        }).catch((error) => {
+          cookies.remove('authenticationToken')
+          cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
+          window.location.href = 'https://account.easyapi.com/login'
+        })
       }
     })
     return {

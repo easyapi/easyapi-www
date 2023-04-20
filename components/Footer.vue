@@ -53,33 +53,65 @@ watch(() => props.screenWidth,
         <div class="w-6/12 flex justify-around">
           <div class="flex flex-col">
             <h2>产品介绍</h2>
-            <a href="/product/doc">API协作</a>
-            <a href="/product/lowcode">API低代码</a>
-            <a href="/product/test">API测试</a>
-            <a href="/product/interface">API服务</a>
-            <a href="/product/monitor">API监控</a>
-            <a href="/product/scene">API场景化服务</a>
+            <nuxt-link to="/product/doc">
+              API协作
+            </nuxt-link>
+            <nuxt-link to="/product/lowcode">
+              API低代码
+            </nuxt-link>
+            <nuxt-link to="/product/test">
+              API测试
+            </nuxt-link>
+            <nuxt-link to="/product/interface">
+              API服务
+            </nuxt-link>
+            <nuxt-link to="/product/monitor">
+              API监控
+            </nuxt-link>
+            <nuxt-link to="/product/scene">
+              API场景化服务
+            </nuxt-link>
           </div>
           <div class="flex flex-col">
             <h2>私有化方案</h2>
-            <a href="/solution/portal">API管理门户</a>
-            <a href="/solution/market">API服务市场</a>
-            <a href="/solution/open">API开放平台</a>
+            <nuxt-link to="/solution/portal">
+              API管理门户
+            </nuxt-link>
+            <nuxt-link to="/solution/market">
+              API服务市场
+            </nuxt-link>
+            <nuxt-link to="/solution/open">
+              API开放平台
+            </nuxt-link>
           </div>
           <div class="flex flex-col">
             <h2>使用文档</h2>
             <a href="https://help.easyapi.com" target="_blank">帮助中心</a>
             <a href="https://support.qq.com/products/352231" target="_blank">BUG反馈</a>
-            <a href="/info/extension">浏览器插件</a>
-            <a href="/info/github">前端开源计划</a>
+            <nuxt-link to="/info/extension">
+              浏览器插件
+            </nuxt-link>
+            <nuxt-link to="/info/github">
+              前端开源计划
+            </nuxt-link>
           </div>
           <div class="flex flex-col">
             <h2>关于</h2>
-            <a href="/info/about">关于我们</a>
-            <a href="/info/together">合作伙伴</a>
-            <a href="/info/contact">联系我们</a>
-            <a href="/info/donate">支持我们</a>
-            <a href="/post/">平台动态</a>
+            <nuxt-link to="/info/about">
+              关于我们
+            </nuxt-link>
+            <nuxt-link to="/info/together">
+              合作伙伴
+            </nuxt-link>
+            <nuxt-link to="/info/contact">
+              联系我们
+            </nuxt-link>
+            <nuxt-link to="/info/donate">
+              支持我们
+            </nuxt-link>
+            <nuxt-link to="/post/">
+              平台动态
+            </nuxt-link>
           </div>
         </div>
         <div class="w-2/12 flex justify-end text-center">

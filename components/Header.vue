@@ -1,7 +1,6 @@
 <script>
-import { CaretTop, CaretBottom } from '@element-plus/icons-vue'
+import { CaretBottom, CaretTop, Edit, Fold, Place, Sort, Switch } from '@element-plus/icons-vue'
 import { useCookies } from '@vueuse/integrations/useCookies'
-import { Edit, Fold, Place, Sort, Switch } from '@element-plus/icons-vue'
 import { gotoEasyTeam } from '~/utils/goto'
 import { userStore } from '@/store/user'
 
@@ -105,9 +104,9 @@ export default {
   <client-only>
     <div v-show="ifShow" :style="headerActive" class="header header-index">
       <div class="content">
-        <a href="/">
-          <img class="logo float-left" src="https://qiniu.easyapi.com/market/logo.svg">
-        </a>
+        <nuxt-link to="/home">
+          <img alt="EasyAPI LOGO" class="logo float-left" src="https://qiniu.easyapi.com/market/logo.svg">
+        </nuxt-link>
         <div class="navs f-fl">
           <el-popover placement="bottom-start" width="650" trigger="hover" @show="showProduct" @hide="hideProduct">
             <ul class="popover-ul">
@@ -176,7 +175,7 @@ export default {
               </span>
             </template>
           </el-popover>
-          <a href="/info/price">价格</a>
+          <nuxt-link to="/info/price">价格</nuxt-link>
           <el-popover placement="bottom-start" width="650" trigger="hover" @show="showPrivatization" @hide="hidePrivatization">
             <ul class="popover-ul">
               <a href="/solution/portal" class="a_link">
