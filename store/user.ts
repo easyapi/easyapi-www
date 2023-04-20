@@ -30,8 +30,6 @@ export const userStore = defineStore('user', {
           this.email = res.content.email
           this.team = res.content.team
         }
-      }).catch((error) => {
-        removeToken()
       })
     },
     /**

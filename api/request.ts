@@ -13,17 +13,18 @@ async function fetch(url: string, options?: any, headers?: any): Promise<ApiResp
     const authenticationToken = getToken()
     if (authenticationToken)
       customHeaders.Authorization = `Bearer ${authenticationToken}`
-    const res = await $fetch<ApiResponse>(url,
+    return await $fetch<ApiResponse>(url,
       { ...options, headers: customHeaders },
     )
-    return res
   } catch (error: any) {
+    if (error.data.code === -9){
+      removeToken()
+      window.location.href = 'https://account.easyapi.com/login?from=https://wwww.easyapi.com/home'
+    }
     ElMessage({
       type: 'error',
       message: error.data.message,
     })
-    if (error.data.code === -9)
-      window.location.href = 'https://account.easyapi.com/login?from=https://wwww.easyapi.com/home'
     return error.data
   }
 }

@@ -2,15 +2,13 @@
 import { onMounted } from 'vue'
 import { useHead } from '@unhead/vue'
 
-import { useCookies } from '@vueuse/integrations/useCookies'
 import { gotoEasyTeam } from '~/utils/goto'
-
 import { account } from '@/api/account'
+import { getToken } from '~/utils/token'
 
 export default defineComponent({
   name: 'Home',
   setup() {
-    const cookies = useCookies()
     const route = useRoute()
     useHead({
       title: 'EasyAPI - API文档管理、API测试、API监控、API低代码、API接口服务新一代工具',
@@ -23,16 +21,12 @@ export default defineComponent({
     }
 
     onMounted(() => {
-      if (route.path === '/' && cookies.get('authenticationToken')) {
+      if (route.path === '/' && getToken()) {
         account.getUser().then((res) => {
           if (res.code === 1 && res.content.team) {
             if (res.content.team.url)
               window.location.href = `https://${res.content.team.url}.easyapi.com`
           }
-        }).catch((error) => {
-          cookies.remove('authenticationToken')
-          cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
-          window.location.href = 'https://account.easyapi.com/login'
         })
       }
     })
