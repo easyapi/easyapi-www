@@ -1,17 +1,15 @@
 <script>
 import { CaretBottom, CaretTop, Edit, Fold, Place, Sort, Switch } from '@element-plus/icons-vue'
-import { useCookies } from '@vueuse/integrations/useCookies'
 import { gotoEasyTeam } from '~/utils/goto'
 import { userStore } from '@/store/user'
-
-const cookies = useCookies()
+import { getToken } from '~/utils/token'
 
 export default {
   components: { Edit, Fold, Place, Sort, Switch, CaretTop, CaretBottom },
   props: ['screenWidth'],
   data() {
     return {
-      authenticationToken: cookies.get('authenticationToken'),
+      authenticationToken: getToken(),
       ifShowProduct: true,
       ifShowPrivatization: true,
       ifShow: true,
@@ -175,7 +173,9 @@ export default {
               </span>
             </template>
           </el-popover>
-          <nuxt-link to="/info/price">价格</nuxt-link>
+          <nuxt-link to="/info/price">
+            价格
+          </nuxt-link>
           <el-popover placement="bottom-start" width="650" trigger="hover" @show="showPrivatization" @hide="hidePrivatization">
             <ul class="popover-ul">
               <a href="/solution/portal" class="a_link">

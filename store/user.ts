@@ -1,12 +1,7 @@
 import { defineStore } from 'pinia'
-import { useCookies } from '@vueuse/integrations/useCookies'
-
 import { account } from '@/api/account'
+import { getToken, removeToken } from '~/utils/token'
 
-const cookies = useCookies()
-
-// useStore 可以任意，比如 useUser, useCart
-// 参数1是整个应用中唯一的store id
 export const userStore = defineStore('user', {
   state() {
     return {
@@ -17,7 +12,7 @@ export const userStore = defineStore('user', {
       mobile: '',
       email: '',
       team: '',
-      token: cookies.get('authenticationToken'),
+      token: getToken(),
     }
   },
   actions: {
@@ -25,29 +20,25 @@ export const userStore = defineStore('user', {
      * 获取用户信息
      */
     getUser() {
-      account.getUser()
-        .then((res) => {
-          if (res.code === 1) {
-            this.userId = res.content.id
-            this.username = res.content.username
-            this.nickname = res.content.nickname
-            this.photo = res.content.photo
-            this.mobile = res.content.mobile
-            this.email = res.content.email
-            this.team = res.content.team
-          }
-        })
-        .catch((error) => {
-          cookies.remove('authenticationToken')
-          cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
-        })
+      account.getUser().then((res) => {
+        if (res.code === 1) {
+          this.userId = res.content.id
+          this.username = res.content.username
+          this.nickname = res.content.nickname
+          this.photo = res.content.photo
+          this.mobile = res.content.mobile
+          this.email = res.content.email
+          this.team = res.content.team
+        }
+      }).catch((error) => {
+        removeToken()
+      })
     },
     /**
      * 登出
      */
     logout() {
-      cookies.remove('authenticationToken')
-      cookies.remove('authenticationToken', { path: '/', domain: '.easyapi.com' })
+      removeToken()
     },
   },
 })

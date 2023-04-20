@@ -1,4 +1,5 @@
 import { ElMessage } from 'element-plus'
+import { getToken } from '~/utils/token'
 
 /**
  * API请求封装
@@ -8,7 +9,10 @@ import { ElMessage } from 'element-plus'
  */
 async function fetch(url: string, options?: any, headers?: any): Promise<ApiResponse> {
   try {
-    const customHeaders = { Authorization: `Bearer ${useCookie('authenticationToken').value}`, ...headers }
+    const customHeaders = { ...headers }
+    const authenticationToken = getToken()
+    if (authenticationToken)
+      customHeaders.Authorization = `Bearer ${authenticationToken}`
     const res = await $fetch<ApiResponse>(url,
       { ...options, headers: customHeaders },
     )
@@ -20,7 +24,6 @@ async function fetch(url: string, options?: any, headers?: any): Promise<ApiResp
     })
     if (error.data.code === -9)
       window.location.href = 'https://account.easyapi.com/login?from=https://wwww.easyapi.com/home'
-
     return error.data
   }
 }
