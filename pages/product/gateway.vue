@@ -104,7 +104,7 @@ useHead({
       <div class="description">
         让API跟安全，更灵活
       </div>
-      <ul class="icon-dispaly content">
+      <ul class="icon-display content">
         <li>
           <img src="/images/info/gateway_icon9.png">
           <span>降低成本</span>

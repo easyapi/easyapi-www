@@ -38,14 +38,15 @@
 }
 
 /** el-dropdown 按钮 **/
-.el-dropdown{
+.el-dropdown {
   .el-tooltip__trigger:focus {
     outline: none !important;
   }
 }
-.el-dropdown__popper{
-  .el-dropdown-menu__item{
-    &:hover{
+
+.el-dropdown__popper {
+  .el-dropdown-menu__item {
+    &:hover {
       color: #18c1d6 !important;
     }
   }

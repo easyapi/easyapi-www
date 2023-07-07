@@ -21,8 +21,8 @@ useHead({
       <div class="title">
         您的API总有问题存在
       </div>
-      <div class="oneimg wp clearfix">
-        <img class="mx-auto" src="/images/info/test_2.png">
+      <div class="text-center wp clearfix">
+        <img class="mx-auto align-bottom" src="/images/info/test_2.png">
       </div>
     </div>
 
@@ -33,8 +33,8 @@ useHead({
       <div class="description">
         致力于成为中国最好的API测试工具
       </div>
-      <div class="oneimg">
-        <img class="mx-auto w-1200" src="https://qiniu.easyapi.com/TestInstrument.png">
+      <div class="text-center">
+        <img class="mx-auto w-1200 align-bottom" src="https://qiniu.easyapi.com/TestInstrument.png">
       </div>
     </div>
 
@@ -45,7 +45,6 @@ useHead({
       <div class="u-tese-wrap">
         <ul class="u-tese content text_img_auto f-cb add_img_line">
           <li>
-            <!-- <i class="iconfont icon-xingxing"></i> -->
             <div class="line_tips flex">
               <img class="" src="/images/info/document.png" alt="未加载">
               <div class="d_inline_block" style="padding-left: 15px">
@@ -55,7 +54,6 @@ useHead({
             </div>
           </li>
           <li>
-            <!-- <i class="iconfont icon-xingxing"></i> -->
             <div class="flex line_tips">
               <img src="/images/info/notice.png" alt="未加载">
               <div class="d_inline_block" style="padding-left: 15px">
@@ -65,9 +63,8 @@ useHead({
             </div>
           </li>
           <li>
-            <!-- <i class="iconfont icon-xingxing"></i> -->
             <div class="flex line_tips">
-              <img src="/images/info/manange.png" alt="未加载">
+              <img src="/images/info/manage.png" alt="未加载">
               <div class="d_inline_block" style="padding-left: 15px">
                 <h3>接口示例管理</h3>
                 <p>创建接口测试示例，方便移动端快速测试，参数传递更清楚</p>
@@ -87,7 +84,7 @@ useHead({
           <li>
             <!-- <i class="iconfont icon-xingxing"></i> -->
             <div class="flex line_tips">
-              <img src="/images/info/sopport.png" alt="未加载">
+              <img src="/images/info/support.png" alt="未加载">
               <div class="d_inline_block" style="padding-left: 15px">
                 <h3>参数支持JSON格式</h3>
                 <p>支持格式化输入参数，并转换为JSON参数进行测试</p>

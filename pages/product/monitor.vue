@@ -1,10 +1,13 @@
 ﻿<script setup lang="ts">
+import { useHead } from '@unhead/vue'
+
 useHead({
   title: '监控系统 - EasyAPI服务平台',
   meta: [{ name: 'description', content: 'API监控系统' },
     { name: 'keyword', content: '监控系统' }],
 })
 </script>
+
 <template>
   <div>
     <div class="banner">
@@ -23,30 +26,35 @@ useHead({
     </div>
 
     <div class="pd-100 f-border-b">
-      <div class="title">接口性能分析</div>
+      <div class="title">
+        接口性能分析
+      </div>
       <div class="description">
         分析App对应的API接口请求性能，包含HTTP响应时间、吞吐率、HTTP错误率，解析崩溃率分析等等
-        <br />
+        <br>
         帮您快速优化后端服务性能
       </div>
-      <div class="oneimg">
-        <img class="mx-auto" src="/images/info/monitor_2.png" />
+      <div class="text-center">
+        <img class="mx-auto align-bottom" src="/images/info/monitor_2.png">
       </div>
     </div>
 
     <div class="pd-100 f-border-b">
-      <div class="title">业务风险降低</div>
+      <div class="title">
+        业务风险降低
+      </div>
       <div class="description">
         实时反馈APP与API的交互情况，请求参数，返回结果，瞬间重现问题场景
-        <br />
+        <br>
         实现发现问题，快速解决问题
       </div>
-      <div class="oneimg">
-        <img class="mx-auto" src="/images/info/monitor_3.png" />
+      <div class="text-center">
+        <img class="mx-auto align-bottom" src="/images/info/monitor_3.png">
       </div>
     </div>
   </div>
 </template>
+
 <style lang="scss" scoped>
 .bug_btn:hover {
   color: rgba(48, 166, 215, 0.7);
@@ -54,10 +62,6 @@ useHead({
 
 .bug_btn:active {
   color: rgba(48, 166, 215, 0.6);
-}
-
-.dis_showtxt p:hover {
-  color: #2eaccb !important;
 }
 
 @media screen and (min-width: 1000px) {
@@ -199,5 +203,4 @@ useHead({
     }
   }
 }
-
 </style>

@@ -57,7 +57,7 @@ useHead({
       <div class="title">
         我们的优势
       </div>
-      <ul class="content icon-dispaly">
+      <ul class="content icon-display">
         <li>
           <img class="mx-auto" src="https://qiniu.easyapi.com/%E5%BD%A2%E7%8A%B6%2023.png">
           <span>专业技术</span>

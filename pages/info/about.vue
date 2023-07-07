@@ -120,6 +120,7 @@ useHead({
     </div>
   </div>
 </template>
+
 <style lang="scss" scoped>
 .about {
   margin-top: 72px;

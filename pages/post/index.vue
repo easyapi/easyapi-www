@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, reactive } from 'vue'
+import { useHead } from '@unhead/vue'
 import Item from './components/item.vue'
 import { article } from '~/api/article'
 
@@ -35,7 +36,7 @@ function getArticleList() {
   state.loading = true
   const params = {
     size: pagination.size,
-    page:pagination.page,
+    page: pagination.page,
   }
   article.getArticleList(params).then((res) => {
     state.loading = false
@@ -79,7 +80,7 @@ onMounted(() => {
       <Icon type="ios-loading" size="18" class="demo-spin-icon-load" />
       <div>加载中......</div>
     </div>
-    <div v-if="state.noMoreData" class="noMoreData">
+    <div v-if="state.noMoreData" class="no-more-data">
       <div>没有更多数据了...</div>
     </div>
   </div>
@@ -91,7 +92,7 @@ onMounted(() => {
   color: #2d8cf0;
 }
 
-.noMoreData {
+.no-more-data {
   margin: 0 0 20px 0;
   text-align: center;
   color: #666;

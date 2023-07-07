@@ -1,7 +1,6 @@
 ﻿<script setup lang="ts">
 import { reactive } from 'vue'
 
-import BaiduMap from 'vue-baidu-map/components/map/Map.vue'
 import { useHead } from '@unhead/vue'
 
 useHead({
@@ -30,7 +29,7 @@ const map = reactive({
         </h2>
         <div class="u-contact">
           <div class="tex">
-<!--            <BaiduMap class="bm-view" ak="yZYo7WmkUj3bMFZMcP7PRSpuvjUfGw0B" :center="map.center" :zoom="map.zoom" :scroll-wheel-zoom="scroll" />-->
+            <!--            <BaiduMap class="bm-view" ak="yZYo7WmkUj3bMFZMcP7PRSpuvjUfGw0B" :center="map.center" :zoom="map.zoom" :scroll-wheel-zoom="scroll" /> -->
             <div class="u-contact-text">
               <h3>无锡帮趣数据服务有限公司</h3>
               <p>地址：中国·无锡市 滨湖区吟白路1号超级计算无锡中心6楼</p>
@@ -56,20 +55,20 @@ const map = reactive({
                 <div class="code_img">
                   <img src="https://qiniu.easyapi.com/easyapi_contact_weixin.png">
                 </div>
-                <div class="link_infr">
+                <div class="link_info">
                   <span>联络人微信</span>
                 </div>
               </li>
               <li>
-                <img class="mx-auto" src="/images/tips_promlem.png">
-                <div class="link_infr">
+                <img class="mx-auto" src="/images/contact/problem.png">
+                <div class="link_info">
                   <p>快速反馈问题</p>
                   <span>7*24小时接受您的反馈并处理</span>
                 </div>
               </li>
               <li>
                 <img class="mx-auto" src="/images/join_wechat.png">
-                <div class="link_infr">
+                <div class="link_info">
                   <p>加入EasyAPI微信城市群</p>
                   <span>上海 无锡 苏州 北京 深圳 广州 成都 重庆 西安</span>
                 </div>
@@ -153,7 +152,7 @@ const map = reactive({
       text-align: center;
       overflow: hidden;
 
-      .link_infr {
+      .link_info {
         clear: both;
         margin-top: 10px;
 
@@ -258,7 +257,7 @@ const map = reactive({
       text-align: center;
       overflow: hidden;
 
-      .link_infr {
+      .link_info {
         clear: both;
         margin-top: 10px;
 
@@ -371,7 +370,7 @@ const map = reactive({
         width: 60px;
       }
 
-      .link_infr {
+      .link_info {
         clear: both;
         margin-top: 10px;
 

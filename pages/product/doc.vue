@@ -21,7 +21,7 @@ useHead({
     </div>
 
     <div class="pd-100">
-      <ul class="icon-dispaly content">
+      <ul class="icon-display content">
         <li>
           <img class="mx-auto" src="/images/info/test-icon-1.png">
           <span>简单易用</span>
@@ -111,11 +111,6 @@ useHead({
 
 <style lang="scss" scoped>
 @import '@/assets/scss/banner.scss';
-
-.dis_showtxt p:hover {
-  color: #2eaccb !important;
-}
-
 .banner {
   background-image: url('/images/product/bg_document.png');
 }

@@ -59,7 +59,7 @@ useHead({
         我们正在做的场景化服务
       </div>
       <div class="description" />
-      <ul class="content icon-dispaly">
+      <ul class="content icon-display">
         <li>
           <img class="mx-auto" src="/images/info/open_icon11.png">
           <span>聚合通知</span>
