@@ -1,164 +1,213 @@
-<script>
-import { CaretBottom, CaretTop, Edit, Fold, Place, Sort, Switch } from '@element-plus/icons-vue'
+<script setup lang="ts">
+import { reactive, watch } from 'vue'
+import {
+  CaretBottom,
+  CaretTop,
+  Edit,
+  Fold,
+  Place,
+  Sort,
+  Switch,
+} from '@element-plus/icons-vue'
 import { gotoEasyTeam } from '~/utils/goto'
-import { userStore } from '@/store/user'
+import { useUser } from '@/store/user'
 import { getToken } from '~/utils/token'
 
-export default {
-  components: { Edit, Fold, Place, Sort, Switch, CaretTop, CaretBottom },
-  props: ['screenWidth'],
-  data() {
-    return {
-      authenticationToken: getToken(),
-      ifShowProduct: true,
-      ifShowPrivatization: true,
-      ifShow: true,
-      ifNavShow: false,
-      type: '',
-      headerActive: '',
-      activeIndex: '1',
-      activeIndex2: '1',
-      userStore: userStore(),
-    }
-  },
-  watch: {
-    $route() {
-      this.ifNavShow = false
-    },
-    screenWidth: {
-      handler(val, oldVal) {
-        this.ifShow = val >= 800
-      },
-      immediate: true,
-    },
-  },
-  beforeMount() {
-    if (
-      this.$route.name === 'post'
-      || this.$route.name === 'info-about'
-      || this.$route.name === 'info-about'
-      || this.$route.name === 'info-together'
-      || this.$route.name === 'info-donate'
-      || this.$route.name === 'info-extension'
-      || this.$route.name === 'post-id'
-      || this.$route.name === 'info-support'
-      || this.$route.name === 'info-contact'
-    )
-      this.headerActive = 'background-color:#18c1d6'
-  },
-  mounted() {
-    if (this.authenticationToken)
-      userStore().getUser()
-  },
-  methods: {
-    showNav(val) {
-      this.type = val
-      this.ifNavShow = !this.ifNavShow
-    },
-    closeMenu() {
-      this.ifNavShow = false
-    },
-    jump() {
-      window.open('https://market.easyapi.com')
-    },
-    jumpSign() {
-      window.open('https://account.easyapi.com/signup/')
-    },
-    jumpLogin() {
-      window.open('https://account.easyapi.com/login/')
-    },
-    gotoTeam() {
-      gotoEasyTeam('')
-    },
-    showProduct() {
-      this.ifShowProduct = false
-    },
-    showPrivatization() {
-      this.ifShowPrivatization = false
-    },
-    hideProduct() {
-      this.ifShowProduct = true
-    },
-    hidePrivatization() {
-      this.ifShowPrivatization = true
-    },
-    handleCommand(command) {
-      if (command === 'notice')
-        gotoEasyTeam('/notification')
-      else if (command === 'edit')
-        gotoEasyTeam('/user/edit')
-      else if (command === 'quitLogin')
-        this.quitLogin()
-    },
-    quitLogin() {
-      this.$store.dispatch('logout')
-      window.location.href = 'https://account.easyapi.com/login'
-    },
-  },
+const route = useRoute()
+const userStore = useUser()
+
+const props = defineProps(['screenWidth'])
+
+const state = reactive({
+  authenticationToken: getToken(),
+  ifShowProduct: true,
+  ifShowPrivatization: true,
+  ifShow: true,
+  ifNavShow: false,
+  type: '',
+  headerActive: '',
+})
+
+function showNav(val: any) {
+  state.type = val
+  state.ifNavShow = !state.ifNavShow
 }
+
+function closeMenu() {
+  state.ifNavShow = false
+}
+
+function jump() {
+  window.open('https://market.easyapi.com')
+}
+
+function jumpSign() {
+  window.open('https://account.easyapi.com/signup/')
+}
+
+function jumpLogin() {
+  window.open('https://account.easyapi.com/login/')
+}
+
+function gotoTeam() {
+  gotoEasyTeam('')
+}
+
+function showProduct() {
+  state.ifShowProduct = false
+}
+
+function showPrivatization() {
+  state.ifShowPrivatization = false
+}
+
+function hideProduct() {
+  state.ifShowProduct = true
+}
+
+function hidePrivatization() {
+  state.ifShowPrivatization = true
+}
+
+function handleCommand(command: any) {
+  if (command === 'notice') gotoEasyTeam('/notification')
+  else if (command === 'edit') gotoEasyTeam('/user/edit')
+  else if (command === 'quitLogin') quitLogin()
+}
+
+function quitLogin() {
+  userStore.logout()
+  window.location.href = 'https://account.easyapi.com/login'
+}
+
+function getHeaderActive() {
+  let routeNames = [
+    'post',
+    'info-about',
+    'info-about',
+    'info-together',
+    'info-donate',
+    'info-extension',
+    'post-id',
+    'info-support',
+    'info-contact',
+  ]
+  if (routeNames.includes(route.name)) {
+    state.headerActive = 'background-color:#18c1d6'
+    return
+  }
+  state.headerActive = ''
+}
+
+onMounted(() => {
+  if (state.authenticationToken) userStore.getUser()
+})
+
+watch(
+  () => route.path,
+  () => {
+    state.ifNavShow = false
+    getHeaderActive()
+  },
+  { immediate: true }
+)
+
+watch(
+  () => props.screenWidth,
+  (value) => {
+    state.ifShow = value >= 800
+  },
+  { immediate: true }
+)
 </script>
 
 <template>
   <client-only>
-    <div v-show="ifShow" :style="headerActive" class="header header-index">
+    <div
+      v-show="state.ifShow"
+      :style="state.headerActive"
+      class="header header-index"
+    >
       <div class="content">
         <nuxt-link to="/home">
-          <img alt="EasyAPI LOGO" class="logo float-left" src="https://qiniu.easyapi.com/market/logo.svg">
+          <img
+            alt="EasyAPI LOGO"
+            class="logo float-left"
+            src="https://qiniu.easyapi.com/market/logo.svg"
+          />
         </nuxt-link>
         <div class="navs f-fl">
-          <el-popover placement="bottom-start" width="650" trigger="hover" @show="showProduct" @hide="hideProduct">
+          <el-popover
+            placement="bottom-start"
+            width="650"
+            trigger="hover"
+            @show="showProduct"
+            @hide="hideProduct"
+          >
             <ul class="popover-ul">
               <a href="/product/doc" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon1.png">
+                  <img class="icon_img" src="/images/info/down_icon1.png" />
                   <div class="popover-content">
                     <p>文档管理</p>
-                    <span>在线编辑API接口文档，强大的API接口测试功能，团队协作超便捷</span>
+                    <span
+                      >在线编辑API接口文档，强大的API接口测试功能，团队协作超便捷</span
+                    >
                   </div>
                 </li>
               </a>
               <a href="/product/lowcode" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/icon_lowcode.png">
+                  <img class="icon_img" src="/images/info/icon_lowcode.png" />
                   <div class="popover-content">
                     <p>低代码</p>
-                    <span>轻松构建API接口服务，助力企业数字化服务，支持多种开发语言</span>
+                    <span
+                      >轻松构建API接口服务，助力企业数字化服务，支持多种开发语言</span
+                    >
                   </div>
                 </li>
               </a>
               <a href="/product/test" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon3.png">
+                  <img class="icon_img" src="/images/info/down_icon3.png" />
                   <div class="popover-content">
                     <p>接口测试</p>
-                    <span>在线API测试工具，快速完成接口测试任务，支持团队共同测试</span>
+                    <span
+                      >在线API测试工具，快速完成接口测试任务，支持团队共同测试</span
+                    >
                   </div>
                 </li>
               </a>
               <a href="/product/interface" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon4.png">
+                  <img class="icon_img" src="/images/info/down_icon4.png" />
                   <div class="popover-content">
                     <p>接口服务</p>
-                    <span>众多接口服务，满足开发的每一个环节，让开发更高效，让开发更高效</span>
+                    <span
+                      >众多接口服务，满足开发的每一个环节，让开发更高效，让开发更高效</span
+                    >
                   </div>
                 </li>
               </a>
               <a href="/product/monitor" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon5.png">
+                  <img class="icon_img" src="/images/info/down_icon5.png" />
                   <div class="popover-content">
                     <p>监控系统</p>
-                    <span>API监控实时反馈API状态，保障产品稳定性，提升运维响应速度</span>
+                    <span
+                      >API监控实时反馈API状态，保障产品稳定性，提升运维响应速度</span
+                    >
                   </div>
                 </li>
               </a>
               <a href="/product/scene" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon6.png">
+                  <img class="icon_img" src="/images/info/down_icon6.png" />
                   <div class="popover-content">
                     <p>场景化服务</p>
-                    <span>企业专注于核心业务开发，提供非核心标准化场景业务开发服务，性价比更高</span>
+                    <span
+                      >企业专注于核心业务开发，提供非核心标准化场景业务开发服务，性价比更高</span
+                    >
                   </div>
                 </li>
               </a>
@@ -167,41 +216,51 @@ export default {
               <span class="f-rel navs-item">
                 <a>
                   产品
-                  <el-icon v-if="ifShowProduct"><CaretBottom /></el-icon>
+                  <el-icon v-if="state.ifShowProduct"><CaretBottom /></el-icon>
                   <el-icon v-else><CaretTop /></el-icon>
                 </a>
               </span>
             </template>
           </el-popover>
-          <nuxt-link to="/info/price">
-            价格
-          </nuxt-link>
-          <el-popover placement="bottom-start" width="650" trigger="hover" @show="showPrivatization" @hide="hidePrivatization">
+          <nuxt-link to="/info/price"> 价格 </nuxt-link>
+          <el-popover
+            placement="bottom-start"
+            width="650"
+            trigger="hover"
+            @show="showPrivatization"
+            @hide="hidePrivatization"
+          >
             <ul class="popover-ul">
               <a href="/solution/portal" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/header-icon2.png">
+                  <img class="icon_img" src="/images/info/header-icon2.png" />
                   <div class="popover-content">
                     <p>API管理门户</p>
-                    <span>API管理门户主要为开发企业搭建API门户，企业集中化API管理解决方案</span>
+                    <span
+                      >API管理门户主要为开发企业搭建API门户，企业集中化API管理解决方案</span
+                    >
                   </div>
                 </li>
               </a>
               <a href="/solution/market" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/header-icon3.png">
+                  <img class="icon_img" src="/images/info/header-icon3.png" />
                   <div class="popover-content">
                     <p>API服务市场</p>
-                    <span>推进企业数字化转型，构建联盟生态服务，统一企业的API服务进出口径</span>
+                    <span
+                      >推进企业数字化转型，构建联盟生态服务，统一企业的API服务进出口径</span
+                    >
                   </div>
                 </li>
               </a>
               <a href="/solution/open" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/header-icon1.png">
+                  <img class="icon_img" src="/images/info/header-icon1.png" />
                   <div class="popover-content">
                     <p>API开放平台</p>
-                    <span>让企业的数据通过开放平台连接更多的可能性，实现上下游生态建设</span>
+                    <span
+                      >让企业的数据通过开放平台连接更多的可能性，实现上下游生态建设</span
+                    >
                   </div>
                 </li>
               </a>
@@ -210,7 +269,9 @@ export default {
               <span class="f-rel navs-item">
                 <a>
                   私有化
-                  <el-icon v-if="ifShowPrivatization"><CaretBottom /></el-icon>
+                  <el-icon v-if="state.ifShowPrivatization"
+                    ><CaretBottom
+                  /></el-icon>
                   <el-icon v-else><CaretTop /></el-icon>
                 </a>
               </span>
@@ -219,12 +280,28 @@ export default {
           <a href="https://market.easyapi.com" target="_blank">API市场</a>
         </div>
         <div class="side-navs">
-          <a v-if="!authenticationToken" id="register" class="register" href="https://account.easyapi.com/signup/">注册</a>
-          <a v-if="!authenticationToken" id="login" class="login" href="https://account.easyapi.com/login/">登录</a>
-          <div v-if="authenticationToken" class="team-head-left">
+          <a
+            v-if="!state.authenticationToken"
+            id="register"
+            class="register"
+            href="https://account.easyapi.com/signup/"
+            >注册</a
+          >
+          <a
+            v-if="!state.authenticationToken"
+            id="login"
+            class="login"
+            href="https://account.easyapi.com/login/"
+            >登录</a
+          >
+          <div v-if="state.authenticationToken" class="team-head-left">
             <el-dropdown trigger="hover" @command="handleCommand">
               <span id="showTeamInfo" style="cursor: pointer">
-                <img v-if="userStore.photo" class="team-icon" :src="userStore.photo">
+                <img
+                  v-if="userStore.photo"
+                  class="team-icon"
+                  :src="userStore.photo"
+                />
               </span>
               <template #dropdown>
                 <el-dropdown-menu>
@@ -250,11 +327,18 @@ export default {
         </div>
       </div>
     </div>
-    <div v-show="!ifShow" class="header header-index" :style="headerActive">
+    <div
+      v-show="!state.ifShow"
+      class="header header-index"
+      :style="state.headerActive"
+    >
       <div class="content">
         <div class="flex justify-between">
           <a href="/">
-            <img class="logo float-left" src="https://qiniu.easyapi.com/market/logo.svg">
+            <img
+              class="logo float-left"
+              src="https://qiniu.easyapi.com/market/logo.svg"
+            />
           </a>
           <div class="icon w-14 flex justify-between">
             <el-icon size="15" color="#ffffff" @click="showNav('person')">
@@ -266,9 +350,13 @@ export default {
           </div>
         </div>
       </div>
-      <div v-if="ifNavShow" class="menu">
-        <el-col v-if="type === 'menu'" :span="24">
-          <el-menu :default-active="$router.path" class="el-menu-vertical-demo" router>
+      <div v-if="state.ifNavShow" class="menu">
+        <el-col v-if="state.type === 'menu'" :span="24">
+          <el-menu
+            :default-active="$router.path"
+            class="el-menu-vertical-demo"
+            router
+          >
             <div class="float-right mr-10">
               <el-button type="text" icon="el-icon-close" @click="closeMenu">
                 关 闭
@@ -280,24 +368,14 @@ export default {
                 <a>产品</a>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="/product/doc">
-                  文档管理
-                </el-menu-item>
-                <el-menu-item index="/product/test">
-                  接口测试
-                </el-menu-item>
-                <el-menu-item index="/product/monitor">
-                  监控系统
-                </el-menu-item>
-                <el-menu-item index="/product/lowcode">
-                  低代码
-                </el-menu-item>
+                <el-menu-item index="/product/doc"> 文档管理 </el-menu-item>
+                <el-menu-item index="/product/test"> 接口测试 </el-menu-item>
+                <el-menu-item index="/product/monitor"> 监控系统 </el-menu-item>
+                <el-menu-item index="/product/lowcode"> 低代码 </el-menu-item>
                 <el-menu-item index="/product/interface">
                   接口服务
                 </el-menu-item>
-                <el-menu-item index="/product/scene">
-                  场景化服务
-                </el-menu-item>
+                <el-menu-item index="/product/scene"> 场景化服务 </el-menu-item>
               </el-menu-item-group>
             </el-sub-menu>
             <el-menu-item index="/info/price">
@@ -328,7 +406,7 @@ export default {
             </el-menu-item>
           </el-menu>
         </el-col>
-        <el-col v-if="type === 'person'" :span="24">
+        <el-col v-if="state.type === 'person'" :span="24">
           <el-menu class="el-menu-vertical-demo">
             <div class="float-right mr-10">
               <el-button type="text" icon="el-icon-close" @click="closeMenu">
@@ -349,7 +427,7 @@ export default {
           </el-menu>
         </el-col>
       </div>
-      <div v-if="ifNavShow" class="popContainer" />
+      <div v-if="state.ifNavShow" class="popContainer" />
     </div>
   </client-only>
 </template>
@@ -406,186 +484,186 @@ export default {
     height: 50px;
     padding-top: 16px;
 
-  .popover {
-    display: none;
+    .popover {
+      display: none;
 
-  .popover-img {
-    width: 20px;
-    height: 10px;
-    position: absolute;
-    top: 38px;
-    right: 24px;
+      .popover-img {
+        width: 20px;
+        height: 10px;
+        position: absolute;
+        top: 38px;
+        right: 24px;
+      }
+    }
+
+    span {
+      &:hover {
+        color: rgba(255, 255, 255, 0.7);
+
+        .popover {
+          display: block;
+        }
+      }
+    }
+
+    a {
+      &:hover {
+        color: rgba(255, 255, 255, 0.5);
+
+        .console {
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+
+    .nav {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      margin-left: 5px;
+      cursor: pointer;
+      vertical-align: top;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .register {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      margin-left: 5px;
+      cursor: pointer;
+      vertical-align: top;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .login {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      margin-left: 5px;
+      cursor: pointer;
+      vertical-align: top;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .console {
+      border: 1px solid #fff;
+      border-radius: 6px;
+      height: 32px;
+      line-height: 30px;
+      margin-top: 4px;
+      padding: 0 10px;
+    }
   }
-}
 
-span {
-&:hover {
-   color: rgba(255, 255, 255, 0.7);
+  .navs {
+    line-height: 68px;
+    font-size: 1.6rem;
+    margin-left: 20px;
+    height: 48px;
 
-.popover {
-  display: block;
-}
-}
-}
+    a {
+      color: #fff;
+      padding: 10px 30px;
+      border-radius: 15px;
 
-a {
-&:hover {
-   color: rgba(255, 255, 255, 0.5);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
 
-.console {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-}
-}
+    .popover {
+      display: none;
 
-.nav {
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 15px;
-  margin-left: 5px;
-  cursor: pointer;
-  vertical-align: top;
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-}
+      .popover-img {
+        width: 20px;
+        height: 10px;
+        position: absolute;
+        top: 58px;
+        left: 20px;
+      }
 
-.register {
-  height: 40px;
-  line-height: 40px;
-  padding: 0 15px;
-  margin-left: 5px;
-  cursor: pointer;
-  vertical-align: top;
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-}
+      ul {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        position: absolute;
+        background: #fff;
+        border-radius: 6px;
+        width: 640px;
+        padding: 20px 0 0;
+        overflow: hidden;
+        left: 0;
+        z-index: 99999;
 
-.login {
-  height: 40px;
-  line-height: 40px;
-  padding: 0 15px;
-  margin-left: 5px;
-  cursor: pointer;
-  vertical-align: top;
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-}
+        .a_link {
+          display: block;
+          margin: 0;
+          padding: 0;
+        }
 
-.console {
-  border: 1px solid #fff;
-  border-radius: 6px;
-  height: 32px;
-  line-height: 30px;
-  margin-top: 4px;
-  padding: 0 10px;
-}
-}
+        li {
+          float: left;
+          width: 50%;
+          padding: 5px 20px 0 20px;
+          box-sizing: border-box;
 
-.navs {
-  line-height: 68px;
-  font-size: 1.6rem;
-  margin-left: 20px;
-  height: 48px;
+          .icon_img {
+            width: 25px;
+            height: 25px;
+            float: left;
+          }
 
-a {
-  color: #fff;
-  padding: 10px 30px;
-  border-radius: 15px;
+          .popover-content {
+            float: right;
+            width: 86%;
+            margin-top: 4px;
 
-&:hover {
-   background-color: rgba(255, 255, 255, 0.5);
- }
-}
+            p {
+              font-size: 16px;
+              color: #333;
+              line-height: 18px;
+            }
 
-.popover {
-  display: none;
+            span {
+              color: #999;
+              font-size: 12px;
+              line-height: 18px;
+              padding: 0;
+              margin: 0;
 
-.popover-img {
-  width: 20px;
-  height: 10px;
-  position: absolute;
-  top: 58px;
-  left: 20px;
-}
+              &:after {
+                content: none;
+              }
+            }
+          }
 
-ul {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  background: #fff;
-  border-radius: 6px;
-  width: 640px;
-  padding: 20px 0 0;
-  overflow: hidden;
-  left: 0;
-  z-index: 99999;
+          &:hover {
+            background: #f5f5f5;
+          }
+        }
+      }
+    }
 
-.a_link {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
+    span {
+      display: inline-block;
+      color: #fff;
+      cursor: pointer;
 
-li {
-  float: left;
-  width: 50%;
-  padding: 5px 20px 0 20px;
-  box-sizing: border-box;
+      &:hover {
+        color: rgba(255, 255, 255, 0.5);
 
-.icon_img {
-  width: 25px;
-  height: 25px;
-  float: left;
-}
-
-.popover-content {
-  float: right;
-  width: 86%;
-  margin-top: 4px;
-
-p {
-  font-size: 16px;
-  color: #333;
-  line-height: 18px;
-}
-
-span {
-  color: #999;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0;
-  margin: 0;
-
-&:after {
-   content: none;
- }
-}
-}
-
-&:hover {
-   background: #f5f5f5;
- }
-}
-}
-}
-
-span {
-  display: inline-block;
-  color: #fff;
-  cursor: pointer;
-
-&:hover {
-   color: rgba(255, 255, 255, 0.5);
-
-.popover {
-  display: block;
-}
-}
-}
-}
+        .popover {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1000px) {
@@ -611,194 +689,194 @@ span {
     margin-left: 20px;
     height: 48px;
 
-  a {
-    color: #fff;
-    padding: 10px 30px;
-    border-radius: 15px;
+    a {
+      color: #fff;
+      padding: 10px 30px;
+      border-radius: 15px;
 
-&:hover {
-   background-color: rgba(255, 255, 255, 0.5);
- }
-}
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
 
-.popover {
-  display: none;
+    .popover {
+      display: none;
 
-.popover-img {
-  width: 20px;
-  height: 10px;
-  position: absolute;
-  top: 58px;
-  left: 20px;
-}
+      .popover-img {
+        width: 20px;
+        height: 10px;
+        position: absolute;
+        top: 58px;
+        left: 20px;
+      }
 
-ul {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  background: #fff;
-  border-radius: 6px;
-  width: 640px;
-  padding: 20px 0 0;
-  overflow: hidden;
-  left: 0;
-  z-index: 99999;
+      ul {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        position: absolute;
+        background: #fff;
+        border-radius: 6px;
+        width: 640px;
+        padding: 20px 0 0;
+        overflow: hidden;
+        left: 0;
+        z-index: 99999;
 
-.a_link {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
+        .a_link {
+          display: block;
+          margin: 0;
+          padding: 0;
+        }
 
-li {
-  float: left;
-  width: 50%;
-  padding: 5px 20px 0 20px;
-  box-sizing: border-box;
+        li {
+          float: left;
+          width: 50%;
+          padding: 5px 20px 0 20px;
+          box-sizing: border-box;
 
-.icon_img {
-  width: 25px;
-  height: 25px;
-  float: left;
-}
+          .icon_img {
+            width: 25px;
+            height: 25px;
+            float: left;
+          }
 
-.popover-content {
-  float: right;
-  width: 86%;
-  margin-top: 4px;
+          .popover-content {
+            float: right;
+            width: 86%;
+            margin-top: 4px;
 
-p {
-  font-size: 16px;
-  color: #333;
-  line-height: 18px;
-}
+            p {
+              font-size: 16px;
+              color: #333;
+              line-height: 18px;
+            }
 
-span {
-  color: #999;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0;
-  margin: 0;
+            span {
+              color: #999;
+              font-size: 12px;
+              line-height: 18px;
+              padding: 0;
+              margin: 0;
 
-&:after {
-   content: none;
- }
-}
-}
+              &:after {
+                content: none;
+              }
+            }
+          }
 
-&:hover {
-   background: #f5f5f5;
- }
-}
-}
-}
+          &:hover {
+            background: #f5f5f5;
+          }
+        }
+      }
+    }
 
-span {
-  display: inline-block;
-  color: #fff;
-  cursor: pointer;
+    span {
+      display: inline-block;
+      color: #fff;
+      cursor: pointer;
 
-&:hover {
-   color: rgba(255, 255, 255, 0.5);
+      &:hover {
+        color: rgba(255, 255, 255, 0.5);
 
-.popover {
-  display: block;
-}
-}
-}
-}
+        .popover {
+          display: block;
+        }
+      }
+    }
+  }
 
-.side-navs {
-  display: flex;
-  float: right;
-  text-align: right;
-  height: 50px;
-  padding-top: 16px;
+  .side-navs {
+    display: flex;
+    float: right;
+    text-align: right;
+    height: 50px;
+    padding-top: 16px;
 
-.popover {
-  display: none;
+    .popover {
+      display: none;
 
-.popover-img {
-  width: 20px;
-  height: 10px;
-  position: absolute;
-  top: 38px;
-  right: 24px;
-}
-}
+      .popover-img {
+        width: 20px;
+        height: 10px;
+        position: absolute;
+        top: 38px;
+        right: 24px;
+      }
+    }
 
-span {
-&:hover {
-   color: rgba(255, 255, 255, 0.7);
+    span {
+      &:hover {
+        color: rgba(255, 255, 255, 0.7);
 
-.popover {
-  display: block;
-}
-}
-}
+        .popover {
+          display: block;
+        }
+      }
+    }
 
-a {
-&:hover {
-   color: rgba(255, 255, 255, 0.5);
+    a {
+      &:hover {
+        color: rgba(255, 255, 255, 0.5);
 
-.console {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-}
-}
+        .console {
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
 
-.nav {
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 15px;
-  margin-left: 5px;
-  cursor: pointer;
-  vertical-align: top;
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-}
+    .nav {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      margin-left: 5px;
+      cursor: pointer;
+      vertical-align: top;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+    }
 
-.register {
-  height: 40px;
-  line-height: 40px;
-  padding: 0 15px;
-  margin-left: 5px;
-  cursor: pointer;
-  vertical-align: top;
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-}
+    .register {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      margin-left: 5px;
+      cursor: pointer;
+      vertical-align: top;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+    }
 
-.login {
-  height: 40px;
-  line-height: 40px;
-  padding: 0 15px;
-  margin-left: 5px;
-  cursor: pointer;
-  vertical-align: top;
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-}
+    .login {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      margin-left: 5px;
+      cursor: pointer;
+      vertical-align: top;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+    }
 
-.console {
-  border: 1px solid #fff;
-  border-radius: 6px;
-  height: 32px;
-  line-height: 30px;
-  margin-top: 4px;
-  padding: 0 10px;
-}
-}
+    .console {
+      border: 1px solid #fff;
+      border-radius: 6px;
+      height: 32px;
+      line-height: 30px;
+      margin-top: 4px;
+      padding: 0 10px;
+    }
+  }
 
-.team-icon {
-  margin-top: 6px;
-  width: 30px;
-  height: 30px;
-  border-radius: 20px;
-}
+  .team-icon {
+    margin-top: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
@@ -829,195 +907,195 @@ a {
     font-size: 0.6rem;
     height: 48px;
 
-  a {
-    color: #fff;
-    padding: 10px;
-    border-radius: 15px;
+    a {
+      color: #fff;
+      padding: 10px;
+      border-radius: 15px;
 
-&:hover {
-   background-color: rgba(255, 255, 255, 0.5);
- }
-}
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
 
-.popover {
-  display: none;
+    .popover {
+      display: none;
 
-.popover-img {
-  width: 20px;
-  height: 10px;
-  position: absolute;
-  top: 58px;
-  left: 20px;
-}
+      .popover-img {
+        width: 20px;
+        height: 10px;
+        position: absolute;
+        top: 58px;
+        left: 20px;
+      }
 
-ul {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  background: #fff;
-  border-radius: 6px;
-  width: 640px;
-  padding: 20px 0 0;
-  overflow: hidden;
-  left: 0;
-  z-index: 99999;
+      ul {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        position: absolute;
+        background: #fff;
+        border-radius: 6px;
+        width: 640px;
+        padding: 20px 0 0;
+        overflow: hidden;
+        left: 0;
+        z-index: 99999;
 
-.a_link {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
+        .a_link {
+          display: block;
+          margin: 0;
+          padding: 0;
+        }
 
-li {
-  float: left;
-  width: 50%;
-  padding: 5px 20px 0 20px;
-  box-sizing: border-box;
+        li {
+          float: left;
+          width: 50%;
+          padding: 5px 20px 0 20px;
+          box-sizing: border-box;
 
-.icon_img {
-  width: 25px;
-  height: 25px;
-  float: left;
-}
+          .icon_img {
+            width: 25px;
+            height: 25px;
+            float: left;
+          }
 
-.popover-content {
-  float: right;
-  width: 86%;
-  margin-top: 4px;
+          .popover-content {
+            float: right;
+            width: 86%;
+            margin-top: 4px;
 
-p {
-  font-size: 16px;
-  color: #333;
-  line-height: 18px;
-}
+            p {
+              font-size: 16px;
+              color: #333;
+              line-height: 18px;
+            }
 
-span {
-  color: #999;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0;
-  margin: 0;
+            span {
+              color: #999;
+              font-size: 12px;
+              line-height: 18px;
+              padding: 0;
+              margin: 0;
 
-&:after {
-   content: none;
- }
-}
-}
+              &:after {
+                content: none;
+              }
+            }
+          }
 
-&:hover {
-   background: #f5f5f5;
- }
-}
-}
-}
+          &:hover {
+            background: #f5f5f5;
+          }
+        }
+      }
+    }
 
-span {
-  display: inline-block;
-  color: #fff;
-  padding: 0 10px;
-  cursor: pointer;
+    span {
+      display: inline-block;
+      color: #fff;
+      padding: 0 10px;
+      cursor: pointer;
 
-&:hover {
-   color: rgba(255, 255, 255, 0.5);
+      &:hover {
+        color: rgba(255, 255, 255, 0.5);
 
-.popover {
-  display: block;
-}
-}
-}
-}
+        .popover {
+          display: block;
+        }
+      }
+    }
+  }
 
-.side-navs {
-  display: flex;
-  float: right;
-  text-align: right;
-  height: 50px;
-  padding-top: 12px;
+  .side-navs {
+    display: flex;
+    float: right;
+    text-align: right;
+    height: 50px;
+    padding-top: 12px;
 
-.popover {
-  display: none;
+    .popover {
+      display: none;
 
-.popover-img {
-  width: 20px;
-  height: 10px;
-  position: absolute;
-  top: 38px;
-  right: 24px;
-}
-}
+      .popover-img {
+        width: 20px;
+        height: 10px;
+        position: absolute;
+        top: 38px;
+        right: 24px;
+      }
+    }
 
-span {
-&:hover {
-   color: rgba(255, 255, 255, 0.7);
+    span {
+      &:hover {
+        color: rgba(255, 255, 255, 0.7);
 
-.popover {
-  display: block;
-}
-}
-}
+        .popover {
+          display: block;
+        }
+      }
+    }
 
-a {
-&:hover {
-   color: rgba(255, 255, 255, 0.5);
+    a {
+      &:hover {
+        color: rgba(255, 255, 255, 0.5);
 
-.console {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-}
-}
+        .console {
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
 
-.nav {
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 15px;
-  margin-left: 5px;
-  cursor: pointer;
-  vertical-align: top;
-  text-decoration: none;
-  color: #fff;
-  font-size: 0.6em;
-}
+    .nav {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      margin-left: 5px;
+      cursor: pointer;
+      vertical-align: top;
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.6em;
+    }
 
-.register {
-  height: 40px;
-  line-height: 40px;
-  padding: 0 15px;
-  margin-left: 5px;
-  cursor: pointer;
-  vertical-align: top;
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-}
+    .register {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      margin-left: 5px;
+      cursor: pointer;
+      vertical-align: top;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+    }
 
-.login {
-  height: 40px;
-  line-height: 40px;
-  padding: 0 15px;
-  margin-left: 5px;
-  cursor: pointer;
-  vertical-align: top;
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-}
+    .login {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      margin-left: 5px;
+      cursor: pointer;
+      vertical-align: top;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+    }
 
-.console {
-  border: 1px solid #fff;
-  border-radius: 6px;
-  height: 24px;
-  line-height: 24px;
-  margin-top: 4px;
-  padding: 0 10px;
-}
-}
+    .console {
+      border: 1px solid #fff;
+      border-radius: 6px;
+      height: 24px;
+      line-height: 24px;
+      margin-top: 4px;
+      padding: 0 10px;
+    }
+  }
 
-.team-icon {
-  margin-top: 3px;
-  width: 28px;
-  height: 28px;
-  border-radius: 20px;
-}
+  .team-icon {
+    margin-top: 3px;
+    width: 28px;
+    height: 28px;
+    border-radius: 20px;
+  }
 }
 
 .popContainer {

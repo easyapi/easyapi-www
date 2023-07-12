@@ -7,20 +7,21 @@ const screenWidth = ref(null)
 const data = reactive({
   ifShowFooter: true,
 })
-function jump(val) {
-  if (val === '帮助中心')
-    window.open('https://help.easyapi.com', '_blank')
-  else
-    window.open('https://support.qq.com/products/352231', '_blank')
+
+function jump(val: any) {
+  if (val === '帮助中心') window.open('https://help.easyapi.com', '_blank')
+  else window.open('https://support.qq.com/products/352231', '_blank')
 }
 
-watch(() => props.screenWidth,
-  (val, oldVal) => {
+watch(
+  () => props.screenWidth,
+  () => {
     data.ifShowFooter = props.screenWidth >= 800
   },
   {
     deep: true,
-  })
+  }
+)
 </script>
 
 <template>
@@ -28,7 +29,7 @@ watch(() => props.screenWidth,
     <div class="content">
       <div class="footer-item flex justify-between my-7">
         <div class="w-3/12">
-          <img class="w-40" src="https://qiniu.easyapi.com/market/logo.svg">
+          <img class="w-40" src="https://qiniu.easyapi.com/market/logo.svg" />
           <p class="w-4/5 mt-6 text-xl">
             新一代API接口管理平台，EasyAPI是一个为您提供API管理、API测试、API监控、API文档、API低代码服务的综合性API服务平台
           </p>
@@ -39,93 +40,72 @@ watch(() => props.screenWidth,
           <div class="flex">
             <client-only>
               <el-popover placement="top" width="100" trigger="hover">
-                <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg">
+                <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg" />
                 <template #reference>
-                  <a><img class="w-12 mr-4" src="../assets/images/wechat.svg" alt=""></a>
+                  <a
+                    ><img
+                      class="w-12 mr-4"
+                      src="../assets/images/wechat.svg"
+                      alt=""
+                  /></a>
                 </template>
               </el-popover>
             </client-only>
             <a href="https://github.com/easyapi" target="_blank">
-              <img class="w-12" src="../assets/images/github.svg" alt="">
+              <img class="w-12" src="../assets/images/github.svg" alt="" />
             </a>
           </div>
         </div>
         <div class="w-6/12 flex justify-around">
           <div class="flex flex-col">
             <h2>产品介绍</h2>
-            <nuxt-link to="/product/doc">
-              API协作
-            </nuxt-link>
-            <nuxt-link to="/product/lowcode">
-              API低代码
-            </nuxt-link>
-            <nuxt-link to="/product/test">
-              API测试
-            </nuxt-link>
-            <nuxt-link to="/product/interface">
-              API服务
-            </nuxt-link>
-            <nuxt-link to="/product/monitor">
-              API监控
-            </nuxt-link>
-            <nuxt-link to="/product/scene">
-              API场景化服务
-            </nuxt-link>
+            <nuxt-link to="/product/doc"> API协作 </nuxt-link>
+            <nuxt-link to="/product/lowcode"> API低代码 </nuxt-link>
+            <nuxt-link to="/product/test"> API测试 </nuxt-link>
+            <nuxt-link to="/product/interface"> API服务 </nuxt-link>
+            <nuxt-link to="/product/monitor"> API监控 </nuxt-link>
+            <nuxt-link to="/product/scene"> API场景化服务 </nuxt-link>
           </div>
           <div class="flex flex-col">
             <h2>私有化方案</h2>
-            <nuxt-link to="/solution/portal">
-              API管理门户
-            </nuxt-link>
-            <nuxt-link to="/solution/market">
-              API服务市场
-            </nuxt-link>
-            <nuxt-link to="/solution/open">
-              API开放平台
-            </nuxt-link>
+            <nuxt-link to="/solution/portal"> API管理门户 </nuxt-link>
+            <nuxt-link to="/solution/market"> API服务市场 </nuxt-link>
+            <nuxt-link to="/solution/open"> API开放平台 </nuxt-link>
           </div>
           <div class="flex flex-col">
             <h2>使用文档</h2>
             <a href="https://help.easyapi.com" target="_blank">帮助中心</a>
-            <a href="https://support.qq.com/products/352231" target="_blank">BUG反馈</a>
-            <nuxt-link to="/info/extension">
-              浏览器插件
-            </nuxt-link>
-            <nuxt-link to="/info/github">
-              前端开源计划
-            </nuxt-link>
+            <a href="https://support.qq.com/products/352231" target="_blank"
+              >BUG反馈</a
+            >
+            <nuxt-link to="/info/extension"> 浏览器插件 </nuxt-link>
+            <nuxt-link to="/info/github"> 前端开源计划 </nuxt-link>
           </div>
           <div class="flex flex-col">
             <h2>关于</h2>
-            <nuxt-link to="/info/about">
-              关于我们
-            </nuxt-link>
-            <nuxt-link to="/info/together">
-              合作伙伴
-            </nuxt-link>
-            <nuxt-link to="/info/contact">
-              联系我们
-            </nuxt-link>
-            <nuxt-link to="/info/donate">
-              支持我们
-            </nuxt-link>
-            <nuxt-link to="/post/">
-              平台动态
-            </nuxt-link>
+            <nuxt-link to="/info/about"> 关于我们 </nuxt-link>
+            <nuxt-link to="/info/together"> 合作伙伴 </nuxt-link>
+            <nuxt-link to="/info/contact"> 联系我们 </nuxt-link>
+            <nuxt-link to="/info/donate"> 支持我们 </nuxt-link>
+            <nuxt-link to="/post/"> 平台动态 </nuxt-link>
           </div>
         </div>
         <div class="w-2/12 flex justify-end text-center">
           <div class="mr-12">
-            <img class="w-32" src="https://qiniu.easyapi.com/qrcode/leida.png" alt="EasyAPI技术咨询">
-            <p class="mt-5">
-              技术咨询
-            </p>
+            <img
+              class="w-32"
+              src="https://qiniu.easyapi.com/qrcode/leida.png"
+              alt="EasyAPI技术咨询"
+            />
+            <p class="mt-5">技术咨询</p>
           </div>
           <div>
-            <img class="w-32" src="https://qiniu.easyapi.com/qrcode/suri.png" alt="EasyAPI商务咨询">
-            <p class="mt-5">
-              商务咨询
-            </p>
+            <img
+              class="w-32"
+              src="https://qiniu.easyapi.com/qrcode/suri.png"
+              alt="EasyAPI商务咨询"
+            />
+            <p class="mt-5">商务咨询</p>
           </div>
         </div>
       </div>
@@ -141,30 +121,25 @@ watch(() => props.screenWidth,
   <div v-show="!data.ifShowFooter" class="mobile-footer">
     <div class="w-4/5 mx-auto">
       <div>
-        <img class="w-40" src="https://qiniu.easyapi.com/market/logo.svg">
+        <img class="w-40" src="https://qiniu.easyapi.com/market/logo.svg" />
       </div>
       <div class="mt-12">
-        <el-menu background-color="#27282c" text-color="#fff" active-text-color="#fff" class="el-menu-vertical-demo">
+        <el-menu
+          background-color="#27282c"
+          text-color="#fff"
+          active-text-color="#fff"
+          class="el-menu-vertical-demo"
+        >
           <el-sub-menu index="1">
             <template #title>
               <span>产品介绍</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="/product/doc">
-                API协作
-              </el-menu-item>
-              <el-menu-item index="/product/lowcode">
-                API低代码
-              </el-menu-item>
-              <el-menu-item index="/product/test">
-                API测试
-              </el-menu-item>
-              <el-menu-item index="/product/interface">
-                API服务
-              </el-menu-item>
-              <el-menu-item index="/product/monitor">
-                API监控
-              </el-menu-item>
+              <el-menu-item index="/product/doc"> API协作 </el-menu-item>
+              <el-menu-item index="/product/lowcode"> API低代码 </el-menu-item>
+              <el-menu-item index="/product/test"> API测试 </el-menu-item>
+              <el-menu-item index="/product/interface"> API服务 </el-menu-item>
+              <el-menu-item index="/product/monitor"> API监控 </el-menu-item>
               <el-menu-item index="/product/scene">
                 API场景化服务
               </el-menu-item>
@@ -181,9 +156,7 @@ watch(() => props.screenWidth,
               <el-menu-item index="/solution/market">
                 API服务市场
               </el-menu-item>
-              <el-menu-item index="/solution/open">
-                API开放平台
-              </el-menu-item>
+              <el-menu-item index="/solution/open"> API开放平台 </el-menu-item>
             </el-menu-item-group>
           </el-sub-menu>
           <el-sub-menu index="3">
@@ -197,12 +170,8 @@ watch(() => props.screenWidth,
               <el-menu-item index="/" @click="jump('BUG反馈')">
                 BUG反馈
               </el-menu-item>
-              <el-menu-item index="/info/extension">
-                浏览器插件
-              </el-menu-item>
-              <el-menu-item index="/post/">
-                前端开源计划
-              </el-menu-item>
+              <el-menu-item index="/info/extension"> 浏览器插件 </el-menu-item>
+              <el-menu-item index="/post/"> 前端开源计划 </el-menu-item>
             </el-menu-item-group>
           </el-sub-menu>
           <el-sub-menu index="4">
@@ -210,21 +179,11 @@ watch(() => props.screenWidth,
               <span>关于</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="/info/about">
-                关于我们
-              </el-menu-item>
-              <el-menu-item index="/info/together">
-                合作伙伴
-              </el-menu-item>
-              <el-menu-item index="/info/contact">
-                联系我们
-              </el-menu-item>
-              <el-menu-item index="/info/support">
-                支持我们
-              </el-menu-item>
-              <el-menu-item index="/post/">
-                平台动态
-              </el-menu-item>
+              <el-menu-item index="/info/about"> 关于我们 </el-menu-item>
+              <el-menu-item index="/info/together"> 合作伙伴 </el-menu-item>
+              <el-menu-item index="/info/contact"> 联系我们 </el-menu-item>
+              <el-menu-item index="/info/support"> 支持我们 </el-menu-item>
+              <el-menu-item index="/post/"> 平台动态 </el-menu-item>
             </el-menu-item-group>
           </el-sub-menu>
         </el-menu>
@@ -233,14 +192,19 @@ watch(() => props.screenWidth,
         <div class="flex">
           <client-only>
             <el-popover placement="top" width="100" trigger="hover">
-              <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg">
+              <img src="https://qiniu.easyapi.com/weixin-easyapi.jpg" />
               <template #reference>
-                <a><img class="w-12 mr-4 outline" src="../assets/images/wechat.svg" alt=""></a>
+                <a
+                  ><img
+                    class="w-12 mr-4 outline"
+                    src="../assets/images/wechat.svg"
+                    alt=""
+                /></a>
               </template>
             </el-popover>
           </client-only>
           <a href="https://github.com/easyapi" target="_blank">
-            <img class="w-12 mr-4" src="../assets/images/github.svg" alt="">
+            <img class="w-12 mr-4" src="../assets/images/github.svg" alt="" />
           </a>
           <p class="flex items-center">
             联系电话：
