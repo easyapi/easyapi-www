@@ -21,14 +21,14 @@ export default defineComponent({
     }
 
     onMounted(() => {
-      if (route.path === '/' && getToken()) {
-        account.getUser().then((res) => {
-          if (res.code === 1 && res.content.team) {
-            if (res.content.team.url)
-              window.location.href = `https://${res.content.team.url}.easyapi.com`
-          }
-        })
-      }
+      // if (route.path === '/' && getToken()) {
+      //   account.getUser().then((res) => {
+      //     if (res.code === 1 && res.content.team) {
+      //       if (res.content.team.url)
+      //         window.location.href = `https://${res.content.team.url}.easyapi.com`
+      //     }
+      //   })
+      // }
     })
     return {
       gotoTeam,

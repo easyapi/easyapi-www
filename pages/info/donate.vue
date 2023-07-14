@@ -344,7 +344,6 @@ function showCode() {
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/donate.scss';
 @media screen and (min-width: 1200px) {
   .donate-description {
     padding: 10px 50px 100px;

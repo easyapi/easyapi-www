@@ -5,8 +5,10 @@ import Pay from './components/pay.vue'
 
 useHead({
   title: '支持名单 - EasyAPI服务平台',
-  meta: [{ name: 'description', content: 'EasyAPI支持名单' },
-    { name: 'keyword', content: 'EasyAPI支持名单,支持我们' }],
+  meta: [
+    { name: 'description', content: 'EasyAPI支持名单' },
+    { name: 'keyword', content: 'EasyAPI支持名单,支持我们' },
+  ],
 })
 
 const dialogVisible = ref(false)
@@ -23,43 +25,76 @@ function showCode() {
   <div class="main">
     <div class="content">
       <div class="info-page">
-        <h2 class="title">
-          支持名单
-        </h2>
+        <h2 class="title">支持名单</h2>
         <div class="u-donatelist f-cb">
           <ul class="ulist f-cb">
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhaozilong.jpg"></p>
+              <p>
+                <img
+                  class="mx-auto"
+                  src="https://qiniu.easyapi.com/user/zhaozilong.jpg"
+                />
+              </p>
               <strong>赵子龙</strong>
               <span>Java工程师</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/tangwenchang.jpg"></p>
+              <p>
+                <img
+                  class="mx-auto"
+                  src="https://qiniu.easyapi.com/user/tangwenchang.jpg"
+                />
+              </p>
               <strong>唐文昌</strong>
               <span>iOS工程师</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/banxin.jpg"></p>
+              <p>
+                <img
+                  class="mx-auto"
+                  src="https://qiniu.easyapi.com/user/banxin.jpg"
+                />
+              </p>
               <strong>班新</strong>
               <span>Android工程师</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhangsheng.jpg"></p>
+              <p>
+                <img
+                  class="mx-auto"
+                  src="https://qiniu.easyapi.com/user/zhangsheng.jpg"
+                />
+              </p>
               <strong>张胜</strong>
               <span>项目总监</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/huangmingjie.jpg"></p>
+              <p>
+                <img
+                  class="mx-auto"
+                  src="https://qiniu.easyapi.com/user/huangmingjie.jpg"
+                />
+              </p>
               <strong>黄明杰</strong>
               <span>技术总监</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/zhanglinghui.jpg"></p>
+              <p>
+                <img
+                  class="mx-auto"
+                  src="https://qiniu.easyapi.com/user/zhanglinghui.jpg"
+                />
+              </p>
               <strong>张凌辉</strong>
               <span>Java架构师</span>
             </li>
             <li>
-              <p><img class="mx-auto" src="https://qiniu.easyapi.com/user/jiyixin.jpg"></p>
+              <p>
+                <img
+                  class="mx-auto"
+                  src="https://qiniu.easyapi.com/user/jiyixin.jpg"
+                />
+              </p>
               <strong>季乙心</strong>
               <span>产品经理</span>
             </li>
@@ -95,9 +130,61 @@ function showCode() {
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/donate.scss';
-
 .header {
   background-color: #18c1d6;
+}
+
+.u-donatelist {
+  .ulist {
+    padding: 50px 0 0 20px;
+
+    li {
+      margin: 8px;
+      text-align: center;
+      width: 110px;
+      height: 130px;
+      float: left;
+
+      img {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+      }
+
+      strong {
+        display: block;
+        padding: 5px 0;
+      }
+    }
+  }
+
+  .utex {
+    margin: 20px 50px;
+
+    a {
+      display: inline-block;
+      padding: 5px 0;
+      float: left;
+      color: #666;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  }
+
+  .u-open {
+    padding: 20px 50px;
+
+    a {
+      background-color: #18c1d6;
+      padding: 5px 15px;
+      font-size: 1.4rem;
+      color: #fff;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: #16b3c6;
+      }
+    }
+  }
 }
 </style>

@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@element-plus/nuxt',
     ['@pinia/nuxt', {
       autoImports: [
-      // automatically imports `defineStore`
+        // automatically imports `defineStore`
         'defineStore', // import { defineStore } from 'pinia'
         // automatically imports `defineStore` as `definePiniaStore`
         ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
@@ -27,8 +27,6 @@ export default defineNuxtConfig({
     '~/assets/scss/element.scss',
     '~/assets/scss/banner.scss',
     '~/assets/scss/base.scss',
-    '~/assets/scss/case.scss',
-    '~/assets/scss/donate.scss',
     '~/assets/scss/function.scss',
   ],
   components: true,
