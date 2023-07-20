@@ -1,6 +1,7 @@
 ﻿<script setup lang="ts">
 import { reactive } from 'vue'
 import { useHead } from '@unhead/vue'
+import BaiduMap from 'vue-baidu-map'
 
 const map = reactive({
   center: { lng: 121.446005, lat: 31.34974 },
@@ -28,13 +29,16 @@ useHead({
         <h2 class="title">联系我们</h2>
         <div class="u-contact">
           <div class="tex">
-            <!-- <BaiduMap
-              class="bm-view"
-              ak="yZYo7WmkUj3bMFZMcP7PRSpuvjUfGw0B"
-              :center="map.center"
-              :zoom="map.zoom"
-              :scroll-wheel-zoom="map.scroll"
-            /> -->
+            <client-only>
+              <BaiduMap
+                class="bm-view"
+                ak="yZYo7WmkUj3bMFZMcP7PRSpuvjUfGw0B"
+                :center="map.center"
+                :zoom="map.zoom"
+                :scroll-wheel-zoom="map.scroll"
+              >
+              </BaiduMap>
+            </client-only>
             <div class="u-contact-text">
               <h3>无锡帮趣数据服务有限公司</h3>
               <p>地址：中国·无锡市 滨湖区吟白路1号超级计算无锡中心6楼</p>

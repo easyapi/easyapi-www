@@ -1,6 +1,5 @@
 ﻿<script setup lang="ts">
 import { useHead } from '@unhead/vue'
-import 'assets/scss/case.scss'
 import '/assets/scss/banner.scss'
 
 useHead({
