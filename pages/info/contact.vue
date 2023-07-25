@@ -3,10 +3,10 @@ import { onMounted, reactive } from 'vue'
 import { useHead } from '@unhead/vue'
 
 const map = reactive({
-  center: { lng: 121.446005, lat: 31.34974 },
+  center: { lng: 120.252664, lat: 31.546584 },
   zoom: 15,
   title: '',
-  contents: '地址：中国·上海市 宝山区呼兰路911弄11号3号楼一层',
+  contents: '地址：中国·无锡市 滨湖区吟白路1号超级计算无锡中心6楼',
   show: true,
   scroll: true,
   dragging: true,
@@ -15,7 +15,7 @@ const map = reactive({
 })
 
 function init() {
-  const center = new qq.maps.LatLng(31.275091, 120.608716)
+  const center = new qq.maps.LatLng(31.546584, 120.252664)
   const map = new qq.maps.Map(document.getElementById('map'), {
     // 地图的中心地理坐标。
     center,
@@ -25,7 +25,7 @@ function init() {
   new qq.maps.Label({
     position: center,
     map,
-    content: '上海帮趣网络技术有限公司',
+    content: '无锡帮趣网络技术有限公司',
   })
   new qq.maps.Marker({
     position: center,
@@ -55,7 +55,7 @@ useHead({
         </h2>
         <div class="u-contact">
           <div class="tex">
-            <div id="map" style="width: 300px;height: 180px;background-color: red" />
+            <div id="map" style="width: 1100px;height: 400px;" />
             <div class="u-contact-text">
               <h3>无锡帮趣数据服务有限公司</h3>
               <p>地址：中国·无锡市 滨湖区吟白路1号超级计算无锡中心6楼</p>
