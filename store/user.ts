@@ -12,6 +12,9 @@ export const useUser = defineStore('user', {
       mobile: '',
       email: '',
       team: '',
+      teamName: '',
+      teamImg: '',
+      userTeam: '',
       token: getToken(),
     }
   },
@@ -29,6 +32,9 @@ export const useUser = defineStore('user', {
           this.mobile = res.content.mobile
           this.email = res.content.email
           this.team = res.content.team
+          this.teamName = res.content.teamName
+          this.teamImg = res.content.teamImg
+          this.userTeam = res.content.userTeam
         }
       })
     },

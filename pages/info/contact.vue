@@ -1,16 +1,40 @@
 ﻿<script setup lang="ts">
-import { reactive } from 'vue'
+import { onMounted, reactive } from 'vue'
 import { useHead } from '@unhead/vue'
-import BaiduMap from 'vue-baidu-map'
 
 const map = reactive({
   center: { lng: 121.446005, lat: 31.34974 },
   zoom: 15,
-  title: '上海帮趣网络技术有限公司',
+  title: '',
   contents: '地址：中国·上海市 宝山区呼兰路911弄11号3号楼一层',
   show: true,
   scroll: true,
   dragging: true,
+  TXmap: null,
+  markerLayer: null,
+})
+
+function init() {
+  const center = new qq.maps.LatLng(31.275091, 120.608716)
+  const map = new qq.maps.Map(document.getElementById('map'), {
+    // 地图的中心地理坐标。
+    center,
+    zoom: 13,
+    disableDefaultUI: true, // 禁止所有控件
+  })
+  new qq.maps.Label({
+    position: center,
+    map,
+    content: '上海帮趣网络技术有限公司',
+  })
+  new qq.maps.Marker({
+    position: center,
+    map,
+  })
+}
+
+onMounted(async () => {
+  await init()
 })
 
 useHead({
@@ -26,19 +50,12 @@ useHead({
   <div class="main">
     <div class="content">
       <div class="info-page">
-        <h2 class="title">联系我们</h2>
+        <h2 class="title">
+          联系我们
+        </h2>
         <div class="u-contact">
           <div class="tex">
-            <client-only>
-              <BaiduMap
-                class="bm-view"
-                ak="yZYo7WmkUj3bMFZMcP7PRSpuvjUfGw0B"
-                :center="map.center"
-                :zoom="map.zoom"
-                :scroll-wheel-zoom="map.scroll"
-              >
-              </BaiduMap>
-            </client-only>
+            <div id="map" style="width: 300px;height: 180px;background-color: red" />
             <div class="u-contact-text">
               <h3>无锡帮趣数据服务有限公司</h3>
               <p>地址：中国·无锡市 滨湖区吟白路1号超级计算无锡中心6楼</p>
@@ -57,7 +74,7 @@ useHead({
                     src="https://pub.idqqimg.com/wpa/images/group.png"
                     alt="EasyAPI开发者交流群"
                     title="EasyAPI开发者交流群"
-                  />
+                  >
                 </a>
               </p>
             </div>
@@ -74,21 +91,21 @@ useHead({
                 <div class="code_img">
                   <img
                     src="https://qiniu.easyapi.com/easyapi_contact_weixin.png"
-                  />
+                  >
                 </div>
                 <div class="link_info">
                   <span>联络人微信</span>
                 </div>
               </li>
               <li>
-                <img class="mx-auto" src="/images/contact/problem.png" />
+                <img class="mx-auto" src="/images/contact/problem.png">
                 <div class="link_info">
                   <p>快速反馈问题</p>
                   <span>7*24小时接受您的反馈并处理</span>
                 </div>
               </li>
               <li>
-                <img class="mx-auto" src="/images/join_wechat.png" />
+                <img class="mx-auto" src="/images/join_wechat.png">
                 <div class="link_info">
                   <p>加入EasyAPI微信城市群</p>
                   <span>上海 无锡 苏州 北京 深圳 广州 成都 重庆 西安</span>

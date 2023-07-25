@@ -2,6 +2,16 @@ const lifecycle = process.env.npm_lifecycle_event
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      script: [
+        {
+          type: 'text/javascript',
+          src: 'https://map.qq.com/api/js?v=2.exp&key=RGWBZ-4LICB-C3VU3-NH2T5-PWBHJ-W7FWQ',
+        },
+      ],
+    },
+  },
   modules: ['@nuxtjs/tailwindcss', '@element-plus/nuxt',
     ['@pinia/nuxt', {
       autoImports: [
