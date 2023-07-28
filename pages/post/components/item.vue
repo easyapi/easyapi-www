@@ -1,8 +1,20 @@
+<script>
+export default {
+  props: ['list'],
+  mounted() {},
+  methods: {
+    jump(articleId) {
+      this.$router.push(`/post/${articleId}`)
+    },
+  },
+}
+</script>
+
 <template>
   <a @click="jump(list.articleId)">
     <div class="list-item">
-      <div class="list-item-left" v-show="list.img">
-        <img :src="list.img" />
+      <div v-show="list.img" class="list-item-left">
+        <img :src="list.img" alt="">
       </div>
       <div class="list-item-right">
         <div>
@@ -135,15 +147,3 @@ a {
   width: 100%;
 }
 </style>
-
-<script>
-export default {
-  props: ['list'],
-  methods: {
-    jump(articleId) {
-      this.$router.push(`/post/${articleId}`)
-    }
-  },
-  mounted() {}
-}
-</script>
