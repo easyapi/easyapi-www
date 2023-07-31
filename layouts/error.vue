@@ -4,7 +4,7 @@ export default {
   props: ['error'],
   head() {
     return {
-      title: '错误 - EasyAPI服务平台',
+      title: '错误',
       meta: [
         { hid: 'description', name: 'description', content: '错误' },
         { hid: 'keyword', name: 'keyword', content: '错误' },

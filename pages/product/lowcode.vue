@@ -2,7 +2,7 @@
 import { useHead } from '@unhead/vue'
 
 useHead({
-  title: 'API低代码 - EasyAPI服务平台',
+  title: 'API低代码',
   meta: [{ name: 'description', content: 'API低代码' },
     { name: 'keyword', content: 'API低代码' }],
 })

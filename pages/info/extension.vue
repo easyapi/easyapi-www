@@ -3,7 +3,7 @@ import { useHead } from '@unhead/vue'
 import { ElMessage } from 'element-plus'
 
 useHead({
-  title: '浏览器插件 - EasyAPI服务平台',
+  title: '浏览器插件',
   meta: [
     { name: 'description', content: 'EasyAPI浏览器插件' },
     { name: 'keyword', content: 'EasyAPI浏览器插件,浏览器插件,接口插件' },

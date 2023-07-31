@@ -5,7 +5,7 @@ import Pay from './components/pay.vue'
 import { Check } from '@element-plus/icons-vue'
 
 useHead({
-  title: '支持我们 - EasyAPI服务平台',
+  title: '支持我们',
   meta: [{ name: 'description', content: '支持EasyAPI' },
     { name: 'keyword', content: '支持EasyAPI' }],
 })

@@ -3,7 +3,7 @@ import { useHead } from '@unhead/vue'
 import '/assets/scss/banner.scss'
 
 useHead({
-  title: 'API管理门户 - EasyAPI服务平台',
+  title: 'API管理门户',
   meta: [
     { name: 'description', content: 'EasyAPIAPI管理门户' },
     { name: 'keyword', content: 'API管理门户' },

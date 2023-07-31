@@ -12,7 +12,7 @@ async function asyncData() {
   const result = await article.getArticle(route.params.id as any)
   if (result.code === 1) {
     articleDetail.value = result.content
-    document.title = `${result.content.title} - EasyAPI服务市场`
+    document.title = `${result.content.title}`
   }
 }
 

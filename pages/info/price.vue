@@ -4,7 +4,7 @@ import { gotoEasyTeam } from '~/utils/goto'
 import { Check } from '@element-plus/icons-vue'
 
 useHead({
-  title: '价格 - EasyAPI服务平台',
+  title: '价格',
   meta: [{ name: 'description', content: 'EasyAPI服务平台价格体系' },
     { name: 'keyword', content: '价格' }],
 })

@@ -4,7 +4,7 @@ import { useHead } from '@unhead/vue'
 import Pay from './components/pay.vue'
 
 useHead({
-  title: '支持名单 - EasyAPI服务平台',
+  title: '支持名单',
   meta: [
     { name: 'description', content: 'EasyAPI支持名单' },
     { name: 'keyword', content: 'EasyAPI支持名单,支持我们' },

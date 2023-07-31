@@ -38,7 +38,7 @@ onMounted(async () => {
 })
 
 useHead({
-  title: '联系我们 - EasyAPI服务平台',
+  title: '联系我们',
   meta: [
     { name: 'description', content: 'EasyAPI联系我们' },
     { name: 'keyword', content: '联系我们' },

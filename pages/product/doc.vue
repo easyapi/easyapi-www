@@ -2,7 +2,7 @@
 import { useHead } from '@unhead/vue'
 
 useHead({
-  title: '文档管理 - EasyAPI服务平台',
+  title: '文档管理',
   meta: [{ name: 'description', content: 'EasyAPI文档管理' }, { name: 'keyword', content: '文档管理' }],
 })
 </script>

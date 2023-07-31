@@ -5,7 +5,7 @@ import Item from './components/item.vue'
 import { article } from '~/api/article'
 
 useHead({
-  title: '市场动态 - EasyAPI服务平台',
+  title: '市场动态',
   meta: [{ name: 'description', content: '市场动态' },
     { name: 'keyword', content: '市场动态' }],
 })
