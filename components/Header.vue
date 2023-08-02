@@ -3,20 +3,17 @@ import { reactive, watch } from 'vue'
 import {
   CaretBottom,
   CaretTop,
-  Edit,
   Fold,
-  Place,
-  Sort,
+  Place, Setting,
   Switch,
 } from '@element-plus/icons-vue'
 import { gotoEasyTeam } from '~/utils/goto'
 import { useUser } from '@/store/user'
 import { getToken } from '~/utils/token'
 
+const props = defineProps(['screenWidth'])
 const route = useRoute()
 const userStore = useUser()
-
-const props = defineProps(['screenWidth'])
 
 const state = reactive({
   authenticationToken: getToken(),
@@ -70,9 +67,12 @@ function hidePrivatization() {
 }
 
 function handleCommand(command: any) {
-  if (command === 'notice') gotoEasyTeam('/notification')
-  else if (command === 'edit') gotoEasyTeam('/user/edit')
-  else if (command === 'quitLogin') quitLogin()
+  if (command === 'notice')
+    gotoEasyTeam('/notification')
+  else if (command === 'edit')
+    gotoEasyTeam('/user/edit')
+  else if (command === 'quitLogin')
+    quitLogin()
 }
 
 function quitLogin() {
@@ -81,7 +81,7 @@ function quitLogin() {
 }
 
 function getHeaderActive() {
-  let routeNames = [
+  const routeNames = [
     'post',
     'info-about',
     'info-about',
@@ -100,7 +100,8 @@ function getHeaderActive() {
 }
 
 onMounted(() => {
-  if (state.authenticationToken) userStore.getUser()
+  if (state.authenticationToken)
+    userStore.getUser()
 })
 
 watch(
@@ -109,7 +110,7 @@ watch(
     state.ifNavShow = false
     getHeaderActive()
   },
-  { immediate: true }
+  { immediate: true },
 )
 
 watch(
@@ -117,7 +118,7 @@ watch(
   (value) => {
     state.ifShow = value >= 800
   },
-  { immediate: true }
+  { immediate: true },
 )
 </script>
 
@@ -134,7 +135,7 @@ watch(
             alt="EasyAPI LOGO"
             class="logo float-left"
             src="https://qiniu.easyapi.com/market/logo.svg"
-          />
+          >
         </nuxt-link>
         <div class="navs f-fl">
           <el-popover
@@ -147,67 +148,55 @@ watch(
             <ul class="popover-ul">
               <a href="/product/doc" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon1.png" />
+                  <img class="icon_img" src="/images/info/down_icon1.png">
                   <div class="popover-content">
                     <p>文档管理</p>
-                    <span
-                      >在线编辑API接口文档，强大的API接口测试功能，团队协作超便捷</span
-                    >
+                    <span>在线编辑API接口文档，强大的API接口测试功能，团队协作超便捷</span>
                   </div>
                 </li>
               </a>
               <a href="/product/lowcode" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/icon_lowcode.png" />
+                  <img class="icon_img" src="/images/info/icon_lowcode.png">
                   <div class="popover-content">
                     <p>低代码</p>
-                    <span
-                      >轻松构建API接口服务，助力企业数字化服务，支持多种开发语言</span
-                    >
+                    <span>轻松构建API接口服务，助力企业数字化服务，支持多种开发语言</span>
                   </div>
                 </li>
               </a>
               <a href="/product/test" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon3.png" />
+                  <img class="icon_img" src="/images/info/down_icon3.png">
                   <div class="popover-content">
                     <p>接口测试</p>
-                    <span
-                      >在线API测试工具，快速完成接口测试任务，支持团队共同测试</span
-                    >
+                    <span>在线API测试工具，快速完成接口测试任务，支持团队共同测试</span>
                   </div>
                 </li>
               </a>
               <a href="/product/interface" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon4.png" />
+                  <img class="icon_img" src="/images/info/down_icon4.png">
                   <div class="popover-content">
                     <p>接口服务</p>
-                    <span
-                      >众多接口服务，满足开发的每一个环节，让开发更高效，让开发更高效</span
-                    >
+                    <span>众多接口服务，满足开发的每一个环节，让开发更高效，让开发更高效</span>
                   </div>
                 </li>
               </a>
               <a href="/product/monitor" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon5.png" />
+                  <img class="icon_img" src="/images/info/down_icon5.png">
                   <div class="popover-content">
                     <p>监控系统</p>
-                    <span
-                      >API监控实时反馈API状态，保障产品稳定性，提升运维响应速度</span
-                    >
+                    <span>API监控实时反馈API状态，保障产品稳定性，提升运维响应速度</span>
                   </div>
                 </li>
               </a>
               <a href="/product/scene" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/down_icon6.png" />
+                  <img class="icon_img" src="/images/info/down_icon6.png">
                   <div class="popover-content">
                     <p>场景化服务</p>
-                    <span
-                      >企业专注于核心业务开发，提供非核心标准化场景业务开发服务，性价比更高</span
-                    >
+                    <span>企业专注于核心业务开发，提供非核心标准化场景业务开发服务，性价比更高</span>
                   </div>
                 </li>
               </a>
@@ -222,7 +211,9 @@ watch(
               </span>
             </template>
           </el-popover>
-          <nuxt-link to="/info/price"> 价格 </nuxt-link>
+          <nuxt-link to="/info/price">
+            价格
+          </nuxt-link>
           <el-popover
             placement="bottom-start"
             width="650"
@@ -233,34 +224,28 @@ watch(
             <ul class="popover-ul">
               <a href="/solution/portal" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/header-icon2.png" />
+                  <img class="icon_img" src="/images/info/header-icon2.png">
                   <div class="popover-content">
                     <p>API管理门户</p>
-                    <span
-                      >API管理门户主要为开发企业搭建API门户，企业集中化API管理解决方案</span
-                    >
+                    <span>API管理门户主要为开发企业搭建API门户，企业集中化API管理解决方案</span>
                   </div>
                 </li>
               </a>
               <a href="/solution/market" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/header-icon3.png" />
+                  <img class="icon_img" src="/images/info/header-icon3.png">
                   <div class="popover-content">
                     <p>API服务市场</p>
-                    <span
-                      >推进企业数字化转型，构建联盟生态服务，统一企业的API服务进出口径</span
-                    >
+                    <span>推进企业数字化转型，构建联盟生态服务，统一企业的API服务进出口径</span>
                   </div>
                 </li>
               </a>
               <a href="/solution/open" class="a_link">
                 <li class="popover-li">
-                  <img class="icon_img" src="/images/info/header-icon1.png" />
+                  <img class="icon_img" src="/images/info/header-icon1.png">
                   <div class="popover-content">
                     <p>API开放平台</p>
-                    <span
-                      >让企业的数据通过开放平台连接更多的可能性，实现上下游生态建设</span
-                    >
+                    <span>让企业的数据通过开放平台连接更多的可能性，实现上下游生态建设</span>
                   </div>
                 </li>
               </a>
@@ -269,9 +254,7 @@ watch(
               <span class="f-rel navs-item">
                 <a>
                   私有化
-                  <el-icon v-if="state.ifShowPrivatization"
-                    ><CaretBottom
-                  /></el-icon>
+                  <el-icon v-if="state.ifShowPrivatization"><CaretBottom /></el-icon>
                   <el-icon v-else><CaretTop /></el-icon>
                 </a>
               </span>
@@ -285,15 +268,13 @@ watch(
             id="register"
             class="register"
             href="https://account.easyapi.com/signup/"
-            >注册</a
-          >
+          >注册</a>
           <a
             v-if="!state.authenticationToken"
             id="login"
             class="login"
             href="https://account.easyapi.com/login/"
-            >登录</a
-          >
+          >登录</a>
           <div v-if="state.authenticationToken" class="team-head-left">
             <el-dropdown trigger="hover" @command="handleCommand">
               <span id="showTeamInfo" style="cursor: pointer">
@@ -301,21 +282,21 @@ watch(
                   v-if="userStore.photo"
                   class="team-icon"
                   :src="userStore.photo"
-                />
+                >
               </span>
               <template #dropdown>
                 <el-dropdown-menu>
                   <el-dropdown-item command="notice">
-                    <el-icon><Edit /></el-icon>
-                    <span>我的通知</span>
+                    <svg-icon class="title-icon" name="icon" />
+                    <span class="ml-2">我的通知</span>
                   </el-dropdown-item>
                   <el-dropdown-item command="edit">
-                    <el-icon><Sort /></el-icon>
-                    <span>个人设置</span>
+                    <svg-icon class="title-icon-1" name="icon-1" />
+                    <span class="ml-2">个人设置</span>
                   </el-dropdown-item>
                   <el-dropdown-item command="quitLogin">
-                    <el-icon><Switch /></el-icon>
-                    <span>退出</span>
+                    <svg-icon class="title-icon-2" name="icon-2" />
+                    <span class="ml-2">退出</span>
                   </el-dropdown-item>
                 </el-dropdown-menu>
               </template>
@@ -338,7 +319,7 @@ watch(
             <img
               class="logo float-left"
               src="https://qiniu.easyapi.com/market/logo.svg"
-            />
+            >
           </a>
           <div class="icon w-14 flex justify-between">
             <el-icon size="15" color="#ffffff" @click="showNav('person')">
@@ -368,14 +349,24 @@ watch(
                 <a>产品</a>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="/product/doc"> 文档管理 </el-menu-item>
-                <el-menu-item index="/product/test"> 接口测试 </el-menu-item>
-                <el-menu-item index="/product/monitor"> 监控系统 </el-menu-item>
-                <el-menu-item index="/product/lowcode"> 低代码 </el-menu-item>
+                <el-menu-item index="/product/doc">
+                  文档管理
+                </el-menu-item>
+                <el-menu-item index="/product/test">
+                  接口测试
+                </el-menu-item>
+                <el-menu-item index="/product/monitor">
+                  监控系统
+                </el-menu-item>
+                <el-menu-item index="/product/lowcode">
+                  低代码
+                </el-menu-item>
                 <el-menu-item index="/product/interface">
                   接口服务
                 </el-menu-item>
-                <el-menu-item index="/product/scene"> 场景化服务 </el-menu-item>
+                <el-menu-item index="/product/scene">
+                  场景化服务
+                </el-menu-item>
               </el-menu-item-group>
             </el-sub-menu>
             <el-menu-item index="/info/price">
