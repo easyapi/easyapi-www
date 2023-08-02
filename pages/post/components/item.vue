@@ -1,17 +1,28 @@
 <script setup lang="ts">
+import {a} from "unplugin-vue-router/dist/options-56006a88";
 import { useRouter } from 'vue-router'
 
 const props = defineProps({
   list: {
     type: Object,
-    default: {},
   },
+})
+const state = reactive({
+  data: {},
 })
 
 const router = useRouter()
 
+function getData() {
+  state.data = props.list
+}
+
+onBeforeMount(async () => {
+  await getData()
+})
+
 onMounted(() => {
-  console.log(props.list)
+
 })
 
 function jump(articleId: any) {
@@ -20,17 +31,17 @@ function jump(articleId: any) {
 </script>
 
 <template>
-  <a @click="jump(props.list.articleId)">
+  <a @click="jump(state.data.articleId)">
     <div class="list-item">
-      <div v-if="props.list.img" class="list-item-left">
-        <img :src="props.list.img" alt="">
+      <div v-if="state.data.img" class="list-item-left">
+        <img :src="state.data.img" alt="">
       </div>
       <div class="list-item-right">
         <div>
-          <span>{{ props.list.title }}</span>
-          <p>{{ props.list.articleCategory.description }}</p>
+          <span>{{ state.data.title }}</span>
+          <p>{{ state.data.articleCategory.description }}</p>
         </div>
-        <label>发布时间：{{ props.list.updateTime }}</label>
+        <label>发布时间：{{ state.data.updateTime }}</label>
       </div>
     </div>
   </a>
