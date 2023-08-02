@@ -1,27 +1,36 @@
-<script>
-export default {
-  props: ['list'],
-  mounted() {},
-  methods: {
-    jump(articleId) {
-      this.$router.push(`/post/${articleId}`)
-    },
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
+
+const props = defineProps({
+  list: {
+    type: Object,
+    default: {},
   },
+})
+
+const router = useRouter()
+
+onMounted(() => {
+  console.log(props.list)
+})
+
+function jump(articleId: any) {
+  router.push(`/post/${articleId}`)
 }
 </script>
 
 <template>
-  <a @click="jump(list.articleId)">
+  <a @click="jump(props.list.articleId)">
     <div class="list-item">
-      <div v-show="list.img" class="list-item-left">
-        <img :src="list.img" alt="">
+      <div v-if="props.list.img" class="list-item-left">
+        <img :src="props.list.img" alt="">
       </div>
       <div class="list-item-right">
         <div>
-          <span>{{ list.title }}</span>
-          <p>{{ list.articleCategory.description }}</p>
+          <span>{{ props.list.title }}</span>
+          <p>{{ props.list.articleCategory.description }}</p>
         </div>
-        <label>发布时间：{{ list.updateTime }}</label>
+        <label>发布时间：{{ props.list.updateTime }}</label>
       </div>
     </div>
   </a>
