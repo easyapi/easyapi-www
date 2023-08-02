@@ -6,14 +6,15 @@ const props = defineProps({
     type: Object,
   },
 })
+
 const state = reactive({
-  data: {}
+  data: {},
 })
 
 const router = useRouter()
 
 onMounted(() => {
-
+  state.data = props.list
 })
 
 function jump(articleId: any) {
@@ -22,19 +23,19 @@ function jump(articleId: any) {
 </script>
 
 <template>
-  <a @click="jump(props.list.articleId)">
+  <a @click="jump(state.data.articleId)">
     <div class="list-item">
-      <div v-if="props.list.img" class="list-item-left">
+      <div v-if="state.data.img" class="list-item-left">
         <client-only>
-          <img :src="props.list.img" alt="">
+          <img :src="state.data.img" alt="">
         </client-only>
       </div>
       <div class="list-item-right">
         <div>
-          <span>{{ props.list.title }}</span>
-          <p>{{ props.list.articleCategory.description }}</p>
+          <span>{{ state.data.title }}</span>
+          <p v-if="state.data.articleCategory">{{ state.data.articleCategory.description }}</p>
         </div>
-        <label>发布时间：{{ props.list.updateTime }}</label>
+        <label>发布时间：{{ state.data.updateTime }}</label>
       </div>
     </div>
   </a>
