@@ -90,7 +90,7 @@ useHead({
               <li>
                 <div class="code_img">
                   <img
-                    src="https://qiniu.easyapi.com/easyapi_contact_weixin.png"
+                    src="https://qiniu.easyapi.com/qrcode/leida.png"
                   >
                 </div>
                 <div class="link_info">
