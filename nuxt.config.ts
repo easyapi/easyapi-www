@@ -3,8 +3,9 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 const lifecycle = process.env.npm_lifecycle_event
 
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// https://nuxt.com/docs/api/nuxt-config
 export default defineNuxtConfig({
+
   app: {
     head: {
       script: [
@@ -15,18 +16,18 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ['@nuxtjs/tailwindcss', '@element-plus/nuxt',
-    ['@pinia/nuxt', {
-      autoImports: [
-        // automatically imports `defineStore`
-        'defineStore', // import { defineStore } from 'pinia'
-        // automatically imports `defineStore` as `definePiniaStore`
-        ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
-      ],
-    }]],
+
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@element-plus/nuxt',
+    '@nuxt/eslint',
+    '@pinia/nuxt',
+  ],
+
   build: {
     transpile: lifecycle === 'build' ? ['element-plus'] : [],
   },
+
   hooks: {
     'pages:extend': function (routes) {
       routes.push({
@@ -36,6 +37,7 @@ export default defineNuxtConfig({
       })
     },
   },
+
   css: [
     '~/assets/scss/element.scss',
     '~/assets/scss/banner.scss',
@@ -43,6 +45,7 @@ export default defineNuxtConfig({
     '~/assets/scss/function.scss',
   ],
   components: true,
+
   vite: {
     plugins: [
       createSvgIconsPlugin({
@@ -63,6 +66,17 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  eslint: {
+    config: {
+      standalone: false,
+    },
+  },
+
+  future: {
+    compatibilityVersion: 4,
+  },
+
   runtimeConfig: {
     public: {
       baseUrl: process.env.NUXT_PUBLIC_BASE_URL,
