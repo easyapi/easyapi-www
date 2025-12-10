@@ -111,7 +111,7 @@ watch(
       </div>
       <el-divider />
       <div class="my-7 text-center">
-        Copyright © 2015～2023 无锡帮趣数据服务有限公司
+        Copyright © 2015～2025 上海帮趣网络技术有限公司
       </div>
     </div>
     <div class="text-center">
